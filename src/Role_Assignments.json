@@ -1,0 +1,555 @@
+[
+  {
+    "userId": "AGARG",
+    "userName": "Arushi Garg",
+    "department": "Core Development",
+    "position": "Senior Developer",
+    "totalRoles": 4,
+    "assignedRoles": [
+      "Z_COMMON_DISPLAY",
+      "Z_MM_DISPLAY",
+      "Z_FI_AP_CLERK",
+      "Z_MM_INVENTORY_MGR"
+    ]
+  },
+  {
+    "userId": "SDOGRA",
+    "userName": "Shilpa Dogra",
+    "department": "Core Development",
+    "position": "Developer",
+    "totalRoles": 9,
+    "assignedRoles": [
+      "Z_COMMON_DISPLAY",
+      "Z_MM_DISPLAY",
+      "Z_DEV_ABAP_JUNIOR",
+      "Z_BASIS_ADMIN",
+      "Z_FI_AR_SUPER",
+      "Z_MM_INVENTORY_MGR",
+      "Z_HR_ADMIN",
+      "Z_SEC_ADMIN",
+      "Z_FI_AP_SUPER"
+    ]
+  },
+  {
+    "userId": "ACHAVAN",
+    "userName": "Akshay R Chavan",
+    "department": "Core Development",
+    "position": "Developer",
+    "totalRoles": 9,
+    "assignedRoles": [
+      "Z_COMMON_DISPLAY",
+      "Z_DEV_ABAP_SENIOR",
+      "Z_MM_DISPLAY",
+      "Z_COMMON_DISPLAY",
+      "Z_FI_AP_CLERK",
+      "Z_HR_ADMIN",
+      "Z_FI_AP_SUPER",
+      "Z_BASIS_ADMIN",
+      "Z_MM_INVENTORY_MGR"
+    ]
+  },
+  {
+    "userId": "DDHIMAN",
+    "userName": "Deepak Dhiman",
+    "department": "Supply Chain",
+    "position": "Procurement Lead",
+    "totalRoles": 11,
+    "assignedRoles": [
+      "Z_COMMON_DISPLAY",
+      "Z_MM_INVENTORY_MGR",
+      "Z_FI_DISPLAY",
+      "Z_COMMON_DISPLAY",
+      "Z_SEC_ADMIN",
+      "Z_MM_PO_BUYER",
+      "Z_DEV_ABAP_JUNIOR",
+      "Z_MM_DISPLAY",
+      "Z_FI_AR_SUPER",
+      "Z_FI_GL_ACCOUNTANT",
+      "Z_DEV_ABAP_SENIOR"
+    ]
+  },
+  {
+    "userId": "DHORIONS",
+    "userName": "David Horions",
+    "department": "Supply Chain",
+    "position": "Inventory Manager",
+    "totalRoles": 6,
+    "assignedRoles": [
+      "Z_COMMON_DISPLAY",
+      "Z_MM_PO_BUYER",
+      "Z_FI_DISPLAY",
+      "Z_MM_DISPLAY",
+      "Z_FI_GL_ACCOUNTANT",
+      "Z_BASIS_ADMIN"
+    ]
+  },
+  {
+    "userId": "GGAUTAM",
+    "userName": "Gaurav Gautam",
+    "department": "IT Security",
+    "position": "Audit Manager",
+    "totalRoles": 11,
+    "assignedRoles": [
+      "Z_COMMON_DISPLAY",
+      "Z_COMMON_DISPLAY",
+      "Z_DEV_ABAP_SENIOR",
+      "Z_MM_PO_BUYER",
+      "Z_DEV_ABAP_JUNIOR",
+      "Z_MM_INVENTORY_MGR",
+      "Z_FI_GL_ACCOUNTANT",
+      "Z_FI_DISPLAY",
+      "Z_FI_AP_CLERK",
+      "Z_FI_AP_SUPER",
+      "Z_SEC_ADMIN"
+    ]
+  },
+  {
+    "userId": "ASINGH",
+    "userName": "Aditya Singh",
+    "department": "IT Security",
+    "position": "Identity Admin",
+    "totalRoles": 6,
+    "assignedRoles": [
+      "Z_COMMON_DISPLAY",
+      "Z_BASIS_ADMIN",
+      "Z_DEV_ABAP_SENIOR",
+      "Z_MM_PO_BUYER",
+      "Z_DEV_ABAP_JUNIOR",
+      "Z_MM_INVENTORY_MGR"
+    ]
+  },
+  {
+    "userId": "JURCK",
+    "userName": "Jan Jurck",
+    "department": "Finance & Controlling",
+    "position": "Controller",
+    "totalRoles": 14,
+    "assignedRoles": [
+      "Z_COMMON_DISPLAY",
+      "Z_FI_AP_CLERK",
+      "Z_BASIS_ADMIN",
+      "Z_MM_INVENTORY_MGR",
+      "Z_SEC_ADMIN",
+      "Z_FI_DISPLAY",
+      "Z_DEV_ABAP_SENIOR",
+      "Z_HR_ADMIN",
+      "Z_FI_AP_SUPER",
+      "Z_MM_PO_BUYER",
+      "Z_FI_AR_SUPER",
+      "Z_MM_DISPLAY",
+      "Z_DEV_ABAP_JUNIOR",
+      "Z_FI_GL_ACCOUNTANT"
+    ]
+  },
+  {
+    "userId": "PETERJ",
+    "userName": "Peter James",
+    "department": "Finance & Controlling",
+    "position": "AP Specialist",
+    "totalRoles": 7,
+    "assignedRoles": [
+      "Z_COMMON_DISPLAY",
+      "Z_FI_GL_ACCOUNTANT",
+      "Z_FI_AP_SUPER",
+      "Z_FI_AR_SUPER",
+      "Z_FI_AP_CLERK",
+      "Z_SEC_ADMIN",
+      "Z_MM_DISPLAY"
+    ]
+  },
+  {
+    "userId": "SMADAN",
+    "userName": "Sonia Madan",
+    "department": "HR Operations",
+    "position": "HR Generalist",
+    "totalRoles": 14,
+    "assignedRoles": [
+      "Z_COMMON_DISPLAY",
+      "Z_HR_ADMIN",
+      "Z_COMMON_DISPLAY",
+      "Z_MM_INVENTORY_MGR",
+      "Z_FI_AR_SUPER",
+      "Z_DEV_ABAP_JUNIOR",
+      "Z_SEC_ADMIN",
+      "Z_MM_DISPLAY",
+      "Z_BASIS_ADMIN",
+      "Z_DEV_ABAP_SENIOR",
+      "Z_FI_DISPLAY",
+      "Z_FI_AP_SUPER",
+      "Z_FI_GL_ACCOUNTANT",
+      "Z_MM_PO_BUYER"
+    ]
+  },
+  {
+    "userId": "USER001",
+    "userName": "Test User 1",
+    "department": "Core Development",
+    "position": "Analyst",
+    "totalRoles": 4,
+    "assignedRoles": [
+      "Z_COMMON_DISPLAY",
+      "Z_MM_DISPLAY",
+      "Z_MM_PO_BUYER",
+      "Z_FI_DISPLAY"
+    ]
+  },
+  {
+    "userId": "USER002",
+    "userName": "Test User 2",
+    "department": "IT Security",
+    "position": "Analyst",
+    "totalRoles": 10,
+    "assignedRoles": [
+      "Z_COMMON_DISPLAY",
+      "Z_COMMON_DISPLAY",
+      "Z_SEC_ADMIN",
+      "Z_DEV_ABAP_JUNIOR",
+      "Z_MM_INVENTORY_MGR",
+      "Z_MM_DISPLAY",
+      "Z_DEV_ABAP_SENIOR",
+      "Z_FI_AR_SUPER",
+      "Z_FI_AP_CLERK",
+      "Z_HR_ADMIN"
+    ]
+  },
+  {
+    "userId": "USER003",
+    "userName": "Test User 3",
+    "department": "HR Operations",
+    "position": "Analyst",
+    "totalRoles": 14,
+    "assignedRoles": [
+      "Z_COMMON_DISPLAY",
+      "Z_COMMON_DISPLAY",
+      "Z_HR_ADMIN",
+      "Z_DEV_ABAP_JUNIOR",
+      "Z_DEV_ABAP_SENIOR",
+      "Z_FI_GL_ACCOUNTANT",
+      "Z_BASIS_ADMIN",
+      "Z_FI_AR_SUPER",
+      "Z_MM_DISPLAY",
+      "Z_MM_PO_BUYER",
+      "Z_FI_DISPLAY",
+      "Z_SEC_ADMIN",
+      "Z_MM_INVENTORY_MGR",
+      "Z_FI_AP_SUPER"
+    ]
+  },
+  {
+    "userId": "USER004",
+    "userName": "Test User 4",
+    "department": "Core Development",
+    "position": "Analyst",
+    "totalRoles": 6,
+    "assignedRoles": [
+      "Z_COMMON_DISPLAY",
+      "Z_DEV_ABAP_SENIOR",
+      "Z_DEV_ABAP_JUNIOR",
+      "Z_FI_DISPLAY",
+      "Z_BASIS_ADMIN",
+      "Z_MM_DISPLAY"
+    ]
+  },
+  {
+    "userId": "USER005",
+    "userName": "Test User 5",
+    "department": "IT Security",
+    "position": "Analyst",
+    "totalRoles": 6,
+    "assignedRoles": [
+      "Z_COMMON_DISPLAY",
+      "Z_BASIS_ADMIN",
+      "Z_SEC_ADMIN",
+      "Z_COMMON_DISPLAY",
+      "Z_HR_ADMIN",
+      "Z_FI_AR_SUPER"
+    ]
+  },
+  {
+    "userId": "USER006",
+    "userName": "Test User 6",
+    "department": "Core Development",
+    "position": "Analyst",
+    "totalRoles": 12,
+    "assignedRoles": [
+      "Z_COMMON_DISPLAY",
+      "Z_DEV_ABAP_SENIOR",
+      "Z_COMMON_DISPLAY",
+      "Z_HR_ADMIN",
+      "Z_FI_AP_SUPER",
+      "Z_MM_PO_BUYER",
+      "Z_FI_AP_CLERK",
+      "Z_FI_AR_SUPER",
+      "Z_DEV_ABAP_JUNIOR",
+      "Z_FI_DISPLAY",
+      "Z_MM_INVENTORY_MGR",
+      "Z_BASIS_ADMIN"
+    ]
+  },
+  {
+    "userId": "USER007",
+    "userName": "Test User 7",
+    "department": "Core Development",
+    "position": "Analyst",
+    "totalRoles": 7,
+    "assignedRoles": [
+      "Z_COMMON_DISPLAY",
+      "Z_FI_DISPLAY",
+      "Z_FI_GL_ACCOUNTANT",
+      "Z_FI_AP_SUPER",
+      "Z_FI_AR_SUPER",
+      "Z_HR_ADMIN",
+      "Z_DEV_ABAP_SENIOR"
+    ]
+  },
+  {
+    "userId": "USER008",
+    "userName": "Test User 8",
+    "department": "Finance & Controlling",
+    "position": "Analyst",
+    "totalRoles": 6,
+    "assignedRoles": [
+      "Z_COMMON_DISPLAY",
+      "Z_FI_AP_CLERK",
+      "Z_FI_AP_SUPER",
+      "Z_FI_GL_ACCOUNTANT",
+      "Z_SEC_ADMIN",
+      "Z_BASIS_ADMIN"
+    ]
+  },
+  {
+    "userId": "USER009",
+    "userName": "Test User 9",
+    "department": "HR Operations",
+    "position": "Analyst",
+    "totalRoles": 11,
+    "assignedRoles": [
+      "Z_COMMON_DISPLAY",
+      "Z_COMMON_DISPLAY",
+      "Z_HR_ADMIN",
+      "Z_FI_AP_CLERK",
+      "Z_DEV_ABAP_SENIOR",
+      "Z_DEV_ABAP_JUNIOR",
+      "Z_FI_GL_ACCOUNTANT",
+      "Z_MM_INVENTORY_MGR",
+      "Z_BASIS_ADMIN",
+      "Z_FI_DISPLAY",
+      "Z_MM_PO_BUYER"
+    ]
+  },
+  {
+    "userId": "USER010",
+    "userName": "Test User 10",
+    "department": "Finance & Controlling",
+    "position": "Analyst",
+    "totalRoles": 14,
+    "assignedRoles": [
+      "Z_COMMON_DISPLAY",
+      "Z_FI_AP_SUPER",
+      "Z_MM_DISPLAY",
+      "Z_DEV_ABAP_SENIOR",
+      "Z_HR_ADMIN",
+      "Z_FI_AR_SUPER",
+      "Z_SEC_ADMIN",
+      "Z_FI_GL_ACCOUNTANT",
+      "Z_MM_PO_BUYER",
+      "Z_FI_AP_CLERK",
+      "Z_BASIS_ADMIN",
+      "Z_MM_INVENTORY_MGR",
+      "Z_FI_DISPLAY",
+      "Z_DEV_ABAP_JUNIOR"
+    ]
+  },
+  {
+    "userId": "USER011",
+    "userName": "Test User 11",
+    "department": "HR Operations",
+    "position": "Analyst",
+    "totalRoles": 10,
+    "assignedRoles": [
+      "Z_COMMON_DISPLAY",
+      "Z_COMMON_DISPLAY",
+      "Z_FI_DISPLAY",
+      "Z_FI_AR_SUPER",
+      "Z_HR_ADMIN",
+      "Z_MM_DISPLAY",
+      "Z_FI_AP_SUPER",
+      "Z_DEV_ABAP_JUNIOR",
+      "Z_FI_AP_CLERK",
+      "Z_SEC_ADMIN"
+    ]
+  },
+  {
+    "userId": "USER012",
+    "userName": "Test User 12",
+    "department": "Supply Chain",
+    "position": "Analyst",
+    "totalRoles": 12,
+    "assignedRoles": [
+      "Z_COMMON_DISPLAY",
+      "Z_FI_DISPLAY",
+      "Z_MM_PO_BUYER",
+      "Z_FI_AR_SUPER",
+      "Z_DEV_ABAP_JUNIOR",
+      "Z_HR_ADMIN",
+      "Z_FI_AP_CLERK",
+      "Z_FI_GL_ACCOUNTANT",
+      "Z_FI_AP_SUPER",
+      "Z_MM_DISPLAY",
+      "Z_MM_INVENTORY_MGR",
+      "Z_SEC_ADMIN"
+    ]
+  },
+  {
+    "userId": "USER013",
+    "userName": "Test User 13",
+    "department": "IT Security",
+    "position": "Analyst",
+    "totalRoles": 12,
+    "assignedRoles": [
+      "Z_COMMON_DISPLAY",
+      "Z_SEC_ADMIN",
+      "Z_FI_AP_CLERK",
+      "Z_MM_PO_BUYER",
+      "Z_MM_INVENTORY_MGR",
+      "Z_DEV_ABAP_JUNIOR",
+      "Z_FI_AP_SUPER",
+      "Z_FI_DISPLAY",
+      "Z_HR_ADMIN",
+      "Z_DEV_ABAP_SENIOR",
+      "Z_FI_AR_SUPER",
+      "Z_FI_GL_ACCOUNTANT"
+    ]
+  },
+  {
+    "userId": "USER014",
+    "userName": "Test User 14",
+    "department": "HR Operations",
+    "position": "Analyst",
+    "totalRoles": 12,
+    "assignedRoles": [
+      "Z_COMMON_DISPLAY",
+      "Z_COMMON_DISPLAY",
+      "Z_HR_ADMIN",
+      "Z_BASIS_ADMIN",
+      "Z_MM_DISPLAY",
+      "Z_SEC_ADMIN",
+      "Z_MM_PO_BUYER",
+      "Z_FI_AP_CLERK",
+      "Z_DEV_ABAP_SENIOR",
+      "Z_FI_AR_SUPER",
+      "Z_FI_DISPLAY",
+      "Z_MM_INVENTORY_MGR"
+    ]
+  },
+  {
+    "userId": "USER015",
+    "userName": "Test User 15",
+    "department": "IT Security",
+    "position": "Analyst",
+    "totalRoles": 10,
+    "assignedRoles": [
+      "Z_COMMON_DISPLAY",
+      "Z_COMMON_DISPLAY",
+      "Z_MM_PO_BUYER",
+      "Z_FI_AR_SUPER",
+      "Z_SEC_ADMIN",
+      "Z_DEV_ABAP_SENIOR",
+      "Z_MM_DISPLAY",
+      "Z_FI_DISPLAY",
+      "Z_FI_AP_CLERK",
+      "Z_HR_ADMIN"
+    ]
+  },
+  {
+    "userId": "USER016",
+    "userName": "Test User 16",
+    "department": "HR Operations",
+    "position": "Analyst",
+    "totalRoles": 6,
+    "assignedRoles": [
+      "Z_COMMON_DISPLAY",
+      "Z_HR_ADMIN",
+      "Z_COMMON_DISPLAY",
+      "Z_MM_DISPLAY",
+      "Z_FI_GL_ACCOUNTANT",
+      "Z_FI_AR_SUPER"
+    ]
+  },
+  {
+    "userId": "USER017",
+    "userName": "Test User 17",
+    "department": "HR Operations",
+    "position": "Analyst",
+    "totalRoles": 4,
+    "assignedRoles": [
+      "Z_COMMON_DISPLAY",
+      "Z_HR_ADMIN",
+      "Z_COMMON_DISPLAY",
+      "Z_BASIS_ADMIN"
+    ]
+  },
+  {
+    "userId": "USER018",
+    "userName": "Test User 18",
+    "department": "HR Operations",
+    "position": "Analyst",
+    "totalRoles": 10,
+    "assignedRoles": [
+      "Z_COMMON_DISPLAY",
+      "Z_COMMON_DISPLAY",
+      "Z_FI_AP_CLERK",
+      "Z_MM_INVENTORY_MGR",
+      "Z_FI_GL_ACCOUNTANT",
+      "Z_BASIS_ADMIN",
+      "Z_SEC_ADMIN",
+      "Z_FI_DISPLAY",
+      "Z_DEV_ABAP_JUNIOR",
+      "Z_MM_DISPLAY"
+    ]
+  },
+  {
+    "userId": "USER019",
+    "userName": "Test User 19",
+    "department": "HR Operations",
+    "position": "Analyst",
+    "totalRoles": 11,
+    "assignedRoles": [
+      "Z_COMMON_DISPLAY",
+      "Z_HR_ADMIN",
+      "Z_COMMON_DISPLAY",
+      "Z_FI_AP_CLERK",
+      "Z_MM_DISPLAY",
+      "Z_DEV_ABAP_JUNIOR",
+      "Z_SEC_ADMIN",
+      "Z_FI_GL_ACCOUNTANT",
+      "Z_FI_DISPLAY",
+      "Z_FI_AP_SUPER",
+      "Z_MM_PO_BUYER"
+    ]
+  },
+  {
+    "userId": "USER020",
+    "userName": "Test User 20",
+    "department": "HR Operations",
+    "position": "Analyst",
+    "totalRoles": 15,
+    "assignedRoles": [
+      "Z_COMMON_DISPLAY",
+      "Z_COMMON_DISPLAY",
+      "Z_HR_ADMIN",
+      "Z_MM_DISPLAY",
+      "Z_FI_GL_ACCOUNTANT",
+      "Z_BASIS_ADMIN",
+      "Z_FI_AP_SUPER",
+      "Z_MM_INVENTORY_MGR",
+      "Z_DEV_ABAP_JUNIOR",
+      "Z_FI_DISPLAY",
+      "Z_FI_AR_SUPER",
+      "Z_SEC_ADMIN",
+      "Z_FI_AP_CLERK",
+      "Z_DEV_ABAP_SENIOR",
+      "Z_MM_PO_BUYER"
+    ]
+  }
+]

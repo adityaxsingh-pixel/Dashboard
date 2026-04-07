@@ -1,0 +1,256 @@
+[
+  {
+    "roleId": "Z_FI_AP_SUPER",
+    "roleName": "Accounts Payable Super User",
+    "module": "FI",
+    "criticality": "HIGH",
+    "tcodes": [
+      "FB01",
+      "FB02",
+      "FB03",
+      "F-43",
+      "F-53",
+      "F110",
+      "FBL1N",
+      "FK01",
+      "FK02",
+      "FK03",
+      "OB52",
+      "F150",
+      "SM30",
+      "SE16"
+    ]
+  },
+  {
+    "roleId": "Z_FI_AP_CLERK",
+    "roleName": "Accounts Payable Clerk",
+    "module": "FI",
+    "criticality": "MEDIUM",
+    "tcodes": [
+      "FB01",
+      "FB03",
+      "F-43",
+      "FBL1N",
+      "FK03"
+    ]
+  },
+  {
+    "roleId": "Z_FI_AR_SUPER",
+    "roleName": "Accounts Receivable Super User",
+    "module": "FI",
+    "criticality": "HIGH",
+    "tcodes": [
+      "FB01",
+      "FB02",
+      "FB03",
+      "F-22",
+      "F-28",
+      "FBL5N",
+      "FD01",
+      "FD02",
+      "FD03",
+      "F150",
+      "OB52",
+      "SM30"
+    ]
+  },
+  {
+    "roleId": "Z_FI_GL_ACCOUNTANT",
+    "roleName": "General Ledger Accountant",
+    "module": "FI",
+    "criticality": "MEDIUM",
+    "tcodes": [
+      "FB50",
+      "FB03",
+      "FS10N",
+      "FBL3N",
+      "F-02",
+      "OB52",
+      "FBD1",
+      "FBD2",
+      "FAGLL03",
+      "SM30"
+    ]
+  },
+  {
+    "roleId": "Z_MM_PO_BUYER",
+    "roleName": "Purchasing Buyer",
+    "module": "MM",
+    "criticality": "MEDIUM",
+    "tcodes": [
+      "ME21N",
+      "ME22N",
+      "ME23N",
+      "ME51N",
+      "ME52N",
+      "ME53N",
+      "ME28",
+      "ME29N",
+      "MK03",
+      "XK03",
+      "MM03"
+    ]
+  },
+  {
+    "roleId": "Z_MM_INVENTORY_MGR",
+    "roleName": "Inventory Manager",
+    "module": "MM",
+    "criticality": "HIGH",
+    "tcodes": [
+      "MIGO",
+      "MIRO",
+      "MB51",
+      "MB52",
+      "MB1B",
+      "MB1C",
+      "MM01",
+      "MM02",
+      "MM03",
+      "MR8M",
+      "MR11"
+    ]
+  },
+  {
+    "roleId": "Z_HR_ADMIN",
+    "roleName": "HR Administrator",
+    "module": "HR",
+    "criticality": "HIGH",
+    "tcodes": [
+      "PA20",
+      "PA30",
+      "PA40",
+      "PP01",
+      "PO13",
+      "PO10",
+      "PT50",
+      "PU00",
+      "PE01",
+      "PE02",
+      "SU01"
+    ]
+  },
+  {
+    "roleId": "Z_BASIS_ADMIN",
+    "roleName": "Basis Administrator",
+    "module": "BASIS",
+    "criticality": "CRITICAL",
+    "tcodes": [
+      "SM37",
+      "SM50",
+      "SM51",
+      "SM59",
+      "ST22",
+      "SU01",
+      "PFCG",
+      "SM04",
+      "AL11",
+      "SPAM",
+      "SAINT",
+      "SCC4",
+      "SM21",
+      "SE09",
+      "SE10",
+      "STMS"
+    ]
+  },
+  {
+    "roleId": "Z_DEV_ABAP_SENIOR",
+    "roleName": "Senior ABAP Developer",
+    "module": "DEV",
+    "criticality": "CRITICAL",
+    "tcodes": [
+      "SE38",
+      "SE80",
+      "SE11",
+      "SE24",
+      "SE37",
+      "SE16N",
+      "SE09",
+      "ST22",
+      "SM37",
+      "SM59",
+      "SU53",
+      "SAT",
+      "ST05",
+      "SCI",
+      "SLIN",
+      "SU01"
+    ]
+  },
+  {
+    "roleId": "Z_DEV_ABAP_JUNIOR",
+    "roleName": "Junior ABAP Developer",
+    "module": "DEV",
+    "criticality": "MEDIUM",
+    "tcodes": [
+      "SE38",
+      "SE80",
+      "SE11",
+      "SE24",
+      "SE37",
+      "SE09",
+      "ST22",
+      "SU53"
+    ]
+  },
+  {
+    "roleId": "Z_SEC_ADMIN",
+    "roleName": "Security Administrator",
+    "module": "SEC",
+    "criticality": "CRITICAL",
+    "tcodes": [
+      "SU01",
+      "SU10",
+      "PFCG",
+      "SUIM",
+      "SU24",
+      "SU53",
+      "SM19",
+      "SM20",
+      "STAUTHTRACE",
+      "SU21",
+      "SU22",
+      "ST01"
+    ]
+  },
+  {
+    "roleId": "Z_COMMON_DISPLAY",
+    "roleName": "Common Display Access",
+    "module": "COMMON",
+    "criticality": "LOW",
+    "tcodes": [
+      "SU53",
+      "SM37",
+      "SP01",
+      "SP02",
+      "SO01",
+      "SBWP"
+    ]
+  },
+  {
+    "roleId": "Z_FI_DISPLAY",
+    "roleName": "FI Display Only",
+    "module": "FI",
+    "criticality": "LOW",
+    "tcodes": [
+      "FB03",
+      "FBL1N",
+      "FBL3N",
+      "FBL5N",
+      "FS10N"
+    ]
+  },
+  {
+    "roleId": "Z_MM_DISPLAY",
+    "roleName": "MM Display Only",
+    "module": "MM",
+    "criticality": "LOW",
+    "tcodes": [
+      "ME23N",
+      "ME53N",
+      "MM03",
+      "MB51",
+      "MB52"
+    ]
+  }
+]

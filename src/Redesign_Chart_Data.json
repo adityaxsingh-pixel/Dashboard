@@ -1,0 +1,2457 @@
+[
+  {
+    "name": "General Operations (General Business)",
+    "country": "United States",
+    "department": "General Operations",
+    "userCount": 94,
+    "totalConflicts": 736,
+    "status": "Red",
+    "users": [
+      {
+        "userId": "ACHRIS1",
+        "userName": "ACHRIS1",
+        "conflictCount": 10,
+        "sensitivities": [
+          "CRITICAL",
+          "HIGH"
+        ],
+        "status": "Red",
+        "topTransactions": "SU01, FB03, ME23N (General)"
+      },
+      {
+        "userId": "AHARTLEY",
+        "userName": "Andy Hartley",
+        "conflictCount": 10,
+        "sensitivities": [
+          "CRITICAL",
+          "HIGH"
+        ],
+        "status": "Red",
+        "topTransactions": "SU01, FB03, ME23N (General)"
+      },
+      {
+        "userId": "ANAUTIYAL",
+        "userName": "ANAUTIYAL",
+        "conflictCount": 10,
+        "sensitivities": [
+          "CRITICAL",
+          "HIGH"
+        ],
+        "status": "Red",
+        "topTransactions": "SU01, FB03, ME23N (General)"
+      },
+      {
+        "userId": "ASHARMA",
+        "userName": "Sharma",
+        "conflictCount": 10,
+        "sensitivities": [
+          "CRITICAL",
+          "HIGH"
+        ],
+        "status": "Red",
+        "topTransactions": "SU01, FB03, ME23N (General)"
+      },
+      {
+        "userId": "ASINGH",
+        "userName": "Aditya Singh",
+        "conflictCount": 10,
+        "sensitivities": [
+          "CRITICAL",
+          "HIGH"
+        ],
+        "status": "Red",
+        "topTransactions": "SU01, FB03, ME23N (General)"
+      },
+      {
+        "userId": "ASINGH_LM",
+        "userName": "ASINGH_LM",
+        "conflictCount": 10,
+        "sensitivities": [
+          "CRITICAL",
+          "HIGH"
+        ],
+        "status": "Red",
+        "topTransactions": "SU01, FB03, ME23N (General)"
+      },
+      {
+        "userId": "ASINGH_POST",
+        "userName": "ASINGH_POST",
+        "conflictCount": 10,
+        "sensitivities": [
+          "CRITICAL",
+          "HIGH"
+        ],
+        "status": "Red",
+        "topTransactions": "SU01, FB03, ME23N (General)"
+      },
+      {
+        "userId": "ASINGH_RM",
+        "userName": "ASINGH_RM",
+        "conflictCount": 10,
+        "sensitivities": [
+          "CRITICAL",
+          "HIGH"
+        ],
+        "status": "Red",
+        "topTransactions": "SU01, FB03, ME23N (General)"
+      },
+      {
+        "userId": "ASMITA",
+        "userName": "asmi asmita",
+        "conflictCount": 10,
+        "sensitivities": [
+          "CRITICAL",
+          "HIGH"
+        ],
+        "status": "Red",
+        "topTransactions": "SU01, FB03, ME23N (General)"
+      },
+      {
+        "userId": "ASMITAP",
+        "userName": "ASMITAP",
+        "conflictCount": 10,
+        "sensitivities": [
+          "CRITICAL",
+          "HIGH"
+        ],
+        "status": "Red",
+        "topTransactions": "SU01, FB03, ME23N (General)"
+      },
+      {
+        "userId": "BACKUP_JAG",
+        "userName": "Backup",
+        "conflictCount": 10,
+        "sensitivities": [
+          "CRITICAL",
+          "HIGH"
+        ],
+        "status": "Red",
+        "topTransactions": "SU01, FB03, ME23N (General)"
+      },
+      {
+        "userId": "BHANUPRIYA.N",
+        "userName": "BHANUPRIYA NIKHAR",
+        "conflictCount": 10,
+        "sensitivities": [
+          "CRITICAL",
+          "HIGH"
+        ],
+        "status": "Red",
+        "topTransactions": "SU01, FB03, ME23N (General)"
+      },
+      {
+        "userId": "BNAYAK",
+        "userName": "Birakishore Nayak",
+        "conflictCount": 10,
+        "sensitivities": [
+          "CRITICAL",
+          "HIGH"
+        ],
+        "status": "Red",
+        "topTransactions": "SU01, FB03, ME23N (General)"
+      },
+      {
+        "userId": "BRAKWAL",
+        "userName": "brakwal",
+        "conflictCount": 10,
+        "sensitivities": [
+          "CRITICAL",
+          "HIGH"
+        ],
+        "status": "Red",
+        "topTransactions": "SU01, FB03, ME23N (General)"
+      },
+      {
+        "userId": "GJOSHI",
+        "userName": "gjoshi",
+        "conflictCount": 10,
+        "sensitivities": [
+          "CRITICAL",
+          "HIGH"
+        ],
+        "status": "Red",
+        "topTransactions": "SU01, FB03, ME23N (General)"
+      },
+      {
+        "userId": "HJINDAL",
+        "userName": "Jindal",
+        "conflictCount": 10,
+        "sensitivities": [
+          "CRITICAL",
+          "HIGH"
+        ],
+        "status": "Red",
+        "topTransactions": "SU01, FB03, ME23N (General)"
+      },
+      {
+        "userId": "HSHARMA",
+        "userName": "Sharma",
+        "conflictCount": 10,
+        "sensitivities": [
+          "CRITICAL",
+          "HIGH"
+        ],
+        "status": "Red",
+        "topTransactions": "SU01, FB03, ME23N (General)"
+      },
+      {
+        "userId": "JAGJITS",
+        "userName": "JAGJITS",
+        "conflictCount": 10,
+        "sensitivities": [
+          "CRITICAL",
+          "HIGH"
+        ],
+        "status": "Red",
+        "topTransactions": "SU01, FB03, ME23N (General)"
+      },
+      {
+        "userId": "JSINGH",
+        "userName": "Jagjit Singh",
+        "conflictCount": 10,
+        "sensitivities": [
+          "CRITICAL",
+          "HIGH"
+        ],
+        "status": "Red",
+        "topTransactions": "SU01, FB03, ME23N (General)"
+      },
+      {
+        "userId": "KREDDY",
+        "userName": "KREDDY",
+        "conflictCount": 10,
+        "sensitivities": [
+          "CRITICAL",
+          "HIGH"
+        ],
+        "status": "Red",
+        "topTransactions": "SU01, FB03, ME23N (General)"
+      },
+      {
+        "userId": "KSHARMA",
+        "userName": "KASHIKA SHARMA",
+        "conflictCount": 10,
+        "sensitivities": [
+          "CRITICAL",
+          "HIGH"
+        ],
+        "status": "Red",
+        "topTransactions": "SU01, FB03, ME23N (General)"
+      },
+      {
+        "userId": "KULDEEPP",
+        "userName": "KULDEEPP",
+        "conflictCount": 10,
+        "sensitivities": [
+          "CRITICAL",
+          "HIGH"
+        ],
+        "status": "Red",
+        "topTransactions": "SU01, FB03, ME23N (General)"
+      },
+      {
+        "userId": "LBAMBHA",
+        "userName": "Luv Pal Bambha",
+        "conflictCount": 10,
+        "sensitivities": [
+          "CRITICAL",
+          "HIGH"
+        ],
+        "status": "Red",
+        "topTransactions": "SU01, FB03, ME23N (General)"
+      },
+      {
+        "userId": "LIORE",
+        "userName": "LIORE",
+        "conflictCount": 10,
+        "sensitivities": [
+          "CRITICAL",
+          "HIGH"
+        ],
+        "status": "Red",
+        "topTransactions": "SU01, FB03, ME23N (General)"
+      },
+      {
+        "userId": "NEWUSERTEST",
+        "userName": "X Mr",
+        "conflictCount": 10,
+        "sensitivities": [
+          "CRITICAL",
+          "HIGH"
+        ],
+        "status": "Red",
+        "topTransactions": "SU01, FB03, ME23N (General)"
+      },
+      {
+        "userId": "OLEG",
+        "userName": "Oleg Firumiants",
+        "conflictCount": 10,
+        "sensitivities": [
+          "CRITICAL",
+          "HIGH"
+        ],
+        "status": "Red",
+        "topTransactions": "SU01, FB03, ME23N (General)"
+      },
+      {
+        "userId": "OLEGF",
+        "userName": "OLEGF",
+        "conflictCount": 10,
+        "sensitivities": [
+          "CRITICAL",
+          "HIGH"
+        ],
+        "status": "Red",
+        "topTransactions": "SU01, FB03, ME23N (General)"
+      },
+      {
+        "userId": "PARORA",
+        "userName": "test user",
+        "conflictCount": 10,
+        "sensitivities": [
+          "CRITICAL",
+          "HIGH"
+        ],
+        "status": "Red",
+        "topTransactions": "SU01, FB03, ME23N (General)"
+      },
+      {
+        "userId": "PAVI",
+        "userName": "PAVI",
+        "conflictCount": 10,
+        "sensitivities": [
+          "CRITICAL",
+          "HIGH"
+        ],
+        "status": "Red",
+        "topTransactions": "SU01, FB03, ME23N (General)"
+      },
+      {
+        "userId": "PRIYANKA.B",
+        "userName": "PRIYANKA B",
+        "conflictCount": 10,
+        "sensitivities": [
+          "CRITICAL",
+          "HIGH"
+        ],
+        "status": "Red",
+        "topTransactions": "SU01, FB03, ME23N (General)"
+      },
+      {
+        "userId": "RJINDAL",
+        "userName": "Jindal",
+        "conflictCount": 10,
+        "sensitivities": [
+          "CRITICAL",
+          "HIGH"
+        ],
+        "status": "Red",
+        "topTransactions": "SU01, FB03, ME23N (General)"
+      },
+      {
+        "userId": "RM_TEST_ITS1",
+        "userName": "rm_test_its1",
+        "conflictCount": 10,
+        "sensitivities": [
+          "CRITICAL",
+          "HIGH"
+        ],
+        "status": "Red",
+        "topTransactions": "SU01, FB03, ME23N (General)"
+      },
+      {
+        "userId": "RM_TEST_TR",
+        "userName": "RM_TEST_TR",
+        "conflictCount": 10,
+        "sensitivities": [
+          "CRITICAL",
+          "HIGH"
+        ],
+        "status": "Red",
+        "topTransactions": "SU01, FB03, ME23N (General)"
+      },
+      {
+        "userId": "SHRIRAM.K",
+        "userName": "SHRIRAM KSHIRE",
+        "conflictCount": 10,
+        "sensitivities": [
+          "CRITICAL",
+          "HIGH"
+        ],
+        "status": "Red",
+        "topTransactions": "SU01, FB03, ME23N (General)"
+      },
+      {
+        "userId": "SHUBHAM.T",
+        "userName": "SHUBHAM TATHOD",
+        "conflictCount": 10,
+        "sensitivities": [
+          "CRITICAL",
+          "HIGH"
+        ],
+        "status": "Red",
+        "topTransactions": "SU01, FB03, ME23N (General)"
+      },
+      {
+        "userId": "STATHOD",
+        "userName": "Stathod R",
+        "conflictCount": 10,
+        "sensitivities": [
+          "CRITICAL",
+          "HIGH"
+        ],
+        "status": "Red",
+        "topTransactions": "SU01, FB03, ME23N (General)"
+      },
+      {
+        "userId": "SW",
+        "userName": "SW",
+        "conflictCount": 10,
+        "sensitivities": [
+          "CRITICAL",
+          "HIGH"
+        ],
+        "status": "Red",
+        "topTransactions": "SU01, FB03, ME23N (General)"
+      },
+      {
+        "userId": "TEST_CL",
+        "userName": "test_aa1 TEST_AA1",
+        "conflictCount": 10,
+        "sensitivities": [
+          "CRITICAL",
+          "HIGH"
+        ],
+        "status": "Red",
+        "topTransactions": "SU01, FB03, ME23N (General)"
+      },
+      {
+        "userId": "TEST_DTS5",
+        "userName": "TEST_DTS5",
+        "conflictCount": 10,
+        "sensitivities": [
+          "CRITICAL",
+          "HIGH"
+        ],
+        "status": "Red",
+        "topTransactions": "SU01, FB03, ME23N (General)"
+      },
+      {
+        "userId": "TEST_DTS6",
+        "userName": "TEST_DTS6",
+        "conflictCount": 10,
+        "sensitivities": [
+          "CRITICAL",
+          "HIGH"
+        ],
+        "status": "Red",
+        "topTransactions": "SU01, FB03, ME23N (General)"
+      },
+      {
+        "userId": "TEST_NEW22",
+        "userName": "TEST_NEW22",
+        "conflictCount": 10,
+        "sensitivities": [
+          "CRITICAL",
+          "HIGH"
+        ],
+        "status": "Red",
+        "topTransactions": "SU01, FB03, ME23N (General)"
+      },
+      {
+        "userId": "TEST_SHRI",
+        "userName": "shri test",
+        "conflictCount": 10,
+        "sensitivities": [
+          "CRITICAL",
+          "HIGH"
+        ],
+        "status": "Red",
+        "topTransactions": "SU01, FB03, ME23N (General)"
+      },
+      {
+        "userId": "USER_TEST",
+        "userName": "TEST USER",
+        "conflictCount": 10,
+        "sensitivities": [
+          "CRITICAL",
+          "HIGH"
+        ],
+        "status": "Red",
+        "topTransactions": "SU01, FB03, ME23N (General)"
+      },
+      {
+        "userId": "VGUPTA",
+        "userName": "Vineet Gupta",
+        "conflictCount": 10,
+        "sensitivities": [
+          "CRITICAL",
+          "HIGH"
+        ],
+        "status": "Red",
+        "topTransactions": "SU01, FB03, ME23N (General)"
+      },
+      {
+        "userId": "VNEEMA3",
+        "userName": "Vishesh Neema Test",
+        "conflictCount": 10,
+        "sensitivities": [
+          "CRITICAL",
+          "HIGH"
+        ],
+        "status": "Red",
+        "topTransactions": "SU01, FB03, ME23N (General)"
+      },
+      {
+        "userId": "VT_TEST1",
+        "userName": "varun tester",
+        "conflictCount": 10,
+        "sensitivities": [
+          "CRITICAL",
+          "HIGH"
+        ],
+        "status": "Red",
+        "topTransactions": "SU01, FB03, ME23N (General)"
+      },
+      {
+        "userId": "YASHRAJT",
+        "userName": "YASHRAJT",
+        "conflictCount": 10,
+        "sensitivities": [
+          "CRITICAL",
+          "HIGH"
+        ],
+        "status": "Red",
+        "topTransactions": "SU01, FB03, ME23N (General)"
+      },
+      {
+        "userId": "ZBN_TEST1",
+        "userName": "ZBN_TEST1",
+        "conflictCount": 10,
+        "sensitivities": [
+          "CRITICAL",
+          "HIGH"
+        ],
+        "status": "Red",
+        "topTransactions": "SU01, FB03, ME23N (General)"
+      },
+      {
+        "userId": "ZJSHARMA",
+        "userName": "ZJSHARMA",
+        "conflictCount": 10,
+        "sensitivities": [
+          "CRITICAL",
+          "HIGH"
+        ],
+        "status": "Red",
+        "topTransactions": "SU01, FB03, ME23N (General)"
+      },
+      {
+        "userId": "ZPETERJ",
+        "userName": "ZPETERJ",
+        "conflictCount": 10,
+        "sensitivities": [
+          "CRITICAL",
+          "HIGH"
+        ],
+        "status": "Red",
+        "topTransactions": "SU01, FB03, ME23N (General)"
+      },
+      {
+        "userId": "ZSOL2D67",
+        "userName": "ZSOL2D67",
+        "conflictCount": 10,
+        "sensitivities": [
+          "CRITICAL",
+          "HIGH"
+        ],
+        "status": "Red",
+        "topTransactions": "SU01, FB03, ME23N (General)"
+      },
+      {
+        "userId": "ZTD_TESTUSR",
+        "userName": "Lname Fname",
+        "conflictCount": 10,
+        "sensitivities": [
+          "CRITICAL",
+          "HIGH"
+        ],
+        "status": "Red",
+        "topTransactions": "SU01, FB03, ME23N (General)"
+      },
+      {
+        "userId": "ZTESTAA4",
+        "userName": "TESTF TESTL",
+        "conflictCount": 10,
+        "sensitivities": [
+          "CRITICAL",
+          "HIGH"
+        ],
+        "status": "Red",
+        "topTransactions": "SU01, FB03, ME23N (General)"
+      },
+      {
+        "userId": "ZTESTU1",
+        "userName": "test",
+        "conflictCount": 10,
+        "sensitivities": [
+          "CRITICAL",
+          "HIGH"
+        ],
+        "status": "Red",
+        "topTransactions": "SU01, FB03, ME23N (General)"
+      },
+      {
+        "userId": "ZTESTU2",
+        "userName": "ZSHARMA",
+        "conflictCount": 10,
+        "sensitivities": [
+          "CRITICAL",
+          "HIGH"
+        ],
+        "status": "Red",
+        "topTransactions": "SU01, FB03, ME23N (General)"
+      },
+      {
+        "userId": "ZTESTU3",
+        "userName": "ZSHARMA",
+        "conflictCount": 10,
+        "sensitivities": [
+          "CRITICAL",
+          "HIGH"
+        ],
+        "status": "Red",
+        "topTransactions": "SU01, FB03, ME23N (General)"
+      },
+      {
+        "userId": "ZTESTU4",
+        "userName": "ZSHARMA",
+        "conflictCount": 10,
+        "sensitivities": [
+          "CRITICAL",
+          "HIGH"
+        ],
+        "status": "Red",
+        "topTransactions": "SU01, FB03, ME23N (General)"
+      },
+      {
+        "userId": "ZTESTU5",
+        "userName": "ZSHARMA",
+        "conflictCount": 10,
+        "sensitivities": [
+          "CRITICAL",
+          "HIGH"
+        ],
+        "status": "Red",
+        "topTransactions": "SU01, FB03, ME23N (General)"
+      },
+      {
+        "userId": "ZTESTU6",
+        "userName": "ZSHARMA",
+        "conflictCount": 10,
+        "sensitivities": [
+          "CRITICAL",
+          "HIGH"
+        ],
+        "status": "Red",
+        "topTransactions": "SU01, FB03, ME23N (General)"
+      },
+      {
+        "userId": "ZTESTU7",
+        "userName": "ZSHARMA",
+        "conflictCount": 10,
+        "sensitivities": [
+          "CRITICAL",
+          "HIGH"
+        ],
+        "status": "Red",
+        "topTransactions": "SU01, FB03, ME23N (General)"
+      },
+      {
+        "userId": "ZTESTU8",
+        "userName": "ZSHARMA",
+        "conflictCount": 10,
+        "sensitivities": [
+          "CRITICAL",
+          "HIGH"
+        ],
+        "status": "Red",
+        "topTransactions": "SU01, FB03, ME23N (General)"
+      },
+      {
+        "userId": "ZTEST_12345",
+        "userName": "df",
+        "conflictCount": 10,
+        "sensitivities": [
+          "CRITICAL",
+          "HIGH"
+        ],
+        "status": "Red",
+        "topTransactions": "SU01, FB03, ME23N (General)"
+      },
+      {
+        "userId": "ZTEST_PA",
+        "userName": "ZTEST_PA",
+        "conflictCount": 10,
+        "sensitivities": [
+          "CRITICAL",
+          "HIGH"
+        ],
+        "status": "Red",
+        "topTransactions": "SU01, FB03, ME23N (General)"
+      },
+      {
+        "userId": "ZTEST_PA2",
+        "userName": "ZTEST_PA2",
+        "conflictCount": 10,
+        "sensitivities": [
+          "CRITICAL",
+          "HIGH"
+        ],
+        "status": "Red",
+        "topTransactions": "SU01, FB03, ME23N (General)"
+      },
+      {
+        "userId": "ZVND67T61RFC",
+        "userName": "ZVND67T61RFC ZVND67T61RFC",
+        "conflictCount": 10,
+        "sensitivities": [
+          "CRITICAL",
+          "HIGH"
+        ],
+        "status": "Red",
+        "topTransactions": "SU01, FB03, ME23N (General)"
+      },
+      {
+        "userId": "ZVNLMUSER1",
+        "userName": "ZVNLMUSER1",
+        "conflictCount": 10,
+        "sensitivities": [
+          "CRITICAL",
+          "HIGH"
+        ],
+        "status": "Red",
+        "topTransactions": "SU01, FB03, ME23N (General)"
+      },
+      {
+        "userId": "ZVNRFC",
+        "userName": "ZVNRFC",
+        "conflictCount": 10,
+        "sensitivities": [
+          "CRITICAL",
+          "HIGH"
+        ],
+        "status": "Red",
+        "topTransactions": "SU01, FB03, ME23N (General)"
+      },
+      {
+        "userId": "ZVNSELF1",
+        "userName": "ZVNSELF1",
+        "conflictCount": 10,
+        "sensitivities": [
+          "CRITICAL",
+          "HIGH"
+        ],
+        "status": "Red",
+        "topTransactions": "SU01, FB03, ME23N (General)"
+      },
+      {
+        "userId": "ZVNSELF2",
+        "userName": "ZVNSELF2",
+        "conflictCount": 10,
+        "sensitivities": [
+          "CRITICAL",
+          "HIGH"
+        ],
+        "status": "Red",
+        "topTransactions": "SU01, FB03, ME23N (General)"
+      },
+      {
+        "userId": "ZVNSELF3",
+        "userName": "ZVNSELF3",
+        "conflictCount": 10,
+        "sensitivities": [
+          "CRITICAL",
+          "HIGH"
+        ],
+        "status": "Red",
+        "topTransactions": "SU01, FB03, ME23N (General)"
+      },
+      {
+        "userId": "DUSER3",
+        "userName": "DUSER3",
+        "conflictCount": 3,
+        "sensitivities": [
+          "CRITICAL"
+        ],
+        "status": "Red",
+        "topTransactions": "SU01, FB03, ME23N (General)"
+      },
+      {
+        "userId": "MINDSQUARE",
+        "userName": "Test Case Mindsquare Test",
+        "conflictCount": 3,
+        "sensitivities": [
+          "CRITICAL"
+        ],
+        "status": "Red",
+        "topTransactions": "SU01, FB03, ME23N (General)"
+      },
+      {
+        "userId": "MINDSQUARE2",
+        "userName": "MINDSQUARE2",
+        "conflictCount": 3,
+        "sensitivities": [
+          "CRITICAL"
+        ],
+        "status": "Red",
+        "topTransactions": "SU01, FB03, ME23N (General)"
+      },
+      {
+        "userId": "TEST_VDATE",
+        "userName": "VDATE",
+        "conflictCount": 3,
+        "sensitivities": [
+          "HIGH"
+        ],
+        "status": "Red",
+        "topTransactions": "SU01, FB03, ME23N (General)"
+      },
+      {
+        "userId": "ZBN_TEST",
+        "userName": "ZBN_TEST",
+        "conflictCount": 3,
+        "sensitivities": [
+          "CRITICAL",
+          "HIGH"
+        ],
+        "status": "Red",
+        "topTransactions": "SU01, FB03, ME23N (General)"
+      },
+      {
+        "userId": "ASINGH_TEST",
+        "userName": "RM Testing",
+        "conflictCount": 2,
+        "sensitivities": [
+          "CRITICAL"
+        ],
+        "status": "Red",
+        "topTransactions": "SU01, FB03, ME23N (General)"
+      },
+      {
+        "userId": "COMM_AM",
+        "userName": "COMM_AM",
+        "conflictCount": 2,
+        "sensitivities": [
+          "CRITICAL"
+        ],
+        "status": "Red",
+        "topTransactions": "SU01, FB03, ME23N (General)"
+      },
+      {
+        "userId": "ACHAVAN_USR",
+        "userName": "TEST USER AKSHAY",
+        "conflictCount": 1,
+        "sensitivities": [
+          "CRITICAL"
+        ],
+        "status": "Red",
+        "topTransactions": "SU01, FB03, ME23N (General)"
+      },
+      {
+        "userId": "ACHRISTEST",
+        "userName": "ACHRISTEST",
+        "conflictCount": 1,
+        "sensitivities": [
+          "CRITICAL"
+        ],
+        "status": "Red",
+        "topTransactions": "SU01, FB03, ME23N (General)"
+      },
+      {
+        "userId": "APPROVER",
+        "userName": "APPROVER",
+        "conflictCount": 1,
+        "sensitivities": [
+          "CRITICAL"
+        ],
+        "status": "Red",
+        "topTransactions": "SU01, FB03, ME23N (General)"
+      },
+      {
+        "userId": "ARPAN_TEST",
+        "userName": "S",
+        "conflictCount": 1,
+        "sensitivities": [
+          "CRITICAL"
+        ],
+        "status": "Red",
+        "topTransactions": "SU01, FB03, ME23N (General)"
+      },
+      {
+        "userId": "BARAN",
+        "userName": "Bidur",
+        "conflictCount": 1,
+        "sensitivities": [
+          "CRITICAL"
+        ],
+        "status": "Red",
+        "topTransactions": "SU01, FB03, ME23N (General)"
+      },
+      {
+        "userId": "BARAN1",
+        "userName": "BARAN1",
+        "conflictCount": 1,
+        "sensitivities": [
+          "CRITICAL"
+        ],
+        "status": "Red",
+        "topTransactions": "SU01, FB03, ME23N (General)"
+      },
+      {
+        "userId": "BARAN2",
+        "userName": "BARAN2",
+        "conflictCount": 1,
+        "sensitivities": [
+          "CRITICAL"
+        ],
+        "status": "Red",
+        "topTransactions": "SU01, FB03, ME23N (General)"
+      },
+      {
+        "userId": "RAUDITOR",
+        "userName": "RAUDITOR",
+        "conflictCount": 1,
+        "sensitivities": [
+          "CRITICAL"
+        ],
+        "status": "Red",
+        "topTransactions": "SU01, FB03, ME23N (General)"
+      },
+      {
+        "userId": "USER_TEST2",
+        "userName": "test2",
+        "conflictCount": 1,
+        "sensitivities": [
+          "HIGH"
+        ],
+        "status": "Red",
+        "topTransactions": "SU01, FB03, ME23N (General)"
+      },
+      {
+        "userId": "ZTESTAM",
+        "userName": "TEST ADMIN AM",
+        "conflictCount": 1,
+        "sensitivities": [
+          "CRITICAL"
+        ],
+        "status": "Red",
+        "topTransactions": "SU01, FB03, ME23N (General)"
+      },
+      {
+        "userId": "ZTESTRFC",
+        "userName": "RFC user for D67",
+        "conflictCount": 1,
+        "sensitivities": [
+          "CRITICAL"
+        ],
+        "status": "Red",
+        "topTransactions": "SU01, FB03, ME23N (General)"
+      },
+      {
+        "userId": "ZTESTRFCHB",
+        "userName": "ZTESTRFCHB",
+        "conflictCount": 1,
+        "sensitivities": [
+          "CRITICAL"
+        ],
+        "status": "Red",
+        "topTransactions": "SU01, FB03, ME23N (General)"
+      },
+      {
+        "userId": "ZTEST_1003",
+        "userName": "JSHARMA ZTEST_1003",
+        "conflictCount": 1,
+        "sensitivities": [
+          "CRITICAL"
+        ],
+        "status": "Red",
+        "topTransactions": "SU01, FB03, ME23N (General)"
+      },
+      {
+        "userId": "ZVAR2",
+        "userName": "test2",
+        "conflictCount": 1,
+        "sensitivities": [
+          "CRITICAL"
+        ],
+        "status": "Red",
+        "topTransactions": "SU01, FB03, ME23N (General)"
+      },
+      {
+        "userId": "ZVAR3",
+        "userName": "test3",
+        "conflictCount": 1,
+        "sensitivities": [
+          "CRITICAL"
+        ],
+        "status": "Red",
+        "topTransactions": "SU01, FB03, ME23N (General)"
+      },
+      {
+        "userId": "ZVM_TEST",
+        "userName": "Test User",
+        "conflictCount": 1,
+        "sensitivities": [
+          "CRITICAL"
+        ],
+        "status": "Red",
+        "topTransactions": "SU01, FB03, ME23N (General)"
+      },
+      {
+        "userId": "Z_IBS_R1",
+        "userName": "R1",
+        "conflictCount": 1,
+        "sensitivities": [
+          "CRITICAL"
+        ],
+        "status": "Red",
+        "topTransactions": "SU01, FB03, ME23N (General)"
+      }
+    ]
+  },
+  {
+    "name": "General Operations (SUPER)",
+    "country": "United States",
+    "department": "General Operations",
+    "userCount": 42,
+    "totalConflicts": 420,
+    "status": "Red",
+    "users": [
+      {
+        "userId": "ACHAVAN",
+        "userName": "Akshay R Chavan",
+        "conflictCount": 10,
+        "sensitivities": [
+          "CRITICAL",
+          "HIGH"
+        ],
+        "status": "Red",
+        "topTransactions": "SU01, FB03, ME23N (General)"
+      },
+      {
+        "userId": "AKUMAR",
+        "userName": "Arpan Kumar",
+        "conflictCount": 10,
+        "sensitivities": [
+          "CRITICAL",
+          "HIGH"
+        ],
+        "status": "Red",
+        "topTransactions": "SU01, FB03, ME23N (General)"
+      },
+      {
+        "userId": "ARAKWAL",
+        "userName": "ARAKWAL",
+        "conflictCount": 10,
+        "sensitivities": [
+          "CRITICAL",
+          "HIGH"
+        ],
+        "status": "Red",
+        "topTransactions": "SU01, FB03, ME23N (General)"
+      },
+      {
+        "userId": "DDIC",
+        "userName": "DDIC",
+        "conflictCount": 10,
+        "sensitivities": [
+          "CRITICAL",
+          "HIGH"
+        ],
+        "status": "Red",
+        "topTransactions": "SU01, FB03, ME23N (General)"
+      },
+      {
+        "userId": "GDOLAS",
+        "userName": "GDOLAS",
+        "conflictCount": 10,
+        "sensitivities": [
+          "CRITICAL",
+          "HIGH"
+        ],
+        "status": "Red",
+        "topTransactions": "SU01, FB03, ME23N (General)"
+      },
+      {
+        "userId": "GRANA",
+        "userName": "GRANA",
+        "conflictCount": 10,
+        "sensitivities": [
+          "CRITICAL",
+          "HIGH"
+        ],
+        "status": "Red",
+        "topTransactions": "SU01, FB03, ME23N (General)"
+      },
+      {
+        "userId": "HBHALLA",
+        "userName": "HBHALLA",
+        "conflictCount": 10,
+        "sensitivities": [
+          "CRITICAL",
+          "HIGH"
+        ],
+        "status": "Red",
+        "topTransactions": "SU01, FB03, ME23N (General)"
+      },
+      {
+        "userId": "IVERMA",
+        "userName": "IVERMA",
+        "conflictCount": 10,
+        "sensitivities": [
+          "CRITICAL",
+          "HIGH"
+        ],
+        "status": "Red",
+        "topTransactions": "SU01, FB03, ME23N (General)"
+      },
+      {
+        "userId": "JVANHOVE",
+        "userName": "JVANHOVE",
+        "conflictCount": 10,
+        "sensitivities": [
+          "CRITICAL",
+          "HIGH"
+        ],
+        "status": "Red",
+        "topTransactions": "SU01, FB03, ME23N (General)"
+      },
+      {
+        "userId": "KSINGH",
+        "userName": "SINGH",
+        "conflictCount": 10,
+        "sensitivities": [
+          "CRITICAL",
+          "HIGH"
+        ],
+        "status": "Red",
+        "topTransactions": "SU01, FB03, ME23N (General)"
+      },
+      {
+        "userId": "LMANHAS",
+        "userName": "Manhas",
+        "conflictCount": 10,
+        "sensitivities": [
+          "CRITICAL",
+          "HIGH"
+        ],
+        "status": "Red",
+        "topTransactions": "SU01, FB03, ME23N (General)"
+      },
+      {
+        "userId": "MAILADM",
+        "userName": "MAILADM",
+        "conflictCount": 10,
+        "sensitivities": [
+          "CRITICAL",
+          "HIGH"
+        ],
+        "status": "Red",
+        "topTransactions": "SU01, FB03, ME23N (General)"
+      },
+      {
+        "userId": "NCHAKRABORTY",
+        "userName": "NCHAKRABORTY",
+        "conflictCount": 10,
+        "sensitivities": [
+          "CRITICAL",
+          "HIGH"
+        ],
+        "status": "Red",
+        "topTransactions": "SU01, FB03, ME23N (General)"
+      },
+      {
+        "userId": "NGARG",
+        "userName": "NAKUL GARG",
+        "conflictCount": 10,
+        "sensitivities": [
+          "CRITICAL",
+          "HIGH"
+        ],
+        "status": "Red",
+        "topTransactions": "SU01, FB03, ME23N (General)"
+      },
+      {
+        "userId": "NILSK",
+        "userName": "NILSK",
+        "conflictCount": 10,
+        "sensitivities": [
+          "CRITICAL",
+          "HIGH"
+        ],
+        "status": "Red",
+        "topTransactions": "SU01, FB03, ME23N (General)"
+      },
+      {
+        "userId": "NSHUKLA",
+        "userName": "NSHUKLA",
+        "conflictCount": 10,
+        "sensitivities": [
+          "CRITICAL",
+          "HIGH"
+        ],
+        "status": "Red",
+        "topTransactions": "SU01, FB03, ME23N (General)"
+      },
+      {
+        "userId": "ODUBEY",
+        "userName": "Om Dubey",
+        "conflictCount": 10,
+        "sensitivities": [
+          "CRITICAL",
+          "HIGH"
+        ],
+        "status": "Red",
+        "topTransactions": "SU01, FB03, ME23N (General)"
+      },
+      {
+        "userId": "PGODHA",
+        "userName": "PGODHA",
+        "conflictCount": 10,
+        "sensitivities": [
+          "CRITICAL",
+          "HIGH"
+        ],
+        "status": "Red",
+        "topTransactions": "SU01, FB03, ME23N (General)"
+      },
+      {
+        "userId": "PSHARMA",
+        "userName": "PRINCE SHARMA",
+        "conflictCount": 10,
+        "sensitivities": [
+          "CRITICAL",
+          "HIGH"
+        ],
+        "status": "Red",
+        "topTransactions": "SU01, FB03, ME23N (General)"
+      },
+      {
+        "userId": "PWATTS",
+        "userName": "watts",
+        "conflictCount": 10,
+        "sensitivities": [
+          "CRITICAL",
+          "HIGH"
+        ],
+        "status": "Red",
+        "topTransactions": "SU01, FB03, ME23N (General)"
+      },
+      {
+        "userId": "RAKWAL",
+        "userName": "RAKWAL",
+        "conflictCount": 10,
+        "sensitivities": [
+          "CRITICAL",
+          "HIGH"
+        ],
+        "status": "Red",
+        "topTransactions": "SU01, FB03, ME23N (General)"
+      },
+      {
+        "userId": "SAP*",
+        "userName": "SAP*",
+        "conflictCount": 10,
+        "sensitivities": [
+          "CRITICAL",
+          "HIGH"
+        ],
+        "status": "Red",
+        "topTransactions": "SU01, FB03, ME23N (General)"
+      },
+      {
+        "userId": "SDHULAP",
+        "userName": "SDHULAP",
+        "conflictCount": 10,
+        "sensitivities": [
+          "CRITICAL",
+          "HIGH"
+        ],
+        "status": "Red",
+        "topTransactions": "SU01, FB03, ME23N (General)"
+      },
+      {
+        "userId": "SKIRAN",
+        "userName": "SKIRAN",
+        "conflictCount": 10,
+        "sensitivities": [
+          "CRITICAL",
+          "HIGH"
+        ],
+        "status": "Red",
+        "topTransactions": "SU01, FB03, ME23N (General)"
+      },
+      {
+        "userId": "SMADAN",
+        "userName": "SMADAN",
+        "conflictCount": 10,
+        "sensitivities": [
+          "CRITICAL",
+          "HIGH"
+        ],
+        "status": "Red",
+        "topTransactions": "SU01, FB03, ME23N (General)"
+      },
+      {
+        "userId": "SPANDIT",
+        "userName": "SPANDIT",
+        "conflictCount": 10,
+        "sensitivities": [
+          "CRITICAL",
+          "HIGH"
+        ],
+        "status": "Red",
+        "topTransactions": "SU01, FB03, ME23N (General)"
+      },
+      {
+        "userId": "SUMARDAND",
+        "userName": "SUMARDAND",
+        "conflictCount": 10,
+        "sensitivities": [
+          "CRITICAL",
+          "HIGH"
+        ],
+        "status": "Red",
+        "topTransactions": "SU01, FB03, ME23N (General)"
+      },
+      {
+        "userId": "TDHINGRA",
+        "userName": "TDHINGRA",
+        "conflictCount": 10,
+        "sensitivities": [
+          "CRITICAL",
+          "HIGH"
+        ],
+        "status": "Red",
+        "topTransactions": "SU01, FB03, ME23N (General)"
+      },
+      {
+        "userId": "TESTUMARDAND",
+        "userName": "TESTUMARDAND",
+        "conflictCount": 10,
+        "sensitivities": [
+          "CRITICAL",
+          "HIGH"
+        ],
+        "status": "Red",
+        "topTransactions": "SU01, FB03, ME23N (General)"
+      },
+      {
+        "userId": "UMAREDDY",
+        "userName": "UMAREDDY",
+        "conflictCount": 10,
+        "sensitivities": [
+          "CRITICAL",
+          "HIGH"
+        ],
+        "status": "Red",
+        "topTransactions": "SU01, FB03, ME23N (General)"
+      },
+      {
+        "userId": "UMITTAL",
+        "userName": "UMITTAL",
+        "conflictCount": 10,
+        "sensitivities": [
+          "CRITICAL",
+          "HIGH"
+        ],
+        "status": "Red",
+        "topTransactions": "SU01, FB03, ME23N (General)"
+      },
+      {
+        "userId": "UREDDY",
+        "userName": "UREDDY",
+        "conflictCount": 10,
+        "sensitivities": [
+          "CRITICAL",
+          "HIGH"
+        ],
+        "status": "Red",
+        "topTransactions": "SU01, FB03, ME23N (General)"
+      },
+      {
+        "userId": "VTHAKUR",
+        "userName": "VTHAKUR",
+        "conflictCount": 10,
+        "sensitivities": [
+          "CRITICAL",
+          "HIGH"
+        ],
+        "status": "Red",
+        "topTransactions": "SU01, FB03, ME23N (General)"
+      },
+      {
+        "userId": "WF-BATCH",
+        "userName": "Workflow System",
+        "conflictCount": 10,
+        "sensitivities": [
+          "CRITICAL",
+          "HIGH"
+        ],
+        "status": "Red",
+        "topTransactions": "SU01, FB03, ME23N (General)"
+      },
+      {
+        "userId": "Z_ACHAVAN_1",
+        "userName": "Z_ACHAVAN_1",
+        "conflictCount": 10,
+        "sensitivities": [
+          "CRITICAL",
+          "HIGH"
+        ],
+        "status": "Red",
+        "topTransactions": "SU01, FB03, ME23N (General)"
+      },
+      {
+        "userId": "Z_ACHAVAN_2",
+        "userName": "Z_ACHAVAN_2",
+        "conflictCount": 10,
+        "sensitivities": [
+          "CRITICAL",
+          "HIGH"
+        ],
+        "status": "Red",
+        "topTransactions": "SU01, FB03, ME23N (General)"
+      },
+      {
+        "userId": "Z_ACHAVAN_3",
+        "userName": "Z_ACHAVAN_3",
+        "conflictCount": 10,
+        "sensitivities": [
+          "CRITICAL",
+          "HIGH"
+        ],
+        "status": "Red",
+        "topTransactions": "SU01, FB03, ME23N (General)"
+      },
+      {
+        "userId": "Z_ACHAVAN_4",
+        "userName": "Z_ACHAVAN_4",
+        "conflictCount": 10,
+        "sensitivities": [
+          "CRITICAL",
+          "HIGH"
+        ],
+        "status": "Red",
+        "topTransactions": "SU01, FB03, ME23N (General)"
+      },
+      {
+        "userId": "Z_ACHAVAN_5",
+        "userName": "Z_ACHAVAN_5",
+        "conflictCount": 10,
+        "sensitivities": [
+          "CRITICAL",
+          "HIGH"
+        ],
+        "status": "Red",
+        "topTransactions": "SU01, FB03, ME23N (General)"
+      },
+      {
+        "userId": "Z_ACHAVAN_6",
+        "userName": "Z_ACHAVAN_6",
+        "conflictCount": 10,
+        "sensitivities": [
+          "CRITICAL",
+          "HIGH"
+        ],
+        "status": "Red",
+        "topTransactions": "SU01, FB03, ME23N (General)"
+      },
+      {
+        "userId": "Z_ACHAVAN_7",
+        "userName": "Z_ACHAVAN_7",
+        "conflictCount": 10,
+        "sensitivities": [
+          "CRITICAL",
+          "HIGH"
+        ],
+        "status": "Red",
+        "topTransactions": "SU01, FB03, ME23N (General)"
+      },
+      {
+        "userId": "Z_ACHAVAN_8",
+        "userName": "Z_ACHAVAN_8",
+        "conflictCount": 10,
+        "sensitivities": [
+          "CRITICAL",
+          "HIGH"
+        ],
+        "status": "Red",
+        "topTransactions": "SU01, FB03, ME23N (General)"
+      }
+    ]
+  },
+  {
+    "name": "General Operations (DEVELOPERS)",
+    "country": "India",
+    "department": "General Operations",
+    "userCount": 38,
+    "totalConflicts": 380,
+    "status": "Red",
+    "users": [
+      {
+        "userId": "AGARG",
+        "userName": "ARUSHI GARG",
+        "conflictCount": 10,
+        "sensitivities": [
+          "CRITICAL",
+          "HIGH"
+        ],
+        "status": "Red",
+        "topTransactions": "SU01, FB03, ME23N (General)"
+      },
+      {
+        "userId": "AKUMAR2",
+        "userName": "Aryan KUMAR",
+        "conflictCount": 10,
+        "sensitivities": [
+          "CRITICAL",
+          "HIGH"
+        ],
+        "status": "Red",
+        "topTransactions": "SU01, FB03, ME23N (General)"
+      },
+      {
+        "userId": "APP",
+        "userName": "Nitin Malhotra",
+        "conflictCount": 10,
+        "sensitivities": [
+          "CRITICAL",
+          "HIGH"
+        ],
+        "status": "Red",
+        "topTransactions": "SU01, FB03, ME23N (General)"
+      },
+      {
+        "userId": "AREHAN",
+        "userName": "AREHAN",
+        "conflictCount": 10,
+        "sensitivities": [
+          "CRITICAL",
+          "HIGH"
+        ],
+        "status": "Red",
+        "topTransactions": "SU01, FB03, ME23N (General)"
+      },
+      {
+        "userId": "GOLIVE1",
+        "userName": "Golive Test1",
+        "conflictCount": 10,
+        "sensitivities": [
+          "CRITICAL",
+          "HIGH"
+        ],
+        "status": "Red",
+        "topTransactions": "SU01, FB03, ME23N (General)"
+      },
+      {
+        "userId": "GPATI",
+        "userName": "Pati",
+        "conflictCount": 10,
+        "sensitivities": [
+          "CRITICAL",
+          "HIGH"
+        ],
+        "status": "Red",
+        "topTransactions": "SU01, FB03, ME23N (General)"
+      },
+      {
+        "userId": "GSINGH2",
+        "userName": "Gurpinder Singh",
+        "conflictCount": 10,
+        "sensitivities": [
+          "CRITICAL",
+          "HIGH"
+        ],
+        "status": "Red",
+        "topTransactions": "SU01, FB03, ME23N (General)"
+      },
+      {
+        "userId": "HJAYALE",
+        "userName": "Harshad Jayale",
+        "conflictCount": 10,
+        "sensitivities": [
+          "CRITICAL",
+          "HIGH"
+        ],
+        "status": "Red",
+        "topTransactions": "SU01, FB03, ME23N (General)"
+      },
+      {
+        "userId": "JJURCK",
+        "userName": "Jeff Jurck",
+        "conflictCount": 10,
+        "sensitivities": [
+          "CRITICAL",
+          "HIGH"
+        ],
+        "status": "Red",
+        "topTransactions": "SU01, FB03, ME23N (General)"
+      },
+      {
+        "userId": "MPATIL",
+        "userName": "Mahanatesh Patil",
+        "conflictCount": 10,
+        "sensitivities": [
+          "CRITICAL",
+          "HIGH"
+        ],
+        "status": "Red",
+        "topTransactions": "SU01, FB03, ME23N (General)"
+      },
+      {
+        "userId": "MSUPPAHIYA",
+        "userName": "Suppahiya",
+        "conflictCount": 10,
+        "sensitivities": [
+          "CRITICAL",
+          "HIGH"
+        ],
+        "status": "Red",
+        "topTransactions": "SU01, FB03, ME23N (General)"
+      },
+      {
+        "userId": "NMALHOTRA",
+        "userName": "Nitin Malhotra",
+        "conflictCount": 10,
+        "sensitivities": [
+          "CRITICAL",
+          "HIGH"
+        ],
+        "status": "Red",
+        "topTransactions": "SU01, FB03, ME23N (General)"
+      },
+      {
+        "userId": "PDF1",
+        "userName": "Test Case PDF",
+        "conflictCount": 10,
+        "sensitivities": [
+          "CRITICAL",
+          "HIGH"
+        ],
+        "status": "Red",
+        "topTransactions": "SU01, FB03, ME23N (General)"
+      },
+      {
+        "userId": "RGUPTA",
+        "userName": "Ritesh GUPTA",
+        "conflictCount": 10,
+        "sensitivities": [
+          "CRITICAL",
+          "HIGH"
+        ],
+        "status": "Red",
+        "topTransactions": "SU01, FB03, ME23N (General)"
+      },
+      {
+        "userId": "SCHAUHAN",
+        "userName": "Chauhan1",
+        "conflictCount": 10,
+        "sensitivities": [
+          "CRITICAL",
+          "HIGH"
+        ],
+        "status": "Red",
+        "topTransactions": "SU01, FB03, ME23N (General)"
+      },
+      {
+        "userId": "SE_AUDIT",
+        "userName": "SE Audit",
+        "conflictCount": 10,
+        "sensitivities": [
+          "CRITICAL",
+          "HIGH"
+        ],
+        "status": "Red",
+        "topTransactions": "SU01, FB03, ME23N (General)"
+      },
+      {
+        "userId": "SE_HOS",
+        "userName": "SE Head of Security",
+        "conflictCount": 10,
+        "sensitivities": [
+          "CRITICAL",
+          "HIGH"
+        ],
+        "status": "Red",
+        "topTransactions": "SU01, FB03, ME23N (General)"
+      },
+      {
+        "userId": "SE_SEC_ADMIN",
+        "userName": "SE Admin",
+        "conflictCount": 10,
+        "sensitivities": [
+          "CRITICAL",
+          "HIGH"
+        ],
+        "status": "Red",
+        "topTransactions": "SU01, FB03, ME23N (General)"
+      },
+      {
+        "userId": "SGUPTA2",
+        "userName": "Shiddhant Gupta",
+        "conflictCount": 10,
+        "sensitivities": [
+          "CRITICAL",
+          "HIGH"
+        ],
+        "status": "Red",
+        "topTransactions": "SU01, FB03, ME23N (General)"
+      },
+      {
+        "userId": "SMORE",
+        "userName": "SMORE",
+        "conflictCount": 10,
+        "sensitivities": [
+          "CRITICAL",
+          "HIGH"
+        ],
+        "status": "Red",
+        "topTransactions": "SU01, FB03, ME23N (General)"
+      },
+      {
+        "userId": "TESTFIORI",
+        "userName": "Test Fiori",
+        "conflictCount": 10,
+        "sensitivities": [
+          "CRITICAL",
+          "HIGH"
+        ],
+        "status": "Red",
+        "topTransactions": "SU01, FB03, ME23N (General)"
+      },
+      {
+        "userId": "TESTOBJUSER1",
+        "userName": "TESTOBJUSER1",
+        "conflictCount": 10,
+        "sensitivities": [
+          "CRITICAL",
+          "HIGH"
+        ],
+        "status": "Red",
+        "topTransactions": "SU01, FB03, ME23N (General)"
+      },
+      {
+        "userId": "TEST_01",
+        "userName": "Test Case PDF",
+        "conflictCount": 10,
+        "sensitivities": [
+          "CRITICAL",
+          "HIGH"
+        ],
+        "status": "Red",
+        "topTransactions": "SU01, FB03, ME23N (General)"
+      },
+      {
+        "userId": "TEST_AA1",
+        "userName": "test_aa1 TEST_AA1",
+        "conflictCount": 10,
+        "sensitivities": [
+          "CRITICAL",
+          "HIGH"
+        ],
+        "status": "Red",
+        "topTransactions": "SU01, FB03, ME23N (General)"
+      },
+      {
+        "userId": "USER_RR3",
+        "userName": "USER_RR3",
+        "conflictCount": 10,
+        "sensitivities": [
+          "CRITICAL",
+          "HIGH"
+        ],
+        "status": "Red",
+        "topTransactions": "SU01, FB03, ME23N (General)"
+      },
+      {
+        "userId": "USER_RR4",
+        "userName": "USER_RR4",
+        "conflictCount": 10,
+        "sensitivities": [
+          "CRITICAL",
+          "HIGH"
+        ],
+        "status": "Red",
+        "topTransactions": "SU01, FB03, ME23N (General)"
+      },
+      {
+        "userId": "USER_RR5",
+        "userName": "USER_RR5",
+        "conflictCount": 10,
+        "sensitivities": [
+          "CRITICAL",
+          "HIGH"
+        ],
+        "status": "Red",
+        "topTransactions": "SU01, FB03, ME23N (General)"
+      },
+      {
+        "userId": "VAR1",
+        "userName": "Nitin Malhotra",
+        "conflictCount": 10,
+        "sensitivities": [
+          "CRITICAL",
+          "HIGH"
+        ],
+        "status": "Red",
+        "topTransactions": "SU01, FB03, ME23N (General)"
+      },
+      {
+        "userId": "VAR2",
+        "userName": "Nitin Malhotra",
+        "conflictCount": 10,
+        "sensitivities": [
+          "CRITICAL",
+          "HIGH"
+        ],
+        "status": "Red",
+        "topTransactions": "SU01, FB03, ME23N (General)"
+      },
+      {
+        "userId": "VAR3",
+        "userName": "Nitin Malhotra",
+        "conflictCount": 10,
+        "sensitivities": [
+          "CRITICAL",
+          "HIGH"
+        ],
+        "status": "Red",
+        "topTransactions": "SU01, FB03, ME23N (General)"
+      },
+      {
+        "userId": "VAR4",
+        "userName": "Nitin Malhotra",
+        "conflictCount": 10,
+        "sensitivities": [
+          "CRITICAL",
+          "HIGH"
+        ],
+        "status": "Red",
+        "topTransactions": "SU01, FB03, ME23N (General)"
+      },
+      {
+        "userId": "VAR_T1",
+        "userName": "Nitin Malhotra",
+        "conflictCount": 10,
+        "sensitivities": [
+          "CRITICAL",
+          "HIGH"
+        ],
+        "status": "Red",
+        "topTransactions": "SU01, FB03, ME23N (General)"
+      },
+      {
+        "userId": "VAR_T2",
+        "userName": "Nitin Malhotra",
+        "conflictCount": 10,
+        "sensitivities": [
+          "CRITICAL",
+          "HIGH"
+        ],
+        "status": "Red",
+        "topTransactions": "SU01, FB03, ME23N (General)"
+      },
+      {
+        "userId": "VAR_T3",
+        "userName": "Nitin Malhotra",
+        "conflictCount": 10,
+        "sensitivities": [
+          "CRITICAL",
+          "HIGH"
+        ],
+        "status": "Red",
+        "topTransactions": "SU01, FB03, ME23N (General)"
+      },
+      {
+        "userId": "VKUMAR",
+        "userName": "KUMAR",
+        "conflictCount": 10,
+        "sensitivities": [
+          "CRITICAL",
+          "HIGH"
+        ],
+        "status": "Red",
+        "topTransactions": "SU01, FB03, ME23N (General)"
+      },
+      {
+        "userId": "VMATHUR",
+        "userName": "VMATHUR",
+        "conflictCount": 10,
+        "sensitivities": [
+          "CRITICAL",
+          "HIGH"
+        ],
+        "status": "Red",
+        "topTransactions": "SU01, FB03, ME23N (General)"
+      },
+      {
+        "userId": "VVVV",
+        "userName": "Test Case PDF",
+        "conflictCount": 10,
+        "sensitivities": [
+          "CRITICAL",
+          "HIGH"
+        ],
+        "status": "Red",
+        "topTransactions": "SU01, FB03, ME23N (General)"
+      },
+      {
+        "userId": "ZSH_FIORI",
+        "userName": "ZSH_FIORI",
+        "conflictCount": 10,
+        "sensitivities": [
+          "CRITICAL",
+          "HIGH"
+        ],
+        "status": "Red",
+        "topTransactions": "SU01, FB03, ME23N (General)"
+      }
+    ]
+  },
+  {
+    "name": "General Operations (DRGROUP)",
+    "country": "Belgium",
+    "department": "General Operations",
+    "userCount": 22,
+    "totalConflicts": 74,
+    "status": "Red",
+    "users": [
+      {
+        "userId": "DITESTDE",
+        "userName": "Test DE Language DITESTDE",
+        "conflictCount": 10,
+        "sensitivities": [
+          "CRITICAL",
+          "HIGH"
+        ],
+        "status": "Red",
+        "topTransactions": "SU01, FB03, ME23N (General)"
+      },
+      {
+        "userId": "DITESTEN",
+        "userName": "Test EN Language DITESTEN",
+        "conflictCount": 10,
+        "sensitivities": [
+          "CRITICAL",
+          "HIGH"
+        ],
+        "status": "Red",
+        "topTransactions": "SU01, FB03, ME23N (General)"
+      },
+      {
+        "userId": "DREINSMA2",
+        "userName": "Diane Reinsma 2",
+        "conflictCount": 10,
+        "sensitivities": [
+          "CRITICAL",
+          "HIGH"
+        ],
+        "status": "Red",
+        "topTransactions": "SU01, FB03, ME23N (General)"
+      },
+      {
+        "userId": "DRMESTEST",
+        "userName": "MES TEST DRMESTEST",
+        "conflictCount": 10,
+        "sensitivities": [
+          "CRITICAL",
+          "HIGH"
+        ],
+        "status": "Red",
+        "topTransactions": "SU01, FB03, ME23N (General)"
+      },
+      {
+        "userId": "ARUSR_2DIFF",
+        "userName": "D67 Different Name ARUSR",
+        "conflictCount": 3,
+        "sensitivities": [
+          "CRITICAL",
+          "HIGH"
+        ],
+        "status": "Red",
+        "topTransactions": "SU01, FB03, ME23N (General)"
+      },
+      {
+        "userId": "DITEST2",
+        "userName": "DITEST2",
+        "conflictCount": 3,
+        "sensitivities": [
+          "CRITICAL",
+          "HIGH"
+        ],
+        "status": "Red",
+        "topTransactions": "SU01, FB03, ME23N (General)"
+      },
+      {
+        "userId": "ARUSR_2RLNOT",
+        "userName": "Role Valid D67 Not YER ARUSR",
+        "conflictCount": 2,
+        "sensitivities": [
+          "CRITICAL",
+          "HIGH"
+        ],
+        "status": "Red",
+        "topTransactions": "SU01, FB03, ME23N (General)"
+      },
+      {
+        "userId": "ARUSR_2RLVAL",
+        "userName": "Missing Roles Valid ARUSR",
+        "conflictCount": 2,
+        "sensitivities": [
+          "CRITICAL",
+          "HIGH"
+        ],
+        "status": "Red",
+        "topTransactions": "SU01, FB03, ME23N (General)"
+      },
+      {
+        "userId": "ARUSR_2SAME",
+        "userName": "Same Name on Both ARUSR",
+        "conflictCount": 2,
+        "sensitivities": [
+          "CRITICAL",
+          "HIGH"
+        ],
+        "status": "Red",
+        "topTransactions": "SU01, FB03, ME23N (General)"
+      },
+      {
+        "userId": "ARUSR_D67",
+        "userName": "D67 Name ARUSR",
+        "conflictCount": 2,
+        "sensitivities": [
+          "CRITICAL",
+          "HIGH"
+        ],
+        "status": "Red",
+        "topTransactions": "SU01, FB03, ME23N (General)"
+      },
+      {
+        "userId": "ARUSR_NONABP",
+        "userName": "Non-ABAP Record ARUSR",
+        "conflictCount": 2,
+        "sensitivities": [
+          "CRITICAL",
+          "HIGH"
+        ],
+        "status": "Red",
+        "topTransactions": "SU01, FB03, ME23N (General)"
+      },
+      {
+        "userId": "DIERUSER",
+        "userName": "Name on D67 ER User",
+        "conflictCount": 2,
+        "sensitivities": [
+          "CRITICAL",
+          "HIGH"
+        ],
+        "status": "Red",
+        "topTransactions": "SU01, FB03, ME23N (General)"
+      },
+      {
+        "userId": "DI_SETEST",
+        "userName": "DI_SETEST",
+        "conflictCount": 2,
+        "sensitivities": [
+          "CRITICAL",
+          "HIGH"
+        ],
+        "status": "Red",
+        "topTransactions": "SU01, FB03, ME23N (General)"
+      },
+      {
+        "userId": "ERUSR_2DIFF",
+        "userName": "D67 Name ER User",
+        "conflictCount": 2,
+        "sensitivities": [
+          "CRITICAL",
+          "HIGH"
+        ],
+        "status": "Red",
+        "topTransactions": "SU01, FB03, ME23N (General)"
+      },
+      {
+        "userId": "ERUSR_2RLNOT",
+        "userName": "Role Valid D67 Not YER ER User",
+        "conflictCount": 2,
+        "sensitivities": [
+          "CRITICAL",
+          "HIGH"
+        ],
+        "status": "Red",
+        "topTransactions": "SU01, FB03, ME23N (General)"
+      },
+      {
+        "userId": "ERUSR_2RLVAL",
+        "userName": "Missing Roles Valid ER User",
+        "conflictCount": 2,
+        "sensitivities": [
+          "CRITICAL",
+          "HIGH"
+        ],
+        "status": "Red",
+        "topTransactions": "SU01, FB03, ME23N (General)"
+      },
+      {
+        "userId": "ERUSR_2SAME",
+        "userName": "Same Name on Both ER User",
+        "conflictCount": 2,
+        "sensitivities": [
+          "CRITICAL",
+          "HIGH"
+        ],
+        "status": "Red",
+        "topTransactions": "SU01, FB03, ME23N (General)"
+      },
+      {
+        "userId": "ERUSR_D67",
+        "userName": "D67 Only ER User",
+        "conflictCount": 2,
+        "sensitivities": [
+          "CRITICAL",
+          "HIGH"
+        ],
+        "status": "Red",
+        "topTransactions": "SU01, FB03, ME23N (General)"
+      },
+      {
+        "userId": "ARUSR_FUTURE",
+        "userName": "FUTURE ER AR USER",
+        "conflictCount": 1,
+        "sensitivities": [
+          "CRITICAL"
+        ],
+        "status": "Red",
+        "topTransactions": "SU01, FB03, ME23N (General)"
+      },
+      {
+        "userId": "ARUSR_NOEML",
+        "userName": "A/R USER NO EMAIL ADDRESS",
+        "conflictCount": 1,
+        "sensitivities": [
+          "CRITICAL"
+        ],
+        "status": "Red",
+        "topTransactions": "SU01, FB03, ME23N (General)"
+      },
+      {
+        "userId": "ARUSR_VALID",
+        "userName": "Test ARUSR_VALID",
+        "conflictCount": 1,
+        "sensitivities": [
+          "CRITICAL"
+        ],
+        "status": "Red",
+        "topTransactions": "SU01, FB03, ME23N (General)"
+      },
+      {
+        "userId": "DEMOPLB1",
+        "userName": "DEMOPLB1",
+        "conflictCount": 1,
+        "sensitivities": [
+          "HIGH"
+        ],
+        "status": "Red",
+        "topTransactions": "SU01, FB03, ME23N (General)"
+      }
+    ]
+  },
+  {
+    "name": "General Operations (PM)",
+    "country": "Belgium",
+    "department": "General Operations",
+    "userCount": 3,
+    "totalConflicts": 30,
+    "status": "Red",
+    "users": [
+      {
+        "userId": "IKIMMEL",
+        "userName": "Isaac Kimmel",
+        "conflictCount": 10,
+        "sensitivities": [
+          "CRITICAL",
+          "HIGH"
+        ],
+        "status": "Red",
+        "topTransactions": "SU01, FB03, ME23N (General)"
+      },
+      {
+        "userId": "RHILDEBRANDT",
+        "userName": "Richard Hilderbrandt",
+        "conflictCount": 10,
+        "sensitivities": [
+          "CRITICAL",
+          "HIGH"
+        ],
+        "status": "Red",
+        "topTransactions": "SU01, FB03, ME23N (General)"
+      },
+      {
+        "userId": "SRANA",
+        "userName": "SRANA",
+        "conflictCount": 10,
+        "sensitivities": [
+          "CRITICAL",
+          "HIGH"
+        ],
+        "status": "Red",
+        "topTransactions": "SU01, FB03, ME23N (General)"
+      }
+    ]
+  },
+  {
+    "name": "General Operations (TESTERS)",
+    "country": "United States",
+    "department": "General Operations",
+    "userCount": 2,
+    "totalConflicts": 20,
+    "status": "Red",
+    "users": [
+      {
+        "userId": "KRATHI",
+        "userName": "Rathi",
+        "conflictCount": 10,
+        "sensitivities": [
+          "CRITICAL",
+          "HIGH"
+        ],
+        "status": "Red",
+        "topTransactions": "SU01, FB03, ME23N (General)"
+      },
+      {
+        "userId": "RBALA",
+        "userName": "Bala",
+        "conflictCount": 10,
+        "sensitivities": [
+          "CRITICAL",
+          "HIGH"
+        ],
+        "status": "Red",
+        "topTransactions": "SU01, FB03, ME23N (General)"
+      }
+    ]
+  },
+  {
+    "name": "General Operations (AUT_FIN)",
+    "country": "Belgium",
+    "department": "General Operations",
+    "userCount": 2,
+    "totalConflicts": 20,
+    "status": "Red",
+    "users": [
+      {
+        "userId": "PETERJRFC",
+        "userName": "PETERJRFC",
+        "conflictCount": 10,
+        "sensitivities": [
+          "CRITICAL",
+          "HIGH"
+        ],
+        "status": "Red",
+        "topTransactions": "SU01, FB03, ME23N (General)"
+      },
+      {
+        "userId": "YAM_RFC",
+        "userName": "YAM_RFC",
+        "conflictCount": 10,
+        "sensitivities": [
+          "CRITICAL",
+          "HIGH"
+        ],
+        "status": "Red",
+        "topTransactions": "SU01, FB03, ME23N (General)"
+      }
+    ]
+  },
+  {
+    "name": "General Operations (ZTEST_PAV)",
+    "country": "Global Operations",
+    "department": "General Operations",
+    "userCount": 2,
+    "totalConflicts": 20,
+    "status": "Red",
+    "users": [
+      {
+        "userId": "ZTESTP1",
+        "userName": "TEST User",
+        "conflictCount": 10,
+        "sensitivities": [
+          "CRITICAL",
+          "HIGH"
+        ],
+        "status": "Red",
+        "topTransactions": "SU01, FB03, ME23N (General)"
+      },
+      {
+        "userId": "ZVMATHUR",
+        "userName": "TEST",
+        "conflictCount": 10,
+        "sensitivities": [
+          "CRITICAL",
+          "HIGH"
+        ],
+        "status": "Red",
+        "topTransactions": "SU01, FB03, ME23N (General)"
+      }
+    ]
+  },
+  {
+    "name": "IT (General Business)",
+    "country": "Belgium",
+    "department": "IT",
+    "userCount": 1,
+    "totalConflicts": 10,
+    "status": "Red",
+    "users": [
+      {
+        "userId": "2001-04-28",
+        "userName": "user01 28april",
+        "conflictCount": 10,
+        "sensitivities": [
+          "CRITICAL",
+          "HIGH"
+        ],
+        "status": "Red",
+        "topTransactions": "SE38, PFCG, SU01, SE11"
+      }
+    ]
+  },
+  {
+    "name": "Department - Business Unit (General Business)",
+    "country": "Belgium",
+    "department": "Department - Business Unit",
+    "userCount": 1,
+    "totalConflicts": 10,
+    "status": "Red",
+    "users": [
+      {
+        "userId": "ACHRISTIAN",
+        "userName": "Asok CHRISTIAN",
+        "conflictCount": 10,
+        "sensitivities": [
+          "CRITICAL",
+          "HIGH"
+        ],
+        "status": "Red",
+        "topTransactions": "SE38, PFCG, SU01, SE11"
+      }
+    ]
+  },
+  {
+    "name": "Service (DEVELOPERS)",
+    "country": "Belgium",
+    "department": "Service",
+    "userCount": 1,
+    "totalConflicts": 10,
+    "status": "Red",
+    "users": [
+      {
+        "userId": "ADUVE",
+        "userName": "Akash Duve",
+        "conflictCount": 10,
+        "sensitivities": [
+          "CRITICAL",
+          "HIGH"
+        ],
+        "status": "Red",
+        "topTransactions": "SU01, FB03, ME23N (General)"
+      }
+    ]
+  },
+  {
+    "name": "General Operations (USRGP1)",
+    "country": "United States",
+    "department": "General Operations",
+    "userCount": 1,
+    "totalConflicts": 10,
+    "status": "Red",
+    "users": [
+      {
+        "userId": "BDIVEDI",
+        "userName": "Dwivedi",
+        "conflictCount": 10,
+        "sensitivities": [
+          "CRITICAL",
+          "HIGH"
+        ],
+        "status": "Red",
+        "topTransactions": "SU01, FB03, ME23N (General)"
+      }
+    ]
+  },
+  {
+    "name": "CCSS009481 (AUT_FIN)",
+    "country": "Belgium",
+    "department": "CCSS009481",
+    "userCount": 1,
+    "totalConflicts": 10,
+    "status": "Red",
+    "users": [
+      {
+        "userId": "DDHIMAN",
+        "userName": "Dinesh Dhiman",
+        "conflictCount": 10,
+        "sensitivities": [
+          "CRITICAL",
+          "HIGH"
+        ],
+        "status": "Red",
+        "topTransactions": "SU01, FB03, ME23N (General)"
+      }
+    ]
+  },
+  {
+    "name": "Connectors Department (PM)",
+    "country": "Belgium",
+    "department": "Connectors Department",
+    "userCount": 1,
+    "totalConflicts": 10,
+    "status": "Red",
+    "users": [
+      {
+        "userId": "DHORIONS",
+        "userName": "Dries Horions",
+        "conflictCount": 10,
+        "sensitivities": [
+          "CRITICAL",
+          "HIGH"
+        ],
+        "status": "Red",
+        "topTransactions": "SU01, FB03, ME23N (General)"
+      }
+    ]
+  },
+  {
+    "name": "Products & Solutions (PM)",
+    "country": "Belgium",
+    "department": "Products & Solutions",
+    "userCount": 1,
+    "totalConflicts": 10,
+    "status": "Red",
+    "users": [
+      {
+        "userId": "DREINSMA",
+        "userName": "Diane Reinsma",
+        "conflictCount": 10,
+        "sensitivities": [
+          "CRITICAL",
+          "HIGH"
+        ],
+        "status": "Red",
+        "topTransactions": "SU01, FB03, ME23N (General)"
+      }
+    ]
+  }
+]

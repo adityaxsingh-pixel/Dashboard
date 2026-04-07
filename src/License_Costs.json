@@ -1,0 +1,18 @@
+{
+  "GA Developer Access": {
+    "cost": 4800,
+    "description": "Full development workbench access"
+  },
+  "GB Advanced Use": {
+    "cost": 2400,
+    "description": "Full access to operational and configuration tasks"
+  },
+  "GC Core Use": {
+    "cost": 480,
+    "description": "Limited operational access, mostly display and approvals"
+  },
+  "GD Self-Service Use": {
+    "cost": 80,
+    "description": "Self-service, time entry, basic reporting"
+  }
+}

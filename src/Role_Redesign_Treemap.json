@@ -1,0 +1,4202 @@
+[
+  {
+    "name": "Belgium",
+    "children": [
+      {
+        "name": "IT",
+        "children": [
+          {
+            "name": "IT - General Business",
+            "size": 1,
+            "status": "Red",
+            "users": [
+              {
+                "userId": "2001-04-28",
+                "userName": "user01 28april",
+                "country": "Belgium",
+                "department": "IT",
+                "position": "IT - General Business",
+                "topTransactions": "SE38, PFCG, SU01, SE11",
+                "conflictCount": 10,
+                "sensitivities": [
+                  "CRITICAL",
+                  "HIGH"
+                ],
+                "status": "Red",
+                "lastLogin": "2026-02-15 04:59",
+                "lockedStatus": "Unlocked",
+                "validity": "Valid (31.12.9999)"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "General Operations",
+        "children": [
+          {
+            "name": "General Operations - General Business",
+            "size": 43,
+            "status": "Red",
+            "users": [
+              {
+                "userId": "ACHRIS1",
+                "userName": "ACHRIS1",
+                "country": "Belgium",
+                "department": "General Operations",
+                "position": "General Operations - General Business",
+                "topTransactions": "SU01, FB03, ME23N (General)",
+                "conflictCount": 10,
+                "sensitivities": [
+                  "CRITICAL",
+                  "HIGH"
+                ],
+                "status": "Red",
+                "lastLogin": "2026-02-21 04:59",
+                "lockedStatus": "Unlocked",
+                "validity": "Expires Soon"
+              },
+              {
+                "userId": "ANAUTIYAL",
+                "userName": "ANAUTIYAL",
+                "country": "Belgium",
+                "department": "General Operations",
+                "position": "General Operations - General Business",
+                "topTransactions": "SU01, FB03, ME23N (General)",
+                "conflictCount": 10,
+                "sensitivities": [
+                  "CRITICAL",
+                  "HIGH"
+                ],
+                "status": "Red",
+                "lastLogin": "2026-03-04 04:59",
+                "lockedStatus": "Unlocked",
+                "validity": "Expires Soon"
+              },
+              {
+                "userId": "ASHARMA",
+                "userName": "Sharma",
+                "country": "Belgium",
+                "department": "General Operations",
+                "position": "General Operations - General Business",
+                "topTransactions": "SU01, FB03, ME23N (General)",
+                "conflictCount": 10,
+                "sensitivities": [
+                  "CRITICAL",
+                  "HIGH"
+                ],
+                "status": "Red",
+                "lastLogin": "2026-02-02 04:59",
+                "lockedStatus": "Unlocked",
+                "validity": "Valid (31.12.9999)"
+              },
+              {
+                "userId": "ASINGH",
+                "userName": "Aditya Singh",
+                "country": "Belgium",
+                "department": "General Operations",
+                "position": "General Operations - General Business",
+                "topTransactions": "SU01, FB03, ME23N (General)",
+                "conflictCount": 10,
+                "sensitivities": [
+                  "CRITICAL",
+                  "HIGH"
+                ],
+                "status": "Red",
+                "lastLogin": "2026-02-10 04:59",
+                "lockedStatus": "Unlocked",
+                "validity": "Valid (31.12.9999)"
+              },
+              {
+                "userId": "ASINGH_LM",
+                "userName": "ASINGH_LM",
+                "country": "Belgium",
+                "department": "General Operations",
+                "position": "General Operations - General Business",
+                "topTransactions": "SU01, FB03, ME23N (General)",
+                "conflictCount": 10,
+                "sensitivities": [
+                  "CRITICAL",
+                  "HIGH"
+                ],
+                "status": "Red",
+                "lastLogin": "2026-02-16 04:59",
+                "lockedStatus": "Unlocked",
+                "validity": "Valid (31.12.9999)"
+              },
+              {
+                "userId": "ASINGH_POST",
+                "userName": "ASINGH_POST",
+                "country": "Belgium",
+                "department": "General Operations",
+                "position": "General Operations - General Business",
+                "topTransactions": "SU01, FB03, ME23N (General)",
+                "conflictCount": 10,
+                "sensitivities": [
+                  "CRITICAL",
+                  "HIGH"
+                ],
+                "status": "Red",
+                "lastLogin": "2026-03-08 04:59",
+                "lockedStatus": "Unlocked",
+                "validity": "Expires Soon"
+              },
+              {
+                "userId": "ASINGH_RM",
+                "userName": "ASINGH_RM",
+                "country": "Belgium",
+                "department": "General Operations",
+                "position": "General Operations - General Business",
+                "topTransactions": "SU01, FB03, ME23N (General)",
+                "conflictCount": 10,
+                "sensitivities": [
+                  "CRITICAL",
+                  "HIGH"
+                ],
+                "status": "Red",
+                "lastLogin": "2026-02-25 04:59",
+                "lockedStatus": "Unlocked",
+                "validity": "Valid (31.12.9999)"
+              },
+              {
+                "userId": "ASMITA",
+                "userName": "asmi asmita",
+                "country": "Belgium",
+                "department": "General Operations",
+                "position": "General Operations - General Business",
+                "topTransactions": "SU01, FB03, ME23N (General)",
+                "conflictCount": 10,
+                "sensitivities": [
+                  "CRITICAL",
+                  "HIGH"
+                ],
+                "status": "Red",
+                "lastLogin": "2026-03-14 04:59",
+                "lockedStatus": "Unlocked",
+                "validity": "Valid (31.12.9999)"
+              },
+              {
+                "userId": "BACKUP_JAG",
+                "userName": "Backup",
+                "country": "Belgium",
+                "department": "General Operations",
+                "position": "General Operations - General Business",
+                "topTransactions": "SU01, FB03, ME23N (General)",
+                "conflictCount": 10,
+                "sensitivities": [
+                  "CRITICAL",
+                  "HIGH"
+                ],
+                "status": "Red",
+                "lastLogin": "2026-02-18 04:59",
+                "lockedStatus": "Unlocked",
+                "validity": "Valid (31.12.9999)"
+              },
+              {
+                "userId": "BHANUPRIYA.N",
+                "userName": "BHANUPRIYA NIKHAR",
+                "country": "Belgium",
+                "department": "General Operations",
+                "position": "General Operations - General Business",
+                "topTransactions": "SU01, FB03, ME23N (General)",
+                "conflictCount": 10,
+                "sensitivities": [
+                  "CRITICAL",
+                  "HIGH"
+                ],
+                "status": "Red",
+                "lastLogin": "2026-02-08 04:59",
+                "lockedStatus": "Unlocked",
+                "validity": "Valid (31.12.9999)"
+              },
+              {
+                "userId": "BRAKWAL",
+                "userName": "brakwal",
+                "country": "Belgium",
+                "department": "General Operations",
+                "position": "General Operations - General Business",
+                "topTransactions": "SU01, FB03, ME23N (General)",
+                "conflictCount": 10,
+                "sensitivities": [
+                  "CRITICAL",
+                  "HIGH"
+                ],
+                "status": "Red",
+                "lastLogin": "2026-02-27 04:59",
+                "lockedStatus": "Unlocked",
+                "validity": "Valid (31.12.9999)"
+              },
+              {
+                "userId": "GJOSHI",
+                "userName": "gjoshi",
+                "country": "Belgium",
+                "department": "General Operations",
+                "position": "General Operations - General Business",
+                "topTransactions": "SU01, FB03, ME23N (General)",
+                "conflictCount": 10,
+                "sensitivities": [
+                  "CRITICAL",
+                  "HIGH"
+                ],
+                "status": "Red",
+                "lastLogin": "2026-02-10 04:59",
+                "lockedStatus": "Unlocked",
+                "validity": "Valid (31.12.9999)"
+              },
+              {
+                "userId": "HJINDAL",
+                "userName": "Jindal",
+                "country": "Belgium",
+                "department": "General Operations",
+                "position": "General Operations - General Business",
+                "topTransactions": "SU01, FB03, ME23N (General)",
+                "conflictCount": 10,
+                "sensitivities": [
+                  "CRITICAL",
+                  "HIGH"
+                ],
+                "status": "Red",
+                "lastLogin": "2026-03-12 04:59",
+                "lockedStatus": "Unlocked",
+                "validity": "Expires Soon"
+              },
+              {
+                "userId": "HSHARMA",
+                "userName": "Sharma",
+                "country": "Belgium",
+                "department": "General Operations",
+                "position": "General Operations - General Business",
+                "topTransactions": "SU01, FB03, ME23N (General)",
+                "conflictCount": 10,
+                "sensitivities": [
+                  "CRITICAL",
+                  "HIGH"
+                ],
+                "status": "Red",
+                "lastLogin": "2026-02-14 04:59",
+                "lockedStatus": "Unlocked",
+                "validity": "Valid (31.12.9999)"
+              },
+              {
+                "userId": "JSINGH",
+                "userName": "Jagjit Singh",
+                "country": "Belgium",
+                "department": "General Operations",
+                "position": "General Operations - General Business",
+                "topTransactions": "SU01, FB03, ME23N (General)",
+                "conflictCount": 10,
+                "sensitivities": [
+                  "CRITICAL",
+                  "HIGH"
+                ],
+                "status": "Red",
+                "lastLogin": "2026-02-26 04:59",
+                "lockedStatus": "Unlocked",
+                "validity": "Valid (31.12.9999)"
+              },
+              {
+                "userId": "KREDDY",
+                "userName": "KREDDY",
+                "country": "Belgium",
+                "department": "General Operations",
+                "position": "General Operations - General Business",
+                "topTransactions": "SU01, FB03, ME23N (General)",
+                "conflictCount": 10,
+                "sensitivities": [
+                  "CRITICAL",
+                  "HIGH"
+                ],
+                "status": "Red",
+                "lastLogin": "2026-02-24 04:59",
+                "lockedStatus": "Unlocked",
+                "validity": "Valid (31.12.9999)"
+              },
+              {
+                "userId": "KSHARMA",
+                "userName": "KASHIKA SHARMA",
+                "country": "Belgium",
+                "department": "General Operations",
+                "position": "General Operations - General Business",
+                "topTransactions": "SU01, FB03, ME23N (General)",
+                "conflictCount": 10,
+                "sensitivities": [
+                  "CRITICAL",
+                  "HIGH"
+                ],
+                "status": "Red",
+                "lastLogin": "2026-02-24 04:59",
+                "lockedStatus": "Unlocked",
+                "validity": "Valid (31.12.9999)"
+              },
+              {
+                "userId": "NEWUSERTEST",
+                "userName": "X Mr",
+                "country": "Belgium",
+                "department": "General Operations",
+                "position": "General Operations - General Business",
+                "topTransactions": "SU01, FB03, ME23N (General)",
+                "conflictCount": 10,
+                "sensitivities": [
+                  "CRITICAL",
+                  "HIGH"
+                ],
+                "status": "Red",
+                "lastLogin": "2026-02-17 04:59",
+                "lockedStatus": "Unlocked",
+                "validity": "Valid (31.12.9999)"
+              },
+              {
+                "userId": "OLEG",
+                "userName": "Oleg Firumiants",
+                "country": "Belgium",
+                "department": "General Operations",
+                "position": "General Operations - General Business",
+                "topTransactions": "SU01, FB03, ME23N (General)",
+                "conflictCount": 10,
+                "sensitivities": [
+                  "CRITICAL",
+                  "HIGH"
+                ],
+                "status": "Red",
+                "lastLogin": "2026-03-11 04:59",
+                "lockedStatus": "Unlocked",
+                "validity": "Valid (31.12.9999)"
+              },
+              {
+                "userId": "PRIYANKA.B",
+                "userName": "PRIYANKA B",
+                "country": "Belgium",
+                "department": "General Operations",
+                "position": "General Operations - General Business",
+                "topTransactions": "SU01, FB03, ME23N (General)",
+                "conflictCount": 10,
+                "sensitivities": [
+                  "CRITICAL",
+                  "HIGH"
+                ],
+                "status": "Red",
+                "lastLogin": "2026-02-05 04:59",
+                "lockedStatus": "Unlocked",
+                "validity": "Valid (31.12.9999)"
+              },
+              {
+                "userId": "RM_TEST_ITS1",
+                "userName": "rm_test_its1",
+                "country": "Belgium",
+                "department": "General Operations",
+                "position": "General Operations - General Business",
+                "topTransactions": "SU01, FB03, ME23N (General)",
+                "conflictCount": 10,
+                "sensitivities": [
+                  "CRITICAL",
+                  "HIGH"
+                ],
+                "status": "Red",
+                "lastLogin": "2026-02-16 04:59",
+                "lockedStatus": "Unlocked",
+                "validity": "Expires Soon"
+              },
+              {
+                "userId": "RM_TEST_TR",
+                "userName": "RM_TEST_TR",
+                "country": "Belgium",
+                "department": "General Operations",
+                "position": "General Operations - General Business",
+                "topTransactions": "SU01, FB03, ME23N (General)",
+                "conflictCount": 10,
+                "sensitivities": [
+                  "CRITICAL",
+                  "HIGH"
+                ],
+                "status": "Red",
+                "lastLogin": "2026-02-09 04:59",
+                "lockedStatus": "Unlocked",
+                "validity": "Valid (31.12.9999)"
+              },
+              {
+                "userId": "SHRIRAM.K",
+                "userName": "SHRIRAM KSHIRE",
+                "country": "Belgium",
+                "department": "General Operations",
+                "position": "General Operations - General Business",
+                "topTransactions": "SU01, FB03, ME23N (General)",
+                "conflictCount": 10,
+                "sensitivities": [
+                  "CRITICAL",
+                  "HIGH"
+                ],
+                "status": "Red",
+                "lastLogin": "2026-02-08 04:59",
+                "lockedStatus": "Unlocked",
+                "validity": "Valid (31.12.9999)"
+              },
+              {
+                "userId": "SHUBHAM.T",
+                "userName": "SHUBHAM TATHOD",
+                "country": "Belgium",
+                "department": "General Operations",
+                "position": "General Operations - General Business",
+                "topTransactions": "SU01, FB03, ME23N (General)",
+                "conflictCount": 10,
+                "sensitivities": [
+                  "CRITICAL",
+                  "HIGH"
+                ],
+                "status": "Red",
+                "lastLogin": "2026-03-15 04:59",
+                "lockedStatus": "Unlocked",
+                "validity": "Valid (31.12.9999)"
+              },
+              {
+                "userId": "STATHOD",
+                "userName": "Stathod R",
+                "country": "Belgium",
+                "department": "General Operations",
+                "position": "General Operations - General Business",
+                "topTransactions": "SU01, FB03, ME23N (General)",
+                "conflictCount": 10,
+                "sensitivities": [
+                  "CRITICAL",
+                  "HIGH"
+                ],
+                "status": "Red",
+                "lastLogin": "2026-03-10 04:59",
+                "lockedStatus": "Unlocked",
+                "validity": "Expires Soon"
+              },
+              {
+                "userId": "TEST_CL",
+                "userName": "test_aa1 TEST_AA1",
+                "country": "Belgium",
+                "department": "General Operations",
+                "position": "General Operations - General Business",
+                "topTransactions": "SU01, FB03, ME23N (General)",
+                "conflictCount": 10,
+                "sensitivities": [
+                  "CRITICAL",
+                  "HIGH"
+                ],
+                "status": "Red",
+                "lastLogin": "2026-02-19 04:59",
+                "lockedStatus": "Unlocked",
+                "validity": "Valid (31.12.9999)"
+              },
+              {
+                "userId": "TEST_DTS5",
+                "userName": "TEST_DTS5",
+                "country": "Belgium",
+                "department": "General Operations",
+                "position": "General Operations - General Business",
+                "topTransactions": "SU01, FB03, ME23N (General)",
+                "conflictCount": 10,
+                "sensitivities": [
+                  "CRITICAL",
+                  "HIGH"
+                ],
+                "status": "Red",
+                "lastLogin": "2026-02-09 04:59",
+                "lockedStatus": "Unlocked",
+                "validity": "Expires Soon"
+              },
+              {
+                "userId": "TEST_DTS6",
+                "userName": "TEST_DTS6",
+                "country": "Belgium",
+                "department": "General Operations",
+                "position": "General Operations - General Business",
+                "topTransactions": "SU01, FB03, ME23N (General)",
+                "conflictCount": 10,
+                "sensitivities": [
+                  "CRITICAL",
+                  "HIGH"
+                ],
+                "status": "Red",
+                "lastLogin": "2026-02-27 04:59",
+                "lockedStatus": "Unlocked",
+                "validity": "Valid (31.12.9999)"
+              },
+              {
+                "userId": "TEST_NEW22",
+                "userName": "TEST_NEW22",
+                "country": "Belgium",
+                "department": "General Operations",
+                "position": "General Operations - General Business",
+                "topTransactions": "SU01, FB03, ME23N (General)",
+                "conflictCount": 10,
+                "sensitivities": [
+                  "CRITICAL",
+                  "HIGH"
+                ],
+                "status": "Red",
+                "lastLogin": "2026-03-01 04:59",
+                "lockedStatus": "Unlocked",
+                "validity": "Expired"
+              },
+              {
+                "userId": "USER_TEST",
+                "userName": "TEST USER",
+                "country": "Belgium",
+                "department": "General Operations",
+                "position": "General Operations - General Business",
+                "topTransactions": "SU01, FB03, ME23N (General)",
+                "conflictCount": 10,
+                "sensitivities": [
+                  "CRITICAL",
+                  "HIGH"
+                ],
+                "status": "Red",
+                "lastLogin": "2026-02-05 04:59",
+                "lockedStatus": "Unlocked",
+                "validity": "Valid (31.12.9999)"
+              },
+              {
+                "userId": "VGUPTA",
+                "userName": "Vineet Gupta",
+                "country": "Belgium",
+                "department": "General Operations",
+                "position": "General Operations - General Business",
+                "topTransactions": "SU01, FB03, ME23N (General)",
+                "conflictCount": 10,
+                "sensitivities": [
+                  "CRITICAL",
+                  "HIGH"
+                ],
+                "status": "Red",
+                "lastLogin": "2026-02-09 04:59",
+                "lockedStatus": "Unlocked",
+                "validity": "Expires Soon"
+              },
+              {
+                "userId": "ZPETERJ",
+                "userName": "ZPETERJ",
+                "country": "Belgium",
+                "department": "General Operations",
+                "position": "General Operations - General Business",
+                "topTransactions": "SU01, FB03, ME23N (General)",
+                "conflictCount": 10,
+                "sensitivities": [
+                  "CRITICAL",
+                  "HIGH"
+                ],
+                "status": "Red",
+                "lastLogin": "2026-02-17 04:59",
+                "lockedStatus": "Unlocked",
+                "validity": "Valid (31.12.9999)"
+              },
+              {
+                "userId": "ZTESTAA4",
+                "userName": "TESTF TESTL",
+                "country": "Belgium",
+                "department": "General Operations",
+                "position": "General Operations - General Business",
+                "topTransactions": "SU01, FB03, ME23N (General)",
+                "conflictCount": 10,
+                "sensitivities": [
+                  "CRITICAL",
+                  "HIGH"
+                ],
+                "status": "Red",
+                "lastLogin": "2026-03-13 04:59",
+                "lockedStatus": "Unlocked",
+                "validity": "Valid (31.12.9999)"
+              },
+              {
+                "userId": "DUSER3",
+                "userName": "DUSER3",
+                "country": "Belgium",
+                "department": "General Operations",
+                "position": "General Operations - General Business",
+                "topTransactions": "SU01, FB03, ME23N (General)",
+                "conflictCount": 3,
+                "sensitivities": [
+                  "CRITICAL"
+                ],
+                "status": "Red",
+                "lastLogin": "2026-03-05 04:59",
+                "lockedStatus": "Unlocked",
+                "validity": "Valid (31.12.9999)"
+              },
+              {
+                "userId": "MINDSQUARE",
+                "userName": "Test Case Mindsquare Test",
+                "country": "Belgium",
+                "department": "General Operations",
+                "position": "General Operations - General Business",
+                "topTransactions": "SU01, FB03, ME23N (General)",
+                "conflictCount": 3,
+                "sensitivities": [
+                  "CRITICAL"
+                ],
+                "status": "Red",
+                "lastLogin": "2026-02-05 04:59",
+                "lockedStatus": "Unlocked",
+                "validity": "Valid (31.12.9999)"
+              },
+              {
+                "userId": "TEST_VDATE",
+                "userName": "VDATE",
+                "country": "Belgium",
+                "department": "General Operations",
+                "position": "General Operations - General Business",
+                "topTransactions": "SU01, FB03, ME23N (General)",
+                "conflictCount": 3,
+                "sensitivities": [
+                  "HIGH"
+                ],
+                "status": "Red",
+                "lastLogin": "2026-03-10 04:59",
+                "lockedStatus": "Unlocked",
+                "validity": "Valid (31.12.9999)"
+              },
+              {
+                "userId": "ASINGH_TEST",
+                "userName": "RM Testing",
+                "country": "Belgium",
+                "department": "General Operations",
+                "position": "General Operations - General Business",
+                "topTransactions": "SU01, FB03, ME23N (General)",
+                "conflictCount": 2,
+                "sensitivities": [
+                  "CRITICAL"
+                ],
+                "status": "Red",
+                "lastLogin": "2026-03-11 04:59",
+                "lockedStatus": "Unlocked",
+                "validity": "Valid (31.12.9999)"
+              },
+              {
+                "userId": "COMM_AM",
+                "userName": "COMM_AM",
+                "country": "Belgium",
+                "department": "General Operations",
+                "position": "General Operations - General Business",
+                "topTransactions": "SU01, FB03, ME23N (General)",
+                "conflictCount": 2,
+                "sensitivities": [
+                  "CRITICAL"
+                ],
+                "status": "Red",
+                "lastLogin": "2026-02-15 04:59",
+                "lockedStatus": "Unlocked",
+                "validity": "Valid (31.12.9999)"
+              },
+              {
+                "userId": "ACHRISTEST",
+                "userName": "ACHRISTEST",
+                "country": "Belgium",
+                "department": "General Operations",
+                "position": "General Operations - General Business",
+                "topTransactions": "SU01, FB03, ME23N (General)",
+                "conflictCount": 1,
+                "sensitivities": [
+                  "CRITICAL"
+                ],
+                "status": "Red",
+                "lastLogin": "2026-02-16 04:59",
+                "lockedStatus": "Unlocked",
+                "validity": "Expires Soon"
+              },
+              {
+                "userId": "BARAN",
+                "userName": "Bidur",
+                "country": "Belgium",
+                "department": "General Operations",
+                "position": "General Operations - General Business",
+                "topTransactions": "SU01, FB03, ME23N (General)",
+                "conflictCount": 1,
+                "sensitivities": [
+                  "CRITICAL"
+                ],
+                "status": "Red",
+                "lastLogin": "2026-02-25 04:59",
+                "lockedStatus": "Unlocked",
+                "validity": "Expired"
+              },
+              {
+                "userId": "BARAN1",
+                "userName": "BARAN1",
+                "country": "Belgium",
+                "department": "General Operations",
+                "position": "General Operations - General Business",
+                "topTransactions": "SU01, FB03, ME23N (General)",
+                "conflictCount": 1,
+                "sensitivities": [
+                  "CRITICAL"
+                ],
+                "status": "Red",
+                "lastLogin": "2026-02-23 04:59",
+                "lockedStatus": "Unlocked",
+                "validity": "Valid (31.12.9999)"
+              },
+              {
+                "userId": "BARAN2",
+                "userName": "BARAN2",
+                "country": "Belgium",
+                "department": "General Operations",
+                "position": "General Operations - General Business",
+                "topTransactions": "SU01, FB03, ME23N (General)",
+                "conflictCount": 1,
+                "sensitivities": [
+                  "CRITICAL"
+                ],
+                "status": "Red",
+                "lastLogin": "2026-02-23 04:59",
+                "lockedStatus": "Unlocked",
+                "validity": "Expired"
+              },
+              {
+                "userId": "USER_TEST2",
+                "userName": "test2",
+                "country": "Belgium",
+                "department": "General Operations",
+                "position": "General Operations - General Business",
+                "topTransactions": "SU01, FB03, ME23N (General)",
+                "conflictCount": 1,
+                "sensitivities": [
+                  "HIGH"
+                ],
+                "status": "Red",
+                "lastLogin": "2026-03-05 04:59",
+                "lockedStatus": "Unlocked",
+                "validity": "Expired"
+              }
+            ]
+          },
+          {
+            "name": "General Operations - DEVELOPERS",
+            "size": 19,
+            "status": "Red",
+            "users": [
+              {
+                "userId": "AKUMAR2",
+                "userName": "Aryan KUMAR",
+                "country": "Belgium",
+                "department": "General Operations",
+                "position": "General Operations - DEVELOPERS",
+                "topTransactions": "SU01, FB03, ME23N (General)",
+                "conflictCount": 10,
+                "sensitivities": [
+                  "CRITICAL",
+                  "HIGH"
+                ],
+                "status": "Red",
+                "lastLogin": "2026-03-03 04:59",
+                "lockedStatus": "Unlocked",
+                "validity": "Valid (31.12.9999)"
+              },
+              {
+                "userId": "APP",
+                "userName": "Nitin Malhotra",
+                "country": "Belgium",
+                "department": "General Operations",
+                "position": "General Operations - DEVELOPERS",
+                "topTransactions": "SU01, FB03, ME23N (General)",
+                "conflictCount": 10,
+                "sensitivities": [
+                  "CRITICAL",
+                  "HIGH"
+                ],
+                "status": "Red",
+                "lastLogin": "2026-02-02 04:59",
+                "lockedStatus": "Unlocked",
+                "validity": "Valid (31.12.9999)"
+              },
+              {
+                "userId": "GOLIVE1",
+                "userName": "Golive Test1",
+                "country": "Belgium",
+                "department": "General Operations",
+                "position": "General Operations - DEVELOPERS",
+                "topTransactions": "SU01, FB03, ME23N (General)",
+                "conflictCount": 10,
+                "sensitivities": [
+                  "CRITICAL",
+                  "HIGH"
+                ],
+                "status": "Red",
+                "lastLogin": "2026-02-22 04:59",
+                "lockedStatus": "Unlocked",
+                "validity": "Valid (31.12.9999)"
+              },
+              {
+                "userId": "GSINGH2",
+                "userName": "Gurpinder Singh",
+                "country": "Belgium",
+                "department": "General Operations",
+                "position": "General Operations - DEVELOPERS",
+                "topTransactions": "SU01, FB03, ME23N (General)",
+                "conflictCount": 10,
+                "sensitivities": [
+                  "CRITICAL",
+                  "HIGH"
+                ],
+                "status": "Red",
+                "lastLogin": "2026-03-04 04:59",
+                "lockedStatus": "Unlocked",
+                "validity": "Valid (31.12.9999)"
+              },
+              {
+                "userId": "JJURCK",
+                "userName": "Jeff Jurck",
+                "country": "Belgium",
+                "department": "General Operations",
+                "position": "General Operations - DEVELOPERS",
+                "topTransactions": "SU01, FB03, ME23N (General)",
+                "conflictCount": 10,
+                "sensitivities": [
+                  "CRITICAL",
+                  "HIGH"
+                ],
+                "status": "Red",
+                "lastLogin": "2026-02-23 04:59",
+                "lockedStatus": "Unlocked",
+                "validity": "Valid (31.12.9999)"
+              },
+              {
+                "userId": "MPATIL",
+                "userName": "Mahanatesh Patil",
+                "country": "Belgium",
+                "department": "General Operations",
+                "position": "General Operations - DEVELOPERS",
+                "topTransactions": "SU01, FB03, ME23N (General)",
+                "conflictCount": 10,
+                "sensitivities": [
+                  "CRITICAL",
+                  "HIGH"
+                ],
+                "status": "Red",
+                "lastLogin": "2026-02-28 04:59",
+                "lockedStatus": "Unlocked",
+                "validity": "Expires Soon"
+              },
+              {
+                "userId": "NMALHOTRA",
+                "userName": "Nitin Malhotra",
+                "country": "Belgium",
+                "department": "General Operations",
+                "position": "General Operations - DEVELOPERS",
+                "topTransactions": "SU01, FB03, ME23N (General)",
+                "conflictCount": 10,
+                "sensitivities": [
+                  "CRITICAL",
+                  "HIGH"
+                ],
+                "status": "Red",
+                "lastLogin": "2026-01-31 04:59",
+                "lockedStatus": "Unlocked",
+                "validity": "Valid (31.12.9999)"
+              },
+              {
+                "userId": "PDF1",
+                "userName": "Test Case PDF",
+                "country": "Belgium",
+                "department": "General Operations",
+                "position": "General Operations - DEVELOPERS",
+                "topTransactions": "SU01, FB03, ME23N (General)",
+                "conflictCount": 10,
+                "sensitivities": [
+                  "CRITICAL",
+                  "HIGH"
+                ],
+                "status": "Red",
+                "lastLogin": "2026-01-30 04:59",
+                "lockedStatus": "Unlocked",
+                "validity": "Valid (31.12.9999)"
+              },
+              {
+                "userId": "TEST_01",
+                "userName": "Test Case PDF",
+                "country": "Belgium",
+                "department": "General Operations",
+                "position": "General Operations - DEVELOPERS",
+                "topTransactions": "SU01, FB03, ME23N (General)",
+                "conflictCount": 10,
+                "sensitivities": [
+                  "CRITICAL",
+                  "HIGH"
+                ],
+                "status": "Red",
+                "lastLogin": "2026-03-02 04:59",
+                "lockedStatus": "Unlocked",
+                "validity": "Valid (31.12.9999)"
+              },
+              {
+                "userId": "TEST_AA1",
+                "userName": "test_aa1 TEST_AA1",
+                "country": "Belgium",
+                "department": "General Operations",
+                "position": "General Operations - DEVELOPERS",
+                "topTransactions": "SU01, FB03, ME23N (General)",
+                "conflictCount": 10,
+                "sensitivities": [
+                  "CRITICAL",
+                  "HIGH"
+                ],
+                "status": "Red",
+                "lastLogin": "2026-02-14 04:59",
+                "lockedStatus": "Unlocked",
+                "validity": "Valid (31.12.9999)"
+              },
+              {
+                "userId": "VAR1",
+                "userName": "Nitin Malhotra",
+                "country": "Belgium",
+                "department": "General Operations",
+                "position": "General Operations - DEVELOPERS",
+                "topTransactions": "SU01, FB03, ME23N (General)",
+                "conflictCount": 10,
+                "sensitivities": [
+                  "CRITICAL",
+                  "HIGH"
+                ],
+                "status": "Red",
+                "lastLogin": "2026-02-15 04:59",
+                "lockedStatus": "Unlocked",
+                "validity": "Expires Soon"
+              },
+              {
+                "userId": "VAR2",
+                "userName": "Nitin Malhotra",
+                "country": "Belgium",
+                "department": "General Operations",
+                "position": "General Operations - DEVELOPERS",
+                "topTransactions": "SU01, FB03, ME23N (General)",
+                "conflictCount": 10,
+                "sensitivities": [
+                  "CRITICAL",
+                  "HIGH"
+                ],
+                "status": "Red",
+                "lastLogin": "2026-03-07 04:59",
+                "lockedStatus": "Unlocked",
+                "validity": "Valid (31.12.9999)"
+              },
+              {
+                "userId": "VAR3",
+                "userName": "Nitin Malhotra",
+                "country": "Belgium",
+                "department": "General Operations",
+                "position": "General Operations - DEVELOPERS",
+                "topTransactions": "SU01, FB03, ME23N (General)",
+                "conflictCount": 10,
+                "sensitivities": [
+                  "CRITICAL",
+                  "HIGH"
+                ],
+                "status": "Red",
+                "lastLogin": "2026-02-10 04:59",
+                "lockedStatus": "Unlocked",
+                "validity": "Valid (31.12.9999)"
+              },
+              {
+                "userId": "VAR4",
+                "userName": "Nitin Malhotra",
+                "country": "Belgium",
+                "department": "General Operations",
+                "position": "General Operations - DEVELOPERS",
+                "topTransactions": "SU01, FB03, ME23N (General)",
+                "conflictCount": 10,
+                "sensitivities": [
+                  "CRITICAL",
+                  "HIGH"
+                ],
+                "status": "Red",
+                "lastLogin": "2026-03-02 04:59",
+                "lockedStatus": "Unlocked",
+                "validity": "Valid (31.12.9999)"
+              },
+              {
+                "userId": "VAR_T1",
+                "userName": "Nitin Malhotra",
+                "country": "Belgium",
+                "department": "General Operations",
+                "position": "General Operations - DEVELOPERS",
+                "topTransactions": "SU01, FB03, ME23N (General)",
+                "conflictCount": 10,
+                "sensitivities": [
+                  "CRITICAL",
+                  "HIGH"
+                ],
+                "status": "Red",
+                "lastLogin": "2026-02-15 04:59",
+                "lockedStatus": "Locked",
+                "validity": "Valid (31.12.9999)"
+              },
+              {
+                "userId": "VAR_T2",
+                "userName": "Nitin Malhotra",
+                "country": "Belgium",
+                "department": "General Operations",
+                "position": "General Operations - DEVELOPERS",
+                "topTransactions": "SU01, FB03, ME23N (General)",
+                "conflictCount": 10,
+                "sensitivities": [
+                  "CRITICAL",
+                  "HIGH"
+                ],
+                "status": "Red",
+                "lastLogin": "2026-03-09 04:59",
+                "lockedStatus": "Unlocked",
+                "validity": "Valid (31.12.9999)"
+              },
+              {
+                "userId": "VAR_T3",
+                "userName": "Nitin Malhotra",
+                "country": "Belgium",
+                "department": "General Operations",
+                "position": "General Operations - DEVELOPERS",
+                "topTransactions": "SU01, FB03, ME23N (General)",
+                "conflictCount": 10,
+                "sensitivities": [
+                  "CRITICAL",
+                  "HIGH"
+                ],
+                "status": "Red",
+                "lastLogin": "2026-01-31 04:59",
+                "lockedStatus": "Unlocked",
+                "validity": "Valid (31.12.9999)"
+              },
+              {
+                "userId": "VKUMAR",
+                "userName": "KUMAR",
+                "country": "Belgium",
+                "department": "General Operations",
+                "position": "General Operations - DEVELOPERS",
+                "topTransactions": "SU01, FB03, ME23N (General)",
+                "conflictCount": 10,
+                "sensitivities": [
+                  "CRITICAL",
+                  "HIGH"
+                ],
+                "status": "Red",
+                "lastLogin": "2026-03-02 04:59",
+                "lockedStatus": "Unlocked",
+                "validity": "Valid (31.12.9999)"
+              },
+              {
+                "userId": "VVVV",
+                "userName": "Test Case PDF",
+                "country": "Belgium",
+                "department": "General Operations",
+                "position": "General Operations - DEVELOPERS",
+                "topTransactions": "SU01, FB03, ME23N (General)",
+                "conflictCount": 10,
+                "sensitivities": [
+                  "CRITICAL",
+                  "HIGH"
+                ],
+                "status": "Red",
+                "lastLogin": "2026-02-12 04:59",
+                "lockedStatus": "Unlocked",
+                "validity": "Valid (31.12.9999)"
+              }
+            ]
+          },
+          {
+            "name": "General Operations - SUPER",
+            "size": 4,
+            "status": "Red",
+            "users": [
+              {
+                "userId": "ARAKWAL",
+                "userName": "ARAKWAL",
+                "country": "Belgium",
+                "department": "General Operations",
+                "position": "General Operations - SUPER",
+                "topTransactions": "SU01, FB03, ME23N (General)",
+                "conflictCount": 10,
+                "sensitivities": [
+                  "CRITICAL",
+                  "HIGH"
+                ],
+                "status": "Red",
+                "lastLogin": "2026-03-04 04:59",
+                "lockedStatus": "Unlocked",
+                "validity": "Valid (31.12.9999)"
+              },
+              {
+                "userId": "LMANHAS",
+                "userName": "Manhas",
+                "country": "Belgium",
+                "department": "General Operations",
+                "position": "General Operations - SUPER",
+                "topTransactions": "SU01, FB03, ME23N (General)",
+                "conflictCount": 10,
+                "sensitivities": [
+                  "CRITICAL",
+                  "HIGH"
+                ],
+                "status": "Red",
+                "lastLogin": "2026-02-26 04:59",
+                "lockedStatus": "Unlocked",
+                "validity": "Valid (31.12.9999)"
+              },
+              {
+                "userId": "RAKWAL",
+                "userName": "RAKWAL",
+                "country": "Belgium",
+                "department": "General Operations",
+                "position": "General Operations - SUPER",
+                "topTransactions": "SU01, FB03, ME23N (General)",
+                "conflictCount": 10,
+                "sensitivities": [
+                  "CRITICAL",
+                  "HIGH"
+                ],
+                "status": "Red",
+                "lastLogin": "2026-02-21 04:59",
+                "lockedStatus": "Unlocked",
+                "validity": "Valid (31.12.9999)"
+              },
+              {
+                "userId": "WF-BATCH",
+                "userName": "Workflow System",
+                "country": "Belgium",
+                "department": "General Operations",
+                "position": "General Operations - SUPER",
+                "topTransactions": "SU01, FB03, ME23N (General)",
+                "conflictCount": 10,
+                "sensitivities": [
+                  "CRITICAL",
+                  "HIGH"
+                ],
+                "status": "Red",
+                "lastLogin": "2026-02-04 04:59",
+                "lockedStatus": "Unlocked",
+                "validity": "Valid (31.12.9999)"
+              }
+            ]
+          },
+          {
+            "name": "General Operations - DRGROUP",
+            "size": 20,
+            "status": "Red",
+            "users": [
+              {
+                "userId": "DITESTEN",
+                "userName": "Test EN Language DITESTEN",
+                "country": "Belgium",
+                "department": "General Operations",
+                "position": "General Operations - DRGROUP",
+                "topTransactions": "SU01, FB03, ME23N (General)",
+                "conflictCount": 10,
+                "sensitivities": [
+                  "CRITICAL",
+                  "HIGH"
+                ],
+                "status": "Red",
+                "lastLogin": "2026-03-09 04:59",
+                "lockedStatus": "Unlocked",
+                "validity": "Valid (31.12.9999)"
+              },
+              {
+                "userId": "DRMESTEST",
+                "userName": "MES TEST DRMESTEST",
+                "country": "Belgium",
+                "department": "General Operations",
+                "position": "General Operations - DRGROUP",
+                "topTransactions": "SU01, FB03, ME23N (General)",
+                "conflictCount": 10,
+                "sensitivities": [
+                  "CRITICAL",
+                  "HIGH"
+                ],
+                "status": "Red",
+                "lastLogin": "2026-02-17 04:59",
+                "lockedStatus": "Unlocked",
+                "validity": "Valid (31.12.9999)"
+              },
+              {
+                "userId": "ARUSR_2DIFF",
+                "userName": "D67 Different Name ARUSR",
+                "country": "Belgium",
+                "department": "General Operations",
+                "position": "General Operations - DRGROUP",
+                "topTransactions": "SU01, FB03, ME23N (General)",
+                "conflictCount": 3,
+                "sensitivities": [
+                  "CRITICAL",
+                  "HIGH"
+                ],
+                "status": "Red",
+                "lastLogin": "2026-02-11 04:59",
+                "lockedStatus": "Unlocked",
+                "validity": "Expires Soon"
+              },
+              {
+                "userId": "DITEST2",
+                "userName": "DITEST2",
+                "country": "Belgium",
+                "department": "General Operations",
+                "position": "General Operations - DRGROUP",
+                "topTransactions": "SU01, FB03, ME23N (General)",
+                "conflictCount": 3,
+                "sensitivities": [
+                  "CRITICAL",
+                  "HIGH"
+                ],
+                "status": "Red",
+                "lastLogin": "2026-02-12 04:59",
+                "lockedStatus": "Unlocked",
+                "validity": "Valid (31.12.9999)"
+              },
+              {
+                "userId": "ARUSR_2RLNOT",
+                "userName": "Role Valid D67 Not YER ARUSR",
+                "country": "Belgium",
+                "department": "General Operations",
+                "position": "General Operations - DRGROUP",
+                "topTransactions": "SU01, FB03, ME23N (General)",
+                "conflictCount": 2,
+                "sensitivities": [
+                  "CRITICAL",
+                  "HIGH"
+                ],
+                "status": "Red",
+                "lastLogin": "2026-03-05 04:59",
+                "lockedStatus": "Unlocked",
+                "validity": "Valid (31.12.9999)"
+              },
+              {
+                "userId": "ARUSR_2RLVAL",
+                "userName": "Missing Roles Valid ARUSR",
+                "country": "Belgium",
+                "department": "General Operations",
+                "position": "General Operations - DRGROUP",
+                "topTransactions": "SU01, FB03, ME23N (General)",
+                "conflictCount": 2,
+                "sensitivities": [
+                  "CRITICAL",
+                  "HIGH"
+                ],
+                "status": "Red",
+                "lastLogin": "2026-02-20 04:59",
+                "lockedStatus": "Locked",
+                "validity": "Valid (31.12.9999)"
+              },
+              {
+                "userId": "ARUSR_2SAME",
+                "userName": "Same Name on Both ARUSR",
+                "country": "Belgium",
+                "department": "General Operations",
+                "position": "General Operations - DRGROUP",
+                "topTransactions": "SU01, FB03, ME23N (General)",
+                "conflictCount": 2,
+                "sensitivities": [
+                  "CRITICAL",
+                  "HIGH"
+                ],
+                "status": "Red",
+                "lastLogin": "2026-03-15 04:59",
+                "lockedStatus": "Unlocked",
+                "validity": "Expires Soon"
+              },
+              {
+                "userId": "ARUSR_D67",
+                "userName": "D67 Name ARUSR",
+                "country": "Belgium",
+                "department": "General Operations",
+                "position": "General Operations - DRGROUP",
+                "topTransactions": "SU01, FB03, ME23N (General)",
+                "conflictCount": 2,
+                "sensitivities": [
+                  "CRITICAL",
+                  "HIGH"
+                ],
+                "status": "Red",
+                "lastLogin": "2026-02-09 04:59",
+                "lockedStatus": "Unlocked",
+                "validity": "Valid (31.12.9999)"
+              },
+              {
+                "userId": "ARUSR_NONABP",
+                "userName": "Non-ABAP Record ARUSR",
+                "country": "Belgium",
+                "department": "General Operations",
+                "position": "General Operations - DRGROUP",
+                "topTransactions": "SU01, FB03, ME23N (General)",
+                "conflictCount": 2,
+                "sensitivities": [
+                  "CRITICAL",
+                  "HIGH"
+                ],
+                "status": "Red",
+                "lastLogin": "2026-02-10 04:59",
+                "lockedStatus": "Unlocked",
+                "validity": "Valid (31.12.9999)"
+              },
+              {
+                "userId": "DIERUSER",
+                "userName": "Name on D67 ER User",
+                "country": "Belgium",
+                "department": "General Operations",
+                "position": "General Operations - DRGROUP",
+                "topTransactions": "SU01, FB03, ME23N (General)",
+                "conflictCount": 2,
+                "sensitivities": [
+                  "CRITICAL",
+                  "HIGH"
+                ],
+                "status": "Red",
+                "lastLogin": "2026-03-05 04:59",
+                "lockedStatus": "Unlocked",
+                "validity": "Valid (31.12.9999)"
+              },
+              {
+                "userId": "DI_SETEST",
+                "userName": "DI_SETEST",
+                "country": "Belgium",
+                "department": "General Operations",
+                "position": "General Operations - DRGROUP",
+                "topTransactions": "SU01, FB03, ME23N (General)",
+                "conflictCount": 2,
+                "sensitivities": [
+                  "CRITICAL",
+                  "HIGH"
+                ],
+                "status": "Red",
+                "lastLogin": "2026-02-06 04:59",
+                "lockedStatus": "Unlocked",
+                "validity": "Valid (31.12.9999)"
+              },
+              {
+                "userId": "ERUSR_2DIFF",
+                "userName": "D67 Name ER User",
+                "country": "Belgium",
+                "department": "General Operations",
+                "position": "General Operations - DRGROUP",
+                "topTransactions": "SU01, FB03, ME23N (General)",
+                "conflictCount": 2,
+                "sensitivities": [
+                  "CRITICAL",
+                  "HIGH"
+                ],
+                "status": "Red",
+                "lastLogin": "2026-03-06 04:59",
+                "lockedStatus": "Unlocked",
+                "validity": "Valid (31.12.9999)"
+              },
+              {
+                "userId": "ERUSR_2RLNOT",
+                "userName": "Role Valid D67 Not YER ER User",
+                "country": "Belgium",
+                "department": "General Operations",
+                "position": "General Operations - DRGROUP",
+                "topTransactions": "SU01, FB03, ME23N (General)",
+                "conflictCount": 2,
+                "sensitivities": [
+                  "CRITICAL",
+                  "HIGH"
+                ],
+                "status": "Red",
+                "lastLogin": "2026-02-10 04:59",
+                "lockedStatus": "Unlocked",
+                "validity": "Valid (31.12.9999)"
+              },
+              {
+                "userId": "ERUSR_2RLVAL",
+                "userName": "Missing Roles Valid ER User",
+                "country": "Belgium",
+                "department": "General Operations",
+                "position": "General Operations - DRGROUP",
+                "topTransactions": "SU01, FB03, ME23N (General)",
+                "conflictCount": 2,
+                "sensitivities": [
+                  "CRITICAL",
+                  "HIGH"
+                ],
+                "status": "Red",
+                "lastLogin": "2026-02-09 04:59",
+                "lockedStatus": "Unlocked",
+                "validity": "Valid (31.12.9999)"
+              },
+              {
+                "userId": "ERUSR_2SAME",
+                "userName": "Same Name on Both ER User",
+                "country": "Belgium",
+                "department": "General Operations",
+                "position": "General Operations - DRGROUP",
+                "topTransactions": "SU01, FB03, ME23N (General)",
+                "conflictCount": 2,
+                "sensitivities": [
+                  "CRITICAL",
+                  "HIGH"
+                ],
+                "status": "Red",
+                "lastLogin": "2026-02-25 04:59",
+                "lockedStatus": "Unlocked",
+                "validity": "Valid (31.12.9999)"
+              },
+              {
+                "userId": "ERUSR_D67",
+                "userName": "D67 Only ER User",
+                "country": "Belgium",
+                "department": "General Operations",
+                "position": "General Operations - DRGROUP",
+                "topTransactions": "SU01, FB03, ME23N (General)",
+                "conflictCount": 2,
+                "sensitivities": [
+                  "CRITICAL",
+                  "HIGH"
+                ],
+                "status": "Red",
+                "lastLogin": "2026-02-16 04:59",
+                "lockedStatus": "Unlocked",
+                "validity": "Valid (31.12.9999)"
+              },
+              {
+                "userId": "ARUSR_FUTURE",
+                "userName": "FUTURE ER AR USER",
+                "country": "Belgium",
+                "department": "General Operations",
+                "position": "General Operations - DRGROUP",
+                "topTransactions": "SU01, FB03, ME23N (General)",
+                "conflictCount": 1,
+                "sensitivities": [
+                  "CRITICAL"
+                ],
+                "status": "Red",
+                "lastLogin": "2026-02-26 04:59",
+                "lockedStatus": "Unlocked",
+                "validity": "Valid (31.12.9999)"
+              },
+              {
+                "userId": "ARUSR_NOEML",
+                "userName": "A/R USER NO EMAIL ADDRESS",
+                "country": "Belgium",
+                "department": "General Operations",
+                "position": "General Operations - DRGROUP",
+                "topTransactions": "SU01, FB03, ME23N (General)",
+                "conflictCount": 1,
+                "sensitivities": [
+                  "CRITICAL"
+                ],
+                "status": "Red",
+                "lastLogin": "2026-03-15 04:59",
+                "lockedStatus": "Unlocked",
+                "validity": "Valid (31.12.9999)"
+              },
+              {
+                "userId": "ARUSR_VALID",
+                "userName": "Test ARUSR_VALID",
+                "country": "Belgium",
+                "department": "General Operations",
+                "position": "General Operations - DRGROUP",
+                "topTransactions": "SU01, FB03, ME23N (General)",
+                "conflictCount": 1,
+                "sensitivities": [
+                  "CRITICAL"
+                ],
+                "status": "Red",
+                "lastLogin": "2026-03-10 04:59",
+                "lockedStatus": "Unlocked",
+                "validity": "Valid (31.12.9999)"
+              },
+              {
+                "userId": "DEMOPLB1",
+                "userName": "DEMOPLB1",
+                "country": "Belgium",
+                "department": "General Operations",
+                "position": "General Operations - DRGROUP",
+                "topTransactions": "SU01, FB03, ME23N (General)",
+                "conflictCount": 1,
+                "sensitivities": [
+                  "HIGH"
+                ],
+                "status": "Red",
+                "lastLogin": "2026-01-30 04:59",
+                "lockedStatus": "Unlocked",
+                "validity": "Valid (31.12.9999)"
+              }
+            ]
+          },
+          {
+            "name": "General Operations - PM",
+            "size": 2,
+            "status": "Red",
+            "users": [
+              {
+                "userId": "IKIMMEL",
+                "userName": "Isaac Kimmel",
+                "country": "Belgium",
+                "department": "General Operations",
+                "position": "General Operations - PM",
+                "topTransactions": "SU01, FB03, ME23N (General)",
+                "conflictCount": 10,
+                "sensitivities": [
+                  "CRITICAL",
+                  "HIGH"
+                ],
+                "status": "Red",
+                "lastLogin": "2026-03-06 04:59",
+                "lockedStatus": "Unlocked",
+                "validity": "Valid (31.12.9999)"
+              },
+              {
+                "userId": "SRANA",
+                "userName": "SRANA",
+                "country": "Belgium",
+                "department": "General Operations",
+                "position": "General Operations - PM",
+                "topTransactions": "SU01, FB03, ME23N (General)",
+                "conflictCount": 10,
+                "sensitivities": [
+                  "CRITICAL",
+                  "HIGH"
+                ],
+                "status": "Red",
+                "lastLogin": "2026-02-24 04:59",
+                "lockedStatus": "Unlocked",
+                "validity": "Valid (31.12.9999)"
+              }
+            ]
+          },
+          {
+            "name": "General Operations - ZTEST2",
+            "size": 1,
+            "status": "Red",
+            "users": [
+              {
+                "userId": "MPATIL1",
+                "userName": "Patil",
+                "country": "Belgium",
+                "department": "General Operations",
+                "position": "General Operations - ZTEST2",
+                "topTransactions": "SU01, FB03, ME23N (General)",
+                "conflictCount": 10,
+                "sensitivities": [
+                  "CRITICAL",
+                  "HIGH"
+                ],
+                "status": "Red",
+                "lastLogin": "2026-02-13 04:59",
+                "lockedStatus": "Unlocked",
+                "validity": "Valid (31.12.9999)"
+              }
+            ]
+          },
+          {
+            "name": "General Operations - AUT_FIN",
+            "size": 2,
+            "status": "Red",
+            "users": [
+              {
+                "userId": "PETERJRFC",
+                "userName": "PETERJRFC",
+                "country": "Belgium",
+                "department": "General Operations",
+                "position": "General Operations - AUT_FIN",
+                "topTransactions": "SU01, FB03, ME23N (General)",
+                "conflictCount": 10,
+                "sensitivities": [
+                  "CRITICAL",
+                  "HIGH"
+                ],
+                "status": "Red",
+                "lastLogin": "2026-03-08 04:59",
+                "lockedStatus": "Unlocked",
+                "validity": "Valid (31.12.9999)"
+              },
+              {
+                "userId": "YAM_RFC",
+                "userName": "YAM_RFC",
+                "country": "Belgium",
+                "department": "General Operations",
+                "position": "General Operations - AUT_FIN",
+                "topTransactions": "SU01, FB03, ME23N (General)",
+                "conflictCount": 10,
+                "sensitivities": [
+                  "CRITICAL",
+                  "HIGH"
+                ],
+                "status": "Red",
+                "lastLogin": "2026-02-06 04:59",
+                "lockedStatus": "Unlocked",
+                "validity": "Valid (31.12.9999)"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Department - Business Unit",
+        "children": [
+          {
+            "name": "Department - Business Unit - General Business",
+            "size": 1,
+            "status": "Red",
+            "users": [
+              {
+                "userId": "ACHRISTIAN",
+                "userName": "Asok CHRISTIAN",
+                "country": "Belgium",
+                "department": "Department - Business Unit",
+                "position": "Department - Business Unit - General Business",
+                "topTransactions": "SE38, PFCG, SU01, SE11",
+                "conflictCount": 10,
+                "sensitivities": [
+                  "CRITICAL",
+                  "HIGH"
+                ],
+                "status": "Red",
+                "lastLogin": "2026-02-01 04:59",
+                "lockedStatus": "Unlocked",
+                "validity": "Expires Soon"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Service",
+        "children": [
+          {
+            "name": "Service - DEVELOPERS",
+            "size": 1,
+            "status": "Red",
+            "users": [
+              {
+                "userId": "ADUVE",
+                "userName": "Akash Duve",
+                "country": "Belgium",
+                "department": "Service",
+                "position": "Service - DEVELOPERS",
+                "topTransactions": "SU01, FB03, ME23N (General)",
+                "conflictCount": 10,
+                "sensitivities": [
+                  "CRITICAL",
+                  "HIGH"
+                ],
+                "status": "Red",
+                "lastLogin": "2026-03-13 04:59",
+                "lockedStatus": "Unlocked",
+                "validity": "Valid (31.12.9999)"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "CCSS009481",
+        "children": [
+          {
+            "name": "CCSS009481 - AUT_FIN",
+            "size": 1,
+            "status": "Red",
+            "users": [
+              {
+                "userId": "DDHIMAN",
+                "userName": "Dinesh Dhiman",
+                "country": "Belgium",
+                "department": "CCSS009481",
+                "position": "CCSS009481 - AUT_FIN",
+                "topTransactions": "SU01, FB03, ME23N (General)",
+                "conflictCount": 10,
+                "sensitivities": [
+                  "CRITICAL",
+                  "HIGH"
+                ],
+                "status": "Red",
+                "lastLogin": "2026-03-16 04:59",
+                "lockedStatus": "Unlocked",
+                "validity": "Valid (31.12.9999)"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Connectors Department",
+        "children": [
+          {
+            "name": "Connectors Department - PM",
+            "size": 1,
+            "status": "Red",
+            "users": [
+              {
+                "userId": "DHORIONS",
+                "userName": "Dries Horions",
+                "country": "Belgium",
+                "department": "Connectors Department",
+                "position": "Connectors Department - PM",
+                "topTransactions": "SU01, FB03, ME23N (General)",
+                "conflictCount": 10,
+                "sensitivities": [
+                  "CRITICAL",
+                  "HIGH"
+                ],
+                "status": "Red",
+                "lastLogin": "2026-03-05 04:59",
+                "lockedStatus": "Locked",
+                "validity": "Valid (31.12.9999)"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Products & Solutions",
+        "children": [
+          {
+            "name": "Products & Solutions - PM",
+            "size": 1,
+            "status": "Red",
+            "users": [
+              {
+                "userId": "DREINSMA",
+                "userName": "Diane Reinsma",
+                "country": "Belgium",
+                "department": "Products & Solutions",
+                "position": "Products & Solutions - PM",
+                "topTransactions": "SU01, FB03, ME23N (General)",
+                "conflictCount": 10,
+                "sensitivities": [
+                  "CRITICAL",
+                  "HIGH"
+                ],
+                "status": "Red",
+                "lastLogin": "2026-02-12 04:59",
+                "lockedStatus": "Unlocked",
+                "validity": "Expired"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "test",
+        "children": [
+          {
+            "name": "test - DRGROUP",
+            "size": 1,
+            "status": "Red",
+            "users": [
+              {
+                "userId": "ER_ADMNSTR",
+                "userName": "Online Administrator ER_ADMNSTR",
+                "country": "Belgium",
+                "department": "test",
+                "position": "test - DRGROUP",
+                "topTransactions": "SU01, FB03, ME23N (General)",
+                "conflictCount": 1,
+                "sensitivities": [
+                  "CRITICAL"
+                ],
+                "status": "Red",
+                "lastLogin": "2026-02-08 04:59",
+                "lockedStatus": "Unlocked",
+                "validity": "Valid (31.12.9999)"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Security Weaver",
+        "children": [
+          {
+            "name": "Security Weaver - AUT_FIN",
+            "size": 1,
+            "status": "Red",
+            "users": [
+              {
+                "userId": "MAZPEITIA",
+                "userName": "Miguel Azpeitia",
+                "country": "Belgium",
+                "department": "Security Weaver",
+                "position": "Security Weaver - AUT_FIN",
+                "topTransactions": "SE38, PFCG, SU01, SE11",
+                "conflictCount": 10,
+                "sensitivities": [
+                  "CRITICAL",
+                  "HIGH"
+                ],
+                "status": "Red",
+                "lastLogin": "2026-03-02 04:59",
+                "lockedStatus": "Unlocked",
+                "validity": "Valid (31.12.9999)"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "SAP-PROGRAMMING",
+        "children": [
+          {
+            "name": "SAP-PROGRAMMING - DEVELOPERS",
+            "size": 1,
+            "status": "Red",
+            "users": [
+              {
+                "userId": "VKUKAL",
+                "userName": "Vipul Kukal",
+                "country": "Belgium",
+                "department": "SAP-PROGRAMMING",
+                "position": "SAP-PROGRAMMING - DEVELOPERS",
+                "topTransactions": "ME21N, MIGO, MIRO",
+                "conflictCount": 10,
+                "sensitivities": [
+                  "CRITICAL",
+                  "HIGH"
+                ],
+                "status": "Red",
+                "lastLogin": "2026-02-21 04:59",
+                "lockedStatus": "Unlocked",
+                "validity": "Valid (31.12.9999)"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "United States",
+    "children": [
+      {
+        "name": "General Operations",
+        "children": [
+          {
+            "name": "General Operations - SUPER",
+            "size": 34,
+            "status": "Red",
+            "users": [
+              {
+                "userId": "ACHAVAN",
+                "userName": "Akshay R Chavan",
+                "country": "United States",
+                "department": "General Operations",
+                "position": "General Operations - SUPER",
+                "topTransactions": "SU01, FB03, ME23N (General)",
+                "conflictCount": 10,
+                "sensitivities": [
+                  "CRITICAL",
+                  "HIGH"
+                ],
+                "status": "Red",
+                "lastLogin": "2026-03-10 04:59",
+                "lockedStatus": "Unlocked",
+                "validity": "Valid (31.12.9999)"
+              },
+              {
+                "userId": "AKUMAR",
+                "userName": "Arpan Kumar",
+                "country": "United States",
+                "department": "General Operations",
+                "position": "General Operations - SUPER",
+                "topTransactions": "SU01, FB03, ME23N (General)",
+                "conflictCount": 10,
+                "sensitivities": [
+                  "CRITICAL",
+                  "HIGH"
+                ],
+                "status": "Red",
+                "lastLogin": "2026-03-08 04:59",
+                "lockedStatus": "Unlocked",
+                "validity": "Valid (31.12.9999)"
+              },
+              {
+                "userId": "GDOLAS",
+                "userName": "GDOLAS",
+                "country": "United States",
+                "department": "General Operations",
+                "position": "General Operations - SUPER",
+                "topTransactions": "SU01, FB03, ME23N (General)",
+                "conflictCount": 10,
+                "sensitivities": [
+                  "CRITICAL",
+                  "HIGH"
+                ],
+                "status": "Red",
+                "lastLogin": "2026-01-30 04:59",
+                "lockedStatus": "Locked",
+                "validity": "Valid (31.12.9999)"
+              },
+              {
+                "userId": "GRANA",
+                "userName": "GRANA",
+                "country": "United States",
+                "department": "General Operations",
+                "position": "General Operations - SUPER",
+                "topTransactions": "SU01, FB03, ME23N (General)",
+                "conflictCount": 10,
+                "sensitivities": [
+                  "CRITICAL",
+                  "HIGH"
+                ],
+                "status": "Red",
+                "lastLogin": "2026-03-03 04:59",
+                "lockedStatus": "Unlocked",
+                "validity": "Valid (31.12.9999)"
+              },
+              {
+                "userId": "HBHALLA",
+                "userName": "HBHALLA",
+                "country": "United States",
+                "department": "General Operations",
+                "position": "General Operations - SUPER",
+                "topTransactions": "SU01, FB03, ME23N (General)",
+                "conflictCount": 10,
+                "sensitivities": [
+                  "CRITICAL",
+                  "HIGH"
+                ],
+                "status": "Red",
+                "lastLogin": "2026-02-03 04:59",
+                "lockedStatus": "Unlocked",
+                "validity": "Valid (31.12.9999)"
+              },
+              {
+                "userId": "IVERMA",
+                "userName": "IVERMA",
+                "country": "United States",
+                "department": "General Operations",
+                "position": "General Operations - SUPER",
+                "topTransactions": "SU01, FB03, ME23N (General)",
+                "conflictCount": 10,
+                "sensitivities": [
+                  "CRITICAL",
+                  "HIGH"
+                ],
+                "status": "Red",
+                "lastLogin": "2026-02-06 04:59",
+                "lockedStatus": "Unlocked",
+                "validity": "Valid (31.12.9999)"
+              },
+              {
+                "userId": "JVANHOVE",
+                "userName": "JVANHOVE",
+                "country": "United States",
+                "department": "General Operations",
+                "position": "General Operations - SUPER",
+                "topTransactions": "SU01, FB03, ME23N (General)",
+                "conflictCount": 10,
+                "sensitivities": [
+                  "CRITICAL",
+                  "HIGH"
+                ],
+                "status": "Red",
+                "lastLogin": "2026-02-09 04:59",
+                "lockedStatus": "Unlocked",
+                "validity": "Valid (31.12.9999)"
+              },
+              {
+                "userId": "KSINGH",
+                "userName": "SINGH",
+                "country": "United States",
+                "department": "General Operations",
+                "position": "General Operations - SUPER",
+                "topTransactions": "SU01, FB03, ME23N (General)",
+                "conflictCount": 10,
+                "sensitivities": [
+                  "CRITICAL",
+                  "HIGH"
+                ],
+                "status": "Red",
+                "lastLogin": "2026-02-04 04:59",
+                "lockedStatus": "Unlocked",
+                "validity": "Expired"
+              },
+              {
+                "userId": "MAILADM",
+                "userName": "MAILADM",
+                "country": "United States",
+                "department": "General Operations",
+                "position": "General Operations - SUPER",
+                "topTransactions": "SU01, FB03, ME23N (General)",
+                "conflictCount": 10,
+                "sensitivities": [
+                  "CRITICAL",
+                  "HIGH"
+                ],
+                "status": "Red",
+                "lastLogin": "2026-03-01 04:59",
+                "lockedStatus": "Unlocked",
+                "validity": "Valid (31.12.9999)"
+              },
+              {
+                "userId": "NCHAKRABORTY",
+                "userName": "NCHAKRABORTY",
+                "country": "United States",
+                "department": "General Operations",
+                "position": "General Operations - SUPER",
+                "topTransactions": "SU01, FB03, ME23N (General)",
+                "conflictCount": 10,
+                "sensitivities": [
+                  "CRITICAL",
+                  "HIGH"
+                ],
+                "status": "Red",
+                "lastLogin": "2026-02-26 04:59",
+                "lockedStatus": "Unlocked",
+                "validity": "Valid (31.12.9999)"
+              },
+              {
+                "userId": "NGARG",
+                "userName": "NAKUL GARG",
+                "country": "United States",
+                "department": "General Operations",
+                "position": "General Operations - SUPER",
+                "topTransactions": "SU01, FB03, ME23N (General)",
+                "conflictCount": 10,
+                "sensitivities": [
+                  "CRITICAL",
+                  "HIGH"
+                ],
+                "status": "Red",
+                "lastLogin": "2026-02-09 04:59",
+                "lockedStatus": "Locked",
+                "validity": "Valid (31.12.9999)"
+              },
+              {
+                "userId": "NILSK",
+                "userName": "NILSK",
+                "country": "United States",
+                "department": "General Operations",
+                "position": "General Operations - SUPER",
+                "topTransactions": "SU01, FB03, ME23N (General)",
+                "conflictCount": 10,
+                "sensitivities": [
+                  "CRITICAL",
+                  "HIGH"
+                ],
+                "status": "Red",
+                "lastLogin": "2026-02-17 04:59",
+                "lockedStatus": "Unlocked",
+                "validity": "Valid (31.12.9999)"
+              },
+              {
+                "userId": "NSHUKLA",
+                "userName": "NSHUKLA",
+                "country": "United States",
+                "department": "General Operations",
+                "position": "General Operations - SUPER",
+                "topTransactions": "SU01, FB03, ME23N (General)",
+                "conflictCount": 10,
+                "sensitivities": [
+                  "CRITICAL",
+                  "HIGH"
+                ],
+                "status": "Red",
+                "lastLogin": "2026-03-16 04:59",
+                "lockedStatus": "Unlocked",
+                "validity": "Valid (31.12.9999)"
+              },
+              {
+                "userId": "PGODHA",
+                "userName": "PGODHA",
+                "country": "United States",
+                "department": "General Operations",
+                "position": "General Operations - SUPER",
+                "topTransactions": "SU01, FB03, ME23N (General)",
+                "conflictCount": 10,
+                "sensitivities": [
+                  "CRITICAL",
+                  "HIGH"
+                ],
+                "status": "Red",
+                "lastLogin": "2026-03-14 04:59",
+                "lockedStatus": "Unlocked",
+                "validity": "Valid (31.12.9999)"
+              },
+              {
+                "userId": "PSHARMA",
+                "userName": "PRINCE SHARMA",
+                "country": "United States",
+                "department": "General Operations",
+                "position": "General Operations - SUPER",
+                "topTransactions": "SU01, FB03, ME23N (General)",
+                "conflictCount": 10,
+                "sensitivities": [
+                  "CRITICAL",
+                  "HIGH"
+                ],
+                "status": "Red",
+                "lastLogin": "2026-02-26 04:59",
+                "lockedStatus": "Unlocked",
+                "validity": "Valid (31.12.9999)"
+              },
+              {
+                "userId": "SDHULAP",
+                "userName": "SDHULAP",
+                "country": "United States",
+                "department": "General Operations",
+                "position": "General Operations - SUPER",
+                "topTransactions": "SU01, FB03, ME23N (General)",
+                "conflictCount": 10,
+                "sensitivities": [
+                  "CRITICAL",
+                  "HIGH"
+                ],
+                "status": "Red",
+                "lastLogin": "2026-02-14 04:59",
+                "lockedStatus": "Unlocked",
+                "validity": "Valid (31.12.9999)"
+              },
+              {
+                "userId": "SKIRAN",
+                "userName": "SKIRAN",
+                "country": "United States",
+                "department": "General Operations",
+                "position": "General Operations - SUPER",
+                "topTransactions": "SU01, FB03, ME23N (General)",
+                "conflictCount": 10,
+                "sensitivities": [
+                  "CRITICAL",
+                  "HIGH"
+                ],
+                "status": "Red",
+                "lastLogin": "2026-02-26 04:59",
+                "lockedStatus": "Unlocked",
+                "validity": "Expired"
+              },
+              {
+                "userId": "SMADAN",
+                "userName": "SMADAN",
+                "country": "United States",
+                "department": "General Operations",
+                "position": "General Operations - SUPER",
+                "topTransactions": "SU01, FB03, ME23N (General)",
+                "conflictCount": 10,
+                "sensitivities": [
+                  "CRITICAL",
+                  "HIGH"
+                ],
+                "status": "Red",
+                "lastLogin": "2026-02-21 04:59",
+                "lockedStatus": "Unlocked",
+                "validity": "Valid (31.12.9999)"
+              },
+              {
+                "userId": "SPANDIT",
+                "userName": "SPANDIT",
+                "country": "United States",
+                "department": "General Operations",
+                "position": "General Operations - SUPER",
+                "topTransactions": "SU01, FB03, ME23N (General)",
+                "conflictCount": 10,
+                "sensitivities": [
+                  "CRITICAL",
+                  "HIGH"
+                ],
+                "status": "Red",
+                "lastLogin": "2026-02-10 04:59",
+                "lockedStatus": "Unlocked",
+                "validity": "Valid (31.12.9999)"
+              },
+              {
+                "userId": "SUMARDAND",
+                "userName": "SUMARDAND",
+                "country": "United States",
+                "department": "General Operations",
+                "position": "General Operations - SUPER",
+                "topTransactions": "SU01, FB03, ME23N (General)",
+                "conflictCount": 10,
+                "sensitivities": [
+                  "CRITICAL",
+                  "HIGH"
+                ],
+                "status": "Red",
+                "lastLogin": "2026-02-03 04:59",
+                "lockedStatus": "Unlocked",
+                "validity": "Valid (31.12.9999)"
+              },
+              {
+                "userId": "TDHINGRA",
+                "userName": "TDHINGRA",
+                "country": "United States",
+                "department": "General Operations",
+                "position": "General Operations - SUPER",
+                "topTransactions": "SU01, FB03, ME23N (General)",
+                "conflictCount": 10,
+                "sensitivities": [
+                  "CRITICAL",
+                  "HIGH"
+                ],
+                "status": "Red",
+                "lastLogin": "2026-03-15 04:59",
+                "lockedStatus": "Unlocked",
+                "validity": "Valid (31.12.9999)"
+              },
+              {
+                "userId": "TESTUMARDAND",
+                "userName": "TESTUMARDAND",
+                "country": "United States",
+                "department": "General Operations",
+                "position": "General Operations - SUPER",
+                "topTransactions": "SU01, FB03, ME23N (General)",
+                "conflictCount": 10,
+                "sensitivities": [
+                  "CRITICAL",
+                  "HIGH"
+                ],
+                "status": "Red",
+                "lastLogin": "2026-02-02 04:59",
+                "lockedStatus": "Unlocked",
+                "validity": "Valid (31.12.9999)"
+              },
+              {
+                "userId": "UMAREDDY",
+                "userName": "UMAREDDY",
+                "country": "United States",
+                "department": "General Operations",
+                "position": "General Operations - SUPER",
+                "topTransactions": "SU01, FB03, ME23N (General)",
+                "conflictCount": 10,
+                "sensitivities": [
+                  "CRITICAL",
+                  "HIGH"
+                ],
+                "status": "Red",
+                "lastLogin": "2026-02-18 04:59",
+                "lockedStatus": "Unlocked",
+                "validity": "Valid (31.12.9999)"
+              },
+              {
+                "userId": "UMITTAL",
+                "userName": "UMITTAL",
+                "country": "United States",
+                "department": "General Operations",
+                "position": "General Operations - SUPER",
+                "topTransactions": "SU01, FB03, ME23N (General)",
+                "conflictCount": 10,
+                "sensitivities": [
+                  "CRITICAL",
+                  "HIGH"
+                ],
+                "status": "Red",
+                "lastLogin": "2026-02-06 04:59",
+                "lockedStatus": "Unlocked",
+                "validity": "Valid (31.12.9999)"
+              },
+              {
+                "userId": "UREDDY",
+                "userName": "UREDDY",
+                "country": "United States",
+                "department": "General Operations",
+                "position": "General Operations - SUPER",
+                "topTransactions": "SU01, FB03, ME23N (General)",
+                "conflictCount": 10,
+                "sensitivities": [
+                  "CRITICAL",
+                  "HIGH"
+                ],
+                "status": "Red",
+                "lastLogin": "2026-03-02 04:59",
+                "lockedStatus": "Unlocked",
+                "validity": "Expires Soon"
+              },
+              {
+                "userId": "VTHAKUR",
+                "userName": "VTHAKUR",
+                "country": "United States",
+                "department": "General Operations",
+                "position": "General Operations - SUPER",
+                "topTransactions": "SU01, FB03, ME23N (General)",
+                "conflictCount": 10,
+                "sensitivities": [
+                  "CRITICAL",
+                  "HIGH"
+                ],
+                "status": "Red",
+                "lastLogin": "2026-03-01 04:59",
+                "lockedStatus": "Unlocked",
+                "validity": "Valid (31.12.9999)"
+              },
+              {
+                "userId": "Z_ACHAVAN_1",
+                "userName": "Z_ACHAVAN_1",
+                "country": "United States",
+                "department": "General Operations",
+                "position": "General Operations - SUPER",
+                "topTransactions": "SU01, FB03, ME23N (General)",
+                "conflictCount": 10,
+                "sensitivities": [
+                  "CRITICAL",
+                  "HIGH"
+                ],
+                "status": "Red",
+                "lastLogin": "2026-02-24 04:59",
+                "lockedStatus": "Unlocked",
+                "validity": "Expires Soon"
+              },
+              {
+                "userId": "Z_ACHAVAN_2",
+                "userName": "Z_ACHAVAN_2",
+                "country": "United States",
+                "department": "General Operations",
+                "position": "General Operations - SUPER",
+                "topTransactions": "SU01, FB03, ME23N (General)",
+                "conflictCount": 10,
+                "sensitivities": [
+                  "CRITICAL",
+                  "HIGH"
+                ],
+                "status": "Red",
+                "lastLogin": "2026-02-22 04:59",
+                "lockedStatus": "Unlocked",
+                "validity": "Valid (31.12.9999)"
+              },
+              {
+                "userId": "Z_ACHAVAN_3",
+                "userName": "Z_ACHAVAN_3",
+                "country": "United States",
+                "department": "General Operations",
+                "position": "General Operations - SUPER",
+                "topTransactions": "SU01, FB03, ME23N (General)",
+                "conflictCount": 10,
+                "sensitivities": [
+                  "CRITICAL",
+                  "HIGH"
+                ],
+                "status": "Red",
+                "lastLogin": "2026-02-08 04:59",
+                "lockedStatus": "Unlocked",
+                "validity": "Valid (31.12.9999)"
+              },
+              {
+                "userId": "Z_ACHAVAN_4",
+                "userName": "Z_ACHAVAN_4",
+                "country": "United States",
+                "department": "General Operations",
+                "position": "General Operations - SUPER",
+                "topTransactions": "SU01, FB03, ME23N (General)",
+                "conflictCount": 10,
+                "sensitivities": [
+                  "CRITICAL",
+                  "HIGH"
+                ],
+                "status": "Red",
+                "lastLogin": "2026-02-18 04:59",
+                "lockedStatus": "Unlocked",
+                "validity": "Valid (31.12.9999)"
+              },
+              {
+                "userId": "Z_ACHAVAN_5",
+                "userName": "Z_ACHAVAN_5",
+                "country": "United States",
+                "department": "General Operations",
+                "position": "General Operations - SUPER",
+                "topTransactions": "SU01, FB03, ME23N (General)",
+                "conflictCount": 10,
+                "sensitivities": [
+                  "CRITICAL",
+                  "HIGH"
+                ],
+                "status": "Red",
+                "lastLogin": "2026-02-22 04:59",
+                "lockedStatus": "Unlocked",
+                "validity": "Valid (31.12.9999)"
+              },
+              {
+                "userId": "Z_ACHAVAN_6",
+                "userName": "Z_ACHAVAN_6",
+                "country": "United States",
+                "department": "General Operations",
+                "position": "General Operations - SUPER",
+                "topTransactions": "SU01, FB03, ME23N (General)",
+                "conflictCount": 10,
+                "sensitivities": [
+                  "CRITICAL",
+                  "HIGH"
+                ],
+                "status": "Red",
+                "lastLogin": "2026-02-06 04:59",
+                "lockedStatus": "Unlocked",
+                "validity": "Expired"
+              },
+              {
+                "userId": "Z_ACHAVAN_7",
+                "userName": "Z_ACHAVAN_7",
+                "country": "United States",
+                "department": "General Operations",
+                "position": "General Operations - SUPER",
+                "topTransactions": "SU01, FB03, ME23N (General)",
+                "conflictCount": 10,
+                "sensitivities": [
+                  "CRITICAL",
+                  "HIGH"
+                ],
+                "status": "Red",
+                "lastLogin": "2026-02-11 04:59",
+                "lockedStatus": "Unlocked",
+                "validity": "Valid (31.12.9999)"
+              },
+              {
+                "userId": "Z_ACHAVAN_8",
+                "userName": "Z_ACHAVAN_8",
+                "country": "United States",
+                "department": "General Operations",
+                "position": "General Operations - SUPER",
+                "topTransactions": "SU01, FB03, ME23N (General)",
+                "conflictCount": 10,
+                "sensitivities": [
+                  "CRITICAL",
+                  "HIGH"
+                ],
+                "status": "Red",
+                "lastLogin": "2026-02-28 04:59",
+                "lockedStatus": "Unlocked",
+                "validity": "Valid (31.12.9999)"
+              }
+            ]
+          },
+          {
+            "name": "General Operations - General Business",
+            "size": 42,
+            "status": "Red",
+            "users": [
+              {
+                "userId": "ASMITAP",
+                "userName": "ASMITAP",
+                "country": "United States",
+                "department": "General Operations",
+                "position": "General Operations - General Business",
+                "topTransactions": "SU01, FB03, ME23N (General)",
+                "conflictCount": 10,
+                "sensitivities": [
+                  "CRITICAL",
+                  "HIGH"
+                ],
+                "status": "Red",
+                "lastLogin": "2026-02-07 04:59",
+                "lockedStatus": "Unlocked",
+                "validity": "Valid (31.12.9999)"
+              },
+              {
+                "userId": "BNAYAK",
+                "userName": "Birakishore Nayak",
+                "country": "United States",
+                "department": "General Operations",
+                "position": "General Operations - General Business",
+                "topTransactions": "SU01, FB03, ME23N (General)",
+                "conflictCount": 10,
+                "sensitivities": [
+                  "CRITICAL",
+                  "HIGH"
+                ],
+                "status": "Red",
+                "lastLogin": "2026-02-19 04:59",
+                "lockedStatus": "Unlocked",
+                "validity": "Expires Soon"
+              },
+              {
+                "userId": "JAGJITS",
+                "userName": "JAGJITS",
+                "country": "United States",
+                "department": "General Operations",
+                "position": "General Operations - General Business",
+                "topTransactions": "SU01, FB03, ME23N (General)",
+                "conflictCount": 10,
+                "sensitivities": [
+                  "CRITICAL",
+                  "HIGH"
+                ],
+                "status": "Red",
+                "lastLogin": "2026-02-14 04:59",
+                "lockedStatus": "Unlocked",
+                "validity": "Valid (31.12.9999)"
+              },
+              {
+                "userId": "KULDEEPP",
+                "userName": "KULDEEPP",
+                "country": "United States",
+                "department": "General Operations",
+                "position": "General Operations - General Business",
+                "topTransactions": "SU01, FB03, ME23N (General)",
+                "conflictCount": 10,
+                "sensitivities": [
+                  "CRITICAL",
+                  "HIGH"
+                ],
+                "status": "Red",
+                "lastLogin": "2026-02-19 04:59",
+                "lockedStatus": "Locked",
+                "validity": "Valid (31.12.9999)"
+              },
+              {
+                "userId": "LIORE",
+                "userName": "LIORE",
+                "country": "United States",
+                "department": "General Operations",
+                "position": "General Operations - General Business",
+                "topTransactions": "SU01, FB03, ME23N (General)",
+                "conflictCount": 10,
+                "sensitivities": [
+                  "CRITICAL",
+                  "HIGH"
+                ],
+                "status": "Red",
+                "lastLogin": "2026-03-11 04:59",
+                "lockedStatus": "Locked",
+                "validity": "Valid (31.12.9999)"
+              },
+              {
+                "userId": "OLEGF",
+                "userName": "OLEGF",
+                "country": "United States",
+                "department": "General Operations",
+                "position": "General Operations - General Business",
+                "topTransactions": "SU01, FB03, ME23N (General)",
+                "conflictCount": 10,
+                "sensitivities": [
+                  "CRITICAL",
+                  "HIGH"
+                ],
+                "status": "Red",
+                "lastLogin": "2026-02-25 04:59",
+                "lockedStatus": "Unlocked",
+                "validity": "Valid (31.12.9999)"
+              },
+              {
+                "userId": "PARORA",
+                "userName": "test user",
+                "country": "United States",
+                "department": "General Operations",
+                "position": "General Operations - General Business",
+                "topTransactions": "SU01, FB03, ME23N (General)",
+                "conflictCount": 10,
+                "sensitivities": [
+                  "CRITICAL",
+                  "HIGH"
+                ],
+                "status": "Red",
+                "lastLogin": "2026-03-15 04:59",
+                "lockedStatus": "Unlocked",
+                "validity": "Valid (31.12.9999)"
+              },
+              {
+                "userId": "PAVI",
+                "userName": "PAVI",
+                "country": "United States",
+                "department": "General Operations",
+                "position": "General Operations - General Business",
+                "topTransactions": "SU01, FB03, ME23N (General)",
+                "conflictCount": 10,
+                "sensitivities": [
+                  "CRITICAL",
+                  "HIGH"
+                ],
+                "status": "Red",
+                "lastLogin": "2026-02-23 04:59",
+                "lockedStatus": "Unlocked",
+                "validity": "Valid (31.12.9999)"
+              },
+              {
+                "userId": "VNEEMA3",
+                "userName": "Vishesh Neema Test",
+                "country": "United States",
+                "department": "General Operations",
+                "position": "General Operations - General Business",
+                "topTransactions": "SU01, FB03, ME23N (General)",
+                "conflictCount": 10,
+                "sensitivities": [
+                  "CRITICAL",
+                  "HIGH"
+                ],
+                "status": "Red",
+                "lastLogin": "2026-03-10 04:59",
+                "lockedStatus": "Unlocked",
+                "validity": "Valid (31.12.9999)"
+              },
+              {
+                "userId": "VT_TEST1",
+                "userName": "varun tester",
+                "country": "United States",
+                "department": "General Operations",
+                "position": "General Operations - General Business",
+                "topTransactions": "SU01, FB03, ME23N (General)",
+                "conflictCount": 10,
+                "sensitivities": [
+                  "CRITICAL",
+                  "HIGH"
+                ],
+                "status": "Red",
+                "lastLogin": "2026-02-09 04:59",
+                "lockedStatus": "Unlocked",
+                "validity": "Valid (31.12.9999)"
+              },
+              {
+                "userId": "YASHRAJT",
+                "userName": "YASHRAJT",
+                "country": "United States",
+                "department": "General Operations",
+                "position": "General Operations - General Business",
+                "topTransactions": "SU01, FB03, ME23N (General)",
+                "conflictCount": 10,
+                "sensitivities": [
+                  "CRITICAL",
+                  "HIGH"
+                ],
+                "status": "Red",
+                "lastLogin": "2026-02-25 04:59",
+                "lockedStatus": "Unlocked",
+                "validity": "Valid (31.12.9999)"
+              },
+              {
+                "userId": "ZBN_TEST1",
+                "userName": "ZBN_TEST1",
+                "country": "United States",
+                "department": "General Operations",
+                "position": "General Operations - General Business",
+                "topTransactions": "SU01, FB03, ME23N (General)",
+                "conflictCount": 10,
+                "sensitivities": [
+                  "CRITICAL",
+                  "HIGH"
+                ],
+                "status": "Red",
+                "lastLogin": "2026-03-14 04:59",
+                "lockedStatus": "Unlocked",
+                "validity": "Expires Soon"
+              },
+              {
+                "userId": "ZJSHARMA",
+                "userName": "ZJSHARMA",
+                "country": "United States",
+                "department": "General Operations",
+                "position": "General Operations - General Business",
+                "topTransactions": "SU01, FB03, ME23N (General)",
+                "conflictCount": 10,
+                "sensitivities": [
+                  "CRITICAL",
+                  "HIGH"
+                ],
+                "status": "Red",
+                "lastLogin": "2026-02-26 04:59",
+                "lockedStatus": "Unlocked",
+                "validity": "Valid (31.12.9999)"
+              },
+              {
+                "userId": "ZSOL2D67",
+                "userName": "ZSOL2D67",
+                "country": "United States",
+                "department": "General Operations",
+                "position": "General Operations - General Business",
+                "topTransactions": "SU01, FB03, ME23N (General)",
+                "conflictCount": 10,
+                "sensitivities": [
+                  "CRITICAL",
+                  "HIGH"
+                ],
+                "status": "Red",
+                "lastLogin": "2026-03-15 04:59",
+                "lockedStatus": "Unlocked",
+                "validity": "Valid (31.12.9999)"
+              },
+              {
+                "userId": "ZTD_TESTUSR",
+                "userName": "Lname Fname",
+                "country": "United States",
+                "department": "General Operations",
+                "position": "General Operations - General Business",
+                "topTransactions": "SU01, FB03, ME23N (General)",
+                "conflictCount": 10,
+                "sensitivities": [
+                  "CRITICAL",
+                  "HIGH"
+                ],
+                "status": "Red",
+                "lastLogin": "2026-03-10 04:59",
+                "lockedStatus": "Unlocked",
+                "validity": "Valid (31.12.9999)"
+              },
+              {
+                "userId": "ZTESTU1",
+                "userName": "test",
+                "country": "United States",
+                "department": "General Operations",
+                "position": "General Operations - General Business",
+                "topTransactions": "SU01, FB03, ME23N (General)",
+                "conflictCount": 10,
+                "sensitivities": [
+                  "CRITICAL",
+                  "HIGH"
+                ],
+                "status": "Red",
+                "lastLogin": "2026-03-10 04:59",
+                "lockedStatus": "Unlocked",
+                "validity": "Valid (31.12.9999)"
+              },
+              {
+                "userId": "ZTESTU2",
+                "userName": "ZSHARMA",
+                "country": "United States",
+                "department": "General Operations",
+                "position": "General Operations - General Business",
+                "topTransactions": "SU01, FB03, ME23N (General)",
+                "conflictCount": 10,
+                "sensitivities": [
+                  "CRITICAL",
+                  "HIGH"
+                ],
+                "status": "Red",
+                "lastLogin": "2026-03-03 04:59",
+                "lockedStatus": "Unlocked",
+                "validity": "Expires Soon"
+              },
+              {
+                "userId": "ZTESTU3",
+                "userName": "ZSHARMA",
+                "country": "United States",
+                "department": "General Operations",
+                "position": "General Operations - General Business",
+                "topTransactions": "SU01, FB03, ME23N (General)",
+                "conflictCount": 10,
+                "sensitivities": [
+                  "CRITICAL",
+                  "HIGH"
+                ],
+                "status": "Red",
+                "lastLogin": "2026-03-04 04:59",
+                "lockedStatus": "Unlocked",
+                "validity": "Valid (31.12.9999)"
+              },
+              {
+                "userId": "ZTESTU4",
+                "userName": "ZSHARMA",
+                "country": "United States",
+                "department": "General Operations",
+                "position": "General Operations - General Business",
+                "topTransactions": "SU01, FB03, ME23N (General)",
+                "conflictCount": 10,
+                "sensitivities": [
+                  "CRITICAL",
+                  "HIGH"
+                ],
+                "status": "Red",
+                "lastLogin": "2026-02-13 04:59",
+                "lockedStatus": "Unlocked",
+                "validity": "Valid (31.12.9999)"
+              },
+              {
+                "userId": "ZTESTU5",
+                "userName": "ZSHARMA",
+                "country": "United States",
+                "department": "General Operations",
+                "position": "General Operations - General Business",
+                "topTransactions": "SU01, FB03, ME23N (General)",
+                "conflictCount": 10,
+                "sensitivities": [
+                  "CRITICAL",
+                  "HIGH"
+                ],
+                "status": "Red",
+                "lastLogin": "2026-03-11 04:59",
+                "lockedStatus": "Unlocked",
+                "validity": "Valid (31.12.9999)"
+              },
+              {
+                "userId": "ZTESTU6",
+                "userName": "ZSHARMA",
+                "country": "United States",
+                "department": "General Operations",
+                "position": "General Operations - General Business",
+                "topTransactions": "SU01, FB03, ME23N (General)",
+                "conflictCount": 10,
+                "sensitivities": [
+                  "CRITICAL",
+                  "HIGH"
+                ],
+                "status": "Red",
+                "lastLogin": "2026-02-10 04:59",
+                "lockedStatus": "Locked",
+                "validity": "Valid (31.12.9999)"
+              },
+              {
+                "userId": "ZTESTU7",
+                "userName": "ZSHARMA",
+                "country": "United States",
+                "department": "General Operations",
+                "position": "General Operations - General Business",
+                "topTransactions": "SU01, FB03, ME23N (General)",
+                "conflictCount": 10,
+                "sensitivities": [
+                  "CRITICAL",
+                  "HIGH"
+                ],
+                "status": "Red",
+                "lastLogin": "2026-03-15 04:59",
+                "lockedStatus": "Locked",
+                "validity": "Valid (31.12.9999)"
+              },
+              {
+                "userId": "ZTESTU8",
+                "userName": "ZSHARMA",
+                "country": "United States",
+                "department": "General Operations",
+                "position": "General Operations - General Business",
+                "topTransactions": "SU01, FB03, ME23N (General)",
+                "conflictCount": 10,
+                "sensitivities": [
+                  "CRITICAL",
+                  "HIGH"
+                ],
+                "status": "Red",
+                "lastLogin": "2026-02-09 04:59",
+                "lockedStatus": "Unlocked",
+                "validity": "Valid (31.12.9999)"
+              },
+              {
+                "userId": "ZTEST_12345",
+                "userName": "df",
+                "country": "United States",
+                "department": "General Operations",
+                "position": "General Operations - General Business",
+                "topTransactions": "SU01, FB03, ME23N (General)",
+                "conflictCount": 10,
+                "sensitivities": [
+                  "CRITICAL",
+                  "HIGH"
+                ],
+                "status": "Red",
+                "lastLogin": "2026-01-31 04:59",
+                "lockedStatus": "Unlocked",
+                "validity": "Valid (31.12.9999)"
+              },
+              {
+                "userId": "ZTEST_PA",
+                "userName": "ZTEST_PA",
+                "country": "United States",
+                "department": "General Operations",
+                "position": "General Operations - General Business",
+                "topTransactions": "SU01, FB03, ME23N (General)",
+                "conflictCount": 10,
+                "sensitivities": [
+                  "CRITICAL",
+                  "HIGH"
+                ],
+                "status": "Red",
+                "lastLogin": "2026-03-02 04:59",
+                "lockedStatus": "Unlocked",
+                "validity": "Expired"
+              },
+              {
+                "userId": "ZTEST_PA2",
+                "userName": "ZTEST_PA2",
+                "country": "United States",
+                "department": "General Operations",
+                "position": "General Operations - General Business",
+                "topTransactions": "SU01, FB03, ME23N (General)",
+                "conflictCount": 10,
+                "sensitivities": [
+                  "CRITICAL",
+                  "HIGH"
+                ],
+                "status": "Red",
+                "lastLogin": "2026-02-01 04:59",
+                "lockedStatus": "Unlocked",
+                "validity": "Valid (31.12.9999)"
+              },
+              {
+                "userId": "ZVND67T61RFC",
+                "userName": "ZVND67T61RFC ZVND67T61RFC",
+                "country": "United States",
+                "department": "General Operations",
+                "position": "General Operations - General Business",
+                "topTransactions": "SU01, FB03, ME23N (General)",
+                "conflictCount": 10,
+                "sensitivities": [
+                  "CRITICAL",
+                  "HIGH"
+                ],
+                "status": "Red",
+                "lastLogin": "2026-02-09 04:59",
+                "lockedStatus": "Unlocked",
+                "validity": "Valid (31.12.9999)"
+              },
+              {
+                "userId": "ZVNLMUSER1",
+                "userName": "ZVNLMUSER1",
+                "country": "United States",
+                "department": "General Operations",
+                "position": "General Operations - General Business",
+                "topTransactions": "SU01, FB03, ME23N (General)",
+                "conflictCount": 10,
+                "sensitivities": [
+                  "CRITICAL",
+                  "HIGH"
+                ],
+                "status": "Red",
+                "lastLogin": "2026-03-09 04:59",
+                "lockedStatus": "Unlocked",
+                "validity": "Expired"
+              },
+              {
+                "userId": "ZVNRFC",
+                "userName": "ZVNRFC",
+                "country": "United States",
+                "department": "General Operations",
+                "position": "General Operations - General Business",
+                "topTransactions": "SU01, FB03, ME23N (General)",
+                "conflictCount": 10,
+                "sensitivities": [
+                  "CRITICAL",
+                  "HIGH"
+                ],
+                "status": "Red",
+                "lastLogin": "2026-02-22 04:59",
+                "lockedStatus": "Unlocked",
+                "validity": "Valid (31.12.9999)"
+              },
+              {
+                "userId": "ZVNSELF1",
+                "userName": "ZVNSELF1",
+                "country": "United States",
+                "department": "General Operations",
+                "position": "General Operations - General Business",
+                "topTransactions": "SU01, FB03, ME23N (General)",
+                "conflictCount": 10,
+                "sensitivities": [
+                  "CRITICAL",
+                  "HIGH"
+                ],
+                "status": "Red",
+                "lastLogin": "2026-02-19 04:59",
+                "lockedStatus": "Unlocked",
+                "validity": "Valid (31.12.9999)"
+              },
+              {
+                "userId": "ZVNSELF2",
+                "userName": "ZVNSELF2",
+                "country": "United States",
+                "department": "General Operations",
+                "position": "General Operations - General Business",
+                "topTransactions": "SU01, FB03, ME23N (General)",
+                "conflictCount": 10,
+                "sensitivities": [
+                  "CRITICAL",
+                  "HIGH"
+                ],
+                "status": "Red",
+                "lastLogin": "2026-03-05 04:59",
+                "lockedStatus": "Unlocked",
+                "validity": "Valid (31.12.9999)"
+              },
+              {
+                "userId": "ZVNSELF3",
+                "userName": "ZVNSELF3",
+                "country": "United States",
+                "department": "General Operations",
+                "position": "General Operations - General Business",
+                "topTransactions": "SU01, FB03, ME23N (General)",
+                "conflictCount": 10,
+                "sensitivities": [
+                  "CRITICAL",
+                  "HIGH"
+                ],
+                "status": "Red",
+                "lastLogin": "2026-03-06 04:59",
+                "lockedStatus": "Unlocked",
+                "validity": "Valid (31.12.9999)"
+              },
+              {
+                "userId": "ZBN_TEST",
+                "userName": "ZBN_TEST",
+                "country": "United States",
+                "department": "General Operations",
+                "position": "General Operations - General Business",
+                "topTransactions": "SU01, FB03, ME23N (General)",
+                "conflictCount": 3,
+                "sensitivities": [
+                  "CRITICAL",
+                  "HIGH"
+                ],
+                "status": "Red",
+                "lastLogin": "2026-03-16 04:59",
+                "lockedStatus": "Unlocked",
+                "validity": "Valid (31.12.9999)"
+              },
+              {
+                "userId": "ACHAVAN_USR",
+                "userName": "TEST USER AKSHAY",
+                "country": "United States",
+                "department": "General Operations",
+                "position": "General Operations - General Business",
+                "topTransactions": "SU01, FB03, ME23N (General)",
+                "conflictCount": 1,
+                "sensitivities": [
+                  "CRITICAL"
+                ],
+                "status": "Red",
+                "lastLogin": "2026-03-16 04:59",
+                "lockedStatus": "Unlocked",
+                "validity": "Valid (31.12.9999)"
+              },
+              {
+                "userId": "ARPAN_TEST",
+                "userName": "S",
+                "country": "United States",
+                "department": "General Operations",
+                "position": "General Operations - General Business",
+                "topTransactions": "SU01, FB03, ME23N (General)",
+                "conflictCount": 1,
+                "sensitivities": [
+                  "CRITICAL"
+                ],
+                "status": "Red",
+                "lastLogin": "2026-03-03 04:59",
+                "lockedStatus": "Unlocked",
+                "validity": "Valid (31.12.9999)"
+              },
+              {
+                "userId": "ZTESTAM",
+                "userName": "TEST ADMIN AM",
+                "country": "United States",
+                "department": "General Operations",
+                "position": "General Operations - General Business",
+                "topTransactions": "SU01, FB03, ME23N (General)",
+                "conflictCount": 1,
+                "sensitivities": [
+                  "CRITICAL"
+                ],
+                "status": "Red",
+                "lastLogin": "2026-02-16 04:59",
+                "lockedStatus": "Unlocked",
+                "validity": "Expires Soon"
+              },
+              {
+                "userId": "ZTESTRFC",
+                "userName": "RFC user for D67",
+                "country": "United States",
+                "department": "General Operations",
+                "position": "General Operations - General Business",
+                "topTransactions": "SU01, FB03, ME23N (General)",
+                "conflictCount": 1,
+                "sensitivities": [
+                  "CRITICAL"
+                ],
+                "status": "Red",
+                "lastLogin": "2026-03-11 04:59",
+                "lockedStatus": "Unlocked",
+                "validity": "Expires Soon"
+              },
+              {
+                "userId": "ZTESTRFCHB",
+                "userName": "ZTESTRFCHB",
+                "country": "United States",
+                "department": "General Operations",
+                "position": "General Operations - General Business",
+                "topTransactions": "SU01, FB03, ME23N (General)",
+                "conflictCount": 1,
+                "sensitivities": [
+                  "CRITICAL"
+                ],
+                "status": "Red",
+                "lastLogin": "2026-02-13 04:59",
+                "lockedStatus": "Unlocked",
+                "validity": "Valid (31.12.9999)"
+              },
+              {
+                "userId": "ZTEST_1003",
+                "userName": "JSHARMA ZTEST_1003",
+                "country": "United States",
+                "department": "General Operations",
+                "position": "General Operations - General Business",
+                "topTransactions": "SU01, FB03, ME23N (General)",
+                "conflictCount": 1,
+                "sensitivities": [
+                  "CRITICAL"
+                ],
+                "status": "Red",
+                "lastLogin": "2026-02-13 04:59",
+                "lockedStatus": "Unlocked",
+                "validity": "Valid (31.12.9999)"
+              },
+              {
+                "userId": "ZVAR2",
+                "userName": "test2",
+                "country": "United States",
+                "department": "General Operations",
+                "position": "General Operations - General Business",
+                "topTransactions": "SU01, FB03, ME23N (General)",
+                "conflictCount": 1,
+                "sensitivities": [
+                  "CRITICAL"
+                ],
+                "status": "Red",
+                "lastLogin": "2026-02-28 04:59",
+                "lockedStatus": "Unlocked",
+                "validity": "Valid (31.12.9999)"
+              },
+              {
+                "userId": "ZVAR3",
+                "userName": "test3",
+                "country": "United States",
+                "department": "General Operations",
+                "position": "General Operations - General Business",
+                "topTransactions": "SU01, FB03, ME23N (General)",
+                "conflictCount": 1,
+                "sensitivities": [
+                  "CRITICAL"
+                ],
+                "status": "Red",
+                "lastLogin": "2026-03-10 04:59",
+                "lockedStatus": "Unlocked",
+                "validity": "Valid (31.12.9999)"
+              },
+              {
+                "userId": "Z_IBS_R1",
+                "userName": "R1",
+                "country": "United States",
+                "department": "General Operations",
+                "position": "General Operations - General Business",
+                "topTransactions": "SU01, FB03, ME23N (General)",
+                "conflictCount": 1,
+                "sensitivities": [
+                  "CRITICAL"
+                ],
+                "status": "Red",
+                "lastLogin": "2026-02-04 04:59",
+                "lockedStatus": "Unlocked",
+                "validity": "Valid (31.12.9999)"
+              }
+            ]
+          },
+          {
+            "name": "General Operations - DEVELOPERS",
+            "size": 7,
+            "status": "Red",
+            "users": [
+              {
+                "userId": "AREHAN",
+                "userName": "AREHAN",
+                "country": "United States",
+                "department": "General Operations",
+                "position": "General Operations - DEVELOPERS",
+                "topTransactions": "SU01, FB03, ME23N (General)",
+                "conflictCount": 10,
+                "sensitivities": [
+                  "CRITICAL",
+                  "HIGH"
+                ],
+                "status": "Red",
+                "lastLogin": "2026-02-07 04:59",
+                "lockedStatus": "Unlocked",
+                "validity": "Valid (31.12.9999)"
+              },
+              {
+                "userId": "RGUPTA",
+                "userName": "Ritesh GUPTA",
+                "country": "United States",
+                "department": "General Operations",
+                "position": "General Operations - DEVELOPERS",
+                "topTransactions": "SU01, FB03, ME23N (General)",
+                "conflictCount": 10,
+                "sensitivities": [
+                  "CRITICAL",
+                  "HIGH"
+                ],
+                "status": "Red",
+                "lastLogin": "2026-03-09 04:59",
+                "lockedStatus": "Unlocked",
+                "validity": "Valid (31.12.9999)"
+              },
+              {
+                "userId": "TESTOBJUSER1",
+                "userName": "TESTOBJUSER1",
+                "country": "United States",
+                "department": "General Operations",
+                "position": "General Operations - DEVELOPERS",
+                "topTransactions": "SU01, FB03, ME23N (General)",
+                "conflictCount": 10,
+                "sensitivities": [
+                  "CRITICAL",
+                  "HIGH"
+                ],
+                "status": "Red",
+                "lastLogin": "2026-02-26 04:59",
+                "lockedStatus": "Unlocked",
+                "validity": "Valid (31.12.9999)"
+              },
+              {
+                "userId": "USER_RR3",
+                "userName": "USER_RR3",
+                "country": "United States",
+                "department": "General Operations",
+                "position": "General Operations - DEVELOPERS",
+                "topTransactions": "SU01, FB03, ME23N (General)",
+                "conflictCount": 10,
+                "sensitivities": [
+                  "CRITICAL",
+                  "HIGH"
+                ],
+                "status": "Red",
+                "lastLogin": "2026-02-10 04:59",
+                "lockedStatus": "Unlocked",
+                "validity": "Valid (31.12.9999)"
+              },
+              {
+                "userId": "USER_RR4",
+                "userName": "USER_RR4",
+                "country": "United States",
+                "department": "General Operations",
+                "position": "General Operations - DEVELOPERS",
+                "topTransactions": "SU01, FB03, ME23N (General)",
+                "conflictCount": 10,
+                "sensitivities": [
+                  "CRITICAL",
+                  "HIGH"
+                ],
+                "status": "Red",
+                "lastLogin": "2026-03-07 04:59",
+                "lockedStatus": "Unlocked",
+                "validity": "Valid (31.12.9999)"
+              },
+              {
+                "userId": "USER_RR5",
+                "userName": "USER_RR5",
+                "country": "United States",
+                "department": "General Operations",
+                "position": "General Operations - DEVELOPERS",
+                "topTransactions": "SU01, FB03, ME23N (General)",
+                "conflictCount": 10,
+                "sensitivities": [
+                  "CRITICAL",
+                  "HIGH"
+                ],
+                "status": "Red",
+                "lastLogin": "2026-02-06 04:59",
+                "lockedStatus": "Unlocked",
+                "validity": "Valid (31.12.9999)"
+              },
+              {
+                "userId": "ZSH_FIORI",
+                "userName": "ZSH_FIORI",
+                "country": "United States",
+                "department": "General Operations",
+                "position": "General Operations - DEVELOPERS",
+                "topTransactions": "SU01, FB03, ME23N (General)",
+                "conflictCount": 10,
+                "sensitivities": [
+                  "CRITICAL",
+                  "HIGH"
+                ],
+                "status": "Red",
+                "lastLogin": "2026-02-26 04:59",
+                "lockedStatus": "Unlocked",
+                "validity": "Valid (31.12.9999)"
+              }
+            ]
+          },
+          {
+            "name": "General Operations - USRGP1",
+            "size": 1,
+            "status": "Red",
+            "users": [
+              {
+                "userId": "BDIVEDI",
+                "userName": "Dwivedi",
+                "country": "United States",
+                "department": "General Operations",
+                "position": "General Operations - USRGP1",
+                "topTransactions": "SU01, FB03, ME23N (General)",
+                "conflictCount": 10,
+                "sensitivities": [
+                  "CRITICAL",
+                  "HIGH"
+                ],
+                "status": "Red",
+                "lastLogin": "2026-03-04 04:59",
+                "lockedStatus": "Unlocked",
+                "validity": "Expires Soon"
+              }
+            ]
+          },
+          {
+            "name": "General Operations - DRGROUP",
+            "size": 1,
+            "status": "Red",
+            "users": [
+              {
+                "userId": "DREINSMA2",
+                "userName": "Diane Reinsma 2",
+                "country": "United States",
+                "department": "General Operations",
+                "position": "General Operations - DRGROUP",
+                "topTransactions": "SU01, FB03, ME23N (General)",
+                "conflictCount": 10,
+                "sensitivities": [
+                  "CRITICAL",
+                  "HIGH"
+                ],
+                "status": "Red",
+                "lastLogin": "2026-02-17 04:59",
+                "lockedStatus": "Unlocked",
+                "validity": "Valid (31.12.9999)"
+              }
+            ]
+          },
+          {
+            "name": "General Operations - TESTERS",
+            "size": 1,
+            "status": "Red",
+            "users": [
+              {
+                "userId": "KRATHI",
+                "userName": "Rathi",
+                "country": "United States",
+                "department": "General Operations",
+                "position": "General Operations - TESTERS",
+                "topTransactions": "SU01, FB03, ME23N (General)",
+                "conflictCount": 10,
+                "sensitivities": [
+                  "CRITICAL",
+                  "HIGH"
+                ],
+                "status": "Red",
+                "lastLogin": "2026-02-20 04:59",
+                "lockedStatus": "Unlocked",
+                "validity": "Valid (31.12.9999)"
+              }
+            ]
+          },
+          {
+            "name": "General Operations - ZUNLOCK",
+            "size": 1,
+            "status": "Red",
+            "users": [
+              {
+                "userId": "ZPARORA",
+                "userName": "zparora test user main",
+                "country": "United States",
+                "department": "General Operations",
+                "position": "General Operations - ZUNLOCK",
+                "topTransactions": "SU01, FB03, ME23N (General)",
+                "conflictCount": 10,
+                "sensitivities": [
+                  "CRITICAL",
+                  "HIGH"
+                ],
+                "status": "Red",
+                "lastLogin": "2026-01-30 04:59",
+                "lockedStatus": "Locked",
+                "validity": "Valid (31.12.9999)"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Development",
+        "children": [
+          {
+            "name": "Development - DEVELOPERS",
+            "size": 1,
+            "status": "Red",
+            "users": [
+              {
+                "userId": "MMEHTO",
+                "userName": "Mohan Mehto",
+                "country": "United States",
+                "department": "Development",
+                "position": "Development - DEVELOPERS",
+                "topTransactions": "SU01, FB03, ME23N (General)",
+                "conflictCount": 10,
+                "sensitivities": [
+                  "CRITICAL",
+                  "HIGH"
+                ],
+                "status": "Red",
+                "lastLogin": "2026-02-09 04:59",
+                "lockedStatus": "Unlocked",
+                "validity": "Valid (31.12.9999)"
+              }
+            ]
+          },
+          {
+            "name": "Development - DEMO",
+            "size": 1,
+            "status": "Red",
+            "users": [
+              {
+                "userId": "SDOGRA",
+                "userName": "Shilpa Dogra",
+                "country": "United States",
+                "department": "Development",
+                "position": "Development - DEMO",
+                "topTransactions": "SU01, FB03, ME23N (General)",
+                "conflictCount": 10,
+                "sensitivities": [
+                  "CRITICAL",
+                  "HIGH"
+                ],
+                "status": "Red",
+                "lastLogin": "2026-02-13 04:59",
+                "lockedStatus": "Locked",
+                "validity": "Valid (31.12.9999)"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "1000",
+        "children": [
+          {
+            "name": "1000 - TESTERS",
+            "size": 1,
+            "status": "Red",
+            "users": [
+              {
+                "userId": "VNEEMA",
+                "userName": "Vishesh Neema",
+                "country": "United States",
+                "department": "1000",
+                "position": "1000 - TESTERS",
+                "topTransactions": "SU01, FB03, ME23N (General)",
+                "conflictCount": 10,
+                "sensitivities": [
+                  "CRITICAL",
+                  "HIGH"
+                ],
+                "status": "Red",
+                "lastLogin": "2026-02-11 04:59",
+                "lockedStatus": "Unlocked",
+                "validity": "Valid (31.12.9999)"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "India",
+    "children": [
+      {
+        "name": "General Operations",
+        "children": [
+          {
+            "name": "General Operations - DEVELOPERS",
+            "size": 1,
+            "status": "Red",
+            "users": [
+              {
+                "userId": "AGARG",
+                "userName": "ARUSHI GARG",
+                "country": "India",
+                "department": "General Operations",
+                "position": "General Operations - DEVELOPERS",
+                "topTransactions": "SU01, FB03, ME23N (General)",
+                "conflictCount": 10,
+                "sensitivities": [
+                  "CRITICAL",
+                  "HIGH"
+                ],
+                "status": "Red",
+                "lastLogin": "2026-02-07 04:59",
+                "lockedStatus": "Unlocked",
+                "validity": "Valid (31.12.9999)"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "United Kingdom",
+    "children": [
+      {
+        "name": "General Operations",
+        "children": [
+          {
+            "name": "General Operations - General Business",
+            "size": 2,
+            "status": "Red",
+            "users": [
+              {
+                "userId": "AHARTLEY",
+                "userName": "Andy Hartley",
+                "country": "United Kingdom",
+                "department": "General Operations",
+                "position": "General Operations - General Business",
+                "topTransactions": "SU01, FB03, ME23N (General)",
+                "conflictCount": 10,
+                "sensitivities": [
+                  "CRITICAL",
+                  "HIGH"
+                ],
+                "status": "Red",
+                "lastLogin": "2026-02-23 04:59",
+                "lockedStatus": "Unlocked",
+                "validity": "Valid (31.12.9999)"
+              },
+              {
+                "userId": "MINDSQUARE2",
+                "userName": "MINDSQUARE2",
+                "country": "United Kingdom",
+                "department": "General Operations",
+                "position": "General Operations - General Business",
+                "topTransactions": "SU01, FB03, ME23N (General)",
+                "conflictCount": 3,
+                "sensitivities": [
+                  "CRITICAL"
+                ],
+                "status": "Red",
+                "lastLogin": "2026-03-10 04:59",
+                "lockedStatus": "Unlocked",
+                "validity": "Expires Soon"
+              }
+            ]
+          },
+          {
+            "name": "General Operations - DRGROUP",
+            "size": 1,
+            "status": "Red",
+            "users": [
+              {
+                "userId": "DITESTDE",
+                "userName": "Test DE Language DITESTDE",
+                "country": "United Kingdom",
+                "department": "General Operations",
+                "position": "General Operations - DRGROUP",
+                "topTransactions": "SU01, FB03, ME23N (General)",
+                "conflictCount": 10,
+                "sensitivities": [
+                  "CRITICAL",
+                  "HIGH"
+                ],
+                "status": "Red",
+                "lastLogin": "2026-02-20 04:59",
+                "lockedStatus": "Unlocked",
+                "validity": "Valid (31.12.9999)"
+              }
+            ]
+          },
+          {
+            "name": "General Operations - PM",
+            "size": 1,
+            "status": "Red",
+            "users": [
+              {
+                "userId": "RHILDEBRANDT",
+                "userName": "Richard Hilderbrandt",
+                "country": "United Kingdom",
+                "department": "General Operations",
+                "position": "General Operations - PM",
+                "topTransactions": "SU01, FB03, ME23N (General)",
+                "conflictCount": 10,
+                "sensitivities": [
+                  "CRITICAL",
+                  "HIGH"
+                ],
+                "status": "Red",
+                "lastLogin": "2026-02-04 04:59",
+                "lockedStatus": "Unlocked",
+                "validity": "Valid (31.12.9999)"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Global Operations",
+    "children": [
+      {
+        "name": "General Operations",
+        "children": [
+          {
+            "name": "General Operations - General Business",
+            "size": 7,
+            "status": "Red",
+            "users": [
+              {
+                "userId": "LBAMBHA",
+                "userName": "Luv Pal Bambha",
+                "country": "Global Operations",
+                "department": "General Operations",
+                "position": "General Operations - General Business",
+                "topTransactions": "SU01, FB03, ME23N (General)",
+                "conflictCount": 10,
+                "sensitivities": [
+                  "CRITICAL",
+                  "HIGH"
+                ],
+                "status": "Red",
+                "lastLogin": "2026-02-01 04:59",
+                "lockedStatus": "Unlocked",
+                "validity": "Valid (31.12.9999)"
+              },
+              {
+                "userId": "RJINDAL",
+                "userName": "Jindal",
+                "country": "Global Operations",
+                "department": "General Operations",
+                "position": "General Operations - General Business",
+                "topTransactions": "SU01, FB03, ME23N (General)",
+                "conflictCount": 10,
+                "sensitivities": [
+                  "CRITICAL",
+                  "HIGH"
+                ],
+                "status": "Red",
+                "lastLogin": "2026-03-16 04:59",
+                "lockedStatus": "Locked",
+                "validity": "Valid (31.12.9999)"
+              },
+              {
+                "userId": "SW",
+                "userName": "SW",
+                "country": "Global Operations",
+                "department": "General Operations",
+                "position": "General Operations - General Business",
+                "topTransactions": "SU01, FB03, ME23N (General)",
+                "conflictCount": 10,
+                "sensitivities": [
+                  "CRITICAL",
+                  "HIGH"
+                ],
+                "status": "Red",
+                "lastLogin": "2026-01-31 04:59",
+                "lockedStatus": "Unlocked",
+                "validity": "Valid (31.12.9999)"
+              },
+              {
+                "userId": "TEST_SHRI",
+                "userName": "shri test",
+                "country": "Global Operations",
+                "department": "General Operations",
+                "position": "General Operations - General Business",
+                "topTransactions": "SU01, FB03, ME23N (General)",
+                "conflictCount": 10,
+                "sensitivities": [
+                  "CRITICAL",
+                  "HIGH"
+                ],
+                "status": "Red",
+                "lastLogin": "2026-03-11 04:59",
+                "lockedStatus": "Unlocked",
+                "validity": "Expired"
+              },
+              {
+                "userId": "APPROVER",
+                "userName": "APPROVER",
+                "country": "Global Operations",
+                "department": "General Operations",
+                "position": "General Operations - General Business",
+                "topTransactions": "SU01, FB03, ME23N (General)",
+                "conflictCount": 1,
+                "sensitivities": [
+                  "CRITICAL"
+                ],
+                "status": "Red",
+                "lastLogin": "2026-03-16 04:59",
+                "lockedStatus": "Unlocked",
+                "validity": "Expires Soon"
+              },
+              {
+                "userId": "RAUDITOR",
+                "userName": "RAUDITOR",
+                "country": "Global Operations",
+                "department": "General Operations",
+                "position": "General Operations - General Business",
+                "topTransactions": "SU01, FB03, ME23N (General)",
+                "conflictCount": 1,
+                "sensitivities": [
+                  "CRITICAL"
+                ],
+                "status": "Red",
+                "lastLogin": "2026-03-14 04:59",
+                "lockedStatus": "Unlocked",
+                "validity": "Valid (31.12.9999)"
+              },
+              {
+                "userId": "ZVM_TEST",
+                "userName": "Test User",
+                "country": "Global Operations",
+                "department": "General Operations",
+                "position": "General Operations - General Business",
+                "topTransactions": "SU01, FB03, ME23N (General)",
+                "conflictCount": 1,
+                "sensitivities": [
+                  "CRITICAL"
+                ],
+                "status": "Red",
+                "lastLogin": "2026-02-19 04:59",
+                "lockedStatus": "Locked",
+                "validity": "Expires Soon"
+              }
+            ]
+          },
+          {
+            "name": "General Operations - SUPER",
+            "size": 4,
+            "status": "Red",
+            "users": [
+              {
+                "userId": "DDIC",
+                "userName": "DDIC",
+                "country": "Global Operations",
+                "department": "General Operations",
+                "position": "General Operations - SUPER",
+                "topTransactions": "SU01, FB03, ME23N (General)",
+                "conflictCount": 10,
+                "sensitivities": [
+                  "CRITICAL",
+                  "HIGH"
+                ],
+                "status": "Red",
+                "lastLogin": "2026-02-18 04:59",
+                "lockedStatus": "Locked",
+                "validity": "Valid (31.12.9999)"
+              },
+              {
+                "userId": "ODUBEY",
+                "userName": "Om Dubey",
+                "country": "Global Operations",
+                "department": "General Operations",
+                "position": "General Operations - SUPER",
+                "topTransactions": "SU01, FB03, ME23N (General)",
+                "conflictCount": 10,
+                "sensitivities": [
+                  "CRITICAL",
+                  "HIGH"
+                ],
+                "status": "Red",
+                "lastLogin": "2026-03-12 04:59",
+                "lockedStatus": "Unlocked",
+                "validity": "Valid (31.12.9999)"
+              },
+              {
+                "userId": "PWATTS",
+                "userName": "watts",
+                "country": "Global Operations",
+                "department": "General Operations",
+                "position": "General Operations - SUPER",
+                "topTransactions": "SU01, FB03, ME23N (General)",
+                "conflictCount": 10,
+                "sensitivities": [
+                  "CRITICAL",
+                  "HIGH"
+                ],
+                "status": "Red",
+                "lastLogin": "2026-03-08 04:59",
+                "lockedStatus": "Unlocked",
+                "validity": "Expires Soon"
+              },
+              {
+                "userId": "SAP*",
+                "userName": "SAP*",
+                "country": "Global Operations",
+                "department": "General Operations",
+                "position": "General Operations - SUPER",
+                "topTransactions": "SU01, FB03, ME23N (General)",
+                "conflictCount": 10,
+                "sensitivities": [
+                  "CRITICAL",
+                  "HIGH"
+                ],
+                "status": "Red",
+                "lastLogin": "2026-02-22 04:59",
+                "lockedStatus": "Unlocked",
+                "validity": "Valid (31.12.9999)"
+              }
+            ]
+          },
+          {
+            "name": "General Operations - DEVELOPERS",
+            "size": 11,
+            "status": "Red",
+            "users": [
+              {
+                "userId": "GPATI",
+                "userName": "Pati",
+                "country": "Global Operations",
+                "department": "General Operations",
+                "position": "General Operations - DEVELOPERS",
+                "topTransactions": "SU01, FB03, ME23N (General)",
+                "conflictCount": 10,
+                "sensitivities": [
+                  "CRITICAL",
+                  "HIGH"
+                ],
+                "status": "Red",
+                "lastLogin": "2026-02-17 04:59",
+                "lockedStatus": "Unlocked",
+                "validity": "Valid (31.12.9999)"
+              },
+              {
+                "userId": "HJAYALE",
+                "userName": "Harshad Jayale",
+                "country": "Global Operations",
+                "department": "General Operations",
+                "position": "General Operations - DEVELOPERS",
+                "topTransactions": "SU01, FB03, ME23N (General)",
+                "conflictCount": 10,
+                "sensitivities": [
+                  "CRITICAL",
+                  "HIGH"
+                ],
+                "status": "Red",
+                "lastLogin": "2026-03-12 04:59",
+                "lockedStatus": "Unlocked",
+                "validity": "Valid (31.12.9999)"
+              },
+              {
+                "userId": "MSUPPAHIYA",
+                "userName": "Suppahiya",
+                "country": "Global Operations",
+                "department": "General Operations",
+                "position": "General Operations - DEVELOPERS",
+                "topTransactions": "SU01, FB03, ME23N (General)",
+                "conflictCount": 10,
+                "sensitivities": [
+                  "CRITICAL",
+                  "HIGH"
+                ],
+                "status": "Red",
+                "lastLogin": "2026-02-14 04:59",
+                "lockedStatus": "Unlocked",
+                "validity": "Valid (31.12.9999)"
+              },
+              {
+                "userId": "SCHAUHAN",
+                "userName": "Chauhan1",
+                "country": "Global Operations",
+                "department": "General Operations",
+                "position": "General Operations - DEVELOPERS",
+                "topTransactions": "SU01, FB03, ME23N (General)",
+                "conflictCount": 10,
+                "sensitivities": [
+                  "CRITICAL",
+                  "HIGH"
+                ],
+                "status": "Red",
+                "lastLogin": "2026-02-03 04:59",
+                "lockedStatus": "Unlocked",
+                "validity": "Valid (31.12.9999)"
+              },
+              {
+                "userId": "SE_AUDIT",
+                "userName": "SE Audit",
+                "country": "Global Operations",
+                "department": "General Operations",
+                "position": "General Operations - DEVELOPERS",
+                "topTransactions": "SU01, FB03, ME23N (General)",
+                "conflictCount": 10,
+                "sensitivities": [
+                  "CRITICAL",
+                  "HIGH"
+                ],
+                "status": "Red",
+                "lastLogin": "2026-03-06 04:59",
+                "lockedStatus": "Unlocked",
+                "validity": "Valid (31.12.9999)"
+              },
+              {
+                "userId": "SE_HOS",
+                "userName": "SE Head of Security",
+                "country": "Global Operations",
+                "department": "General Operations",
+                "position": "General Operations - DEVELOPERS",
+                "topTransactions": "SU01, FB03, ME23N (General)",
+                "conflictCount": 10,
+                "sensitivities": [
+                  "CRITICAL",
+                  "HIGH"
+                ],
+                "status": "Red",
+                "lastLogin": "2026-03-01 04:59",
+                "lockedStatus": "Unlocked",
+                "validity": "Valid (31.12.9999)"
+              },
+              {
+                "userId": "SE_SEC_ADMIN",
+                "userName": "SE Admin",
+                "country": "Global Operations",
+                "department": "General Operations",
+                "position": "General Operations - DEVELOPERS",
+                "topTransactions": "SU01, FB03, ME23N (General)",
+                "conflictCount": 10,
+                "sensitivities": [
+                  "CRITICAL",
+                  "HIGH"
+                ],
+                "status": "Red",
+                "lastLogin": "2026-02-21 04:59",
+                "lockedStatus": "Unlocked",
+                "validity": "Valid (31.12.9999)"
+              },
+              {
+                "userId": "SGUPTA2",
+                "userName": "Shiddhant Gupta",
+                "country": "Global Operations",
+                "department": "General Operations",
+                "position": "General Operations - DEVELOPERS",
+                "topTransactions": "SU01, FB03, ME23N (General)",
+                "conflictCount": 10,
+                "sensitivities": [
+                  "CRITICAL",
+                  "HIGH"
+                ],
+                "status": "Red",
+                "lastLogin": "2026-03-15 04:59",
+                "lockedStatus": "Unlocked",
+                "validity": "Expired"
+              },
+              {
+                "userId": "SMORE",
+                "userName": "SMORE",
+                "country": "Global Operations",
+                "department": "General Operations",
+                "position": "General Operations - DEVELOPERS",
+                "topTransactions": "SU01, FB03, ME23N (General)",
+                "conflictCount": 10,
+                "sensitivities": [
+                  "CRITICAL",
+                  "HIGH"
+                ],
+                "status": "Red",
+                "lastLogin": "2026-02-19 04:59",
+                "lockedStatus": "Unlocked",
+                "validity": "Valid (31.12.9999)"
+              },
+              {
+                "userId": "TESTFIORI",
+                "userName": "Test Fiori",
+                "country": "Global Operations",
+                "department": "General Operations",
+                "position": "General Operations - DEVELOPERS",
+                "topTransactions": "SU01, FB03, ME23N (General)",
+                "conflictCount": 10,
+                "sensitivities": [
+                  "CRITICAL",
+                  "HIGH"
+                ],
+                "status": "Red",
+                "lastLogin": "2026-02-09 04:59",
+                "lockedStatus": "Unlocked",
+                "validity": "Valid (31.12.9999)"
+              },
+              {
+                "userId": "VMATHUR",
+                "userName": "VMATHUR",
+                "country": "Global Operations",
+                "department": "General Operations",
+                "position": "General Operations - DEVELOPERS",
+                "topTransactions": "SU01, FB03, ME23N (General)",
+                "conflictCount": 10,
+                "sensitivities": [
+                  "CRITICAL",
+                  "HIGH"
+                ],
+                "status": "Red",
+                "lastLogin": "2026-03-05 04:59",
+                "lockedStatus": "Unlocked",
+                "validity": "Valid (31.12.9999)"
+              }
+            ]
+          },
+          {
+            "name": "General Operations - TESTERS",
+            "size": 1,
+            "status": "Red",
+            "users": [
+              {
+                "userId": "RBALA",
+                "userName": "Bala",
+                "country": "Global Operations",
+                "department": "General Operations",
+                "position": "General Operations - TESTERS",
+                "topTransactions": "SU01, FB03, ME23N (General)",
+                "conflictCount": 10,
+                "sensitivities": [
+                  "CRITICAL",
+                  "HIGH"
+                ],
+                "status": "Red",
+                "lastLogin": "2026-02-18 04:59",
+                "lockedStatus": "Unlocked",
+                "validity": "Valid (31.12.9999)"
+              }
+            ]
+          },
+          {
+            "name": "General Operations - ZTEST_PAV",
+            "size": 2,
+            "status": "Red",
+            "users": [
+              {
+                "userId": "ZTESTP1",
+                "userName": "TEST User",
+                "country": "Global Operations",
+                "department": "General Operations",
+                "position": "General Operations - ZTEST_PAV",
+                "topTransactions": "SU01, FB03, ME23N (General)",
+                "conflictCount": 10,
+                "sensitivities": [
+                  "CRITICAL",
+                  "HIGH"
+                ],
+                "status": "Red",
+                "lastLogin": "2026-02-10 04:59",
+                "lockedStatus": "Unlocked",
+                "validity": "Valid (31.12.9999)"
+              },
+              {
+                "userId": "ZVMATHUR",
+                "userName": "TEST",
+                "country": "Global Operations",
+                "department": "General Operations",
+                "position": "General Operations - ZTEST_PAV",
+                "topTransactions": "SU01, FB03, ME23N (General)",
+                "conflictCount": 10,
+                "sensitivities": [
+                  "CRITICAL",
+                  "HIGH"
+                ],
+                "status": "Red",
+                "lastLogin": "2026-02-11 04:59",
+                "lockedStatus": "Unlocked",
+                "validity": "Valid (31.12.9999)"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "DIANE TEST USER 1",
+        "children": [
+          {
+            "name": "DIANE TEST USER 1 - DRGROUP",
+            "size": 1,
+            "status": "Red",
+            "users": [
+              {
+                "userId": "DITEST",
+                "userName": "Diane ER User Smith",
+                "country": "Global Operations",
+                "department": "DIANE TEST USER 1",
+                "position": "DIANE TEST USER 1 - DRGROUP",
+                "topTransactions": "SU01, FB03, ME23N (General)",
+                "conflictCount": 1,
+                "sensitivities": [
+                  "CRITICAL"
+                ],
+                "status": "Red",
+                "lastLogin": "2026-02-10 04:59",
+                "lockedStatus": "Unlocked",
+                "validity": "Valid (31.12.9999)"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "CCSS009482",
+        "children": [
+          {
+            "name": "CCSS009482 - DEMO",
+            "size": 1,
+            "status": "Red",
+            "users": [
+              {
+                "userId": "PETERJ",
+                "userName": "Fname1 Test Lname1",
+                "country": "Global Operations",
+                "department": "CCSS009482",
+                "position": "CCSS009482 - DEMO",
+                "topTransactions": "SU01, FB03, ME23N (General)",
+                "conflictCount": 10,
+                "sensitivities": [
+                  "CRITICAL",
+                  "HIGH"
+                ],
+                "status": "Red",
+                "lastLogin": "2026-03-05 04:59",
+                "lockedStatus": "Unlocked",
+                "validity": "Valid (31.12.9999)"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "QA",
+        "children": [
+          {
+            "name": "QA - DEVELOPERS",
+            "size": 1,
+            "status": "Red",
+            "users": [
+              {
+                "userId": "PGARIBE",
+                "userName": "PritiNew GaribeNew",
+                "country": "Global Operations",
+                "department": "QA",
+                "position": "QA - DEVELOPERS",
+                "topTransactions": "SU01, FB03, ME23N (General)",
+                "conflictCount": 10,
+                "sensitivities": [
+                  "CRITICAL",
+                  "HIGH"
+                ],
+                "status": "Red",
+                "lastLogin": "2026-02-19 04:59",
+                "lockedStatus": "Unlocked",
+                "validity": "Valid (31.12.9999)"
+              }
+            ]
+          },
+          {
+            "name": "QA - SUPER",
+            "size": 1,
+            "status": "Red",
+            "users": [
+              {
+                "userId": "WORKFLOWU1",
+                "userName": "Dr. Work dos Flow",
+                "country": "Global Operations",
+                "department": "QA",
+                "position": "QA - SUPER",
+                "topTransactions": "SU01, FB03, ME23N (General)",
+                "conflictCount": 1,
+                "sensitivities": [
+                  "CRITICAL"
+                ],
+                "status": "Red",
+                "lastLogin": "2026-02-16 04:59",
+                "lockedStatus": "Unlocked",
+                "validity": "Valid (31.12.9999)"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Test",
+        "children": [
+          {
+            "name": "Test - DEVELOPERS",
+            "size": 1,
+            "status": "Red",
+            "users": [
+              {
+                "userId": "SCHAUHAN_CP",
+                "userName": "Shekhar Chauhan1",
+                "country": "Global Operations",
+                "department": "Test",
+                "position": "Test - DEVELOPERS",
+                "topTransactions": "SU01, FB03, ME23N (General)",
+                "conflictCount": 10,
+                "sensitivities": [
+                  "CRITICAL",
+                  "HIGH"
+                ],
+                "status": "Red",
+                "lastLogin": "2026-03-14 04:59",
+                "lockedStatus": "Unlocked",
+                "validity": "Expires Soon"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+]

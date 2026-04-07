@@ -1,0 +1,4181 @@
+[
+  {
+    "name": "Asia Pacific",
+    "children": [
+      {
+        "name": "HR Operations",
+        "children": [
+          {
+            "name": "Recruiter",
+            "size": 7,
+            "status": "Yellow",
+            "users": [
+              {
+                "userId": "TEST_SHRI",
+                "userName": "shri test",
+                "country": "Asia Pacific",
+                "department": "HR Operations",
+                "position": "Recruiter",
+                "topTransactions": "PA30, PA40, PP01",
+                "conflictCount": 10,
+                "sensitivities": [
+                  "MEDIUM"
+                ],
+                "status": "Yellow",
+                "lastLogin": "2026-02-20 05:06",
+                "lockedStatus": "Unlocked",
+                "validity": "Valid (31.12.9999)",
+                "sev_score": 2
+              },
+              {
+                "userId": "2001-04-28",
+                "userName": "user01 28april",
+                "country": "Asia Pacific",
+                "department": "HR Operations",
+                "position": "Recruiter",
+                "topTransactions": "PA30, PA40, PP01",
+                "conflictCount": 5,
+                "sensitivities": [
+                  "MEDIUM"
+                ],
+                "status": "Yellow",
+                "lastLogin": "2026-02-23 05:06",
+                "lockedStatus": "Unlocked",
+                "validity": "Valid (31.12.9999)",
+                "sev_score": 2
+              },
+              {
+                "userId": "KRATHI",
+                "userName": "Rathi",
+                "country": "Asia Pacific",
+                "department": "HR Operations",
+                "position": "Recruiter",
+                "topTransactions": "PA30, PA40, PP01",
+                "conflictCount": 5,
+                "sensitivities": [
+                  "MEDIUM",
+                  "LOW"
+                ],
+                "status": "Yellow",
+                "lastLogin": "2026-03-02 05:06",
+                "lockedStatus": "Unlocked",
+                "validity": "Expires Soon",
+                "sev_score": 2
+              },
+              {
+                "userId": "MSUPPAHIYA",
+                "userName": "Suppahiya",
+                "country": "Asia Pacific",
+                "department": "HR Operations",
+                "position": "Recruiter",
+                "topTransactions": "PA30, PA40, PP01",
+                "conflictCount": 4,
+                "sensitivities": [
+                  "MEDIUM"
+                ],
+                "status": "Yellow",
+                "lastLogin": "2026-02-15 05:06",
+                "lockedStatus": "Unlocked",
+                "validity": "Valid (31.12.9999)",
+                "sev_score": 2
+              },
+              {
+                "userId": "KREDDY",
+                "userName": "KREDDY",
+                "country": "Asia Pacific",
+                "department": "HR Operations",
+                "position": "Recruiter",
+                "topTransactions": "PA30, PA40, PP01",
+                "conflictCount": 1,
+                "sensitivities": [
+                  "LOW"
+                ],
+                "status": "Blue",
+                "lastLogin": "2026-02-23 05:06",
+                "lockedStatus": "Unlocked",
+                "validity": "Valid (31.12.9999)",
+                "sev_score": 1
+              },
+              {
+                "userId": "ZTESTU3",
+                "userName": "ZSHARMA",
+                "country": "Asia Pacific",
+                "department": "HR Operations",
+                "position": "Recruiter",
+                "topTransactions": "PA30, PA40, PP01",
+                "conflictCount": 1,
+                "sensitivities": [
+                  "LOW"
+                ],
+                "status": "Blue",
+                "lastLogin": "2026-03-08 05:06",
+                "lockedStatus": "Unlocked",
+                "validity": "Valid (31.12.9999)",
+                "sev_score": 1
+              },
+              {
+                "userId": "SGUPTA2",
+                "userName": "Shiddhant Gupta",
+                "country": "Asia Pacific",
+                "department": "HR Operations",
+                "position": "Recruiter",
+                "topTransactions": "PA30, PA40, PP01",
+                "conflictCount": 0,
+                "sensitivities": [],
+                "status": "Green",
+                "lastLogin": "2026-03-11 05:06",
+                "lockedStatus": "Unlocked",
+                "validity": "Valid (31.12.9999)",
+                "sev_score": 0
+              }
+            ]
+          },
+          {
+            "name": "Payroll Admin",
+            "size": 5,
+            "status": "Red",
+            "users": [
+              {
+                "userId": "MPATIL1",
+                "userName": "Patil",
+                "country": "Asia Pacific",
+                "department": "HR Operations",
+                "position": "Payroll Admin",
+                "topTransactions": "PA30, PA40, PP01",
+                "conflictCount": 24,
+                "sensitivities": [
+                  "HIGH",
+                  "MEDIUM"
+                ],
+                "status": "Red",
+                "lastLogin": "2026-03-15 05:06",
+                "lockedStatus": "Unlocked",
+                "validity": "Valid (31.12.9999)",
+                "sev_score": 3
+              },
+              {
+                "userId": "NILSK",
+                "userName": "NILSK",
+                "country": "Asia Pacific",
+                "department": "HR Operations",
+                "position": "Payroll Admin",
+                "topTransactions": "PA30, PA40, PP01",
+                "conflictCount": 22,
+                "sensitivities": [
+                  "CRITICAL",
+                  "HIGH"
+                ],
+                "status": "Red",
+                "lastLogin": "2026-03-16 05:06",
+                "lockedStatus": "Unlocked",
+                "validity": "Valid (31.12.9999)",
+                "sev_score": 3
+              },
+              {
+                "userId": "ACHRISTIAN",
+                "userName": "Asok CHRISTIAN",
+                "country": "Asia Pacific",
+                "department": "HR Operations",
+                "position": "Payroll Admin",
+                "topTransactions": "PA30, PA40, PP01",
+                "conflictCount": 12,
+                "sensitivities": [
+                  "HIGH",
+                  "MEDIUM"
+                ],
+                "status": "Red",
+                "lastLogin": "2026-03-03 05:06",
+                "lockedStatus": "Unlocked",
+                "validity": "Valid (31.12.9999)",
+                "sev_score": 3
+              },
+              {
+                "userId": "Z_ACHAVAN_6",
+                "userName": "Z_ACHAVAN_6",
+                "country": "Asia Pacific",
+                "department": "HR Operations",
+                "position": "Payroll Admin",
+                "topTransactions": "PA30, PA40, PP01",
+                "conflictCount": 0,
+                "sensitivities": [],
+                "status": "Green",
+                "lastLogin": "2026-02-25 05:06",
+                "lockedStatus": "Unlocked",
+                "validity": "Valid (31.12.9999)",
+                "sev_score": 0
+              },
+              {
+                "userId": "ZBN_TEST1",
+                "userName": "ZBN_TEST1",
+                "country": "Asia Pacific",
+                "department": "HR Operations",
+                "position": "Payroll Admin",
+                "topTransactions": "PA30, PA40, PP01",
+                "conflictCount": 0,
+                "sensitivities": [],
+                "status": "Green",
+                "lastLogin": "2026-03-07 05:06",
+                "lockedStatus": "Unlocked",
+                "validity": "Valid (31.12.9999)",
+                "sev_score": 0
+              }
+            ]
+          },
+          {
+            "name": "HR Generalist",
+            "size": 6,
+            "status": "Red",
+            "users": [
+              {
+                "userId": "PETERJRFC",
+                "userName": "PETERJRFC",
+                "country": "Asia Pacific",
+                "department": "HR Operations",
+                "position": "HR Generalist",
+                "topTransactions": "PA30, PA40, PP01",
+                "conflictCount": 24,
+                "sensitivities": [
+                  "CRITICAL",
+                  "HIGH"
+                ],
+                "status": "Red",
+                "lastLogin": "2026-02-15 05:06",
+                "lockedStatus": "Unlocked",
+                "validity": "Valid (31.12.9999)",
+                "sev_score": 3
+              },
+              {
+                "userId": "ARUSR_2RLVAL",
+                "userName": "Missing Roles Valid ARUSR",
+                "country": "Asia Pacific",
+                "department": "HR Operations",
+                "position": "HR Generalist",
+                "topTransactions": "PA30, PA40, PP01",
+                "conflictCount": 10,
+                "sensitivities": [
+                  "MEDIUM"
+                ],
+                "status": "Yellow",
+                "lastLogin": "2026-02-19 05:06",
+                "lockedStatus": "Unlocked",
+                "validity": "Valid (31.12.9999)",
+                "sev_score": 2
+              },
+              {
+                "userId": "ANAUTIYAL",
+                "userName": "ANAUTIYAL",
+                "country": "Asia Pacific",
+                "department": "HR Operations",
+                "position": "HR Generalist",
+                "topTransactions": "PA30, PA40, PP01",
+                "conflictCount": 7,
+                "sensitivities": [
+                  "MEDIUM",
+                  "LOW"
+                ],
+                "status": "Yellow",
+                "lastLogin": "2026-03-02 05:06",
+                "lockedStatus": "Unlocked",
+                "validity": "Valid (31.12.9999)",
+                "sev_score": 2
+              },
+              {
+                "userId": "SCHAUHAN_CP",
+                "userName": "Shekhar Chauhan1",
+                "country": "Asia Pacific",
+                "department": "HR Operations",
+                "position": "HR Generalist",
+                "topTransactions": "PA30, PA40, PP01",
+                "conflictCount": 0,
+                "sensitivities": [],
+                "status": "Green",
+                "lastLogin": "2026-03-01 05:06",
+                "lockedStatus": "Unlocked",
+                "validity": "Valid (31.12.9999)",
+                "sev_score": 0
+              },
+              {
+                "userId": "VAR2",
+                "userName": "Nitin Malhotra",
+                "country": "Asia Pacific",
+                "department": "HR Operations",
+                "position": "HR Generalist",
+                "topTransactions": "PA30, PA40, PP01",
+                "conflictCount": 0,
+                "sensitivities": [],
+                "status": "Green",
+                "lastLogin": "2026-02-17 05:06",
+                "lockedStatus": "Unlocked",
+                "validity": "Valid (31.12.9999)",
+                "sev_score": 0
+              },
+              {
+                "userId": "ZBN_TEST",
+                "userName": "ZBN_TEST",
+                "country": "Asia Pacific",
+                "department": "HR Operations",
+                "position": "HR Generalist",
+                "topTransactions": "PA30, PA40, PP01",
+                "conflictCount": 0,
+                "sensitivities": [],
+                "status": "Green",
+                "lastLogin": "2026-03-09 05:06",
+                "lockedStatus": "Unlocked",
+                "validity": "Valid (31.12.9999)",
+                "sev_score": 0
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Core Development",
+        "children": [
+          {
+            "name": "ABAP Developer",
+            "size": 6,
+            "status": "Yellow",
+            "users": [
+              {
+                "userId": "USER_RR5",
+                "userName": "USER_RR5",
+                "country": "Asia Pacific",
+                "department": "Core Development",
+                "position": "ABAP Developer",
+                "topTransactions": "SE38, SE80, SE11, SE24",
+                "conflictCount": 10,
+                "sensitivities": [
+                  "MEDIUM"
+                ],
+                "status": "Yellow",
+                "lastLogin": "2026-02-15 05:06",
+                "lockedStatus": "Unlocked",
+                "validity": "Valid (31.12.9999)",
+                "sev_score": 2
+              },
+              {
+                "userId": "ACHAVAN",
+                "userName": "Akshay R Chavan",
+                "country": "Asia Pacific",
+                "department": "Core Development",
+                "position": "ABAP Developer",
+                "topTransactions": "SE38, SE80, SE11, SE24",
+                "conflictCount": 4,
+                "sensitivities": [
+                  "MEDIUM"
+                ],
+                "status": "Yellow",
+                "lastLogin": "2026-02-14 05:06",
+                "lockedStatus": "Unlocked",
+                "validity": "Valid (31.12.9999)",
+                "sev_score": 2
+              },
+              {
+                "userId": "JSINGH",
+                "userName": "Jagjit Singh",
+                "country": "Asia Pacific",
+                "department": "Core Development",
+                "position": "ABAP Developer",
+                "topTransactions": "SE38, SE80, SE11, SE24",
+                "conflictCount": 1,
+                "sensitivities": [
+                  "LOW"
+                ],
+                "status": "Blue",
+                "lastLogin": "2026-02-16 05:06",
+                "lockedStatus": "Unlocked",
+                "validity": "Valid (31.12.9999)",
+                "sev_score": 1
+              },
+              {
+                "userId": "ASHARMA",
+                "userName": "Sharma",
+                "country": "Asia Pacific",
+                "department": "Core Development",
+                "position": "ABAP Developer",
+                "topTransactions": "SE38, SE80, SE11, SE24",
+                "conflictCount": 0,
+                "sensitivities": [],
+                "status": "Green",
+                "lastLogin": "2026-02-26 05:06",
+                "lockedStatus": "Unlocked",
+                "validity": "Expires Soon",
+                "sev_score": 0
+              },
+              {
+                "userId": "VAR1",
+                "userName": "Nitin Malhotra",
+                "country": "Asia Pacific",
+                "department": "Core Development",
+                "position": "ABAP Developer",
+                "topTransactions": "SE38, SE80, SE11, SE24",
+                "conflictCount": 0,
+                "sensitivities": [],
+                "status": "Green",
+                "lastLogin": "2026-02-28 05:06",
+                "lockedStatus": "Unlocked",
+                "validity": "Valid (31.12.9999)",
+                "sev_score": 0
+              },
+              {
+                "userId": "ZTESTU2",
+                "userName": "ZSHARMA",
+                "country": "Asia Pacific",
+                "department": "Core Development",
+                "position": "ABAP Developer",
+                "topTransactions": "SE38, SE80, SE11, SE24",
+                "conflictCount": 0,
+                "sensitivities": [],
+                "status": "Green",
+                "lastLogin": "2026-03-05 05:06",
+                "lockedStatus": "Unlocked",
+                "validity": "Valid (31.12.9999)",
+                "sev_score": 0
+              }
+            ]
+          },
+          {
+            "name": "Fiori Dev",
+            "size": 7,
+            "status": "Yellow",
+            "users": [
+              {
+                "userId": "SMORE",
+                "userName": "SMORE",
+                "country": "Asia Pacific",
+                "department": "Core Development",
+                "position": "Fiori Dev",
+                "topTransactions": "SE38, SE80, SE11, SE24",
+                "conflictCount": 9,
+                "sensitivities": [
+                  "MEDIUM",
+                  "LOW"
+                ],
+                "status": "Yellow",
+                "lastLogin": "2026-02-28 05:06",
+                "lockedStatus": "Unlocked",
+                "validity": "Valid (31.12.9999)",
+                "sev_score": 2
+              },
+              {
+                "userId": "ODUBEY",
+                "userName": "Om Dubey",
+                "country": "Asia Pacific",
+                "department": "Core Development",
+                "position": "Fiori Dev",
+                "topTransactions": "SE38, SE80, SE11, SE24",
+                "conflictCount": 7,
+                "sensitivities": [
+                  "MEDIUM",
+                  "LOW"
+                ],
+                "status": "Yellow",
+                "lastLogin": "2026-02-21 05:06",
+                "lockedStatus": "Unlocked",
+                "validity": "Valid (31.12.9999)",
+                "sev_score": 2
+              },
+              {
+                "userId": "ASINGH",
+                "userName": "Aditya Singh",
+                "country": "Asia Pacific",
+                "department": "Core Development",
+                "position": "Fiori Dev",
+                "topTransactions": "SE38, SE80, SE11, SE24",
+                "conflictCount": 5,
+                "sensitivities": [
+                  "MEDIUM"
+                ],
+                "status": "Yellow",
+                "lastLogin": "2026-03-08 05:06",
+                "lockedStatus": "Unlocked",
+                "validity": "Valid (31.12.9999)",
+                "sev_score": 2
+              },
+              {
+                "userId": "MAZPEITIA",
+                "userName": "Miguel Azpeitia",
+                "country": "Asia Pacific",
+                "department": "Core Development",
+                "position": "Fiori Dev",
+                "topTransactions": "SE38, SE80, SE11, SE24",
+                "conflictCount": 3,
+                "sensitivities": [
+                  "LOW"
+                ],
+                "status": "Blue",
+                "lastLogin": "2026-03-14 05:06",
+                "lockedStatus": "Unlocked",
+                "validity": "Expires Soon",
+                "sev_score": 1
+              },
+              {
+                "userId": "VNEEMA",
+                "userName": "Vishesh Neema",
+                "country": "Asia Pacific",
+                "department": "Core Development",
+                "position": "Fiori Dev",
+                "topTransactions": "SE38, SE80, SE11, SE24",
+                "conflictCount": 1,
+                "sensitivities": [
+                  "LOW"
+                ],
+                "status": "Blue",
+                "lastLogin": "2026-03-01 05:06",
+                "lockedStatus": "Unlocked",
+                "validity": "Valid (31.12.9999)",
+                "sev_score": 1
+              },
+              {
+                "userId": "WORKFLOWU1",
+                "userName": "Dr. Work dos Flow",
+                "country": "Asia Pacific",
+                "department": "Core Development",
+                "position": "Fiori Dev",
+                "topTransactions": "SE38, SE80, SE11, SE24",
+                "conflictCount": 1,
+                "sensitivities": [
+                  "LOW"
+                ],
+                "status": "Blue",
+                "lastLogin": "2026-02-22 05:06",
+                "lockedStatus": "Unlocked",
+                "validity": "Valid (31.12.9999)",
+                "sev_score": 1
+              },
+              {
+                "userId": "ZTESTU5",
+                "userName": "ZSHARMA",
+                "country": "Asia Pacific",
+                "department": "Core Development",
+                "position": "Fiori Dev",
+                "topTransactions": "SE38, SE80, SE11, SE24",
+                "conflictCount": 0,
+                "sensitivities": [],
+                "status": "Green",
+                "lastLogin": "2026-02-21 05:06",
+                "lockedStatus": "Unlocked",
+                "validity": "Valid (31.12.9999)",
+                "sev_score": 0
+              }
+            ]
+          },
+          {
+            "name": "Integration Lead",
+            "size": 6,
+            "status": "Red",
+            "users": [
+              {
+                "userId": "GSINGH2",
+                "userName": "Gurpinder Singh",
+                "country": "Asia Pacific",
+                "department": "Core Development",
+                "position": "Integration Lead",
+                "topTransactions": "SE38, SE80, SE11, SE24",
+                "conflictCount": 17,
+                "sensitivities": [
+                  "CRITICAL",
+                  "HIGH"
+                ],
+                "status": "Red",
+                "lastLogin": "2026-02-26 05:06",
+                "lockedStatus": "Unlocked",
+                "validity": "Valid (31.12.9999)",
+                "sev_score": 3
+              },
+              {
+                "userId": "SDOGRA",
+                "userName": "Shilpa Dogra",
+                "country": "Asia Pacific",
+                "department": "Core Development",
+                "position": "Integration Lead",
+                "topTransactions": "SE38, SE80, SE11, SE24",
+                "conflictCount": 9,
+                "sensitivities": [
+                  "MEDIUM"
+                ],
+                "status": "Yellow",
+                "lastLogin": "2026-02-22 05:06",
+                "lockedStatus": "Unlocked",
+                "validity": "Valid (31.12.9999)",
+                "sev_score": 2
+              },
+              {
+                "userId": "GPATI",
+                "userName": "Pati",
+                "country": "Asia Pacific",
+                "department": "Core Development",
+                "position": "Integration Lead",
+                "topTransactions": "SE38, SE80, SE11, SE24",
+                "conflictCount": 3,
+                "sensitivities": [
+                  "LOW"
+                ],
+                "status": "Blue",
+                "lastLogin": "2026-03-07 05:06",
+                "lockedStatus": "Unlocked",
+                "validity": "Valid (31.12.9999)",
+                "sev_score": 1
+              },
+              {
+                "userId": "BDIVEDI",
+                "userName": "Dwivedi",
+                "country": "Asia Pacific",
+                "department": "Core Development",
+                "position": "Integration Lead",
+                "topTransactions": "SE38, SE80, SE11, SE24",
+                "conflictCount": 0,
+                "sensitivities": [],
+                "status": "Green",
+                "lastLogin": "2026-02-14 05:06",
+                "lockedStatus": "Unlocked",
+                "validity": "Valid (31.12.9999)",
+                "sev_score": 0
+              },
+              {
+                "userId": "JJURCK",
+                "userName": "Jeff Jurck",
+                "country": "Asia Pacific",
+                "department": "Core Development",
+                "position": "Integration Lead",
+                "topTransactions": "SE38, SE80, SE11, SE24",
+                "conflictCount": 0,
+                "sensitivities": [],
+                "status": "Green",
+                "lastLogin": "2026-03-09 05:06",
+                "lockedStatus": "Unlocked",
+                "validity": "Valid (31.12.9999)",
+                "sev_score": 0
+              },
+              {
+                "userId": "KSHARMA",
+                "userName": "KASHIKA SHARMA",
+                "country": "Asia Pacific",
+                "department": "Core Development",
+                "position": "Integration Lead",
+                "topTransactions": "SE38, SE80, SE11, SE24",
+                "conflictCount": 0,
+                "sensitivities": [],
+                "status": "Green",
+                "lastLogin": "2026-02-20 05:06",
+                "lockedStatus": "Unlocked",
+                "validity": "Valid (31.12.9999)",
+                "sev_score": 0
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Supply Chain",
+        "children": [
+          {
+            "name": "Logistics Admin",
+            "size": 4,
+            "status": "Red",
+            "users": [
+              {
+                "userId": "AGARG",
+                "userName": "ARUSHI GARG",
+                "country": "Asia Pacific",
+                "department": "Supply Chain",
+                "position": "Logistics Admin",
+                "topTransactions": "ME21N, MIGO, MIRO, VL01N",
+                "conflictCount": 17,
+                "sensitivities": [
+                  "CRITICAL",
+                  "HIGH"
+                ],
+                "status": "Red",
+                "lastLogin": "2026-02-17 05:06",
+                "lockedStatus": "Unlocked",
+                "validity": "Valid (31.12.9999)",
+                "sev_score": 3
+              },
+              {
+                "userId": "SRANA",
+                "userName": "SRANA",
+                "country": "Asia Pacific",
+                "department": "Supply Chain",
+                "position": "Logistics Admin",
+                "topTransactions": "ME21N, MIGO, MIRO, VL01N",
+                "conflictCount": 16,
+                "sensitivities": [
+                  "HIGH",
+                  "MEDIUM"
+                ],
+                "status": "Red",
+                "lastLogin": "2026-02-21 05:06",
+                "lockedStatus": "Unlocked",
+                "validity": "Valid (31.12.9999)",
+                "sev_score": 3
+              },
+              {
+                "userId": "MINDSQUARE2",
+                "userName": "MINDSQUARE2",
+                "country": "Asia Pacific",
+                "department": "Supply Chain",
+                "position": "Logistics Admin",
+                "topTransactions": "ME21N, MIGO, MIRO, VL01N",
+                "conflictCount": 3,
+                "sensitivities": [
+                  "LOW"
+                ],
+                "status": "Blue",
+                "lastLogin": "2026-02-19 05:06",
+                "lockedStatus": "Unlocked",
+                "validity": "Valid (31.12.9999)",
+                "sev_score": 1
+              },
+              {
+                "userId": "UREDDY",
+                "userName": "UREDDY",
+                "country": "Asia Pacific",
+                "department": "Supply Chain",
+                "position": "Logistics Admin",
+                "topTransactions": "ME21N, MIGO, MIRO, VL01N",
+                "conflictCount": 0,
+                "sensitivities": [],
+                "status": "Green",
+                "lastLogin": "2026-02-28 05:06",
+                "lockedStatus": "Unlocked",
+                "validity": "Valid (31.12.9999)",
+                "sev_score": 0
+              }
+            ]
+          },
+          {
+            "name": "Procurement Officer",
+            "size": 3,
+            "status": "Yellow",
+            "users": [
+              {
+                "userId": "DITESTEN",
+                "userName": "Test EN Language DITESTEN",
+                "country": "Asia Pacific",
+                "department": "Supply Chain",
+                "position": "Procurement Officer",
+                "topTransactions": "ME21N, MIGO, MIRO, VL01N",
+                "conflictCount": 6,
+                "sensitivities": [
+                  "MEDIUM"
+                ],
+                "status": "Yellow",
+                "lastLogin": "2026-02-16 05:06",
+                "lockedStatus": "Unlocked",
+                "validity": "Valid (31.12.9999)",
+                "sev_score": 2
+              },
+              {
+                "userId": "ARUSR_2DIFF",
+                "userName": "D67 Different Name ARUSR",
+                "country": "Asia Pacific",
+                "department": "Supply Chain",
+                "position": "Procurement Officer",
+                "topTransactions": "ME21N, MIGO, MIRO, VL01N",
+                "conflictCount": 0,
+                "sensitivities": [],
+                "status": "Green",
+                "lastLogin": "2026-02-26 05:06",
+                "lockedStatus": "Unlocked",
+                "validity": "Valid (31.12.9999)",
+                "sev_score": 0
+              },
+              {
+                "userId": "MAILADM",
+                "userName": "MAILADM",
+                "country": "Asia Pacific",
+                "department": "Supply Chain",
+                "position": "Procurement Officer",
+                "topTransactions": "ME21N, MIGO, MIRO, VL01N",
+                "conflictCount": 0,
+                "sensitivities": [],
+                "status": "Green",
+                "lastLogin": "2026-02-16 05:06",
+                "lockedStatus": "Unlocked",
+                "validity": "Valid (31.12.9999)",
+                "sev_score": 0
+              }
+            ]
+          },
+          {
+            "name": "Warehouse Manager",
+            "size": 2,
+            "status": "Red",
+            "users": [
+              {
+                "userId": "ARUSR_NONABP",
+                "userName": "Non-ABAP Record ARUSR",
+                "country": "Asia Pacific",
+                "department": "Supply Chain",
+                "position": "Warehouse Manager",
+                "topTransactions": "ME21N, MIGO, MIRO, VL01N",
+                "conflictCount": 20,
+                "sensitivities": [
+                  "HIGH",
+                  "MEDIUM"
+                ],
+                "status": "Red",
+                "lastLogin": "2026-02-18 05:06",
+                "lockedStatus": "Unlocked",
+                "validity": "Valid (31.12.9999)",
+                "sev_score": 3
+              },
+              {
+                "userId": "VTHAKUR",
+                "userName": "VTHAKUR",
+                "country": "Asia Pacific",
+                "department": "Supply Chain",
+                "position": "Warehouse Manager",
+                "topTransactions": "ME21N, MIGO, MIRO, VL01N",
+                "conflictCount": 6,
+                "sensitivities": [
+                  "MEDIUM",
+                  "LOW"
+                ],
+                "status": "Yellow",
+                "lastLogin": "2026-02-14 05:06",
+                "lockedStatus": "Unlocked",
+                "validity": "Valid (31.12.9999)",
+                "sev_score": 2
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "IT Security",
+        "children": [
+          {
+            "name": "Basis Admin",
+            "size": 3,
+            "status": "Blue",
+            "users": [
+              {
+                "userId": "ARAKWAL",
+                "userName": "ARAKWAL",
+                "country": "Asia Pacific",
+                "department": "IT Security",
+                "position": "Basis Admin",
+                "topTransactions": "SU01, PFCG, SUIM",
+                "conflictCount": 2,
+                "sensitivities": [
+                  "LOW"
+                ],
+                "status": "Blue",
+                "lastLogin": "2026-03-10 05:06",
+                "lockedStatus": "Unlocked",
+                "validity": "Expires Soon",
+                "sev_score": 1
+              },
+              {
+                "userId": "BNAYAK",
+                "userName": "Birakishore Nayak",
+                "country": "Asia Pacific",
+                "department": "IT Security",
+                "position": "Basis Admin",
+                "topTransactions": "SU01, PFCG, SUIM",
+                "conflictCount": 0,
+                "sensitivities": [],
+                "status": "Green",
+                "lastLogin": "2026-03-01 05:06",
+                "lockedStatus": "Unlocked",
+                "validity": "Valid (31.12.9999)",
+                "sev_score": 0
+              },
+              {
+                "userId": "TEST_VDATE",
+                "userName": "VDATE",
+                "country": "Asia Pacific",
+                "department": "IT Security",
+                "position": "Basis Admin",
+                "topTransactions": "SU01, PFCG, SUIM",
+                "conflictCount": 0,
+                "sensitivities": [],
+                "status": "Green",
+                "lastLogin": "2026-03-03 05:06",
+                "lockedStatus": "Unlocked",
+                "validity": "Valid (31.12.9999)",
+                "sev_score": 0
+              }
+            ]
+          },
+          {
+            "name": "Security Auditor",
+            "size": 5,
+            "status": "Yellow",
+            "users": [
+              {
+                "userId": "BARAN2",
+                "userName": "BARAN2",
+                "country": "Asia Pacific",
+                "department": "IT Security",
+                "position": "Security Auditor",
+                "topTransactions": "SU01, PFCG, SUIM",
+                "conflictCount": 10,
+                "sensitivities": [
+                  "MEDIUM",
+                  "LOW"
+                ],
+                "status": "Yellow",
+                "lastLogin": "2026-03-05 05:06",
+                "lockedStatus": "Unlocked",
+                "validity": "Valid (31.12.9999)",
+                "sev_score": 2
+              },
+              {
+                "userId": "OLEGF",
+                "userName": "OLEGF",
+                "country": "Asia Pacific",
+                "department": "IT Security",
+                "position": "Security Auditor",
+                "topTransactions": "SU01, PFCG, SUIM",
+                "conflictCount": 9,
+                "sensitivities": [
+                  "MEDIUM"
+                ],
+                "status": "Yellow",
+                "lastLogin": "2026-03-07 05:06",
+                "lockedStatus": "Unlocked",
+                "validity": "Valid (31.12.9999)",
+                "sev_score": 2
+              },
+              {
+                "userId": "DITEST2",
+                "userName": "DITEST2",
+                "country": "Asia Pacific",
+                "department": "IT Security",
+                "position": "Security Auditor",
+                "topTransactions": "SU01, PFCG, SUIM",
+                "conflictCount": 5,
+                "sensitivities": [
+                  "MEDIUM",
+                  "LOW"
+                ],
+                "status": "Yellow",
+                "lastLogin": "2026-02-21 05:06",
+                "lockedStatus": "Unlocked",
+                "validity": "Valid (31.12.9999)",
+                "sev_score": 2
+              },
+              {
+                "userId": "MMEHTO",
+                "userName": "Mohan Mehto",
+                "country": "Asia Pacific",
+                "department": "IT Security",
+                "position": "Security Auditor",
+                "topTransactions": "SU01, PFCG, SUIM",
+                "conflictCount": 1,
+                "sensitivities": [
+                  "LOW"
+                ],
+                "status": "Blue",
+                "lastLogin": "2026-02-18 05:06",
+                "lockedStatus": "Locked",
+                "validity": "Valid (31.12.9999)",
+                "sev_score": 1
+              },
+              {
+                "userId": "ASMITA",
+                "userName": "asmi asmita",
+                "country": "Asia Pacific",
+                "department": "IT Security",
+                "position": "Security Auditor",
+                "topTransactions": "SU01, PFCG, SUIM",
+                "conflictCount": 0,
+                "sensitivities": [],
+                "status": "Green",
+                "lastLogin": "2026-02-22 05:06",
+                "lockedStatus": "Unlocked",
+                "validity": "Valid (31.12.9999)",
+                "sev_score": 0
+              }
+            ]
+          },
+          {
+            "name": "Identity Admin",
+            "size": 6,
+            "status": "Yellow",
+            "users": [
+              {
+                "userId": "ZTESTU7",
+                "userName": "ZSHARMA",
+                "country": "Asia Pacific",
+                "department": "IT Security",
+                "position": "Identity Admin",
+                "topTransactions": "SU01, PFCG, SUIM",
+                "conflictCount": 10,
+                "sensitivities": [
+                  "MEDIUM"
+                ],
+                "status": "Yellow",
+                "lastLogin": "2026-02-20 05:06",
+                "lockedStatus": "Unlocked",
+                "validity": "Expires Soon",
+                "sev_score": 2
+              },
+              {
+                "userId": "VAR_T3",
+                "userName": "Nitin Malhotra",
+                "country": "Asia Pacific",
+                "department": "IT Security",
+                "position": "Identity Admin",
+                "topTransactions": "SU01, PFCG, SUIM",
+                "conflictCount": 8,
+                "sensitivities": [
+                  "MEDIUM",
+                  "LOW"
+                ],
+                "status": "Yellow",
+                "lastLogin": "2026-02-17 05:06",
+                "lockedStatus": "Unlocked",
+                "validity": "Valid (31.12.9999)",
+                "sev_score": 2
+              },
+              {
+                "userId": "DITESTDE",
+                "userName": "Test DE Language DITESTDE",
+                "country": "Asia Pacific",
+                "department": "IT Security",
+                "position": "Identity Admin",
+                "topTransactions": "SU01, PFCG, SUIM",
+                "conflictCount": 7,
+                "sensitivities": [
+                  "MEDIUM",
+                  "LOW"
+                ],
+                "status": "Yellow",
+                "lastLogin": "2026-03-15 05:06",
+                "lockedStatus": "Unlocked",
+                "validity": "Valid (31.12.9999)",
+                "sev_score": 2
+              },
+              {
+                "userId": "SMADAN",
+                "userName": "SMADAN",
+                "country": "Asia Pacific",
+                "department": "IT Security",
+                "position": "Identity Admin",
+                "topTransactions": "SU01, PFCG, SUIM",
+                "conflictCount": 5,
+                "sensitivities": [
+                  "MEDIUM"
+                ],
+                "status": "Yellow",
+                "lastLogin": "2026-02-22 05:06",
+                "lockedStatus": "Unlocked",
+                "validity": "Valid (31.12.9999)",
+                "sev_score": 2
+              },
+              {
+                "userId": "ZTESTU8",
+                "userName": "ZSHARMA",
+                "country": "Asia Pacific",
+                "department": "IT Security",
+                "position": "Identity Admin",
+                "topTransactions": "SU01, PFCG, SUIM",
+                "conflictCount": 2,
+                "sensitivities": [
+                  "LOW"
+                ],
+                "status": "Blue",
+                "lastLogin": "2026-03-06 05:06",
+                "lockedStatus": "Unlocked",
+                "validity": "Valid (31.12.9999)",
+                "sev_score": 1
+              },
+              {
+                "userId": "JAGJITS",
+                "userName": "JAGJITS",
+                "country": "Asia Pacific",
+                "department": "IT Security",
+                "position": "Identity Admin",
+                "topTransactions": "SU01, PFCG, SUIM",
+                "conflictCount": 0,
+                "sensitivities": [],
+                "status": "Green",
+                "lastLogin": "2026-03-06 05:06",
+                "lockedStatus": "Unlocked",
+                "validity": "Valid (31.12.9999)",
+                "sev_score": 0
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Finance & Controlling",
+        "children": [
+          {
+            "name": "FI/CO Analyst",
+            "size": 5,
+            "status": "Red",
+            "users": [
+              {
+                "userId": "ZTESTU1",
+                "userName": "test",
+                "country": "Asia Pacific",
+                "department": "Finance & Controlling",
+                "position": "FI/CO Analyst",
+                "topTransactions": "FB01, FB50, F-02, F-53",
+                "conflictCount": 19,
+                "sensitivities": [
+                  "CRITICAL",
+                  "HIGH"
+                ],
+                "status": "Red",
+                "lastLogin": "2026-02-15 05:06",
+                "lockedStatus": "Unlocked",
+                "validity": "Valid (31.12.9999)",
+                "sev_score": 3
+              },
+              {
+                "userId": "DREINSMA",
+                "userName": "Diane Reinsma",
+                "country": "Asia Pacific",
+                "department": "Finance & Controlling",
+                "position": "FI/CO Analyst",
+                "topTransactions": "FB01, FB50, F-02, F-53",
+                "conflictCount": 18,
+                "sensitivities": [
+                  "CRITICAL",
+                  "HIGH"
+                ],
+                "status": "Red",
+                "lastLogin": "2026-02-20 05:06",
+                "lockedStatus": "Unlocked",
+                "validity": "Valid (31.12.9999)",
+                "sev_score": 3
+              },
+              {
+                "userId": "ZTESTRFCHB",
+                "userName": "ZTESTRFCHB",
+                "country": "Asia Pacific",
+                "department": "Finance & Controlling",
+                "position": "FI/CO Analyst",
+                "topTransactions": "FB01, FB50, F-02, F-53",
+                "conflictCount": 6,
+                "sensitivities": [
+                  "MEDIUM",
+                  "LOW"
+                ],
+                "status": "Yellow",
+                "lastLogin": "2026-03-04 05:06",
+                "lockedStatus": "Unlocked",
+                "validity": "Valid (31.12.9999)",
+                "sev_score": 2
+              },
+              {
+                "userId": "RJINDAL",
+                "userName": "Jindal",
+                "country": "Asia Pacific",
+                "department": "Finance & Controlling",
+                "position": "FI/CO Analyst",
+                "topTransactions": "FB01, FB50, F-02, F-53",
+                "conflictCount": 1,
+                "sensitivities": [
+                  "LOW"
+                ],
+                "status": "Blue",
+                "lastLogin": "2026-02-21 05:06",
+                "lockedStatus": "Unlocked",
+                "validity": "Valid (31.12.9999)",
+                "sev_score": 1
+              },
+              {
+                "userId": "TESTUMARDAND",
+                "userName": "TESTUMARDAND",
+                "country": "Asia Pacific",
+                "department": "Finance & Controlling",
+                "position": "FI/CO Analyst",
+                "topTransactions": "FB01, FB50, F-02, F-53",
+                "conflictCount": 0,
+                "sensitivities": [],
+                "status": "Green",
+                "lastLogin": "2026-02-21 05:06",
+                "lockedStatus": "Unlocked",
+                "validity": "Valid (31.12.9999)",
+                "sev_score": 0
+              }
+            ]
+          },
+          {
+            "name": "Controller",
+            "size": 3,
+            "status": "Yellow",
+            "users": [
+              {
+                "userId": "IKIMMEL",
+                "userName": "Isaac Kimmel",
+                "country": "Asia Pacific",
+                "department": "Finance & Controlling",
+                "position": "Controller",
+                "topTransactions": "FB01, FB50, F-02, F-53",
+                "conflictCount": 7,
+                "sensitivities": [
+                  "MEDIUM"
+                ],
+                "status": "Yellow",
+                "lastLogin": "2026-02-14 05:06",
+                "lockedStatus": "Unlocked",
+                "validity": "Valid (31.12.9999)",
+                "sev_score": 2
+              },
+              {
+                "userId": "VAR_T2",
+                "userName": "Nitin Malhotra",
+                "country": "Asia Pacific",
+                "department": "Finance & Controlling",
+                "position": "Controller",
+                "topTransactions": "FB01, FB50, F-02, F-53",
+                "conflictCount": 3,
+                "sensitivities": [
+                  "LOW"
+                ],
+                "status": "Blue",
+                "lastLogin": "2026-03-13 05:06",
+                "lockedStatus": "Unlocked",
+                "validity": "Valid (31.12.9999)",
+                "sev_score": 1
+              },
+              {
+                "userId": "SHRIRAM.K",
+                "userName": "SHRIRAM KSHIRE",
+                "country": "Asia Pacific",
+                "department": "Finance & Controlling",
+                "position": "Controller",
+                "topTransactions": "FB01, FB50, F-02, F-53",
+                "conflictCount": 1,
+                "sensitivities": [
+                  "LOW"
+                ],
+                "status": "Blue",
+                "lastLogin": "2026-03-01 05:06",
+                "lockedStatus": "Unlocked",
+                "validity": "Valid (31.12.9999)",
+                "sev_score": 1
+              }
+            ]
+          },
+          {
+            "name": "AP Specialist",
+            "size": 3,
+            "status": "Blue",
+            "users": [
+              {
+                "userId": "PWATTS",
+                "userName": "watts",
+                "country": "Asia Pacific",
+                "department": "Finance & Controlling",
+                "position": "AP Specialist",
+                "topTransactions": "FB01, FB50, F-02, F-53",
+                "conflictCount": 3,
+                "sensitivities": [
+                  "LOW"
+                ],
+                "status": "Blue",
+                "lastLogin": "2026-03-06 05:06",
+                "lockedStatus": "Unlocked",
+                "validity": "Expires Soon",
+                "sev_score": 1
+              },
+              {
+                "userId": "RAUDITOR",
+                "userName": "RAUDITOR",
+                "country": "Asia Pacific",
+                "department": "Finance & Controlling",
+                "position": "AP Specialist",
+                "topTransactions": "FB01, FB50, F-02, F-53",
+                "conflictCount": 0,
+                "sensitivities": [],
+                "status": "Green",
+                "lastLogin": "2026-02-17 05:06",
+                "lockedStatus": "Unlocked",
+                "validity": "Valid (31.12.9999)",
+                "sev_score": 0
+              },
+              {
+                "userId": "ZTD_TESTUSR",
+                "userName": "Lname Fname",
+                "country": "Asia Pacific",
+                "department": "Finance & Controlling",
+                "position": "AP Specialist",
+                "topTransactions": "FB01, FB50, F-02, F-53",
+                "conflictCount": 0,
+                "sensitivities": [],
+                "status": "Green",
+                "lastLogin": "2026-02-24 05:06",
+                "lockedStatus": "Unlocked",
+                "validity": "Valid (31.12.9999)",
+                "sev_score": 0
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Europe",
+    "children": [
+      {
+        "name": "Supply Chain",
+        "children": [
+          {
+            "name": "Procurement Officer",
+            "size": 8,
+            "status": "Red",
+            "users": [
+              {
+                "userId": "ARUSR_FUTURE",
+                "userName": "FUTURE ER AR USER",
+                "country": "Europe",
+                "department": "Supply Chain",
+                "position": "Procurement Officer",
+                "topTransactions": "ME21N, MIGO, MIRO, VL01N",
+                "conflictCount": 22,
+                "sensitivities": [
+                  "CRITICAL",
+                  "HIGH"
+                ],
+                "status": "Red",
+                "lastLogin": "2026-03-06 05:06",
+                "lockedStatus": "Unlocked",
+                "validity": "Valid (31.12.9999)",
+                "sev_score": 3
+              },
+              {
+                "userId": "WF-BATCH",
+                "userName": "Workflow System",
+                "country": "Europe",
+                "department": "Supply Chain",
+                "position": "Procurement Officer",
+                "topTransactions": "ME21N, MIGO, MIRO, VL01N",
+                "conflictCount": 8,
+                "sensitivities": [
+                  "MEDIUM"
+                ],
+                "status": "Yellow",
+                "lastLogin": "2026-03-07 05:06",
+                "lockedStatus": "Unlocked",
+                "validity": "Valid (31.12.9999)",
+                "sev_score": 2
+              },
+              {
+                "userId": "Z_ACHAVAN_2",
+                "userName": "Z_ACHAVAN_2",
+                "country": "Europe",
+                "department": "Supply Chain",
+                "position": "Procurement Officer",
+                "topTransactions": "ME21N, MIGO, MIRO, VL01N",
+                "conflictCount": 3,
+                "sensitivities": [
+                  "LOW"
+                ],
+                "status": "Blue",
+                "lastLogin": "2026-03-07 05:06",
+                "lockedStatus": "Unlocked",
+                "validity": "Valid (31.12.9999)",
+                "sev_score": 1
+              },
+              {
+                "userId": "ACHAVAN_USR",
+                "userName": "TEST USER AKSHAY",
+                "country": "Europe",
+                "department": "Supply Chain",
+                "position": "Procurement Officer",
+                "topTransactions": "ME21N, MIGO, MIRO, VL01N",
+                "conflictCount": 2,
+                "sensitivities": [
+                  "LOW"
+                ],
+                "status": "Blue",
+                "lastLogin": "2026-02-23 05:06",
+                "lockedStatus": "Unlocked",
+                "validity": "Expires Soon",
+                "sev_score": 1
+              },
+              {
+                "userId": "TEST_01",
+                "userName": "Test Case PDF",
+                "country": "Europe",
+                "department": "Supply Chain",
+                "position": "Procurement Officer",
+                "topTransactions": "ME21N, MIGO, MIRO, VL01N",
+                "conflictCount": 1,
+                "sensitivities": [
+                  "LOW"
+                ],
+                "status": "Blue",
+                "lastLogin": "2026-03-12 05:06",
+                "lockedStatus": "Unlocked",
+                "validity": "Valid (31.12.9999)",
+                "sev_score": 1
+              },
+              {
+                "userId": "COMM_AM",
+                "userName": "COMM_AM",
+                "country": "Europe",
+                "department": "Supply Chain",
+                "position": "Procurement Officer",
+                "topTransactions": "ME21N, MIGO, MIRO, VL01N",
+                "conflictCount": 0,
+                "sensitivities": [],
+                "status": "Green",
+                "lastLogin": "2026-02-24 05:06",
+                "lockedStatus": "Unlocked",
+                "validity": "Valid (31.12.9999)",
+                "sev_score": 0
+              },
+              {
+                "userId": "ZSOL2D67",
+                "userName": "ZSOL2D67",
+                "country": "Europe",
+                "department": "Supply Chain",
+                "position": "Procurement Officer",
+                "topTransactions": "ME21N, MIGO, MIRO, VL01N",
+                "conflictCount": 0,
+                "sensitivities": [],
+                "status": "Green",
+                "lastLogin": "2026-03-13 05:06",
+                "lockedStatus": "Unlocked",
+                "validity": "Valid (31.12.9999)",
+                "sev_score": 0
+              },
+              {
+                "userId": "ZTESTP1",
+                "userName": "TEST User",
+                "country": "Europe",
+                "department": "Supply Chain",
+                "position": "Procurement Officer",
+                "topTransactions": "ME21N, MIGO, MIRO, VL01N",
+                "conflictCount": 0,
+                "sensitivities": [],
+                "status": "Green",
+                "lastLogin": "2026-03-12 05:06",
+                "lockedStatus": "Unlocked",
+                "validity": "Valid (31.12.9999)",
+                "sev_score": 0
+              }
+            ]
+          },
+          {
+            "name": "Logistics Admin",
+            "size": 7,
+            "status": "Red",
+            "users": [
+              {
+                "userId": "DIERUSER",
+                "userName": "Name on D67 ER User",
+                "country": "Europe",
+                "department": "Supply Chain",
+                "position": "Logistics Admin",
+                "topTransactions": "ME21N, MIGO, MIRO, VL01N",
+                "conflictCount": 11,
+                "sensitivities": [
+                  "HIGH",
+                  "MEDIUM"
+                ],
+                "status": "Red",
+                "lastLogin": "2026-03-03 05:06",
+                "lockedStatus": "Unlocked",
+                "validity": "Valid (31.12.9999)",
+                "sev_score": 3
+              },
+              {
+                "userId": "ASINGH_POST",
+                "userName": "ASINGH_POST",
+                "country": "Europe",
+                "department": "Supply Chain",
+                "position": "Logistics Admin",
+                "topTransactions": "ME21N, MIGO, MIRO, VL01N",
+                "conflictCount": 10,
+                "sensitivities": [
+                  "MEDIUM"
+                ],
+                "status": "Yellow",
+                "lastLogin": "2026-03-06 05:06",
+                "lockedStatus": "Unlocked",
+                "validity": "Valid (31.12.9999)",
+                "sev_score": 2
+              },
+              {
+                "userId": "JVANHOVE",
+                "userName": "JVANHOVE",
+                "country": "Europe",
+                "department": "Supply Chain",
+                "position": "Logistics Admin",
+                "topTransactions": "ME21N, MIGO, MIRO, VL01N",
+                "conflictCount": 8,
+                "sensitivities": [
+                  "MEDIUM",
+                  "LOW"
+                ],
+                "status": "Yellow",
+                "lastLogin": "2026-03-02 05:06",
+                "lockedStatus": "Unlocked",
+                "validity": "Valid (31.12.9999)",
+                "sev_score": 2
+              },
+              {
+                "userId": "ZTEST_1003",
+                "userName": "JSHARMA ZTEST_1003",
+                "country": "Europe",
+                "department": "Supply Chain",
+                "position": "Logistics Admin",
+                "topTransactions": "ME21N, MIGO, MIRO, VL01N",
+                "conflictCount": 5,
+                "sensitivities": [
+                  "MEDIUM"
+                ],
+                "status": "Yellow",
+                "lastLogin": "2026-02-20 05:06",
+                "lockedStatus": "Unlocked",
+                "validity": "Valid (31.12.9999)",
+                "sev_score": 2
+              },
+              {
+                "userId": "ERUSR_2DIFF",
+                "userName": "D67 Name ER User",
+                "country": "Europe",
+                "department": "Supply Chain",
+                "position": "Logistics Admin",
+                "topTransactions": "ME21N, MIGO, MIRO, VL01N",
+                "conflictCount": 4,
+                "sensitivities": [
+                  "MEDIUM"
+                ],
+                "status": "Yellow",
+                "lastLogin": "2026-03-05 05:06",
+                "lockedStatus": "Unlocked",
+                "validity": "Valid (31.12.9999)",
+                "sev_score": 2
+              },
+              {
+                "userId": "SHUBHAM.T",
+                "userName": "SHUBHAM TATHOD",
+                "country": "Europe",
+                "department": "Supply Chain",
+                "position": "Logistics Admin",
+                "topTransactions": "ME21N, MIGO, MIRO, VL01N",
+                "conflictCount": 3,
+                "sensitivities": [
+                  "LOW"
+                ],
+                "status": "Blue",
+                "lastLogin": "2026-03-04 05:06",
+                "lockedStatus": "Unlocked",
+                "validity": "Valid (31.12.9999)",
+                "sev_score": 1
+              },
+              {
+                "userId": "ARPAN_TEST",
+                "userName": "S",
+                "country": "Europe",
+                "department": "Supply Chain",
+                "position": "Logistics Admin",
+                "topTransactions": "ME21N, MIGO, MIRO, VL01N",
+                "conflictCount": 1,
+                "sensitivities": [
+                  "LOW"
+                ],
+                "status": "Blue",
+                "lastLogin": "2026-02-19 05:06",
+                "lockedStatus": "Unlocked",
+                "validity": "Valid (31.12.9999)",
+                "sev_score": 1
+              }
+            ]
+          },
+          {
+            "name": "Warehouse Manager",
+            "size": 4,
+            "status": "Yellow",
+            "users": [
+              {
+                "userId": "DDIC",
+                "userName": "DDIC",
+                "country": "Europe",
+                "department": "Supply Chain",
+                "position": "Warehouse Manager",
+                "topTransactions": "ME21N, MIGO, MIRO, VL01N",
+                "conflictCount": 9,
+                "sensitivities": [
+                  "MEDIUM",
+                  "LOW"
+                ],
+                "status": "Yellow",
+                "lastLogin": "2026-03-16 05:06",
+                "lockedStatus": "Unlocked",
+                "validity": "Valid (31.12.9999)",
+                "sev_score": 2
+              },
+              {
+                "userId": "RM_TEST_ITS1",
+                "userName": "rm_test_its1",
+                "country": "Europe",
+                "department": "Supply Chain",
+                "position": "Warehouse Manager",
+                "topTransactions": "ME21N, MIGO, MIRO, VL01N",
+                "conflictCount": 3,
+                "sensitivities": [
+                  "LOW"
+                ],
+                "status": "Blue",
+                "lastLogin": "2026-03-06 05:06",
+                "lockedStatus": "Unlocked",
+                "validity": "Valid (31.12.9999)",
+                "sev_score": 1
+              },
+              {
+                "userId": "Z_ACHAVAN_5",
+                "userName": "Z_ACHAVAN_5",
+                "country": "Europe",
+                "department": "Supply Chain",
+                "position": "Warehouse Manager",
+                "topTransactions": "ME21N, MIGO, MIRO, VL01N",
+                "conflictCount": 2,
+                "sensitivities": [
+                  "LOW"
+                ],
+                "status": "Blue",
+                "lastLogin": "2026-03-05 05:06",
+                "lockedStatus": "Unlocked",
+                "validity": "Valid (31.12.9999)",
+                "sev_score": 1
+              },
+              {
+                "userId": "DRMESTEST",
+                "userName": "MES TEST DRMESTEST",
+                "country": "Europe",
+                "department": "Supply Chain",
+                "position": "Warehouse Manager",
+                "topTransactions": "ME21N, MIGO, MIRO, VL01N",
+                "conflictCount": 0,
+                "sensitivities": [],
+                "status": "Green",
+                "lastLogin": "2026-02-18 05:06",
+                "lockedStatus": "Unlocked",
+                "validity": "Valid (31.12.9999)",
+                "sev_score": 0
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "IT Security",
+        "children": [
+          {
+            "name": "Basis Admin",
+            "size": 5,
+            "status": "Red",
+            "users": [
+              {
+                "userId": "GRANA",
+                "userName": "GRANA",
+                "country": "Europe",
+                "department": "IT Security",
+                "position": "Basis Admin",
+                "topTransactions": "SU01, PFCG, SUIM",
+                "conflictCount": 22,
+                "sensitivities": [
+                  "CRITICAL",
+                  "HIGH"
+                ],
+                "status": "Red",
+                "lastLogin": "2026-03-09 05:06",
+                "lockedStatus": "Unlocked",
+                "validity": "Valid (31.12.9999)",
+                "sev_score": 3
+              },
+              {
+                "userId": "RM_TEST_TR",
+                "userName": "RM_TEST_TR",
+                "country": "Europe",
+                "department": "IT Security",
+                "position": "Basis Admin",
+                "topTransactions": "SU01, PFCG, SUIM",
+                "conflictCount": 18,
+                "sensitivities": [
+                  "HIGH",
+                  "MEDIUM"
+                ],
+                "status": "Red",
+                "lastLogin": "2026-02-25 05:06",
+                "lockedStatus": "Unlocked",
+                "validity": "Valid (31.12.9999)",
+                "sev_score": 3
+              },
+              {
+                "userId": "ZTEST_PA2",
+                "userName": "ZTEST_PA2",
+                "country": "Europe",
+                "department": "IT Security",
+                "position": "Basis Admin",
+                "topTransactions": "SU01, PFCG, SUIM",
+                "conflictCount": 3,
+                "sensitivities": [
+                  "LOW"
+                ],
+                "status": "Blue",
+                "lastLogin": "2026-03-15 05:06",
+                "lockedStatus": "Unlocked",
+                "validity": "Valid (31.12.9999)",
+                "sev_score": 1
+              },
+              {
+                "userId": "ACHRIS1",
+                "userName": "ACHRIS1",
+                "country": "Europe",
+                "department": "IT Security",
+                "position": "Basis Admin",
+                "topTransactions": "SU01, PFCG, SUIM",
+                "conflictCount": 2,
+                "sensitivities": [
+                  "LOW"
+                ],
+                "status": "Blue",
+                "lastLogin": "2026-03-09 05:06",
+                "lockedStatus": "Unlocked",
+                "validity": "Valid (31.12.9999)",
+                "sev_score": 1
+              },
+              {
+                "userId": "Z_ACHAVAN_1",
+                "userName": "Z_ACHAVAN_1",
+                "country": "Europe",
+                "department": "IT Security",
+                "position": "Basis Admin",
+                "topTransactions": "SU01, PFCG, SUIM",
+                "conflictCount": 2,
+                "sensitivities": [
+                  "LOW"
+                ],
+                "status": "Blue",
+                "lastLogin": "2026-03-05 05:06",
+                "lockedStatus": "Unlocked",
+                "validity": "Valid (31.12.9999)",
+                "sev_score": 1
+              }
+            ]
+          },
+          {
+            "name": "Security Auditor",
+            "size": 2,
+            "status": "Yellow",
+            "users": [
+              {
+                "userId": "NGARG",
+                "userName": "NAKUL GARG",
+                "country": "Europe",
+                "department": "IT Security",
+                "position": "Security Auditor",
+                "topTransactions": "SU01, PFCG, SUIM",
+                "conflictCount": 10,
+                "sensitivities": [
+                  "MEDIUM"
+                ],
+                "status": "Yellow",
+                "lastLogin": "2026-02-20 05:06",
+                "lockedStatus": "Unlocked",
+                "validity": "Valid (31.12.9999)",
+                "sev_score": 2
+              },
+              {
+                "userId": "ZVMATHUR",
+                "userName": "TEST",
+                "country": "Europe",
+                "department": "IT Security",
+                "position": "Security Auditor",
+                "topTransactions": "SU01, PFCG, SUIM",
+                "conflictCount": 0,
+                "sensitivities": [],
+                "status": "Green",
+                "lastLogin": "2026-02-28 05:06",
+                "lockedStatus": "Unlocked",
+                "validity": "Valid (31.12.9999)",
+                "sev_score": 0
+              }
+            ]
+          },
+          {
+            "name": "Identity Admin",
+            "size": 1,
+            "status": "Green",
+            "users": [
+              {
+                "userId": "VKUMAR",
+                "userName": "KUMAR",
+                "country": "Europe",
+                "department": "IT Security",
+                "position": "Identity Admin",
+                "topTransactions": "SU01, PFCG, SUIM",
+                "conflictCount": 0,
+                "sensitivities": [],
+                "status": "Green",
+                "lastLogin": "2026-03-11 05:06",
+                "lockedStatus": "Unlocked",
+                "validity": "Valid (31.12.9999)",
+                "sev_score": 0
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Core Development",
+        "children": [
+          {
+            "name": "Integration Lead",
+            "size": 7,
+            "status": "Red",
+            "users": [
+              {
+                "userId": "ARUSR_VALID",
+                "userName": "Test ARUSR_VALID",
+                "country": "Europe",
+                "department": "Core Development",
+                "position": "Integration Lead",
+                "topTransactions": "SE38, SE80, SE11, SE24",
+                "conflictCount": 12,
+                "sensitivities": [
+                  "HIGH",
+                  "MEDIUM"
+                ],
+                "status": "Red",
+                "lastLogin": "2026-02-19 05:06",
+                "lockedStatus": "Unlocked",
+                "validity": "Valid (31.12.9999)",
+                "sev_score": 3
+              },
+              {
+                "userId": "ZVND67T61RFC",
+                "userName": "ZVND67T61RFC ZVND67T61RFC",
+                "country": "Europe",
+                "department": "Core Development",
+                "position": "Integration Lead",
+                "topTransactions": "SE38, SE80, SE11, SE24",
+                "conflictCount": 8,
+                "sensitivities": [
+                  "MEDIUM",
+                  "LOW"
+                ],
+                "status": "Yellow",
+                "lastLogin": "2026-03-15 05:06",
+                "lockedStatus": "Unlocked",
+                "validity": "Expires Soon",
+                "sev_score": 2
+              },
+              {
+                "userId": "AHARTLEY",
+                "userName": "Andy Hartley",
+                "country": "Europe",
+                "department": "Core Development",
+                "position": "Integration Lead",
+                "topTransactions": "SE38, SE80, SE11, SE24",
+                "conflictCount": 2,
+                "sensitivities": [
+                  "LOW"
+                ],
+                "status": "Blue",
+                "lastLogin": "2026-03-05 05:06",
+                "lockedStatus": "Unlocked",
+                "validity": "Valid (31.12.9999)",
+                "sev_score": 1
+              },
+              {
+                "userId": "TEST_NEW22",
+                "userName": "TEST_NEW22",
+                "country": "Europe",
+                "department": "Core Development",
+                "position": "Integration Lead",
+                "topTransactions": "SE38, SE80, SE11, SE24",
+                "conflictCount": 1,
+                "sensitivities": [
+                  "LOW"
+                ],
+                "status": "Blue",
+                "lastLogin": "2026-02-24 05:06",
+                "lockedStatus": "Unlocked",
+                "validity": "Valid (31.12.9999)",
+                "sev_score": 1
+              },
+              {
+                "userId": "APPROVER",
+                "userName": "APPROVER",
+                "country": "Europe",
+                "department": "Core Development",
+                "position": "Integration Lead",
+                "topTransactions": "SE38, SE80, SE11, SE24",
+                "conflictCount": 0,
+                "sensitivities": [],
+                "status": "Green",
+                "lastLogin": "2026-03-15 05:06",
+                "lockedStatus": "Unlocked",
+                "validity": "Valid (31.12.9999)",
+                "sev_score": 0
+              },
+              {
+                "userId": "ASINGH_TEST",
+                "userName": "RM Testing",
+                "country": "Europe",
+                "department": "Core Development",
+                "position": "Integration Lead",
+                "topTransactions": "SE38, SE80, SE11, SE24",
+                "conflictCount": 0,
+                "sensitivities": [],
+                "status": "Green",
+                "lastLogin": "2026-02-23 05:06",
+                "lockedStatus": "Unlocked",
+                "validity": "Valid (31.12.9999)",
+                "sev_score": 0
+              },
+              {
+                "userId": "Z_ACHAVAN_4",
+                "userName": "Z_ACHAVAN_4",
+                "country": "Europe",
+                "department": "Core Development",
+                "position": "Integration Lead",
+                "topTransactions": "SE38, SE80, SE11, SE24",
+                "conflictCount": 0,
+                "sensitivities": [],
+                "status": "Green",
+                "lastLogin": "2026-02-21 05:06",
+                "lockedStatus": "Unlocked",
+                "validity": "Valid (31.12.9999)",
+                "sev_score": 0
+              }
+            ]
+          },
+          {
+            "name": "Fiori Dev",
+            "size": 5,
+            "status": "Red",
+            "users": [
+              {
+                "userId": "DHORIONS",
+                "userName": "Dries Horions",
+                "country": "Europe",
+                "department": "Core Development",
+                "position": "Fiori Dev",
+                "topTransactions": "SE38, SE80, SE11, SE24",
+                "conflictCount": 21,
+                "sensitivities": [
+                  "CRITICAL",
+                  "HIGH"
+                ],
+                "status": "Red",
+                "lastLogin": "2026-02-21 05:06",
+                "lockedStatus": "Unlocked",
+                "validity": "Valid (31.12.9999)",
+                "sev_score": 3
+              },
+              {
+                "userId": "ASINGH_RM",
+                "userName": "ASINGH_RM",
+                "country": "Europe",
+                "department": "Core Development",
+                "position": "Fiori Dev",
+                "topTransactions": "SE38, SE80, SE11, SE24",
+                "conflictCount": 10,
+                "sensitivities": [
+                  "MEDIUM",
+                  "LOW"
+                ],
+                "status": "Yellow",
+                "lastLogin": "2026-02-15 05:06",
+                "lockedStatus": "Unlocked",
+                "validity": "Valid (31.12.9999)",
+                "sev_score": 2
+              },
+              {
+                "userId": "LIORE",
+                "userName": "LIORE",
+                "country": "Europe",
+                "department": "Core Development",
+                "position": "Fiori Dev",
+                "topTransactions": "SE38, SE80, SE11, SE24",
+                "conflictCount": 9,
+                "sensitivities": [
+                  "MEDIUM",
+                  "LOW"
+                ],
+                "status": "Yellow",
+                "lastLogin": "2026-02-27 05:06",
+                "lockedStatus": "Unlocked",
+                "validity": "Valid (31.12.9999)",
+                "sev_score": 2
+              },
+              {
+                "userId": "DEMOPLB1",
+                "userName": "DEMOPLB1",
+                "country": "Europe",
+                "department": "Core Development",
+                "position": "Fiori Dev",
+                "topTransactions": "SE38, SE80, SE11, SE24",
+                "conflictCount": 7,
+                "sensitivities": [
+                  "MEDIUM",
+                  "LOW"
+                ],
+                "status": "Yellow",
+                "lastLogin": "2026-02-24 05:06",
+                "lockedStatus": "Unlocked",
+                "validity": "Valid (31.12.9999)",
+                "sev_score": 2
+              },
+              {
+                "userId": "ZVAR2",
+                "userName": "test2",
+                "country": "Europe",
+                "department": "Core Development",
+                "position": "Fiori Dev",
+                "topTransactions": "SE38, SE80, SE11, SE24",
+                "conflictCount": 1,
+                "sensitivities": [
+                  "LOW"
+                ],
+                "status": "Blue",
+                "lastLogin": "2026-02-16 05:06",
+                "lockedStatus": "Unlocked",
+                "validity": "Valid (31.12.9999)",
+                "sev_score": 1
+              }
+            ]
+          },
+          {
+            "name": "ABAP Developer",
+            "size": 1,
+            "status": "Blue",
+            "users": [
+              {
+                "userId": "SE_AUDIT",
+                "userName": "SE Audit",
+                "country": "Europe",
+                "department": "Core Development",
+                "position": "ABAP Developer",
+                "topTransactions": "SE38, SE80, SE11, SE24",
+                "conflictCount": 1,
+                "sensitivities": [
+                  "LOW"
+                ],
+                "status": "Blue",
+                "lastLogin": "2026-03-04 05:06",
+                "lockedStatus": "Unlocked",
+                "validity": "Valid (31.12.9999)",
+                "sev_score": 1
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "HR Operations",
+        "children": [
+          {
+            "name": "Payroll Admin",
+            "size": 6,
+            "status": "Red",
+            "users": [
+              {
+                "userId": "AKUMAR",
+                "userName": "Arpan Kumar",
+                "country": "Europe",
+                "department": "HR Operations",
+                "position": "Payroll Admin",
+                "topTransactions": "PA30, PA40, PP01",
+                "conflictCount": 23,
+                "sensitivities": [
+                  "HIGH",
+                  "MEDIUM"
+                ],
+                "status": "Red",
+                "lastLogin": "2026-03-06 05:06",
+                "lockedStatus": "Unlocked",
+                "validity": "Valid (31.12.9999)",
+                "sev_score": 3
+              },
+              {
+                "userId": "PARORA",
+                "userName": "test user",
+                "country": "Europe",
+                "department": "HR Operations",
+                "position": "Payroll Admin",
+                "topTransactions": "PA30, PA40, PP01",
+                "conflictCount": 16,
+                "sensitivities": [
+                  "CRITICAL",
+                  "HIGH"
+                ],
+                "status": "Red",
+                "lastLogin": "2026-03-13 05:06",
+                "lockedStatus": "Unlocked",
+                "validity": "Expires Soon",
+                "sev_score": 3
+              },
+              {
+                "userId": "ZVM_TEST",
+                "userName": "Test User",
+                "country": "Europe",
+                "department": "HR Operations",
+                "position": "Payroll Admin",
+                "topTransactions": "PA30, PA40, PP01",
+                "conflictCount": 4,
+                "sensitivities": [
+                  "MEDIUM",
+                  "LOW"
+                ],
+                "status": "Yellow",
+                "lastLogin": "2026-03-03 05:06",
+                "lockedStatus": "Unlocked",
+                "validity": "Valid (31.12.9999)",
+                "sev_score": 2
+              },
+              {
+                "userId": "PSHARMA",
+                "userName": "PRINCE SHARMA",
+                "country": "Europe",
+                "department": "HR Operations",
+                "position": "Payroll Admin",
+                "topTransactions": "PA30, PA40, PP01",
+                "conflictCount": 1,
+                "sensitivities": [
+                  "LOW"
+                ],
+                "status": "Blue",
+                "lastLogin": "2026-03-06 05:06",
+                "lockedStatus": "Locked",
+                "validity": "Valid (31.12.9999)",
+                "sev_score": 1
+              },
+              {
+                "userId": "AREHAN",
+                "userName": "AREHAN",
+                "country": "Europe",
+                "department": "HR Operations",
+                "position": "Payroll Admin",
+                "topTransactions": "PA30, PA40, PP01",
+                "conflictCount": 0,
+                "sensitivities": [],
+                "status": "Green",
+                "lastLogin": "2026-03-16 05:06",
+                "lockedStatus": "Unlocked",
+                "validity": "Valid (31.12.9999)",
+                "sev_score": 0
+              },
+              {
+                "userId": "TEST_DTS5",
+                "userName": "TEST_DTS5",
+                "country": "Europe",
+                "department": "HR Operations",
+                "position": "Payroll Admin",
+                "topTransactions": "PA30, PA40, PP01",
+                "conflictCount": 0,
+                "sensitivities": [],
+                "status": "Green",
+                "lastLogin": "2026-03-02 05:06",
+                "lockedStatus": "Unlocked",
+                "validity": "Valid (31.12.9999)",
+                "sev_score": 0
+              }
+            ]
+          },
+          {
+            "name": "HR Generalist",
+            "size": 4,
+            "status": "Blue",
+            "users": [
+              {
+                "userId": "DDHIMAN",
+                "userName": "Dinesh Dhiman",
+                "country": "Europe",
+                "department": "HR Operations",
+                "position": "HR Generalist",
+                "topTransactions": "PA30, PA40, PP01",
+                "conflictCount": 1,
+                "sensitivities": [
+                  "LOW"
+                ],
+                "status": "Blue",
+                "lastLogin": "2026-03-05 05:06",
+                "lockedStatus": "Unlocked",
+                "validity": "Valid (31.12.9999)",
+                "sev_score": 1
+              },
+              {
+                "userId": "APP",
+                "userName": "Nitin Malhotra",
+                "country": "Europe",
+                "department": "HR Operations",
+                "position": "HR Generalist",
+                "topTransactions": "PA30, PA40, PP01",
+                "conflictCount": 0,
+                "sensitivities": [],
+                "status": "Green",
+                "lastLogin": "2026-03-02 05:06",
+                "lockedStatus": "Unlocked",
+                "validity": "Valid (31.12.9999)",
+                "sev_score": 0
+              },
+              {
+                "userId": "LBAMBHA",
+                "userName": "Luv Pal Bambha",
+                "country": "Europe",
+                "department": "HR Operations",
+                "position": "HR Generalist",
+                "topTransactions": "PA30, PA40, PP01",
+                "conflictCount": 0,
+                "sensitivities": [],
+                "status": "Green",
+                "lastLogin": "2026-03-12 05:06",
+                "lockedStatus": "Unlocked",
+                "validity": "Valid (31.12.9999)",
+                "sev_score": 0
+              },
+              {
+                "userId": "NEWUSERTEST",
+                "userName": "X Mr",
+                "country": "Europe",
+                "department": "HR Operations",
+                "position": "HR Generalist",
+                "topTransactions": "PA30, PA40, PP01",
+                "conflictCount": 0,
+                "sensitivities": [],
+                "status": "Green",
+                "lastLogin": "2026-02-15 05:06",
+                "lockedStatus": "Unlocked",
+                "validity": "Valid (31.12.9999)",
+                "sev_score": 0
+              }
+            ]
+          },
+          {
+            "name": "Recruiter",
+            "size": 3,
+            "status": "Yellow",
+            "users": [
+              {
+                "userId": "SE_HOS",
+                "userName": "SE Head of Security",
+                "country": "Europe",
+                "department": "HR Operations",
+                "position": "Recruiter",
+                "topTransactions": "PA30, PA40, PP01",
+                "conflictCount": 9,
+                "sensitivities": [
+                  "MEDIUM"
+                ],
+                "status": "Yellow",
+                "lastLogin": "2026-03-11 05:06",
+                "lockedStatus": "Unlocked",
+                "validity": "Valid (31.12.9999)",
+                "sev_score": 2
+              },
+              {
+                "userId": "ZTEST_12345",
+                "userName": "df",
+                "country": "Europe",
+                "department": "HR Operations",
+                "position": "Recruiter",
+                "topTransactions": "PA30, PA40, PP01",
+                "conflictCount": 2,
+                "sensitivities": [
+                  "LOW"
+                ],
+                "status": "Blue",
+                "lastLogin": "2026-02-21 05:06",
+                "lockedStatus": "Unlocked",
+                "validity": "Valid (31.12.9999)",
+                "sev_score": 1
+              },
+              {
+                "userId": "ZVNSELF1",
+                "userName": "ZVNSELF1",
+                "country": "Europe",
+                "department": "HR Operations",
+                "position": "Recruiter",
+                "topTransactions": "PA30, PA40, PP01",
+                "conflictCount": 0,
+                "sensitivities": [],
+                "status": "Green",
+                "lastLogin": "2026-03-10 05:06",
+                "lockedStatus": "Unlocked",
+                "validity": "Valid (31.12.9999)",
+                "sev_score": 0
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Finance & Controlling",
+        "children": [
+          {
+            "name": "Controller",
+            "size": 6,
+            "status": "Red",
+            "users": [
+              {
+                "userId": "ARUSR_D67",
+                "userName": "D67 Name ARUSR",
+                "country": "Europe",
+                "department": "Finance & Controlling",
+                "position": "Controller",
+                "topTransactions": "FB01, FB50, F-02, F-53",
+                "conflictCount": 19,
+                "sensitivities": [
+                  "CRITICAL",
+                  "HIGH"
+                ],
+                "status": "Red",
+                "lastLogin": "2026-03-01 05:06",
+                "lockedStatus": "Unlocked",
+                "validity": "Valid (31.12.9999)",
+                "sev_score": 3
+              },
+              {
+                "userId": "ERUSR_2RLVAL",
+                "userName": "Missing Roles Valid ER User",
+                "country": "Europe",
+                "department": "Finance & Controlling",
+                "position": "Controller",
+                "topTransactions": "FB01, FB50, F-02, F-53",
+                "conflictCount": 10,
+                "sensitivities": [
+                  "MEDIUM",
+                  "LOW"
+                ],
+                "status": "Yellow",
+                "lastLogin": "2026-03-02 05:06",
+                "lockedStatus": "Unlocked",
+                "validity": "Valid (31.12.9999)",
+                "sev_score": 2
+              },
+              {
+                "userId": "HJINDAL",
+                "userName": "Jindal",
+                "country": "Europe",
+                "department": "Finance & Controlling",
+                "position": "Controller",
+                "topTransactions": "FB01, FB50, F-02, F-53",
+                "conflictCount": 6,
+                "sensitivities": [
+                  "MEDIUM"
+                ],
+                "status": "Yellow",
+                "lastLogin": "2026-02-27 05:06",
+                "lockedStatus": "Locked",
+                "validity": "Valid (31.12.9999)",
+                "sev_score": 2
+              },
+              {
+                "userId": "VMATHUR",
+                "userName": "VMATHUR",
+                "country": "Europe",
+                "department": "Finance & Controlling",
+                "position": "Controller",
+                "topTransactions": "FB01, FB50, F-02, F-53",
+                "conflictCount": 5,
+                "sensitivities": [
+                  "MEDIUM",
+                  "LOW"
+                ],
+                "status": "Yellow",
+                "lastLogin": "2026-02-25 05:06",
+                "lockedStatus": "Unlocked",
+                "validity": "Expires Soon",
+                "sev_score": 2
+              },
+              {
+                "userId": "AKUMAR2",
+                "userName": "Aryan KUMAR",
+                "country": "Europe",
+                "department": "Finance & Controlling",
+                "position": "Controller",
+                "topTransactions": "FB01, FB50, F-02, F-53",
+                "conflictCount": 3,
+                "sensitivities": [
+                  "LOW"
+                ],
+                "status": "Blue",
+                "lastLogin": "2026-02-19 05:06",
+                "lockedStatus": "Unlocked",
+                "validity": "Valid (31.12.9999)",
+                "sev_score": 1
+              },
+              {
+                "userId": "TESTOBJUSER1",
+                "userName": "TESTOBJUSER1",
+                "country": "Europe",
+                "department": "Finance & Controlling",
+                "position": "Controller",
+                "topTransactions": "FB01, FB50, F-02, F-53",
+                "conflictCount": 3,
+                "sensitivities": [
+                  "LOW"
+                ],
+                "status": "Blue",
+                "lastLogin": "2026-02-18 05:06",
+                "lockedStatus": "Unlocked",
+                "validity": "Valid (31.12.9999)",
+                "sev_score": 1
+              }
+            ]
+          },
+          {
+            "name": "AP Specialist",
+            "size": 4,
+            "status": "Red",
+            "users": [
+              {
+                "userId": "ERUSR_2SAME",
+                "userName": "Same Name on Both ER User",
+                "country": "Europe",
+                "department": "Finance & Controlling",
+                "position": "AP Specialist",
+                "topTransactions": "FB01, FB50, F-02, F-53",
+                "conflictCount": 19,
+                "sensitivities": [
+                  "CRITICAL",
+                  "HIGH"
+                ],
+                "status": "Red",
+                "lastLogin": "2026-03-16 05:06",
+                "lockedStatus": "Unlocked",
+                "validity": "Valid (31.12.9999)",
+                "sev_score": 3
+              },
+              {
+                "userId": "NMALHOTRA",
+                "userName": "Nitin Malhotra",
+                "country": "Europe",
+                "department": "Finance & Controlling",
+                "position": "AP Specialist",
+                "topTransactions": "FB01, FB50, F-02, F-53",
+                "conflictCount": 3,
+                "sensitivities": [
+                  "LOW"
+                ],
+                "status": "Blue",
+                "lastLogin": "2026-03-12 05:06",
+                "lockedStatus": "Unlocked",
+                "validity": "Valid (31.12.9999)",
+                "sev_score": 1
+              },
+              {
+                "userId": "KULDEEPP",
+                "userName": "KULDEEPP",
+                "country": "Europe",
+                "department": "Finance & Controlling",
+                "position": "AP Specialist",
+                "topTransactions": "FB01, FB50, F-02, F-53",
+                "conflictCount": 2,
+                "sensitivities": [
+                  "LOW"
+                ],
+                "status": "Blue",
+                "lastLogin": "2026-02-25 05:06",
+                "lockedStatus": "Unlocked",
+                "validity": "Valid (31.12.9999)",
+                "sev_score": 1
+              },
+              {
+                "userId": "ASINGH_LM",
+                "userName": "ASINGH_LM",
+                "country": "Europe",
+                "department": "Finance & Controlling",
+                "position": "AP Specialist",
+                "topTransactions": "FB01, FB50, F-02, F-53",
+                "conflictCount": 0,
+                "sensitivities": [],
+                "status": "Green",
+                "lastLogin": "2026-03-03 05:06",
+                "lockedStatus": "Unlocked",
+                "validity": "Valid (31.12.9999)",
+                "sev_score": 0
+              }
+            ]
+          },
+          {
+            "name": "FI/CO Analyst",
+            "size": 9,
+            "status": "Red",
+            "users": [
+              {
+                "userId": "Z_ACHAVAN_7",
+                "userName": "Z_ACHAVAN_7",
+                "country": "Europe",
+                "department": "Finance & Controlling",
+                "position": "FI/CO Analyst",
+                "topTransactions": "FB01, FB50, F-02, F-53",
+                "conflictCount": 14,
+                "sensitivities": [
+                  "HIGH",
+                  "MEDIUM"
+                ],
+                "status": "Red",
+                "lastLogin": "2026-02-17 05:06",
+                "lockedStatus": "Unlocked",
+                "validity": "Valid (31.12.9999)",
+                "sev_score": 3
+              },
+              {
+                "userId": "BACKUP_JAG",
+                "userName": "Backup",
+                "country": "Europe",
+                "department": "Finance & Controlling",
+                "position": "FI/CO Analyst",
+                "topTransactions": "FB01, FB50, F-02, F-53",
+                "conflictCount": 13,
+                "sensitivities": [
+                  "HIGH",
+                  "MEDIUM"
+                ],
+                "status": "Red",
+                "lastLogin": "2026-03-15 05:06",
+                "lockedStatus": "Unlocked",
+                "validity": "Valid (31.12.9999)",
+                "sev_score": 3
+              },
+              {
+                "userId": "HBHALLA",
+                "userName": "HBHALLA",
+                "country": "Europe",
+                "department": "Finance & Controlling",
+                "position": "FI/CO Analyst",
+                "topTransactions": "FB01, FB50, F-02, F-53",
+                "conflictCount": 9,
+                "sensitivities": [
+                  "MEDIUM"
+                ],
+                "status": "Yellow",
+                "lastLogin": "2026-02-14 05:06",
+                "lockedStatus": "Unlocked",
+                "validity": "Valid (31.12.9999)",
+                "sev_score": 2
+              },
+              {
+                "userId": "ZTEST_PA",
+                "userName": "ZTEST_PA",
+                "country": "Europe",
+                "department": "Finance & Controlling",
+                "position": "FI/CO Analyst",
+                "topTransactions": "FB01, FB50, F-02, F-53",
+                "conflictCount": 5,
+                "sensitivities": [
+                  "MEDIUM"
+                ],
+                "status": "Yellow",
+                "lastLogin": "2026-02-16 05:06",
+                "lockedStatus": "Unlocked",
+                "validity": "Valid (31.12.9999)",
+                "sev_score": 2
+              },
+              {
+                "userId": "SDHULAP",
+                "userName": "SDHULAP",
+                "country": "Europe",
+                "department": "Finance & Controlling",
+                "position": "FI/CO Analyst",
+                "topTransactions": "FB01, FB50, F-02, F-53",
+                "conflictCount": 0,
+                "sensitivities": [],
+                "status": "Green",
+                "lastLogin": "2026-02-20 05:06",
+                "lockedStatus": "Unlocked",
+                "validity": "Valid (31.12.9999)",
+                "sev_score": 0
+              },
+              {
+                "userId": "TEST_CL",
+                "userName": "test_aa1 TEST_AA1",
+                "country": "Europe",
+                "department": "Finance & Controlling",
+                "position": "FI/CO Analyst",
+                "topTransactions": "FB01, FB50, F-02, F-53",
+                "conflictCount": 0,
+                "sensitivities": [],
+                "status": "Green",
+                "lastLogin": "2026-03-02 05:06",
+                "lockedStatus": "Unlocked",
+                "validity": "Valid (31.12.9999)",
+                "sev_score": 0
+              },
+              {
+                "userId": "VVVV",
+                "userName": "Test Case PDF",
+                "country": "Europe",
+                "department": "Finance & Controlling",
+                "position": "FI/CO Analyst",
+                "topTransactions": "FB01, FB50, F-02, F-53",
+                "conflictCount": 0,
+                "sensitivities": [],
+                "status": "Green",
+                "lastLogin": "2026-02-22 05:06",
+                "lockedStatus": "Unlocked",
+                "validity": "Expires Soon",
+                "sev_score": 0
+              },
+              {
+                "userId": "Z_ACHAVAN_8",
+                "userName": "Z_ACHAVAN_8",
+                "country": "Europe",
+                "department": "Finance & Controlling",
+                "position": "FI/CO Analyst",
+                "topTransactions": "FB01, FB50, F-02, F-53",
+                "conflictCount": 0,
+                "sensitivities": [],
+                "status": "Green",
+                "lastLogin": "2026-02-19 05:06",
+                "lockedStatus": "Unlocked",
+                "validity": "Valid (31.12.9999)",
+                "sev_score": 0
+              },
+              {
+                "userId": "ZVNSELF2",
+                "userName": "ZVNSELF2",
+                "country": "Europe",
+                "department": "Finance & Controlling",
+                "position": "FI/CO Analyst",
+                "topTransactions": "FB01, FB50, F-02, F-53",
+                "conflictCount": 0,
+                "sensitivities": [],
+                "status": "Green",
+                "lastLogin": "2026-02-27 05:06",
+                "lockedStatus": "Unlocked",
+                "validity": "Valid (31.12.9999)",
+                "sev_score": 0
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "North America",
+    "children": [
+      {
+        "name": "Supply Chain",
+        "children": [
+          {
+            "name": "Procurement Officer",
+            "size": 9,
+            "status": "Red",
+            "users": [
+              {
+                "userId": "ACHRISTEST",
+                "userName": "ACHRISTEST",
+                "country": "North America",
+                "department": "Supply Chain",
+                "position": "Procurement Officer",
+                "topTransactions": "ME21N, MIGO, MIRO, VL01N",
+                "conflictCount": 14,
+                "sensitivities": [
+                  "CRITICAL",
+                  "HIGH"
+                ],
+                "status": "Red",
+                "lastLogin": "2026-03-10 05:06",
+                "lockedStatus": "Unlocked",
+                "validity": "Valid (31.12.9999)",
+                "sev_score": 3
+              },
+              {
+                "userId": "VAR_T1",
+                "userName": "Nitin Malhotra",
+                "country": "North America",
+                "department": "Supply Chain",
+                "position": "Procurement Officer",
+                "topTransactions": "ME21N, MIGO, MIRO, VL01N",
+                "conflictCount": 8,
+                "sensitivities": [
+                  "MEDIUM",
+                  "LOW"
+                ],
+                "status": "Yellow",
+                "lastLogin": "2026-02-23 05:06",
+                "lockedStatus": "Unlocked",
+                "validity": "Valid (31.12.9999)",
+                "sev_score": 2
+              },
+              {
+                "userId": "MPATIL",
+                "userName": "Mahanatesh Patil",
+                "country": "North America",
+                "department": "Supply Chain",
+                "position": "Procurement Officer",
+                "topTransactions": "ME21N, MIGO, MIRO, VL01N",
+                "conflictCount": 3,
+                "sensitivities": [
+                  "LOW"
+                ],
+                "status": "Blue",
+                "lastLogin": "2026-02-26 05:06",
+                "lockedStatus": "Unlocked",
+                "validity": "Valid (31.12.9999)",
+                "sev_score": 1
+              },
+              {
+                "userId": "NCHAKRABORTY",
+                "userName": "NCHAKRABORTY",
+                "country": "North America",
+                "department": "Supply Chain",
+                "position": "Procurement Officer",
+                "topTransactions": "ME21N, MIGO, MIRO, VL01N",
+                "conflictCount": 3,
+                "sensitivities": [
+                  "LOW"
+                ],
+                "status": "Blue",
+                "lastLogin": "2026-03-14 05:06",
+                "lockedStatus": "Unlocked",
+                "validity": "Valid (31.12.9999)",
+                "sev_score": 1
+              },
+              {
+                "userId": "TESTFIORI",
+                "userName": "Test Fiori",
+                "country": "North America",
+                "department": "Supply Chain",
+                "position": "Procurement Officer",
+                "topTransactions": "ME21N, MIGO, MIRO, VL01N",
+                "conflictCount": 3,
+                "sensitivities": [
+                  "LOW"
+                ],
+                "status": "Blue",
+                "lastLogin": "2026-03-05 05:06",
+                "lockedStatus": "Unlocked",
+                "validity": "Valid (31.12.9999)",
+                "sev_score": 1
+              },
+              {
+                "userId": "GOLIVE1",
+                "userName": "Golive Test1",
+                "country": "North America",
+                "department": "Supply Chain",
+                "position": "Procurement Officer",
+                "topTransactions": "ME21N, MIGO, MIRO, VL01N",
+                "conflictCount": 0,
+                "sensitivities": [],
+                "status": "Green",
+                "lastLogin": "2026-03-04 05:06",
+                "lockedStatus": "Unlocked",
+                "validity": "Valid (31.12.9999)",
+                "sev_score": 0
+              },
+              {
+                "userId": "NSHUKLA",
+                "userName": "NSHUKLA",
+                "country": "North America",
+                "department": "Supply Chain",
+                "position": "Procurement Officer",
+                "topTransactions": "ME21N, MIGO, MIRO, VL01N",
+                "conflictCount": 0,
+                "sensitivities": [],
+                "status": "Green",
+                "lastLogin": "2026-03-08 05:06",
+                "lockedStatus": "Unlocked",
+                "validity": "Valid (31.12.9999)",
+                "sev_score": 0
+              },
+              {
+                "userId": "PRIYANKA.B",
+                "userName": "PRIYANKA B",
+                "country": "North America",
+                "department": "Supply Chain",
+                "position": "Procurement Officer",
+                "topTransactions": "ME21N, MIGO, MIRO, VL01N",
+                "conflictCount": 0,
+                "sensitivities": [],
+                "status": "Green",
+                "lastLogin": "2026-03-06 05:06",
+                "lockedStatus": "Unlocked",
+                "validity": "Valid (31.12.9999)",
+                "sev_score": 0
+              },
+              {
+                "userId": "TDHINGRA",
+                "userName": "TDHINGRA",
+                "country": "North America",
+                "department": "Supply Chain",
+                "position": "Procurement Officer",
+                "topTransactions": "ME21N, MIGO, MIRO, VL01N",
+                "conflictCount": 0,
+                "sensitivities": [],
+                "status": "Green",
+                "lastLogin": "2026-03-13 05:06",
+                "lockedStatus": "Unlocked",
+                "validity": "Valid (31.12.9999)",
+                "sev_score": 0
+              }
+            ]
+          },
+          {
+            "name": "Logistics Admin",
+            "size": 4,
+            "status": "Yellow",
+            "users": [
+              {
+                "userId": "ADUVE",
+                "userName": "Akash Duve",
+                "country": "North America",
+                "department": "Supply Chain",
+                "position": "Logistics Admin",
+                "topTransactions": "ME21N, MIGO, MIRO, VL01N",
+                "conflictCount": 10,
+                "sensitivities": [
+                  "MEDIUM"
+                ],
+                "status": "Yellow",
+                "lastLogin": "2026-03-03 05:06",
+                "lockedStatus": "Unlocked",
+                "validity": "Valid (31.12.9999)",
+                "sev_score": 2
+              },
+              {
+                "userId": "VGUPTA",
+                "userName": "Vineet Gupta",
+                "country": "North America",
+                "department": "Supply Chain",
+                "position": "Logistics Admin",
+                "topTransactions": "ME21N, MIGO, MIRO, VL01N",
+                "conflictCount": 10,
+                "sensitivities": [
+                  "MEDIUM"
+                ],
+                "status": "Yellow",
+                "lastLogin": "2026-03-02 05:06",
+                "lockedStatus": "Unlocked",
+                "validity": "Valid (31.12.9999)",
+                "sev_score": 2
+              },
+              {
+                "userId": "ARUSR_NOEML",
+                "userName": "A/R USER NO EMAIL ADDRESS",
+                "country": "North America",
+                "department": "Supply Chain",
+                "position": "Logistics Admin",
+                "topTransactions": "ME21N, MIGO, MIRO, VL01N",
+                "conflictCount": 6,
+                "sensitivities": [
+                  "MEDIUM",
+                  "LOW"
+                ],
+                "status": "Yellow",
+                "lastLogin": "2026-02-19 05:06",
+                "lockedStatus": "Unlocked",
+                "validity": "Valid (31.12.9999)",
+                "sev_score": 2
+              },
+              {
+                "userId": "VNEEMA3",
+                "userName": "Vishesh Neema Test",
+                "country": "North America",
+                "department": "Supply Chain",
+                "position": "Logistics Admin",
+                "topTransactions": "ME21N, MIGO, MIRO, VL01N",
+                "conflictCount": 3,
+                "sensitivities": [
+                  "LOW"
+                ],
+                "status": "Blue",
+                "lastLogin": "2026-02-20 05:06",
+                "lockedStatus": "Unlocked",
+                "validity": "Valid (31.12.9999)",
+                "sev_score": 1
+              }
+            ]
+          },
+          {
+            "name": "Warehouse Manager",
+            "size": 5,
+            "status": "Yellow",
+            "users": [
+              {
+                "userId": "SCHAUHAN",
+                "userName": "Chauhan1",
+                "country": "North America",
+                "department": "Supply Chain",
+                "position": "Warehouse Manager",
+                "topTransactions": "ME21N, MIGO, MIRO, VL01N",
+                "conflictCount": 10,
+                "sensitivities": [
+                  "MEDIUM",
+                  "LOW"
+                ],
+                "status": "Yellow",
+                "lastLogin": "2026-02-24 05:06",
+                "lockedStatus": "Unlocked",
+                "validity": "Valid (31.12.9999)",
+                "sev_score": 2
+              },
+              {
+                "userId": "VKUKAL",
+                "userName": "Vipul Kukal",
+                "country": "North America",
+                "department": "Supply Chain",
+                "position": "Warehouse Manager",
+                "topTransactions": "ME21N, MIGO, MIRO, VL01N",
+                "conflictCount": 4,
+                "sensitivities": [
+                  "MEDIUM",
+                  "LOW"
+                ],
+                "status": "Yellow",
+                "lastLogin": "2026-03-02 05:06",
+                "lockedStatus": "Unlocked",
+                "validity": "Valid (31.12.9999)",
+                "sev_score": 2
+              },
+              {
+                "userId": "ZTESTU6",
+                "userName": "ZSHARMA",
+                "country": "North America",
+                "department": "Supply Chain",
+                "position": "Warehouse Manager",
+                "topTransactions": "ME21N, MIGO, MIRO, VL01N",
+                "conflictCount": 4,
+                "sensitivities": [
+                  "MEDIUM",
+                  "LOW"
+                ],
+                "status": "Yellow",
+                "lastLogin": "2026-02-16 05:06",
+                "lockedStatus": "Unlocked",
+                "validity": "Valid (31.12.9999)",
+                "sev_score": 2
+              },
+              {
+                "userId": "UMAREDDY",
+                "userName": "UMAREDDY",
+                "country": "North America",
+                "department": "Supply Chain",
+                "position": "Warehouse Manager",
+                "topTransactions": "ME21N, MIGO, MIRO, VL01N",
+                "conflictCount": 1,
+                "sensitivities": [
+                  "LOW"
+                ],
+                "status": "Blue",
+                "lastLogin": "2026-03-11 05:06",
+                "lockedStatus": "Unlocked",
+                "validity": "Valid (31.12.9999)",
+                "sev_score": 1
+              },
+              {
+                "userId": "UMITTAL",
+                "userName": "UMITTAL",
+                "country": "North America",
+                "department": "Supply Chain",
+                "position": "Warehouse Manager",
+                "topTransactions": "ME21N, MIGO, MIRO, VL01N",
+                "conflictCount": 1,
+                "sensitivities": [
+                  "LOW"
+                ],
+                "status": "Blue",
+                "lastLogin": "2026-03-04 05:06",
+                "lockedStatus": "Unlocked",
+                "validity": "Valid (31.12.9999)",
+                "sev_score": 1
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Finance & Controlling",
+        "children": [
+          {
+            "name": "FI/CO Analyst",
+            "size": 7,
+            "status": "Red",
+            "users": [
+              {
+                "userId": "ZTESTAM",
+                "userName": "TEST ADMIN AM",
+                "country": "North America",
+                "department": "Finance & Controlling",
+                "position": "FI/CO Analyst",
+                "topTransactions": "FB01, FB50, F-02, F-53",
+                "conflictCount": 25,
+                "sensitivities": [
+                  "HIGH",
+                  "MEDIUM"
+                ],
+                "status": "Red",
+                "lastLogin": "2026-03-03 05:06",
+                "lockedStatus": "Locked",
+                "validity": "Valid (31.12.9999)",
+                "sev_score": 3
+              },
+              {
+                "userId": "USER_RR4",
+                "userName": "USER_RR4",
+                "country": "North America",
+                "department": "Finance & Controlling",
+                "position": "FI/CO Analyst",
+                "topTransactions": "FB01, FB50, F-02, F-53",
+                "conflictCount": 24,
+                "sensitivities": [
+                  "CRITICAL",
+                  "HIGH"
+                ],
+                "status": "Red",
+                "lastLogin": "2026-03-13 05:06",
+                "lockedStatus": "Unlocked",
+                "validity": "Expires Soon",
+                "sev_score": 3
+              },
+              {
+                "userId": "TEST_AA1",
+                "userName": "test_aa1 TEST_AA1",
+                "country": "North America",
+                "department": "Finance & Controlling",
+                "position": "FI/CO Analyst",
+                "topTransactions": "FB01, FB50, F-02, F-53",
+                "conflictCount": 9,
+                "sensitivities": [
+                  "MEDIUM"
+                ],
+                "status": "Yellow",
+                "lastLogin": "2026-02-20 05:06",
+                "lockedStatus": "Unlocked",
+                "validity": "Valid (31.12.9999)",
+                "sev_score": 2
+              },
+              {
+                "userId": "STATHOD",
+                "userName": "Stathod R",
+                "country": "North America",
+                "department": "Finance & Controlling",
+                "position": "FI/CO Analyst",
+                "topTransactions": "FB01, FB50, F-02, F-53",
+                "conflictCount": 5,
+                "sensitivities": [
+                  "MEDIUM"
+                ],
+                "status": "Yellow",
+                "lastLogin": "2026-03-08 05:06",
+                "lockedStatus": "Unlocked",
+                "validity": "Valid (31.12.9999)",
+                "sev_score": 2
+              },
+              {
+                "userId": "ARUSR_2RLNOT",
+                "userName": "Role Valid D67 Not YER ARUSR",
+                "country": "North America",
+                "department": "Finance & Controlling",
+                "position": "FI/CO Analyst",
+                "topTransactions": "FB01, FB50, F-02, F-53",
+                "conflictCount": 1,
+                "sensitivities": [
+                  "LOW"
+                ],
+                "status": "Blue",
+                "lastLogin": "2026-03-02 05:06",
+                "lockedStatus": "Unlocked",
+                "validity": "Valid (31.12.9999)",
+                "sev_score": 1
+              },
+              {
+                "userId": "USER_RR3",
+                "userName": "USER_RR3",
+                "country": "North America",
+                "department": "Finance & Controlling",
+                "position": "FI/CO Analyst",
+                "topTransactions": "FB01, FB50, F-02, F-53",
+                "conflictCount": 1,
+                "sensitivities": [
+                  "LOW"
+                ],
+                "status": "Blue",
+                "lastLogin": "2026-03-15 05:06",
+                "lockedStatus": "Locked",
+                "validity": "Valid (31.12.9999)",
+                "sev_score": 1
+              },
+              {
+                "userId": "DITEST",
+                "userName": "Diane ER User Smith",
+                "country": "North America",
+                "department": "Finance & Controlling",
+                "position": "FI/CO Analyst",
+                "topTransactions": "FB01, FB50, F-02, F-53",
+                "conflictCount": 0,
+                "sensitivities": [],
+                "status": "Green",
+                "lastLogin": "2026-02-26 05:06",
+                "lockedStatus": "Unlocked",
+                "validity": "Valid (31.12.9999)",
+                "sev_score": 0
+              }
+            ]
+          },
+          {
+            "name": "Controller",
+            "size": 4,
+            "status": "Yellow",
+            "users": [
+              {
+                "userId": "ER_ADMNSTR",
+                "userName": "Online Administrator ER_ADMNSTR",
+                "country": "North America",
+                "department": "Finance & Controlling",
+                "position": "Controller",
+                "topTransactions": "FB01, FB50, F-02, F-53",
+                "conflictCount": 9,
+                "sensitivities": [
+                  "MEDIUM",
+                  "LOW"
+                ],
+                "status": "Yellow",
+                "lastLogin": "2026-02-18 05:06",
+                "lockedStatus": "Unlocked",
+                "validity": "Valid (31.12.9999)",
+                "sev_score": 2
+              },
+              {
+                "userId": "SE_SEC_ADMIN",
+                "userName": "SE Admin",
+                "country": "North America",
+                "department": "Finance & Controlling",
+                "position": "Controller",
+                "topTransactions": "FB01, FB50, F-02, F-53",
+                "conflictCount": 1,
+                "sensitivities": [
+                  "LOW"
+                ],
+                "status": "Blue",
+                "lastLogin": "2026-02-22 05:06",
+                "lockedStatus": "Unlocked",
+                "validity": "Valid (31.12.9999)",
+                "sev_score": 1
+              },
+              {
+                "userId": "GJOSHI",
+                "userName": "gjoshi",
+                "country": "North America",
+                "department": "Finance & Controlling",
+                "position": "Controller",
+                "topTransactions": "FB01, FB50, F-02, F-53",
+                "conflictCount": 0,
+                "sensitivities": [],
+                "status": "Green",
+                "lastLogin": "2026-02-25 05:06",
+                "lockedStatus": "Unlocked",
+                "validity": "Expires Soon",
+                "sev_score": 0
+              },
+              {
+                "userId": "PGARIBE",
+                "userName": "PritiNew GaribeNew",
+                "country": "North America",
+                "department": "Finance & Controlling",
+                "position": "Controller",
+                "topTransactions": "FB01, FB50, F-02, F-53",
+                "conflictCount": 0,
+                "sensitivities": [],
+                "status": "Green",
+                "lastLogin": "2026-03-11 05:06",
+                "lockedStatus": "Unlocked",
+                "validity": "Valid (31.12.9999)",
+                "sev_score": 0
+              }
+            ]
+          },
+          {
+            "name": "AP Specialist",
+            "size": 3,
+            "status": "Red",
+            "users": [
+              {
+                "userId": "SPANDIT",
+                "userName": "SPANDIT",
+                "country": "North America",
+                "department": "Finance & Controlling",
+                "position": "AP Specialist",
+                "topTransactions": "FB01, FB50, F-02, F-53",
+                "conflictCount": 19,
+                "sensitivities": [
+                  "CRITICAL",
+                  "HIGH"
+                ],
+                "status": "Red",
+                "lastLogin": "2026-02-27 05:06",
+                "lockedStatus": "Locked",
+                "validity": "Valid (31.12.9999)",
+                "sev_score": 3
+              },
+              {
+                "userId": "KSINGH",
+                "userName": "SINGH",
+                "country": "North America",
+                "department": "Finance & Controlling",
+                "position": "AP Specialist",
+                "topTransactions": "FB01, FB50, F-02, F-53",
+                "conflictCount": 3,
+                "sensitivities": [
+                  "LOW"
+                ],
+                "status": "Blue",
+                "lastLogin": "2026-02-21 05:06",
+                "lockedStatus": "Unlocked",
+                "validity": "Valid (31.12.9999)",
+                "sev_score": 1
+              },
+              {
+                "userId": "SAP*",
+                "userName": "SAP*",
+                "country": "North America",
+                "department": "Finance & Controlling",
+                "position": "AP Specialist",
+                "topTransactions": "FB01, FB50, F-02, F-53",
+                "conflictCount": 3,
+                "sensitivities": [
+                  "LOW"
+                ],
+                "status": "Blue",
+                "lastLogin": "2026-02-28 05:06",
+                "lockedStatus": "Unlocked",
+                "validity": "Valid (31.12.9999)",
+                "sev_score": 1
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Core Development",
+        "children": [
+          {
+            "name": "Fiori Dev",
+            "size": 5,
+            "status": "Blue",
+            "users": [
+              {
+                "userId": "ARUSR_2SAME",
+                "userName": "Same Name on Both ARUSR",
+                "country": "North America",
+                "department": "Core Development",
+                "position": "Fiori Dev",
+                "topTransactions": "SE38, SE80, SE11, SE24",
+                "conflictCount": 3,
+                "sensitivities": [
+                  "LOW"
+                ],
+                "status": "Blue",
+                "lastLogin": "2026-03-12 05:06",
+                "lockedStatus": "Unlocked",
+                "validity": "Expires Soon",
+                "sev_score": 1
+              },
+              {
+                "userId": "VT_TEST1",
+                "userName": "varun tester",
+                "country": "North America",
+                "department": "Core Development",
+                "position": "Fiori Dev",
+                "topTransactions": "SE38, SE80, SE11, SE24",
+                "conflictCount": 1,
+                "sensitivities": [
+                  "LOW"
+                ],
+                "status": "Blue",
+                "lastLogin": "2026-03-06 05:06",
+                "lockedStatus": "Unlocked",
+                "validity": "Valid (31.12.9999)",
+                "sev_score": 1
+              },
+              {
+                "userId": "ZPETERJ",
+                "userName": "ZPETERJ",
+                "country": "North America",
+                "department": "Core Development",
+                "position": "Fiori Dev",
+                "topTransactions": "SE38, SE80, SE11, SE24",
+                "conflictCount": 1,
+                "sensitivities": [
+                  "LOW"
+                ],
+                "status": "Blue",
+                "lastLogin": "2026-03-09 05:06",
+                "lockedStatus": "Unlocked",
+                "validity": "Valid (31.12.9999)",
+                "sev_score": 1
+              },
+              {
+                "userId": "ERUSR_D67",
+                "userName": "D67 Only ER User",
+                "country": "North America",
+                "department": "Core Development",
+                "position": "Fiori Dev",
+                "topTransactions": "SE38, SE80, SE11, SE24",
+                "conflictCount": 0,
+                "sensitivities": [],
+                "status": "Green",
+                "lastLogin": "2026-02-22 05:06",
+                "lockedStatus": "Unlocked",
+                "validity": "Valid (31.12.9999)",
+                "sev_score": 0
+              },
+              {
+                "userId": "ZTESTAA4",
+                "userName": "TESTF TESTL",
+                "country": "North America",
+                "department": "Core Development",
+                "position": "Fiori Dev",
+                "topTransactions": "SE38, SE80, SE11, SE24",
+                "conflictCount": 0,
+                "sensitivities": [],
+                "status": "Green",
+                "lastLogin": "2026-02-19 05:06",
+                "lockedStatus": "Unlocked",
+                "validity": "Valid (31.12.9999)",
+                "sev_score": 0
+              }
+            ]
+          },
+          {
+            "name": "ABAP Developer",
+            "size": 3,
+            "status": "Red",
+            "users": [
+              {
+                "userId": "Z_IBS_R1",
+                "userName": "R1",
+                "country": "North America",
+                "department": "Core Development",
+                "position": "ABAP Developer",
+                "topTransactions": "SE38, SE80, SE11, SE24",
+                "conflictCount": 14,
+                "sensitivities": [
+                  "CRITICAL",
+                  "HIGH"
+                ],
+                "status": "Red",
+                "lastLogin": "2026-02-16 05:06",
+                "lockedStatus": "Unlocked",
+                "validity": "Valid (31.12.9999)",
+                "sev_score": 3
+              },
+              {
+                "userId": "DREINSMA2",
+                "userName": "Diane Reinsma 2",
+                "country": "North America",
+                "department": "Core Development",
+                "position": "ABAP Developer",
+                "topTransactions": "SE38, SE80, SE11, SE24",
+                "conflictCount": 10,
+                "sensitivities": [
+                  "MEDIUM",
+                  "LOW"
+                ],
+                "status": "Yellow",
+                "lastLogin": "2026-03-01 05:06",
+                "lockedStatus": "Unlocked",
+                "validity": "Valid (31.12.9999)",
+                "sev_score": 2
+              },
+              {
+                "userId": "SW",
+                "userName": "SW",
+                "country": "North America",
+                "department": "Core Development",
+                "position": "ABAP Developer",
+                "topTransactions": "SE38, SE80, SE11, SE24",
+                "conflictCount": 2,
+                "sensitivities": [
+                  "LOW"
+                ],
+                "status": "Blue",
+                "lastLogin": "2026-03-11 05:06",
+                "lockedStatus": "Unlocked",
+                "validity": "Valid (31.12.9999)",
+                "sev_score": 1
+              }
+            ]
+          },
+          {
+            "name": "Integration Lead",
+            "size": 8,
+            "status": "Red",
+            "users": [
+              {
+                "userId": "ZSH_FIORI",
+                "userName": "ZSH_FIORI",
+                "country": "North America",
+                "department": "Core Development",
+                "position": "Integration Lead",
+                "topTransactions": "SE38, SE80, SE11, SE24",
+                "conflictCount": 15,
+                "sensitivities": [
+                  "CRITICAL",
+                  "HIGH"
+                ],
+                "status": "Red",
+                "lastLogin": "2026-03-15 05:06",
+                "lockedStatus": "Unlocked",
+                "validity": "Valid (31.12.9999)",
+                "sev_score": 3
+              },
+              {
+                "userId": "DUSER3",
+                "userName": "DUSER3",
+                "country": "North America",
+                "department": "Core Development",
+                "position": "Integration Lead",
+                "topTransactions": "SE38, SE80, SE11, SE24",
+                "conflictCount": 10,
+                "sensitivities": [
+                  "MEDIUM"
+                ],
+                "status": "Yellow",
+                "lastLogin": "2026-02-23 05:06",
+                "lockedStatus": "Unlocked",
+                "validity": "Valid (31.12.9999)",
+                "sev_score": 2
+              },
+              {
+                "userId": "RHILDEBRANDT",
+                "userName": "Richard Hilderbrandt",
+                "country": "North America",
+                "department": "Core Development",
+                "position": "Integration Lead",
+                "topTransactions": "SE38, SE80, SE11, SE24",
+                "conflictCount": 9,
+                "sensitivities": [
+                  "MEDIUM",
+                  "LOW"
+                ],
+                "status": "Yellow",
+                "lastLogin": "2026-02-16 05:06",
+                "lockedStatus": "Unlocked",
+                "validity": "Valid (31.12.9999)",
+                "sev_score": 2
+              },
+              {
+                "userId": "LMANHAS",
+                "userName": "Manhas",
+                "country": "North America",
+                "department": "Core Development",
+                "position": "Integration Lead",
+                "topTransactions": "SE38, SE80, SE11, SE24",
+                "conflictCount": 6,
+                "sensitivities": [
+                  "MEDIUM",
+                  "LOW"
+                ],
+                "status": "Yellow",
+                "lastLogin": "2026-02-25 05:06",
+                "lockedStatus": "Unlocked",
+                "validity": "Valid (31.12.9999)",
+                "sev_score": 2
+              },
+              {
+                "userId": "VAR3",
+                "userName": "Nitin Malhotra",
+                "country": "North America",
+                "department": "Core Development",
+                "position": "Integration Lead",
+                "topTransactions": "SE38, SE80, SE11, SE24",
+                "conflictCount": 5,
+                "sensitivities": [
+                  "MEDIUM"
+                ],
+                "status": "Yellow",
+                "lastLogin": "2026-02-23 05:06",
+                "lockedStatus": "Unlocked",
+                "validity": "Valid (31.12.9999)",
+                "sev_score": 2
+              },
+              {
+                "userId": "RGUPTA",
+                "userName": "Ritesh GUPTA",
+                "country": "North America",
+                "department": "Core Development",
+                "position": "Integration Lead",
+                "topTransactions": "SE38, SE80, SE11, SE24",
+                "conflictCount": 1,
+                "sensitivities": [
+                  "LOW"
+                ],
+                "status": "Blue",
+                "lastLogin": "2026-02-20 05:06",
+                "lockedStatus": "Unlocked",
+                "validity": "Valid (31.12.9999)",
+                "sev_score": 1
+              },
+              {
+                "userId": "ZJSHARMA",
+                "userName": "ZJSHARMA",
+                "country": "North America",
+                "department": "Core Development",
+                "position": "Integration Lead",
+                "topTransactions": "SE38, SE80, SE11, SE24",
+                "conflictCount": 1,
+                "sensitivities": [
+                  "LOW"
+                ],
+                "status": "Blue",
+                "lastLogin": "2026-02-14 05:06",
+                "lockedStatus": "Unlocked",
+                "validity": "Valid (31.12.9999)",
+                "sev_score": 1
+              },
+              {
+                "userId": "VAR4",
+                "userName": "Nitin Malhotra",
+                "country": "North America",
+                "department": "Core Development",
+                "position": "Integration Lead",
+                "topTransactions": "SE38, SE80, SE11, SE24",
+                "conflictCount": 0,
+                "sensitivities": [],
+                "status": "Green",
+                "lastLogin": "2026-02-23 05:06",
+                "lockedStatus": "Unlocked",
+                "validity": "Valid (31.12.9999)",
+                "sev_score": 0
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "IT Security",
+        "children": [
+          {
+            "name": "Identity Admin",
+            "size": 5,
+            "status": "Red",
+            "users": [
+              {
+                "userId": "ASMITAP",
+                "userName": "ASMITAP",
+                "country": "North America",
+                "department": "IT Security",
+                "position": "Identity Admin",
+                "topTransactions": "SU01, PFCG, SUIM",
+                "conflictCount": 16,
+                "sensitivities": [
+                  "CRITICAL",
+                  "HIGH"
+                ],
+                "status": "Red",
+                "lastLogin": "2026-03-13 05:06",
+                "lockedStatus": "Unlocked",
+                "validity": "Valid (31.12.9999)",
+                "sev_score": 3
+              },
+              {
+                "userId": "BARAN1",
+                "userName": "BARAN1",
+                "country": "North America",
+                "department": "IT Security",
+                "position": "Identity Admin",
+                "topTransactions": "SU01, PFCG, SUIM",
+                "conflictCount": 3,
+                "sensitivities": [
+                  "LOW"
+                ],
+                "status": "Blue",
+                "lastLogin": "2026-02-20 05:06",
+                "lockedStatus": "Unlocked",
+                "validity": "Valid (31.12.9999)",
+                "sev_score": 1
+              },
+              {
+                "userId": "Z_ACHAVAN_3",
+                "userName": "Z_ACHAVAN_3",
+                "country": "North America",
+                "department": "IT Security",
+                "position": "Identity Admin",
+                "topTransactions": "SU01, PFCG, SUIM",
+                "conflictCount": 1,
+                "sensitivities": [
+                  "LOW"
+                ],
+                "status": "Blue",
+                "lastLogin": "2026-02-21 05:06",
+                "lockedStatus": "Unlocked",
+                "validity": "Valid (31.12.9999)",
+                "sev_score": 1
+              },
+              {
+                "userId": "YASHRAJT",
+                "userName": "YASHRAJT",
+                "country": "North America",
+                "department": "IT Security",
+                "position": "Identity Admin",
+                "topTransactions": "SU01, PFCG, SUIM",
+                "conflictCount": 0,
+                "sensitivities": [],
+                "status": "Green",
+                "lastLogin": "2026-03-03 05:06",
+                "lockedStatus": "Unlocked",
+                "validity": "Valid (31.12.9999)",
+                "sev_score": 0
+              },
+              {
+                "userId": "ZVAR3",
+                "userName": "test3",
+                "country": "North America",
+                "department": "IT Security",
+                "position": "Identity Admin",
+                "topTransactions": "SU01, PFCG, SUIM",
+                "conflictCount": 0,
+                "sensitivities": [],
+                "status": "Green",
+                "lastLogin": "2026-02-16 05:06",
+                "lockedStatus": "Unlocked",
+                "validity": "Valid (31.12.9999)",
+                "sev_score": 0
+              }
+            ]
+          },
+          {
+            "name": "Security Auditor",
+            "size": 10,
+            "status": "Yellow",
+            "users": [
+              {
+                "userId": "BRAKWAL",
+                "userName": "brakwal",
+                "country": "North America",
+                "department": "IT Security",
+                "position": "Security Auditor",
+                "topTransactions": "SU01, PFCG, SUIM",
+                "conflictCount": 10,
+                "sensitivities": [
+                  "MEDIUM"
+                ],
+                "status": "Yellow",
+                "lastLogin": "2026-02-16 05:06",
+                "lockedStatus": "Unlocked",
+                "validity": "Valid (31.12.9999)",
+                "sev_score": 2
+              },
+              {
+                "userId": "HSHARMA",
+                "userName": "Sharma",
+                "country": "North America",
+                "department": "IT Security",
+                "position": "Security Auditor",
+                "topTransactions": "SU01, PFCG, SUIM",
+                "conflictCount": 8,
+                "sensitivities": [
+                  "MEDIUM",
+                  "LOW"
+                ],
+                "status": "Yellow",
+                "lastLogin": "2026-03-13 05:06",
+                "lockedStatus": "Unlocked",
+                "validity": "Valid (31.12.9999)",
+                "sev_score": 2
+              },
+              {
+                "userId": "SKIRAN",
+                "userName": "SKIRAN",
+                "country": "North America",
+                "department": "IT Security",
+                "position": "Security Auditor",
+                "topTransactions": "SU01, PFCG, SUIM",
+                "conflictCount": 5,
+                "sensitivities": [
+                  "MEDIUM",
+                  "LOW"
+                ],
+                "status": "Yellow",
+                "lastLogin": "2026-02-22 05:06",
+                "lockedStatus": "Unlocked",
+                "validity": "Valid (31.12.9999)",
+                "sev_score": 2
+              },
+              {
+                "userId": "OLEG",
+                "userName": "Oleg Firumiants",
+                "country": "North America",
+                "department": "IT Security",
+                "position": "Security Auditor",
+                "topTransactions": "SU01, PFCG, SUIM",
+                "conflictCount": 4,
+                "sensitivities": [
+                  "MEDIUM"
+                ],
+                "status": "Yellow",
+                "lastLogin": "2026-03-11 05:06",
+                "lockedStatus": "Unlocked",
+                "validity": "Valid (31.12.9999)",
+                "sev_score": 2
+              },
+              {
+                "userId": "IVERMA",
+                "userName": "IVERMA",
+                "country": "North America",
+                "department": "IT Security",
+                "position": "Security Auditor",
+                "topTransactions": "SU01, PFCG, SUIM",
+                "conflictCount": 3,
+                "sensitivities": [
+                  "LOW"
+                ],
+                "status": "Blue",
+                "lastLogin": "2026-02-14 05:06",
+                "lockedStatus": "Unlocked",
+                "validity": "Valid (31.12.9999)",
+                "sev_score": 1
+              },
+              {
+                "userId": "DI_SETEST",
+                "userName": "DI_SETEST",
+                "country": "North America",
+                "department": "IT Security",
+                "position": "Security Auditor",
+                "topTransactions": "SU01, PFCG, SUIM",
+                "conflictCount": 2,
+                "sensitivities": [
+                  "LOW"
+                ],
+                "status": "Blue",
+                "lastLogin": "2026-03-06 05:06",
+                "lockedStatus": "Locked",
+                "validity": "Valid (31.12.9999)",
+                "sev_score": 1
+              },
+              {
+                "userId": "GDOLAS",
+                "userName": "GDOLAS",
+                "country": "North America",
+                "department": "IT Security",
+                "position": "Security Auditor",
+                "topTransactions": "SU01, PFCG, SUIM",
+                "conflictCount": 2,
+                "sensitivities": [
+                  "LOW"
+                ],
+                "status": "Blue",
+                "lastLogin": "2026-02-26 05:06",
+                "lockedStatus": "Unlocked",
+                "validity": "Valid (31.12.9999)",
+                "sev_score": 1
+              },
+              {
+                "userId": "PAVI",
+                "userName": "PAVI",
+                "country": "North America",
+                "department": "IT Security",
+                "position": "Security Auditor",
+                "topTransactions": "SU01, PFCG, SUIM",
+                "conflictCount": 2,
+                "sensitivities": [
+                  "LOW"
+                ],
+                "status": "Blue",
+                "lastLogin": "2026-03-01 05:06",
+                "lockedStatus": "Unlocked",
+                "validity": "Valid (31.12.9999)",
+                "sev_score": 1
+              },
+              {
+                "userId": "ZVNSELF3",
+                "userName": "ZVNSELF3",
+                "country": "North America",
+                "department": "IT Security",
+                "position": "Security Auditor",
+                "topTransactions": "SU01, PFCG, SUIM",
+                "conflictCount": 1,
+                "sensitivities": [
+                  "LOW"
+                ],
+                "status": "Blue",
+                "lastLogin": "2026-03-07 05:06",
+                "lockedStatus": "Unlocked",
+                "validity": "Valid (31.12.9999)",
+                "sev_score": 1
+              },
+              {
+                "userId": "BARAN",
+                "userName": "Bidur",
+                "country": "North America",
+                "department": "IT Security",
+                "position": "Security Auditor",
+                "topTransactions": "SU01, PFCG, SUIM",
+                "conflictCount": 0,
+                "sensitivities": [],
+                "status": "Green",
+                "lastLogin": "2026-02-28 05:06",
+                "lockedStatus": "Unlocked",
+                "validity": "Valid (31.12.9999)",
+                "sev_score": 0
+              }
+            ]
+          },
+          {
+            "name": "Basis Admin",
+            "size": 5,
+            "status": "Red",
+            "users": [
+              {
+                "userId": "ZTESTU4",
+                "userName": "ZSHARMA",
+                "country": "North America",
+                "department": "IT Security",
+                "position": "Basis Admin",
+                "topTransactions": "SU01, PFCG, SUIM",
+                "conflictCount": 17,
+                "sensitivities": [
+                  "HIGH",
+                  "MEDIUM"
+                ],
+                "status": "Red",
+                "lastLogin": "2026-02-14 05:06",
+                "lockedStatus": "Unlocked",
+                "validity": "Expires Soon",
+                "sev_score": 3
+              },
+              {
+                "userId": "HJAYALE",
+                "userName": "Harshad Jayale",
+                "country": "North America",
+                "department": "IT Security",
+                "position": "Basis Admin",
+                "topTransactions": "SU01, PFCG, SUIM",
+                "conflictCount": 15,
+                "sensitivities": [
+                  "CRITICAL",
+                  "HIGH"
+                ],
+                "status": "Red",
+                "lastLogin": "2026-02-16 05:06",
+                "lockedStatus": "Locked",
+                "validity": "Valid (31.12.9999)",
+                "sev_score": 3
+              },
+              {
+                "userId": "TEST_DTS6",
+                "userName": "TEST_DTS6",
+                "country": "North America",
+                "department": "IT Security",
+                "position": "Basis Admin",
+                "topTransactions": "SU01, PFCG, SUIM",
+                "conflictCount": 8,
+                "sensitivities": [
+                  "MEDIUM",
+                  "LOW"
+                ],
+                "status": "Yellow",
+                "lastLogin": "2026-03-16 05:06",
+                "lockedStatus": "Unlocked",
+                "validity": "Valid (31.12.9999)",
+                "sev_score": 2
+              },
+              {
+                "userId": "PETERJ",
+                "userName": "Fname1 Test Lname1",
+                "country": "North America",
+                "department": "IT Security",
+                "position": "Basis Admin",
+                "topTransactions": "SU01, PFCG, SUIM",
+                "conflictCount": 4,
+                "sensitivities": [
+                  "MEDIUM"
+                ],
+                "status": "Yellow",
+                "lastLogin": "2026-03-14 05:06",
+                "lockedStatus": "Unlocked",
+                "validity": "Valid (31.12.9999)",
+                "sev_score": 2
+              },
+              {
+                "userId": "MINDSQUARE",
+                "userName": "Test Case Mindsquare Test",
+                "country": "North America",
+                "department": "IT Security",
+                "position": "Basis Admin",
+                "topTransactions": "SU01, PFCG, SUIM",
+                "conflictCount": 0,
+                "sensitivities": [],
+                "status": "Green",
+                "lastLogin": "2026-03-12 05:06",
+                "lockedStatus": "Unlocked",
+                "validity": "Valid (31.12.9999)",
+                "sev_score": 0
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "HR Operations",
+        "children": [
+          {
+            "name": "Payroll Admin",
+            "size": 3,
+            "status": "Yellow",
+            "users": [
+              {
+                "userId": "ERUSR_2RLNOT",
+                "userName": "Role Valid D67 Not YER ER User",
+                "country": "North America",
+                "department": "HR Operations",
+                "position": "Payroll Admin",
+                "topTransactions": "PA30, PA40, PP01",
+                "conflictCount": 10,
+                "sensitivities": [
+                  "MEDIUM"
+                ],
+                "status": "Yellow",
+                "lastLogin": "2026-02-22 05:06",
+                "lockedStatus": "Unlocked",
+                "validity": "Valid (31.12.9999)",
+                "sev_score": 2
+              },
+              {
+                "userId": "BHANUPRIYA.N",
+                "userName": "BHANUPRIYA NIKHAR",
+                "country": "North America",
+                "department": "HR Operations",
+                "position": "Payroll Admin",
+                "topTransactions": "PA30, PA40, PP01",
+                "conflictCount": 9,
+                "sensitivities": [
+                  "MEDIUM"
+                ],
+                "status": "Yellow",
+                "lastLogin": "2026-02-28 05:06",
+                "lockedStatus": "Unlocked",
+                "validity": "Valid (31.12.9999)",
+                "sev_score": 2
+              },
+              {
+                "userId": "ZTESTRFC",
+                "userName": "RFC user for D67",
+                "country": "North America",
+                "department": "HR Operations",
+                "position": "Payroll Admin",
+                "topTransactions": "PA30, PA40, PP01",
+                "conflictCount": 1,
+                "sensitivities": [
+                  "LOW"
+                ],
+                "status": "Blue",
+                "lastLogin": "2026-02-22 05:06",
+                "lockedStatus": "Unlocked",
+                "validity": "Valid (31.12.9999)",
+                "sev_score": 1
+              }
+            ]
+          },
+          {
+            "name": "HR Generalist",
+            "size": 6,
+            "status": "Red",
+            "users": [
+              {
+                "userId": "PDF1",
+                "userName": "Test Case PDF",
+                "country": "North America",
+                "department": "HR Operations",
+                "position": "HR Generalist",
+                "topTransactions": "PA30, PA40, PP01",
+                "conflictCount": 23,
+                "sensitivities": [
+                  "HIGH",
+                  "MEDIUM"
+                ],
+                "status": "Red",
+                "lastLogin": "2026-03-08 05:06",
+                "lockedStatus": "Unlocked",
+                "validity": "Valid (31.12.9999)",
+                "sev_score": 3
+              },
+              {
+                "userId": "PGODHA",
+                "userName": "PGODHA",
+                "country": "North America",
+                "department": "HR Operations",
+                "position": "HR Generalist",
+                "topTransactions": "PA30, PA40, PP01",
+                "conflictCount": 18,
+                "sensitivities": [
+                  "CRITICAL",
+                  "HIGH"
+                ],
+                "status": "Red",
+                "lastLogin": "2026-02-14 05:06",
+                "lockedStatus": "Unlocked",
+                "validity": "Valid (31.12.9999)",
+                "sev_score": 3
+              },
+              {
+                "userId": "USER_TEST",
+                "userName": "TEST USER",
+                "country": "North America",
+                "department": "HR Operations",
+                "position": "HR Generalist",
+                "topTransactions": "PA30, PA40, PP01",
+                "conflictCount": 10,
+                "sensitivities": [
+                  "MEDIUM"
+                ],
+                "status": "Yellow",
+                "lastLogin": "2026-02-17 05:06",
+                "lockedStatus": "Unlocked",
+                "validity": "Valid (31.12.9999)",
+                "sev_score": 2
+              },
+              {
+                "userId": "USER_TEST2",
+                "userName": "test2",
+                "country": "North America",
+                "department": "HR Operations",
+                "position": "HR Generalist",
+                "topTransactions": "PA30, PA40, PP01",
+                "conflictCount": 10,
+                "sensitivities": [
+                  "MEDIUM",
+                  "LOW"
+                ],
+                "status": "Yellow",
+                "lastLogin": "2026-02-15 05:06",
+                "lockedStatus": "Unlocked",
+                "validity": "Valid (31.12.9999)",
+                "sev_score": 2
+              },
+              {
+                "userId": "SUMARDAND",
+                "userName": "SUMARDAND",
+                "country": "North America",
+                "department": "HR Operations",
+                "position": "HR Generalist",
+                "topTransactions": "PA30, PA40, PP01",
+                "conflictCount": 5,
+                "sensitivities": [
+                  "MEDIUM",
+                  "LOW"
+                ],
+                "status": "Yellow",
+                "lastLogin": "2026-02-21 05:06",
+                "lockedStatus": "Unlocked",
+                "validity": "Valid (31.12.9999)",
+                "sev_score": 2
+              },
+              {
+                "userId": "ZVNLMUSER1",
+                "userName": "ZVNLMUSER1",
+                "country": "North America",
+                "department": "HR Operations",
+                "position": "HR Generalist",
+                "topTransactions": "PA30, PA40, PP01",
+                "conflictCount": 3,
+                "sensitivities": [
+                  "LOW"
+                ],
+                "status": "Blue",
+                "lastLogin": "2026-03-13 05:06",
+                "lockedStatus": "Unlocked",
+                "validity": "Valid (31.12.9999)",
+                "sev_score": 1
+              }
+            ]
+          },
+          {
+            "name": "Recruiter",
+            "size": 5,
+            "status": "Red",
+            "users": [
+              {
+                "userId": "RBALA",
+                "userName": "Bala",
+                "country": "North America",
+                "department": "HR Operations",
+                "position": "Recruiter",
+                "topTransactions": "PA30, PA40, PP01",
+                "conflictCount": 19,
+                "sensitivities": [
+                  "CRITICAL",
+                  "HIGH"
+                ],
+                "status": "Red",
+                "lastLogin": "2026-02-26 05:06",
+                "lockedStatus": "Unlocked",
+                "validity": "Valid (31.12.9999)",
+                "sev_score": 3
+              },
+              {
+                "userId": "ZVNRFC",
+                "userName": "ZVNRFC",
+                "country": "North America",
+                "department": "HR Operations",
+                "position": "Recruiter",
+                "topTransactions": "PA30, PA40, PP01",
+                "conflictCount": 8,
+                "sensitivities": [
+                  "MEDIUM"
+                ],
+                "status": "Yellow",
+                "lastLogin": "2026-03-04 05:06",
+                "lockedStatus": "Unlocked",
+                "validity": "Valid (31.12.9999)",
+                "sev_score": 2
+              },
+              {
+                "userId": "ZPARORA",
+                "userName": "zparora test user main",
+                "country": "North America",
+                "department": "HR Operations",
+                "position": "Recruiter",
+                "topTransactions": "PA30, PA40, PP01",
+                "conflictCount": 3,
+                "sensitivities": [
+                  "LOW"
+                ],
+                "status": "Blue",
+                "lastLogin": "2026-02-24 05:06",
+                "lockedStatus": "Locked",
+                "validity": "Valid (31.12.9999)",
+                "sev_score": 1
+              },
+              {
+                "userId": "RAKWAL",
+                "userName": "RAKWAL",
+                "country": "North America",
+                "department": "HR Operations",
+                "position": "Recruiter",
+                "topTransactions": "PA30, PA40, PP01",
+                "conflictCount": 1,
+                "sensitivities": [
+                  "LOW"
+                ],
+                "status": "Blue",
+                "lastLogin": "2026-03-11 05:06",
+                "lockedStatus": "Unlocked",
+                "validity": "Valid (31.12.9999)",
+                "sev_score": 1
+              },
+              {
+                "userId": "YAM_RFC",
+                "userName": "YAM_RFC",
+                "country": "North America",
+                "department": "HR Operations",
+                "position": "Recruiter",
+                "topTransactions": "PA30, PA40, PP01",
+                "conflictCount": 0,
+                "sensitivities": [],
+                "status": "Green",
+                "lastLogin": "2026-02-20 05:06",
+                "lockedStatus": "Unlocked",
+                "validity": "Valid (31.12.9999)",
+                "sev_score": 0
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+]
