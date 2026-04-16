@@ -33,7 +33,7 @@ const CustomTooltip = ({ active, payload, scaleMetric, colorMetric }) => {
     const scaleValue = data['_' + scaleMetric] || data[scaleMetric] || 0;
     const colorValue = data['_' + colorMetric] || data[colorMetric] || 0;
     const isSameMetric = scaleMetric === colorMetric;
-
+    
     return (
       <div style={{
         backgroundColor: 'rgba(255, 255, 255, 0.95)',
@@ -70,16 +70,15 @@ const CustomTooltip = ({ active, payload, scaleMetric, colorMetric }) => {
 // --- ULTRA-PREMIUM "APP ICON" TREEMAP SHAPE ---
 const CustomizedTreemapContent = (props) => {
   const { x, y, width, height, name, depth, users, colorMetric, maxValue } = props;
-  
   if (depth < 2 || !users) return null; 
 
   const colorValue = props['_' + colorMetric] || 0;
 
-  let fillColor = '#10b981'; 
+  let fillColor = '#10b981';
   if (colorValue > 0 && maxValue > 0) {
     const ratio = colorValue / maxValue;
     if (ratio >= 0.70) fillColor = '#ef4444';       
-    else if (ratio >= 0.40) fillColor = '#f59e0b';  
+    else if (ratio >= 0.40) fillColor = '#f59e0b';
     else if (ratio >= 0.15) fillColor = '#3b82f6';  
     else fillColor = '#10b981';                     
   }
@@ -89,11 +88,11 @@ const CustomizedTreemapContent = (props) => {
   const innerY = y + padding;
   const innerWidth = Math.max(0, width - padding * 2);
   const innerHeight = Math.max(0, height - padding * 2);
-
+  
   let showName = false;
   let fontSizeName = 14;
   let displayName = name;
-
+  
   if (innerWidth > 100 && innerHeight > 45) {
     showName = true;
     displayName = name.length > 20 ? name.substring(0, 17) + '...' : name;
@@ -148,12 +147,58 @@ const CustomizedTreemapContent = (props) => {
   );
 };
 
+// --- AI DEMO MODAL FOR MANAGEMENT ---
+const AIDemoModal = ({ isOpen, onClose }) => {
+  if (!isOpen) return null;
+
+  return (
+    <div style={styles.modalBackdrop} onClick={onClose}>
+      <div style={styles.modalContent} onClick={e => e.stopPropagation()}>
+        <div style={styles.modalHeader}>
+          <h3 style={styles.modalTitle}>✨ AI-Driven Heatmap Mapping</h3>
+          <button style={styles.closeButton} onClick={onClose}>×</button>
+        </div>
+        
+        <div style={styles.modalBody}>
+          <p style={styles.modalText}>
+            Our engine evaluates user transaction logs against assigned SAP roles to autonomously divide the workforce into functional clusters. It then maps these groups onto the Treemap to quantify risk and license efficiency.
+          </p>
+
+          <div style={styles.algorithmCard}>
+            <div style={{...styles.algoIcon, backgroundColor: '#3b82f6'}}>⊞</div>
+            <div style={styles.algoDetails}>
+              <h4 style={styles.algoTitle}>1. Heatmap Block Assignment</h4>
+              <p style={styles.algoDesc}>The system clusters users by organizational hierarchy and shared access profiles. The physical size of each block dynamically scales based on user density or the sheer volume of detected SoD conflicts within that node.</p>
+            </div>
+          </div>
+
+          <div style={styles.algorithmCard}>
+            <div style={{...styles.algoIcon, backgroundColor: '#ef4444'}}>◑</div>
+            <div style={styles.algoDetails}>
+              <h4 style={styles.algoTitle}>2. Grouping by Usage & Risk</h4>
+              <p style={styles.algoDesc}>By comparing authorized access vs. actual transaction execution, the engine scores "Role Bloat" and cross-functional access violations. These metrics drive the heat gradient, shifting groups from clean (Green) to severe (Red).</p>
+            </div>
+          </div>
+
+          <div style={styles.algorithmCard}>
+            <div style={{...styles.algoIcon, backgroundColor: '#10b981'}}>📈</div>
+            <div style={styles.algoDetails}>
+              <h4 style={styles.algoTitle}>3. Evaluating FUE Benefits</h4>
+              <p style={styles.algoDesc}>This mapping immediately isolates highly bloated red blocks, flagging specific user groups as prime candidates for license downgrades and role revocation—converting abstract data into measurable FUE cost savings.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+};
 
 export default function DashboardHome({ onSelectTeam }) {
 
   const [scaleMetric, setScaleMetric] = useState('userCount');
   const [colorMetric, setColorMetric] = useState('userCount');
-
+  const [isDemoModalOpen, setIsDemoModalOpen] = useState(false);
+  
   const { enrichedTreemapData, maxValues } = useMemo(() => {
     let globalMaxUsers = 0;
     let globalMaxSod = 0;
@@ -165,6 +210,7 @@ export default function DashboardHome({ onSelectTeam }) {
       region.children.forEach(dept => {
         const newDept = { ...dept, children: [] };
         dept.children.forEach(pos => {
+         
           let exactUsers = pos.users ? pos.users.length : 0;
           let exactSodConflicts = 0;
           let exactHighRiskConflicts = 0;
@@ -180,11 +226,12 @@ export default function DashboardHome({ onSelectTeam }) {
               const conflicts = ud.conflictCount !== undefined ? ud.conflictCount : (u.conflictCount || 0);
               const statusColor = ud.statusColor || u.status || 'Green';
               const criticality = ud.criticality || (statusColor === 'Red' ? 'High Risk' : statusColor === 'Yellow' ? 'Medium Risk' : 'Clean');
-
+              
               exactSodConflicts += conflicts;
               if (statusColor === 'Red' || criticality === 'High Risk' || criticality === 'Critical') {
                 exactHighRiskConflicts += conflicts;
               }
+              
               blockTotalAssigned += ud.totalTxAssigned !== undefined ? ud.totalTxAssigned : fallbackAssigned;
               blockTotalExecuted += ud.totalTxExecuted !== undefined ? ud.totalTxExecuted : fallbackExecuted;
             });
@@ -210,11 +257,15 @@ export default function DashboardHome({ onSelectTeam }) {
       });
       return newRegion;
     });
-    return { enrichedTreemapData: processedData, maxValues: { userCount: globalMaxUsers, sodCount: globalMaxSod, highRiskCount: globalMaxHighRisk, bloatScore: globalMaxBloat } };
+
+    return { 
+      enrichedTreemapData: processedData, 
+      maxValues: { userCount: globalMaxUsers, sodCount: globalMaxSod, highRiskCount: globalMaxHighRisk, bloatScore: globalMaxBloat }
+    };
   }, []);
 
   const getRegionSize = (region) => region.children.reduce((acc, dept) => acc + dept.children.reduce((a, pos) => a + pos[scaleMetric], 0), 0);
-
+  
   return (
     <div style={styles.container}>
       
@@ -224,12 +275,20 @@ export default function DashboardHome({ onSelectTeam }) {
           <div style={styles.eyebrowBadge}>Global Operations View</div>
           <h1 style={styles.heroTitle}>Role Redesign <span style={styles.heroAccent}>Landscape</span></h1>
           <p style={styles.heroSubtitle}>Click on any department chip to audit user roles, optimize licenses, and eliminate Segregation of Duties conflicts.</p>
+          
+          <button 
+            style={styles.demoButton} 
+            onClick={() => setIsDemoModalOpen(true)}
+            onMouseEnter={(e) => e.target.style.transform = 'translateY(-2px)'}
+            onMouseLeave={(e) => e.target.style.transform = 'translateY(0)'}
+          >
+            ✨ View AI Insights & Mapping Logic
+          </button>
         </div>
       </div>
 
-      {/* TOP CONTROLS ONLY HAVE THE DROPDOWNS NOW */}
       <div style={styles.controlsContainer}>
-        <div style={{ display: 'flex', gap: '30px', margin: '0 auto' }}> {/* Centered dropdowns */}
+        <div style={{ display: 'flex', gap: '30px', margin: '0 auto' }}>
           <div style={styles.metricSelectorBox}>
             <span style={styles.metricLabel}>Scale By:</span>
             <select style={styles.metricSelect} value={scaleMetric} onChange={(e) => setScaleMetric(e.target.value)}>
@@ -280,7 +339,6 @@ export default function DashboardHome({ onSelectTeam }) {
         })}
       </div>
 
-      {/* NEW FOOTER LEGEND */}
       <div style={styles.footerLegendContainer}>
         <div style={styles.legendItem}><div style={{...styles.legendDot, backgroundColor: '#ef4444', boxShadow: '0 0 8px rgba(239, 68, 68, 0.5)'}}></div><span style={styles.legendText}>Top 30% (Severe)</span></div>
         <div style={styles.legendItem}><div style={{...styles.legendDot, backgroundColor: '#f59e0b', boxShadow: '0 0 8px rgba(245, 158, 11, 0.5)'}}></div><span style={styles.legendText}>Elevated</span></div>
@@ -288,6 +346,11 @@ export default function DashboardHome({ onSelectTeam }) {
         <div style={styles.legendItem}><div style={{...styles.legendDot, backgroundColor: '#10b981', boxShadow: '0 0 8px rgba(16, 185, 129, 0.5)'}}></div><span style={styles.legendText}>Low/Clean</span></div>
       </div>
       
+      <AIDemoModal 
+        isOpen={isDemoModalOpen} 
+        onClose={() => setIsDemoModalOpen(false)} 
+      />
+
     </div>
   );
 }
@@ -295,7 +358,7 @@ export default function DashboardHome({ onSelectTeam }) {
 // --- CSS-IN-JS STYLES ---
 const styles = {
   container: { padding: '40px 60px', backgroundColor: '#f0fdf4', minHeight: '100vh', fontFamily: '"Inter", -apple-system, sans-serif' },
-  heroHeaderCard: { display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start', backgroundColor: '#064e3b', padding: '45px 50px', borderRadius: '24px', boxShadow: '0 20px 40px -10px rgba(6, 78, 59, 0.25)', marginBottom: '35px', position: 'relative', overflow: 'hidden' },
+  heroHeaderCard: { display: 'flex', justifyContent: 'space-between', alignItems: 'center', backgroundColor: '#064e3b', padding: '45px 50px', borderRadius: '24px', boxShadow: '0 20px 40px -10px rgba(6, 78, 59, 0.25)', marginBottom: '35px', position: 'relative', overflow: 'hidden' },
   headerAccentLine: { position: 'absolute', top: 0, left: 0, right: 0, height: '6px', background: 'linear-gradient(90deg, #34d399 0%, #10b981 100%)' },
   brandBox: { display: 'flex', flexDirection: 'column', maxWidth: '800px', position: 'relative', zIndex: 2 },
   eyebrowBadge: { display: 'inline-block', padding: '6px 14px', backgroundColor: 'rgba(167, 243, 208, 0.15)', color: '#a7f3d0', borderRadius: '20px', fontSize: '0.75rem', fontWeight: '700', textTransform: 'uppercase', letterSpacing: '1px', marginBottom: '16px', width: 'fit-content', border: '1px solid rgba(167, 243, 208, 0.3)' },
@@ -303,7 +366,6 @@ const styles = {
   heroAccent: { color: '#10b981', fontWeight: '700' },
   heroSubtitle: { margin: 0, fontSize: '1.05rem', color: '#a7f3d0', lineHeight: '1.6', fontWeight: '400' },
   
-  // Updated Controls Container (Just the dropdowns now)
   controlsContainer: { display: 'flex', justifyContent: 'center', alignItems: 'center', backgroundColor: '#ffffff', padding: '16px 24px', borderRadius: '100px', boxShadow: '0 10px 25px -5px rgba(5, 150, 105, 0.08)', border: '1px solid #e2e8f0', marginBottom: '30px' },
   metricSelectorBox: { display: 'flex', alignItems: 'center', gap: '12px', paddingLeft: '8px' },
   metricLabel: { fontSize: '0.80rem', fontWeight: '700', color: '#64748b', textTransform: 'uppercase', letterSpacing: '0.5px' },
@@ -313,7 +375,6 @@ const styles = {
   regionHeaderContainer: { display: 'flex', justifyContent: 'center', marginBottom: '15px', marginTop: '10px' },
   regionHeaderTop: { backgroundColor: '#f0fdf4', color: '#047857', padding: '8px 20px', borderRadius: '100px', textAlign: 'center', fontWeight: '700', fontSize: '0.8rem', textTransform: 'uppercase', letterSpacing: '1px', border: '1px solid #a7f3d0' },
 
-  // New Footer Legend Container
   footerLegendContainer: { 
     display: 'flex', 
     justifyContent: 'center', 
@@ -331,4 +392,43 @@ const styles = {
   legendItem: { display: 'flex', alignItems: 'center', gap: '8px' },
   legendDot: { width: '12px', height: '12px', borderRadius: '50%' },
   legendText: { fontSize: '0.85rem', fontWeight: '600', color: '#475569', textTransform: 'uppercase', letterSpacing: '0.5px' },
+
+  // --- DEMO BUTTON & MODAL STYLES ---
+  demoButton: {
+    marginTop: '20px',
+    padding: '10px 20px',
+    backgroundColor: 'rgba(16, 185, 129, 0.15)',
+    color: '#34d399',
+    border: '1px solid rgba(52, 211, 153, 0.4)',
+    borderRadius: '8px',
+    fontSize: '0.9rem',
+    fontWeight: '600',
+    cursor: 'pointer',
+    transition: 'all 0.2s ease',
+    width: 'fit-content',
+    boxShadow: '0 4px 12px rgba(0,0,0,0.1)'
+  },
+  modalBackdrop: {
+    position: 'fixed', top: 0, left: 0, right: 0, bottom: 0,
+    backgroundColor: 'rgba(15, 23, 42, 0.6)', backdropFilter: 'blur(4px)',
+    display: 'flex', justifyContent: 'center', alignItems: 'center', zIndex: 9999,
+  },
+  modalContent: {
+    backgroundColor: '#ffffff', borderRadius: '20px', width: '500px', maxWidth: '90%',
+    boxShadow: '0 25px 50px -12px rgba(0, 0, 0, 0.25)', overflow: 'hidden',
+    animation: 'slideUp 0.3s ease-out forwards',
+  },
+  modalHeader: {
+    backgroundColor: '#f8fafc', padding: '20px 24px', borderBottom: '1px solid #e2e8f0',
+    display: 'flex', justifyContent: 'space-between', alignItems: 'center',
+  },
+  modalTitle: { margin: 0, color: '#0f172a', fontSize: '1.25rem', fontWeight: '700' },
+  closeButton: { background: 'none', border: 'none', fontSize: '1.5rem', color: '#64748b', cursor: 'pointer', padding: 0, lineHeight: 1 },
+  modalBody: { padding: '24px' },
+  modalText: { color: '#475569', fontSize: '0.95rem', lineHeight: '1.6', marginBottom: '24px', marginTop: 0 },
+  algorithmCard: { display: 'flex', alignItems: 'flex-start', gap: '16px', padding: '16px', backgroundColor: '#f8fafc', borderRadius: '12px', marginBottom: '12px', border: '1px solid #f1f5f9' },
+  algoIcon: { width: '32px', height: '32px', borderRadius: '8px', color: '#ffffff', display: 'flex', justifyContent: 'center', alignItems: 'center', fontWeight: 'bold', fontSize: '1.2rem', flexShrink: 0 },
+  algoDetails: { display: 'flex', flexDirection: 'column', gap: '4px' },
+  algoTitle: { margin: 0, fontSize: '0.95rem', fontWeight: '700', color: '#0f172a' },
+  algoDesc: { margin: 0, fontSize: '0.85rem', color: '#64748b', lineHeight: '1.5' }
 };

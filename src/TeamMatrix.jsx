@@ -64,6 +64,7 @@ function PfcgBuilderScreen({ roleType, onBack }) {
 
       const authKey = `${row.object}-${row.auth}`;
       if (!tree[row.clss].objects[row.object].auths[authKey]) tree[row.clss].objects[row.object].auths[authKey] = { text: row.objText, authId: row.auth, rows: [], fields: {} };
+    
       tree[row.clss].objects[row.object].auths[authKey].rows.push(row);
 
       if (!tree[row.clss].objects[row.object].auths[authKey].fields[row.fieldName]) {
@@ -186,18 +187,74 @@ function PfcgBuilderScreen({ roleType, onBack }) {
 }
 
 
+// --- NEW AI DEMO MODAL COMPONENT ---
+const TeamMatrixAIDemoModal = ({ isOpen, onClose }) => {
+  if (!isOpen) return null;
+
+  return (
+    <div style={styles.modalBackdrop} onClick={onClose}>
+      <div style={styles.modalContent} onClick={e => e.stopPropagation()}>
+        <div style={styles.modalHeader}>
+          <h3 style={styles.modalTitle}>✨ AI Insights: Team Optimization</h3>
+          <button style={styles.closeButton} onClick={onClose}>×</button>
+        </div>
+        
+        <div style={styles.modalBody}>
+          <p style={styles.modalText}>
+            Our engine analyzes historical transaction execution logs against current PFCG role assignments to deliver precise, actionable insights for this specific team.
+          </p>
+
+          <div style={styles.algorithmCard}>
+            <div style={{...styles.algoIcon, backgroundColor: '#3b82f6'}}>🗑️</div>
+            <div style={styles.algoDetails}>
+              <h4 style={styles.algoTitle}>1. Smart Transaction Pruning</h4>
+              <p style={styles.algoDesc}>Identifies transactions with near-zero usage and flags them for removal. This directly cuts architectural "Role Bloat" and strips out unnecessary authorization objects.</p>
+            </div>
+          </div>
+
+          <div style={styles.algorithmCard}>
+            <div style={{...styles.algoIcon, backgroundColor: '#10b981'}}>🔄</div>
+            <div style={styles.algoDetails}>
+              <h4 style={styles.algoTitle}>2. Intelligent Segregation</h4>
+              <p style={styles.algoDesc}>Detects users who only execute "Display" functions despite having "Maintain" roles. Suggests read-only replacements to instantly neutralize SoD conflicts without disrupting workflow.</p>
+            </div>
+          </div>
+
+          <div style={styles.algorithmCard}>
+            <div style={{...styles.algoIcon, backgroundColor: '#f59e0b'}}>💰</div>
+            <div style={styles.algoDetails}>
+              <h4 style={styles.algoTitle}>3. FUE License Downgrades</h4>
+              <p style={styles.algoDesc}>Maps actual execution percentages against SAP licensing tiers. Automatically highlights optimal downgrade candidates (e.g., Professional to Core Use) to capture budget savings.</p>
+            </div>
+          </div>
+
+          <div style={styles.algorithmCard}>
+            <div style={{...styles.algoIcon, backgroundColor: '#ef4444'}}>🛡️</div>
+            <div style={styles.algoDetails}>
+              <h4 style={styles.algoTitle}>4. Residual Risk Mitigation</h4>
+              <p style={styles.algoDesc}>Calculates the exact drop in Segregation of Duties conflicts after applying bloat pruning and segregation steps, providing a clear mathematical path to a clean audit.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+};
+
+
 export default function TeamMatrix({ team, onBack }) {
   // --- STATE MANAGEMENT ---
-  const [activeScreen, setActiveScreen] = useState('matrix'); // 'matrix' | 'pfcg'
+  const [activeScreen, setActiveScreen] = useState('matrix');
   const [activeTab, setActiveTab] = useState('summary'); 
   const [summaryView, setSummaryView] = useState('plan'); 
   
-  const [expandedSections, setExpandedSections] = useState([]); 
+  const [expandedSections, setExpandedSections] = useState([]);
   const [expandedKpis, setExpandedKpis] = useState([]); 
   const [expandedRoleSections, setExpandedRoleSections] = useState([]);
-  const [excludedTx, setExcludedTx] = useState(new Set()); 
-
+  const [excludedTx, setExcludedTx] = useState(new Set());
   const [pfcgRoleType, setPfcgRoleType] = useState('');
+  
+  const [isDemoModalOpen, setIsDemoModalOpen] = useState(false); // NEW DEMO MODAL STATE
 
   // --- DATA PROCESSING 1: USER ROSTER ---
   const { enrichedUsers, optimizedCount } = useMemo(() => {
@@ -207,7 +264,7 @@ export default function TeamMatrix({ team, onBack }) {
       const fallbackUsage = 12 + (index * 17) % 70; 
       const fallbackAssigned = 150 + (index * 23) % 150;
       const fallbackExecuted = Math.floor((fallbackUsage / 100) * fallbackAssigned);
-      
+    
       const currentLicense = details?.currentLicense || "GB Advanced Use";
       const optimalLicense = details?.optimalLicense || (fallbackUsage < 30 ? "GC Core Use" : "GB Advanced Use");
       const isReduced = currentLicense !== optimalLicense;
@@ -241,6 +298,7 @@ export default function TeamMatrix({ team, onBack }) {
     enrichedUsers.forEach((user, index) => {
       currentCost += licenseCosts[user.currentLicense]?.cost || 2400;
       optimalCost += licenseCosts[user.optimalLicense]?.cost || 2400;
+    
       totalConflicts += user.conflictCount;
       totalBloatPercent += (100 - user.usagePercent);
       totalAssignedTx += user.totalTxAssigned;
@@ -287,6 +345,7 @@ export default function TeamMatrix({ team, onBack }) {
     const txUsageCount = {};
     if (hasRealTxData) {
       enrichedUsers.forEach(u => {
+      
         const uTx = u.transactions || [];
         const uniqueUserCodes = [...new Set(uTx.map(t => typeof t === 'object' ? t.tcode : t))];
         uniqueUserCodes.forEach(code => {
@@ -298,13 +357,16 @@ export default function TeamMatrix({ team, onBack }) {
     const uniqueTxMap = new Map();
     allTx.forEach((tx, idx) => {
       let tcode, desc, type;
+    
       if (typeof tx === 'object' && tx.tcode) {
-        tcode = tx.tcode; desc = tx.description || 'Description unavailable'; type = tx.type || 'M';
+        tcode = tx.tcode; desc = tx.description || 'Description unavailable';
+        type = tx.type || 'M';
       } else if (typeof tx === 'string') {
         tcode = tx;
         const fallback = fallbackDictionary[tx];
         if (fallback) {
-            desc = fallback.description; type = fallback.type;
+            desc = fallback.description;
+            type = fallback.type;
         } else {
             const isDisplay = tx.endsWith('03') || tx.endsWith('D') || tx.includes('DISPLAY');
             desc = isDisplay ? 'Standard Display Transaction' : 'Standard Maintenance Transaction'; type = isDisplay ? 'D' : 'M';
@@ -360,18 +422,15 @@ export default function TeamMatrix({ team, onBack }) {
     { name: 'Current Run-Rate', value: kpis.currentCost, fill: '#cbd5e1' },
     { name: 'Target Optimized', value: kpis.optimalCost, fill: '#10b981' }
   ];
-
   const chartDataBloat = [
     { name: 'Active Executions', value: kpis.totalAssignedTx - kpis.totalUnusedTx },
     { name: 'Unused (Bloat)', value: kpis.totalUnusedTx }
   ];
-
   const chartDataRisk = [
     { phase: 'Baseline', conflicts: kpis.totalConflicts },
     { phase: 'Phase 1: Clean', conflicts: kpis.postBloatConflicts },
     { phase: 'Phase 2: Segregate', conflicts: kpis.finalResidualConflicts }
   ];
-
   const chartDataArchitecture = [
     { name: 'Current', roles: kpis.avgRoleDensity, fill: '#cbd5e1' },
     { name: 'Target Target', roles: 2, fill: '#6366f1' } 
@@ -381,7 +440,6 @@ export default function TeamMatrix({ team, onBack }) {
   const toggleSection = (id) => setExpandedSections(prev => prev.includes(id) ? prev.filter(i => i !== id) : [...prev, id]);
   const toggleKpi = (id) => setExpandedKpis(prev => prev.includes(id) ? prev.filter(i => i !== id) : [...prev, id]);
   const toggleRoleSection = (id) => setExpandedRoleSections(prev => prev.includes(id) ? prev.filter(i => i !== id) : [...prev, id]);
-  
   const toggleTxInclude = (tcode) => {
     setExcludedTx(prev => {
       const next = new Set(prev);
@@ -393,17 +451,17 @@ export default function TeamMatrix({ team, onBack }) {
 
   const getRiskTheme = (colorCode) => {
     switch (colorCode) {
-      case 'Red': return { bg: '#fee2e2', text: '#dc2626', border: '#f87171', bar: 'linear-gradient(90deg, #fca5a5 0%, #ef4444 100%)' };      
-      case 'Yellow': return { bg: '#fef3c7', text: '#d97706', border: '#fbbf24', bar: 'linear-gradient(90deg, #fde047 0%, #f59e0b 100%)' };   
-      case 'Blue': return { bg: '#e0f2fe', text: '#0284c7', border: '#38bdf8', bar: 'linear-gradient(90deg, #7dd3fc 0%, #0ea5e9 100%)' };     
-      case 'Green': return { bg: '#d1fae5', text: '#059669', border: '#34d399', bar: 'linear-gradient(90deg, #6ee7b7 0%, #10b981 100%)' };    
+      case 'Red': return { bg: '#fee2e2', text: '#dc2626', border: '#f87171', bar: 'linear-gradient(90deg, #fca5a5 0%, #ef4444 100%)' };
+      case 'Yellow': return { bg: '#fef3c7', text: '#d97706', border: '#fbbf24', bar: 'linear-gradient(90deg, #fde047 0%, #f59e0b 100%)' };
+      case 'Blue': return { bg: '#e0f2fe', text: '#0284c7', border: '#38bdf8', bar: 'linear-gradient(90deg, #7dd3fc 0%, #0ea5e9 100%)' };
+      case 'Green': return { bg: '#d1fae5', text: '#059669', border: '#34d399', bar: 'linear-gradient(90deg, #6ee7b7 0%, #10b981 100%)' };
       default: return { bg: '#f1f5f9', text: '#475569', border: '#cbd5e1', bar: '#94a3b8' };
     }
   };
 
   const handleBuildRoleClick = (type) => {
     setPfcgRoleType(type);
-    setActiveScreen('pfcg'); // Switches view
+    setActiveScreen('pfcg'); 
   };
 
   // --- RENDER CONDITIONAL VIEWS ---
@@ -422,15 +480,27 @@ export default function TeamMatrix({ team, onBack }) {
         </div>
 
         <div style={styles.headerTitleRow}>
+         
           <div style={{ textAlign: 'left' }}>
             <div style={styles.eyebrowText}>{team.users[0]?.country || 'Global'} / {team.name}</div>
             <h1 style={styles.heroTitle}>Role Optimization <span style={styles.heroAccent}>Workspace</span></h1>
             <p style={styles.heroSubtitle}>Analyzing <strong>{enrichedUsers.length} active users</strong> and <strong>{activeTransactions.length} unique transactions</strong>.</p>
+            
+            {/* NEW: AI Insights Demo Button */}
+            <button 
+              style={styles.demoButton} 
+              onClick={() => setIsDemoModalOpen(true)}
+              onMouseEnter={(e) => e.target.style.transform = 'translateY(-2px)'}
+              onMouseLeave={(e) => e.target.style.transform = 'translateY(0)'}
+            >
+              ✨ View AI Optimization Logic
+            </button>
           </div>
         </div>
 
         {/* --- MAIN TAB NAVIGATION --- */}
         <div style={styles.tabContainer}>
+ 
           <div style={styles.tabGroup}>
             <button onClick={() => setActiveTab('summary')} style={{...styles.tabBtn, ...(activeTab === 'summary' ? styles.tabBtnActive : {})}}>
               📑 Executive Summary
@@ -462,6 +532,7 @@ export default function TeamMatrix({ team, onBack }) {
           <div style={styles.tabContentFadeIn}>
 
             {/* VIEW MODE: PLAN (Text Accordions) */}
+      
             {summaryView === 'plan' ? (
               <div style={styles.reportContainer}>
                 <div style={styles.accordionContainer}>
@@ -595,7 +666,6 @@ export default function TeamMatrix({ team, onBack }) {
                 </div>
               </div>
             ) : (
-              
               /* VIEW MODE: GRID WITH RECHARTS (6 KPIs) */
               <div style={styles.flowingGrid}>
                 
@@ -698,7 +768,7 @@ export default function TeamMatrix({ team, onBack }) {
                             <Legend verticalAlign="bottom" height={36}/>
                           </PieChart>
                         </ResponsiveContainer>
-                      </div>
+                       </div>
                     </div>
                   )}
                 </div>
@@ -749,7 +819,7 @@ export default function TeamMatrix({ team, onBack }) {
                             <Legend verticalAlign="bottom" height={36}/>
                           </PieChart>
                         </ResponsiveContainer>
-                      </div>
+                       </div>
                     </div>
                   )}
                 </div>
@@ -949,7 +1019,7 @@ export default function TeamMatrix({ team, onBack }) {
              <div style={styles.roleActionFooter}>
                 <div style={styles.footerInner}>
                   <div style={{color: '#64748b', fontSize: '0.95rem', fontWeight: '600'}}>
-                      Optimization selections active. {excludedTx.size} transactions excluded.
+                    Optimization selections active. {excludedTx.size} transactions excluded.
                   </div>
                   <div style={styles.footerActionGroup}>
                     <button onClick={() => handleBuildRoleClick('Display')} style={styles.btnSecondaryBlue}>Build Display Role</button>
@@ -964,6 +1034,7 @@ export default function TeamMatrix({ team, onBack }) {
         )}
       </div>
 
+      <TeamMatrixAIDemoModal isOpen={isDemoModalOpen} onClose={() => setIsDemoModalOpen(false)} />
     </div>
   );
 }
@@ -981,7 +1052,7 @@ const styles = {
   eyebrowText: { color: '#047857', fontSize: '0.85rem', fontWeight: '700', textTransform: 'uppercase', letterSpacing: '1px', marginBottom: '8px' },
   heroTitle: { color: '#064e3b', margin: '0 0 6px 0', fontSize: '2.4rem', fontWeight: '500', letterSpacing: '-1px' },
   heroAccent: { color: '#10b981', fontWeight: '700' }, 
-  heroSubtitle: { margin: 0, fontSize: '1.05rem', color: '#065f46', fontWeight: '400' },
+  heroSubtitle: { margin: 0, fontSize: '1.05rem', color: '#065f46', fontWeight: '400', marginBottom: '16px' },
 
   // TABS
   tabContainer: { display: 'flex', justifyContent: 'space-between', alignItems: 'flex-end', marginTop: '10px', borderBottom: '2px solid #d1fae5', paddingBottom: '0' },
@@ -1077,5 +1148,20 @@ const styles = {
   pfcgEdit: { margin: '0 12px 0 8px', fontSize: '1.1rem' },
   pfcgStatus: { width: '120px', color: '#475569', fontWeight: 'bold' },
   pfcgTextMain: { flex: 1, color: '#0f172a' },
-  pfcgIdLabel: { color: '#64748b', textAlign: 'right' }
+  pfcgIdLabel: { color: '#64748b', textAlign: 'right' },
+
+  // --- NEW DEMO MODAL STYLES ---
+  modalBackdrop: { position: 'fixed', top: 0, left: 0, right: 0, bottom: 0, backgroundColor: 'rgba(15, 23, 42, 0.6)', backdropFilter: 'blur(4px)', display: 'flex', justifyContent: 'center', alignItems: 'center', zIndex: 9999 },
+  modalContent: { backgroundColor: '#ffffff', borderRadius: '20px', width: '550px', maxWidth: '90%', boxShadow: '0 25px 50px -12px rgba(0, 0, 0, 0.25)', overflow: 'hidden', animation: 'slideUp 0.3s ease-out forwards' },
+  modalHeader: { backgroundColor: '#f8fafc', padding: '20px 24px', borderBottom: '1px solid #e2e8f0', display: 'flex', justifyContent: 'space-between', alignItems: 'center' },
+  modalTitle: { margin: 0, color: '#0f172a', fontSize: '1.25rem', fontWeight: '700' },
+  closeButton: { background: 'none', border: 'none', fontSize: '1.5rem', color: '#64748b', cursor: 'pointer', padding: 0, lineHeight: 1 },
+  modalBody: { padding: '24px' },
+  modalText: { color: '#475569', fontSize: '0.95rem', lineHeight: '1.6', marginBottom: '24px', marginTop: 0 },
+  algorithmCard: { display: 'flex', alignItems: 'flex-start', gap: '16px', padding: '16px', backgroundColor: '#f8fafc', borderRadius: '12px', marginBottom: '12px', border: '1px solid #f1f5f9' },
+  algoIcon: { width: '32px', height: '32px', borderRadius: '8px', color: '#ffffff', display: 'flex', justifyContent: 'center', alignItems: 'center', fontWeight: 'bold', fontSize: '1.2rem', flexShrink: 0 },
+  algoDetails: { display: 'flex', flexDirection: 'column', gap: '4px' },
+  algoTitle: { margin: 0, fontSize: '0.95rem', fontWeight: '700', color: '#0f172a' },
+  algoDesc: { margin: 0, fontSize: '0.85rem', color: '#64748b', lineHeight: '1.5' },
+  demoButton: { marginTop: '16px', padding: '10px 20px', backgroundColor: 'rgba(16, 185, 129, 0.15)', color: '#047857', border: '1px solid rgba(52, 211, 153, 0.4)', borderRadius: '8px', fontSize: '0.9rem', fontWeight: '600', cursor: 'pointer', transition: 'all 0.2s ease', width: 'fit-content', boxShadow: '0 4px 12px rgba(0,0,0,0.05)' }
 };
