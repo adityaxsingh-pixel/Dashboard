@@ -1,79 +1,123 @@
-import React, { useMemo } from 'react';
-import { Treemap, ResponsiveContainer } from 'recharts';
+import React, { useState, useMemo } from 'react';
+import { Treemap, ResponsiveContainer, Tooltip } from 'recharts';
 import treemapData from './Optimized_Role_Treemap.json';
 import userDetails from './User_Details.json';
 
+// --- CUSTOM TOOLTIP COMPONENT ---
+const CustomTooltip = ({ active, payload, scaleMetric, colorMetric }) => {
+  if (active && payload && payload.length) {
+    const data = payload[0].payload;
+    
+    // Helper to get the user-friendly dropdown label
+    const getMetricLabel = (metric) => {
+      switch (metric) {
+        case 'userCount': return 'Total Headcount';
+        case 'sodCount': return 'Total SoD Conflicts';
+        case 'highRiskCount': return 'High Risk Conflicts';
+        case 'bloatScore': return 'Role Usage Bloat';
+        default: return metric;
+      }
+    };
+
+    // Helper to format the metric value
+    const formatMetric = (metric, val) => {
+      switch (metric) {
+        case 'userCount': return `${val} ${val === 1 ? 'User' : 'Users'}`;
+        case 'sodCount': return `${val} Conflicts`;
+        case 'highRiskCount': return `${val} High Risk`;
+        case 'bloatScore': return `${val}% Bloat`;
+        default: return val;
+      }
+    };
+
+    const scaleValue = data['_' + scaleMetric] || data[scaleMetric] || 0;
+    const colorValue = data['_' + colorMetric] || data[colorMetric] || 0;
+    const isSameMetric = scaleMetric === colorMetric;
+
+    return (
+      <div style={{
+        backgroundColor: 'rgba(255, 255, 255, 0.95)',
+        padding: '12px 16px',
+        borderRadius: '12px',
+        boxShadow: '0 10px 25px -5px rgba(0,0,0,0.15)',
+        border: '1px solid #e2e8f0',
+        fontFamily: '"Inter", -apple-system, sans-serif',
+        backdropFilter: 'blur(8px)',
+        zIndex: 1000,
+        pointerEvents: 'none'
+      }}>
+        <h4 style={{ margin: '0 0 10px 0', fontSize: '14px', color: '#064e3b', fontWeight: '700', borderBottom: '1px solid #e2e8f0', paddingBottom: '6px' }}>
+          {data.name}
+        </h4>
+        
+        <div style={{ display: 'flex', flexDirection: 'column', gap: '6px' }}>
+          <div style={{ fontSize: '13px', color: '#475569' }}>
+            <strong style={{ color: '#0f172a' }}>{isSameMetric ? 'Value:' : getMetricLabel(scaleMetric) + ':'}</strong> {formatMetric(scaleMetric, scaleValue)}
+          </div>
+          
+          {!isSameMetric && (
+            <div style={{ fontSize: '13px', color: '#475569' }}>
+              <strong style={{ color: '#0f172a' }}>{getMetricLabel(colorMetric)}:</strong> {formatMetric(colorMetric, colorValue)}
+            </div>
+          )}
+        </div>
+      </div>
+    );
+  }
+  return null;
+};
+
 // --- ULTRA-PREMIUM "APP ICON" TREEMAP SHAPE ---
 const CustomizedTreemapContent = (props) => {
-  const { x, y, width, height, name, depth, users, currentMetric, maxValue } = props;
+  const { x, y, width, height, name, depth, users, colorMetric, maxValue } = props;
   
   if (depth < 2 || !users) return null; 
 
-  const realValue = props['_' + currentMetric] || 0;
+  const colorValue = props['_' + colorMetric] || 0;
 
-  // Rich, saturated color palette for maximum visual impact
-  let fillColor = '#10b981'; // Default Emerald
-  
-  if (realValue > 0 && maxValue > 0) {
-    const ratio = realValue / maxValue;
-    if (ratio >= 0.70) fillColor = '#ef4444';       // Top 30% -> Rich Red
-    else if (ratio >= 0.40) fillColor = '#f59e0b';  // Mid-High -> Rich Amber
-    else if (ratio >= 0.15) fillColor = '#3b82f6';  // Mid-Low -> Rich Blue
-    else fillColor = '#10b981';                     // Bottom 15% -> Rich Emerald
+  let fillColor = '#10b981'; 
+  if (colorValue > 0 && maxValue > 0) {
+    const ratio = colorValue / maxValue;
+    if (ratio >= 0.70) fillColor = '#ef4444';       
+    else if (ratio >= 0.40) fillColor = '#f59e0b';  
+    else if (ratio >= 0.15) fillColor = '#3b82f6';  
+    else fillColor = '#10b981';                     
   }
 
-  // Sizing adjustments for the floating chip look
   const padding = 4;
   const innerX = x + padding;
   const innerY = y + padding;
   const innerWidth = Math.max(0, width - padding * 2);
   const innerHeight = Math.max(0, height - padding * 2);
 
-  // Dynamic text scaling
-  let showText = false;
-  let showSubtitle = false;
+  let showName = false;
   let fontSizeName = 14;
-  let fontSizeSubtitle = 12;
   let displayName = name;
 
-  if (innerWidth > 100 && innerHeight > 55) {
-    showText = true;
-    showSubtitle = true;
+  if (innerWidth > 100 && innerHeight > 45) {
+    showName = true;
     displayName = name.length > 20 ? name.substring(0, 17) + '...' : name;
-  } else if (innerWidth > 60 && innerHeight > 35) {
-    showText = true;
-    showSubtitle = true;
+  } else if (innerWidth > 60 && innerHeight > 30) {
+    showName = true;
     fontSizeName = 11;
-    fontSizeSubtitle = 9;
-    displayName = name.length > 12 ? name.substring(0, 10) + '..' : name;
-  } else if (innerWidth > 35 && innerHeight > 22) {
-    showText = true;
-    showSubtitle = false;
+    displayName = name.length > 14 ? name.substring(0, 12) + '..' : name;
+  } else if (innerWidth > 35 && innerHeight > 20) {
+    showName = true;
     fontSizeName = 8.5;
     displayName = name.length > 8 ? name.substring(0, 6) + '..' : name;
   }
-
-  const getSubtitle = () => {
-    switch (currentMetric) {
-      case 'userCount': return `${realValue} ${realValue === 1 ? 'User' : 'Users'}`;
-      case 'sodCount': return `${realValue} Conflicts`;
-      case 'highRiskCount': return `${realValue} High Risk`;
-      case 'bloatScore': return `${realValue}% Bloat`;
-      default: return '';
-    }
-  };
 
   return (
     <g>
       <rect 
         x={innerX} y={innerY} width={innerWidth} height={innerHeight} 
         fill={fillColor} 
-        rx={12} ry={12} // Rounder, app-icon corners
-        stroke="rgba(255,255,255,0.35)" // Soft glass-like inner border
+        rx={12} ry={12} 
+        stroke="rgba(255,255,255,0.35)" 
         strokeWidth={1.5}
         style={{ 
           cursor: 'pointer', 
-          transition: 'all 0.3s cubic-bezier(0.34, 1.56, 0.64, 1)', // Bouncy transition
+          transition: 'all 0.3s cubic-bezier(0.34, 1.56, 0.64, 1)', 
           filter: 'drop-shadow(0px 4px 8px rgba(0,0,0,0.08))' 
         }}
         onMouseEnter={(e) => {
@@ -88,31 +132,27 @@ const CustomizedTreemapContent = (props) => {
         }}
       />
       
-      {showText && (
-        <>
-          <text 
-            x={innerX + innerWidth / 2} y={innerY + innerHeight / 2 - (showSubtitle ? 5 : -4)} 
-            textAnchor="middle" fill="#ffffff" fontSize={fontSizeName} fontWeight="700" fontFamily='"Inter", -apple-system, sans-serif' letterSpacing="0.5px"
-            style={{ textShadow: '0px 2px 4px rgba(0,0,0,0.2)', pointerEvents: 'none' }} 
-          >
-            {displayName}
-          </text>
-          {showSubtitle && (
-            <text 
-              x={innerX + innerWidth / 2} y={innerY + innerHeight / 2 + (fontSizeName === 14 ? 14 : 11)} 
-              textAnchor="middle" fill="#ffffff" fontSize={fontSizeSubtitle} fontWeight="600" fontFamily='"Inter", -apple-system, sans-serif' opacity={0.9}
-              style={{ pointerEvents: 'none', textShadow: '0px 1px 2px rgba(0,0,0,0.15)' }}
-            >
-              {getSubtitle()}
-            </text>
-          )}
-        </>
+      {showName && (
+        <text 
+          x={innerX + innerWidth / 2} 
+          y={innerY + innerHeight / 2} 
+          textAnchor="middle" fill="#ffffff" fontSize={fontSizeName} fontWeight="700" 
+          fontFamily='"Inter", -apple-system, sans-serif' letterSpacing="0.5px"
+          dominantBaseline="central" 
+          style={{ textShadow: '0px 2px 4px rgba(0,0,0,0.3)', pointerEvents: 'none' }} 
+        >
+          {displayName}
+        </text>
       )}
     </g>
   );
 };
 
-export default function DashboardHome({ onSelectTeam, metric, setMetric }) {
+
+export default function DashboardHome({ onSelectTeam }) {
+
+  const [scaleMetric, setScaleMetric] = useState('userCount');
+  const [colorMetric, setColorMetric] = useState('userCount');
 
   const { enrichedTreemapData, maxValues } = useMemo(() => {
     let globalMaxUsers = 0;
@@ -173,12 +213,11 @@ export default function DashboardHome({ onSelectTeam, metric, setMetric }) {
     return { enrichedTreemapData: processedData, maxValues: { userCount: globalMaxUsers, sodCount: globalMaxSod, highRiskCount: globalMaxHighRisk, bloatScore: globalMaxBloat } };
   }, []);
 
-  const getRegionSize = (region) => region.children.reduce((acc, dept) => acc + dept.children.reduce((a, pos) => a + pos[metric], 0), 0);
+  const getRegionSize = (region) => region.children.reduce((acc, dept) => acc + dept.children.reduce((a, pos) => a + pos[scaleMetric], 0), 0);
 
   return (
     <div style={styles.container}>
       
-      {/* BEAUTIFUL DARK EMERALD COMMAND HEADER */}
       <div style={styles.heroHeaderCard}>
         <div style={styles.headerAccentLine}></div>
         <div style={styles.brandBox}>
@@ -188,27 +227,31 @@ export default function DashboardHome({ onSelectTeam, metric, setMetric }) {
         </div>
       </div>
 
-      {/* FLOATING CONTROLS BAR */}
+      {/* TOP CONTROLS ONLY HAVE THE DROPDOWNS NOW */}
       <div style={styles.controlsContainer}>
-        <div style={styles.metricSelectorBox}>
-          <span style={styles.metricLabel}>Scale & Color By:</span>
-          <select style={styles.metricSelect} value={metric} onChange={(e) => setMetric(e.target.value)}>
-            <option value="userCount">Total Headcount (Users)</option>
-            <option value="sodCount">Total SoD Conflicts</option>
-            <option value="highRiskCount">High Risk Conflicts</option>
-            <option value="bloatScore">Role Usage Bloat (Unused %)</option>
-          </select>
-        </div>
+        <div style={{ display: 'flex', gap: '30px', margin: '0 auto' }}> {/* Centered dropdowns */}
+          <div style={styles.metricSelectorBox}>
+            <span style={styles.metricLabel}>Scale By:</span>
+            <select style={styles.metricSelect} value={scaleMetric} onChange={(e) => setScaleMetric(e.target.value)}>
+              <option value="userCount">Total Headcount</option>
+              <option value="sodCount">Total SoD Conflicts</option>
+              <option value="highRiskCount">High Risk Conflicts</option>
+              <option value="bloatScore">Role Usage Bloat</option>
+            </select>
+          </div>
 
-        <div style={styles.legendContainer}>
-          <div style={styles.legendItem}><div style={{...styles.legendDot, backgroundColor: '#ef4444', boxShadow: '0 0 8px rgba(239, 68, 68, 0.5)'}}></div><span style={styles.legendText}>Top 30% (Severe)</span></div>
-          <div style={styles.legendItem}><div style={{...styles.legendDot, backgroundColor: '#f59e0b', boxShadow: '0 0 8px rgba(245, 158, 11, 0.5)'}}></div><span style={styles.legendText}>Elevated</span></div>
-          <div style={styles.legendItem}><div style={{...styles.legendDot, backgroundColor: '#3b82f6', boxShadow: '0 0 8px rgba(59, 130, 246, 0.5)'}}></div><span style={styles.legendText}>Moderate</span></div>
-          <div style={styles.legendItem}><div style={{...styles.legendDot, backgroundColor: '#10b981', boxShadow: '0 0 8px rgba(16, 185, 129, 0.5)'}}></div><span style={styles.legendText}>Low/Clean</span></div>
+          <div style={styles.metricSelectorBox}>
+            <span style={styles.metricLabel}>Color By:</span>
+            <select style={styles.metricSelect} value={colorMetric} onChange={(e) => setColorMetric(e.target.value)}>
+              <option value="userCount">Total Headcount</option>
+              <option value="sodCount">Total SoD Conflicts</option>
+              <option value="highRiskCount">High Risk Conflicts</option>
+              <option value="bloatScore">Role Usage Bloat</option>
+            </select>
+          </div>
         </div>
       </div>
 
-      {/* SEAMLESS CHART WINDOW */}
       <div style={styles.chartMasterWindow}>
         {enrichedTreemapData.map((region, idx) => {
           const regionSize = getRegionSize(region);
@@ -221,178 +264,71 @@ export default function DashboardHome({ onSelectTeam, metric, setMetric }) {
                 <ResponsiveContainer width="100%" height="100%">
                   <Treemap 
                     data={region.children} 
-                    dataKey={metric} 
-                    content={<CustomizedTreemapContent currentMetric={metric} maxValue={maxValues[metric]} />} 
+                    dataKey={scaleMetric} 
+                    content={<CustomizedTreemapContent colorMetric={colorMetric} maxValue={maxValues[colorMetric]} />} 
                     onClick={(e) => e && e.users && onSelectTeam(e)} 
                     isAnimationActive={true} 
                     animationDuration={600} 
                     animationEasing="ease-in-out"
-                  />
+                  >
+                    <Tooltip content={<CustomTooltip scaleMetric={scaleMetric} colorMetric={colorMetric} />} />
+                  </Treemap>
                 </ResponsiveContainer>
               </div>
             </div>
           )
         })}
       </div>
+
+      {/* NEW FOOTER LEGEND */}
+      <div style={styles.footerLegendContainer}>
+        <div style={styles.legendItem}><div style={{...styles.legendDot, backgroundColor: '#ef4444', boxShadow: '0 0 8px rgba(239, 68, 68, 0.5)'}}></div><span style={styles.legendText}>Top 30% (Severe)</span></div>
+        <div style={styles.legendItem}><div style={{...styles.legendDot, backgroundColor: '#f59e0b', boxShadow: '0 0 8px rgba(245, 158, 11, 0.5)'}}></div><span style={styles.legendText}>Elevated</span></div>
+        <div style={styles.legendItem}><div style={{...styles.legendDot, backgroundColor: '#3b82f6', boxShadow: '0 0 8px rgba(59, 130, 246, 0.5)'}}></div><span style={styles.legendText}>Moderate</span></div>
+        <div style={styles.legendItem}><div style={{...styles.legendDot, backgroundColor: '#10b981', boxShadow: '0 0 8px rgba(16, 185, 129, 0.5)'}}></div><span style={styles.legendText}>Low/Clean</span></div>
+      </div>
+      
     </div>
   );
 }
 
-// --- BEAUTIFUL CSS-IN-JS STYLES ---
+// --- CSS-IN-JS STYLES ---
 const styles = {
-  container: { 
-    padding: '40px 60px', 
-    backgroundColor: '#f0fdf4', // Matching the soft green tint from TeamMatrix
-    minHeight: '100vh', 
-    fontFamily: '"Inter", -apple-system, sans-serif' 
-  },
+  container: { padding: '40px 60px', backgroundColor: '#f0fdf4', minHeight: '100vh', fontFamily: '"Inter", -apple-system, sans-serif' },
+  heroHeaderCard: { display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start', backgroundColor: '#064e3b', padding: '45px 50px', borderRadius: '24px', boxShadow: '0 20px 40px -10px rgba(6, 78, 59, 0.25)', marginBottom: '35px', position: 'relative', overflow: 'hidden' },
+  headerAccentLine: { position: 'absolute', top: 0, left: 0, right: 0, height: '6px', background: 'linear-gradient(90deg, #34d399 0%, #10b981 100%)' },
+  brandBox: { display: 'flex', flexDirection: 'column', maxWidth: '800px', position: 'relative', zIndex: 2 },
+  eyebrowBadge: { display: 'inline-block', padding: '6px 14px', backgroundColor: 'rgba(167, 243, 208, 0.15)', color: '#a7f3d0', borderRadius: '20px', fontSize: '0.75rem', fontWeight: '700', textTransform: 'uppercase', letterSpacing: '1px', marginBottom: '16px', width: 'fit-content', border: '1px solid rgba(167, 243, 208, 0.3)' },
+  heroTitle: { color: '#ffffff', margin: '0 0 10px 0', fontSize: '2.6rem', fontWeight: '400', letterSpacing: '-1px' },
+  heroAccent: { color: '#10b981', fontWeight: '700' },
+  heroSubtitle: { margin: 0, fontSize: '1.05rem', color: '#a7f3d0', lineHeight: '1.6', fontWeight: '400' },
   
-  // Deep Forest Green Premium Header
-  heroHeaderCard: { 
-    display: 'flex', 
-    justifyContent: 'space-between', 
-    alignItems: 'flex-start', 
-    backgroundColor: '#064e3b', // Deep emerald background
-    padding: '45px 50px',
-    borderRadius: '24px',
-    boxShadow: '0 20px 40px -10px rgba(6, 78, 59, 0.25)',
-    marginBottom: '35px',
-    position: 'relative',
-    overflow: 'hidden' 
-  },
-  headerAccentLine: {
-    position: 'absolute',
-    top: 0,
-    left: 0,
-    right: 0,
-    height: '6px',
-    background: 'linear-gradient(90deg, #34d399 0%, #10b981 100%)' // Bright emerald to standard emerald
-  },
-  brandBox: { 
-    display: 'flex', 
-    flexDirection: 'column',
-    maxWidth: '800px',
-    position: 'relative',
-    zIndex: 2
-  },
-  eyebrowBadge: { 
-    display: 'inline-block',
-    padding: '6px 14px',
-    backgroundColor: 'rgba(167, 243, 208, 0.15)', // Soft glowing green background
-    color: '#a7f3d0',
-    borderRadius: '20px',
-    fontSize: '0.75rem', 
-    fontWeight: '700', 
-    textTransform: 'uppercase', 
-    letterSpacing: '1px', 
-    marginBottom: '16px',
-    width: 'fit-content',
-    border: '1px solid rgba(167, 243, 208, 0.3)'
-  },
-  heroTitle: { 
-    color: '#ffffff', 
-    margin: '0 0 10px 0', 
-    fontSize: '2.6rem', 
-    fontWeight: '400', 
-    letterSpacing: '-1px' 
-  },
-  heroAccent: { 
-    color: '#10b981', // Vivid emerald accent text
-    fontWeight: '700'
-  },
-  heroSubtitle: {
-    margin: 0,
-    fontSize: '1.05rem',
-    color: '#a7f3d0',
-    lineHeight: '1.6',
-    fontWeight: '400'
-  },
+  // Updated Controls Container (Just the dropdowns now)
+  controlsContainer: { display: 'flex', justifyContent: 'center', alignItems: 'center', backgroundColor: '#ffffff', padding: '16px 24px', borderRadius: '100px', boxShadow: '0 10px 25px -5px rgba(5, 150, 105, 0.08)', border: '1px solid #e2e8f0', marginBottom: '30px' },
+  metricSelectorBox: { display: 'flex', alignItems: 'center', gap: '12px', paddingLeft: '8px' },
+  metricLabel: { fontSize: '0.80rem', fontWeight: '700', color: '#64748b', textTransform: 'uppercase', letterSpacing: '0.5px' },
+  metricSelect: { border: 'none', fontSize: '1rem', fontWeight: '700', color: '#064e3b', backgroundColor: 'transparent', outline: 'none', cursor: 'pointer', fontFamily: '"Inter", -apple-system, sans-serif' },
   
-  // Floating Controls Bar
-  controlsContainer: {
-    display: 'flex',
-    justifyContent: 'space-between',
-    alignItems: 'center',
-    backgroundColor: '#ffffff',
-    padding: '16px 24px',
-    borderRadius: '100px', 
-    boxShadow: '0 10px 25px -5px rgba(5, 150, 105, 0.08)', // subtle green shadow
-    border: '1px solid #e2e8f0',
-    marginBottom: '30px'
-  },
-  metricSelectorBox: {
-    display: 'flex',
-    alignItems: 'center',
-    gap: '12px',
-    paddingLeft: '8px'
-  },
-  metricLabel: {
-    fontSize: '0.80rem',
-    fontWeight: '700',
-    color: '#64748b',
-    textTransform: 'uppercase',
-    letterSpacing: '0.5px'
-  },
-  metricSelect: {
-    border: 'none',
-    fontSize: '1rem',
-    fontWeight: '700',
-    color: '#064e3b', // Deep green for active text
-    backgroundColor: 'transparent',
-    outline: 'none',
-    cursor: 'pointer',
-    fontFamily: '"Inter", -apple-system, sans-serif'
-  },
-  legendContainer: { 
-    display: 'flex', 
-    gap: '24px', 
-    paddingRight: '8px'
-  },
-  legendItem: { 
-    display: 'flex', 
-    alignItems: 'center', 
-    gap: '8px' 
-  },
-  legendDot: { 
-    width: '12px', 
-    height: '12px', 
-    borderRadius: '50%' 
-  },
-  legendText: {
-    fontSize: '0.85rem', 
-    fontWeight: '600', 
-    color: '#475569',
-    textTransform: 'uppercase',
-    letterSpacing: '0.5px'
-  },
+  chartMasterWindow: { display: 'flex', width: '100%', height: '650px', backgroundColor: '#ffffff', borderRadius: '28px', boxShadow: '0 20px 40px -10px rgba(5, 150, 105, 0.08)', padding: '12px', border: '1px solid #ffffff' },
+  regionHeaderContainer: { display: 'flex', justifyContent: 'center', marginBottom: '15px', marginTop: '10px' },
+  regionHeaderTop: { backgroundColor: '#f0fdf4', color: '#047857', padding: '8px 20px', borderRadius: '100px', textAlign: 'center', fontWeight: '700', fontSize: '0.8rem', textTransform: 'uppercase', letterSpacing: '1px', border: '1px solid #a7f3d0' },
 
-  // Chart Window
-  chartMasterWindow: { 
+  // New Footer Legend Container
+  footerLegendContainer: { 
     display: 'flex', 
-    width: '100%', 
-    height: '650px', 
+    justifyContent: 'center', 
+    alignItems: 'center', 
+    gap: '32px', 
+    marginTop: '24px', 
+    padding: '16px 32px', 
     backgroundColor: '#ffffff', 
-    borderRadius: '28px', 
-    boxShadow: '0 20px 40px -10px rgba(5, 150, 105, 0.08)', // subtle green shadow
-    padding: '12px',
-    border: '1px solid #ffffff'
-  },
-  regionHeaderContainer: {
-    display: 'flex',
-    justifyContent: 'center',
-    marginBottom: '15px',
-    marginTop: '10px'
-  },
-  regionHeaderTop: { 
-    backgroundColor: '#f0fdf4', // Matching the emerald theme
-    color: '#047857', // Deep emerald text
-    padding: '8px 20px',
     borderRadius: '100px', 
-    textAlign: 'center', 
-    fontWeight: '700', 
-    fontSize: '0.8rem', 
-    textTransform: 'uppercase', 
-    letterSpacing: '1px',
-    border: '1px solid #a7f3d0'
-  }
+    boxShadow: '0 10px 25px -5px rgba(5, 150, 105, 0.08)', 
+    border: '1px solid #e2e8f0', 
+    width: 'fit-content', 
+    margin: '30px auto 0 auto' 
+  },
+  legendItem: { display: 'flex', alignItems: 'center', gap: '8px' },
+  legendDot: { width: '12px', height: '12px', borderRadius: '50%' },
+  legendText: { fontSize: '0.85rem', fontWeight: '600', color: '#475569', textTransform: 'uppercase', letterSpacing: '0.5px' },
 };
