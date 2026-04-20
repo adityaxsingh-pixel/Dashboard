@@ -180,8 +180,87 @@ function PfcgBuilderScreen({ roleType, onBack }) {
   );
 }
 
+// --- SUMMARIZED CHANGES MODAL COMPONENT ---
+const SummarizedChangesModal = ({ isOpen, onClose, allTx, excludedTx, displayTcodes, maintainTcodes }) => {
+  if (!isOpen) return null;
 
-// --- NEW AI DEMO MODAL COMPONENT ---
+  const removedList = allTx.filter(t => excludedTx.has(t.tcode));
+  const targetDisplay = displayTcodes.filter(t => !excludedTx.has(t.tcode));
+  const targetMaintain = maintainTcodes.filter(t => !excludedTx.has(t.tcode));
+
+  return (
+    <div style={styles.modalBackdrop} onClick={onClose}>
+      <div style={{...styles.modalContent, width: '900px', maxWidth: '95%'}} onClick={e => e.stopPropagation()}>
+        <div style={styles.modalHeader}>
+          <div>
+            <h3 style={styles.modalTitle}>📊 Redesign Summary</h3>
+            <p style={{margin: '4px 0 0 0', color: '#64748b', fontSize: '0.9rem'}}>Overview of transaction changes before generating final architecture.</p>
+          </div>
+          <button style={styles.closeButton} onClick={onClose}>×</button>
+        </div>
+        
+        <div style={{...styles.modalBody, display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '20px', backgroundColor: '#f8fafc'}}>
+          
+          {/* Box 1: Original Scope */}
+          <div style={styles.summaryBox}>
+            <div style={styles.summaryBoxHeader}>
+              <span style={{fontSize: '1.2rem'}}>📦</span> 
+              <span style={styles.summaryBoxTitle}>Original Role Scope ({allTx.length})</span>
+            </div>
+            <div style={styles.summaryPillContainer}>
+              {allTx.map(tx => (
+                <span key={tx.tcode} style={{...styles.summaryPill, backgroundColor: '#f1f5f9', color: '#475569'}}>{tx.tcode}</span>
+              ))}
+            </div>
+          </div>
+
+          {/* Box 2: Removed Scope */}
+          <div style={styles.summaryBox}>
+            <div style={styles.summaryBoxHeader}>
+              <span style={{fontSize: '1.2rem'}}>🗑️</span> 
+              <span style={styles.summaryBoxTitle}>Transactions Removed ({removedList.length})</span>
+            </div>
+            <div style={styles.summaryPillContainer}>
+              {removedList.length > 0 ? removedList.map(tx => (
+                <span key={tx.tcode} style={{...styles.summaryPill, backgroundColor: '#fee2e2', color: '#dc2626', border: '1px solid #fecaca'}}>{tx.tcode}</span>
+              )) : <span style={{color: '#94a3b8', fontSize: '0.85rem', fontStyle: 'italic'}}>No transactions flagged for removal.</span>}
+            </div>
+          </div>
+
+          {/* Box 3: Target Display Role */}
+          <div style={styles.summaryBox}>
+            <div style={styles.summaryBoxHeader}>
+              <span style={{fontSize: '1.2rem'}}>👁️</span> 
+              <span style={styles.summaryBoxTitle}>Target: Display Role ({targetDisplay.length})</span>
+            </div>
+            <div style={styles.summaryPillContainer}>
+              {targetDisplay.length > 0 ? targetDisplay.map(tx => (
+                <span key={tx.tcode} style={{...styles.summaryPill, backgroundColor: '#e0f2fe', color: '#0284c7', border: '1px solid #bae6fd'}}>{tx.tcode}</span>
+              )) : <span style={{color: '#94a3b8', fontSize: '0.85rem', fontStyle: 'italic'}}>No display transactions allocated.</span>}
+            </div>
+          </div>
+
+          {/* Box 4: Target Maintain Role */}
+          <div style={styles.summaryBox}>
+            <div style={styles.summaryBoxHeader}>
+              <span style={{fontSize: '1.2rem'}}>✍️</span> 
+              <span style={styles.summaryBoxTitle}>Target: Maintain Role ({targetMaintain.length})</span>
+            </div>
+            <div style={styles.summaryPillContainer}>
+              {targetMaintain.length > 0 ? targetMaintain.map(tx => (
+                <span key={tx.tcode} style={{...styles.summaryPill, backgroundColor: '#fef3c7', color: '#d97706', border: '1px solid #fde68a'}}>{tx.tcode}</span>
+              )) : <span style={{color: '#94a3b8', fontSize: '0.85rem', fontStyle: 'italic'}}>No maintain transactions allocated.</span>}
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  );
+};
+
+
+// --- AI DEMO MODAL COMPONENT ---
 const TeamMatrixAIDemoModal = ({ isOpen, onClose }) => {
   if (!isOpen) return null;
   return (
@@ -246,7 +325,9 @@ export default function TeamMatrix({ team, onBack }) {
   const [expandedRoleSections, setExpandedRoleSections] = useState([]);
   const [excludedTx, setExcludedTx] = useState(new Set());
   const [pfcgRoleType, setPfcgRoleType] = useState('');
+  
   const [isDemoModalOpen, setIsDemoModalOpen] = useState(false); 
+  const [isSummaryModalOpen, setIsSummaryModalOpen] = useState(false);
 
   // --- DATA PROCESSING 1: USER ROSTER ---
   const { enrichedUsers, optimizedCount } = useMemo(() => {
@@ -864,18 +945,18 @@ export default function TeamMatrix({ team, onBack }) {
                   <tr>
                     <th style={styles.th}>User Profile</th>
                     <th style={styles.th}>Role Usage (Bloat)</th>
-                    <th style={styles.th}>Post-Optimization Conflicts</th>
+                    <th style={styles.th}>Baseline Conflicts</th>
+                    <th style={styles.th}>Optimized Conflicts</th>
                   </tr>
                 </thead>
                 <tbody>
                   {enrichedUsers.map((user, idx) => {
                     const theme = getRiskTheme(user.statusColor);
                     
-                    // NEW LOGIC: Calculate Dynamic Conflict Reduction
+                    // DYNAMIC CONFLICT REDUCTION LOGIC
                     const userTcodes = user.transactions.map(t => typeof t === 'object' ? t.tcode : t);
                     const userExcludedCount = userTcodes.filter(code => excludedTx.has(code)).length;
                     
-                    // Fallback to simulate a reduction if mock data doesn't map perfectly
                     const mockReductionFactor = excludedTx.size > 0 ? Math.ceil((excludedTx.size / maintainTcodes.length) * user.conflictCount) : 0;
                     const actualReduction = userTcodes.length > 0 ? Math.min(user.conflictCount, userExcludedCount) : mockReductionFactor;
                     const newConflicts = Math.max(0, user.conflictCount - actualReduction);
@@ -893,9 +974,10 @@ export default function TeamMatrix({ team, onBack }) {
                           </div>
                           <div style={styles.secondaryText}>{user.totalTxExecuted} Executed / {user.totalTxAssigned} Assigned</div>
                         </td>
+                        
+                        {/* COLUMN 1: BASELINE */}
                         <td style={styles.td}>
-                          <div style={{ display: 'flex', alignItems: 'center', gap: '12px' }}>
-                            {/* Display original conflict count with strike-through if improved */}
+                          <div style={{ display: 'flex', alignItems: 'center', gap: '10px' }}>
                             <span style={{ 
                               fontSize: '1.05rem', 
                               fontWeight: '800', 
@@ -905,25 +987,30 @@ export default function TeamMatrix({ team, onBack }) {
                             }}>
                               {user.conflictCount}
                             </span>
-
-                            {/* Display new optimized count if there was a reduction */}
-                            {actualReduction > 0 && (
-                              <>
-                                <span style={{ fontSize: '1.1rem', fontWeight: '800', color: '#059669' }}>
-                                  {newConflicts}
-                                </span>
-                                <span style={{ fontSize: '0.75rem', fontWeight: '700', color: '#10b981', backgroundColor: '#d1fae5', padding: '3px 8px', borderRadius: '100px' }}>
-                                  -{actualReduction} Resolved
-                                </span>
-                              </>
-                            )}
-
-                            {/* Show original status pill ONLY if there's no reduction yet */}
                             {actualReduction === 0 && (
                               <span style={{ ...styles.pillBadge, backgroundColor: theme.bg, color: theme.text }}>{user.criticality}</span>
                             )}
                           </div>
                         </td>
+
+                        {/* COLUMN 2: OPTIMIZED */}
+                        <td style={styles.td}>
+                           {actualReduction > 0 ? (
+                            <div style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
+                              <span style={{ fontSize: '1.1rem', fontWeight: '800', color: '#059669' }}>
+                                {newConflicts}
+                              </span>
+                              <span style={{ fontSize: '0.75rem', fontWeight: '700', color: '#10b981', backgroundColor: '#d1fae5', padding: '3px 8px', borderRadius: '100px' }}>
+                                -{actualReduction} Resolved
+                              </span>
+                            </div>
+                           ) : (
+                            <span style={{ fontSize: '0.9rem', fontWeight: '600', color: '#94a3b8', fontStyle: 'italic' }}>
+                              {user.conflictCount} (Unchanged)
+                            </span>
+                           )}
+                        </td>
+
                       </tr>
                     )
                   })}
@@ -1061,17 +1148,18 @@ export default function TeamMatrix({ team, onBack }) {
 
              </div>
 
-             {/* ACTION BUTTONS */}
+             {/* ACTION FOOTER WITH NEW BUTTON AND TEXT */}
              <div style={styles.roleActionFooter}>
                 <div style={styles.footerInner}>
                   <div style={{color: '#64748b', fontSize: '0.95rem', fontWeight: '600'}}>
                       Optimization selections active. {excludedTx.size} transactions excluded.
                   </div>
                   <div style={styles.footerActionGroup}>
+                    <button onClick={() => setIsSummaryModalOpen(true)} style={styles.btnSecondaryGray}>Show Summarized Changes</button>
                     <button onClick={() => handleBuildRoleClick('Display')} style={styles.btnSecondaryBlue}>Build Display Role</button>
                     <button onClick={() => handleBuildRoleClick('Maintain')} style={styles.btnSecondaryRed}>Build Maintain Role</button>
                     <div style={styles.vertDivider}></div>
-                    <button style={styles.btnPrimaryEmerald}>Generate Enforced Architecture</button>
+                    <button style={styles.btnPrimaryEmerald}>Generate All Inclusive Role</button>
                   </div>
                 </div>
              </div>
@@ -1080,7 +1168,17 @@ export default function TeamMatrix({ team, onBack }) {
         )}
       </div>
 
+      {/* OVERLAYS */}
       <TeamMatrixAIDemoModal isOpen={isDemoModalOpen} onClose={() => setIsDemoModalOpen(false)} />
+      
+      <SummarizedChangesModal 
+        isOpen={isSummaryModalOpen} 
+        onClose={() => setIsSummaryModalOpen(false)} 
+        allTx={activeTransactions}
+        excludedTx={excludedTx}
+        displayTcodes={displayTcodes}
+        maintainTcodes={maintainTcodes}
+      />
     </div>
   );
 }
@@ -1190,6 +1288,7 @@ const styles = {
   footerActionGroup: { display: 'flex', alignItems: 'center', gap: '16px' },
   vertDivider: { width: '1px', height: '24px', backgroundColor: '#e2e8f0', margin: '0 8px' },
   
+  btnSecondaryGray: { background: '#f1f5f9', border: '1px solid #cbd5e1', color: '#475569', padding: '12px 24px', borderRadius: '10px', fontWeight: '600', cursor: 'pointer', transition: 'all 0.2s ease' },
   btnSecondaryBlue: { background: '#f0f9ff', border: '1px solid #bae6fd', color: '#0284c7', padding: '12px 24px', borderRadius: '10px', fontWeight: '600', cursor: 'pointer', transition: 'all 0.2s ease' },
   btnSecondaryRed: { background: '#fef2f2', border: '1px solid #fecaca', color: '#dc2626', padding: '12px 24px', borderRadius: '10px', fontWeight: '600', cursor: 'pointer', transition: 'all 0.2s ease' },
   btnPrimaryEmerald: { background: 'linear-gradient(135deg, #10b981 0%, #047857 100%)', border: 'none', color: '#ffffff', padding: '12px 32px', borderRadius: '10px', cursor: 'pointer', fontWeight: '700', fontSize: '0.95rem', boxShadow: '0 4px 12px rgba(5, 150, 105, 0.25)', transition: 'transform 0.1s ease' },
@@ -1205,14 +1304,21 @@ const styles = {
   pfcgTextMain: { flex: 1, color: '#0f172a' },
   pfcgIdLabel: { color: '#64748b', textAlign: 'right' },
 
-  // --- DEMO MODAL STYLES ---
+  // --- DEMO / SUMMARY MODAL STYLES ---
   modalBackdrop: { position: 'fixed', top: 0, left: 0, right: 0, bottom: 0, backgroundColor: 'rgba(15, 23, 42, 0.6)', backdropFilter: 'blur(4px)', display: 'flex', justifyContent: 'center', alignItems: 'center', zIndex: 9999 },
-  modalContent: { backgroundColor: '#ffffff', borderRadius: '20px', width: '550px', maxWidth: '90%', boxShadow: '0 25px 50px -12px rgba(0, 0, 0, 0.25)', overflow: 'hidden', animation: 'slideUp 0.3s ease-out forwards' },
-  modalHeader: { backgroundColor: '#f8fafc', padding: '20px 24px', borderBottom: '1px solid #e2e8f0', display: 'flex', justifyContent: 'space-between', alignItems: 'center' },
+  modalContent: { backgroundColor: '#ffffff', borderRadius: '20px', width: '550px', maxWidth: '90%', boxShadow: '0 25px 50px -12px rgba(0, 0, 0, 0.25)', overflow: 'hidden', animation: 'slideUp 0.3s ease-out forwards', display: 'flex', flexDirection: 'column', maxHeight: '85vh' },
+  modalHeader: { backgroundColor: '#ffffff', padding: '20px 24px', borderBottom: '1px solid #e2e8f0', display: 'flex', justifyContent: 'space-between', alignItems: 'center' },
   modalTitle: { margin: 0, color: '#0f172a', fontSize: '1.25rem', fontWeight: '700' },
   closeButton: { background: 'none', border: 'none', fontSize: '1.5rem', color: '#64748b', cursor: 'pointer', padding: 0, lineHeight: 1 },
-  modalBody: { padding: '24px' },
+  modalBody: { padding: '24px', overflowY: 'auto' },
   modalText: { color: '#475569', fontSize: '0.95rem', lineHeight: '1.6', marginBottom: '24px', marginTop: 0 },
+  
+  summaryBox: { backgroundColor: '#ffffff', border: '1px solid #e2e8f0', borderRadius: '12px', padding: '16px', display: 'flex', flexDirection: 'column' },
+  summaryBoxHeader: { display: 'flex', alignItems: 'center', gap: '8px', borderBottom: '1px solid #e2e8f0', paddingBottom: '12px', marginBottom: '12px' },
+  summaryBoxTitle: { fontWeight: '700', color: '#0f172a', fontSize: '0.95rem' },
+  summaryPillContainer: { display: 'flex', flexWrap: 'wrap', gap: '8px', overflowY: 'auto', maxHeight: '180px', paddingRight: '4px' },
+  summaryPill: { padding: '4px 10px', borderRadius: '6px', fontSize: '0.8rem', fontWeight: '700', fontFamily: '"Fira Code", monospace' },
+
   algorithmCard: { display: 'flex', alignItems: 'flex-start', gap: '16px', padding: '16px', backgroundColor: '#f8fafc', borderRadius: '12px', marginBottom: '12px', border: '1px solid #f1f5f9' },
   algoIcon: { width: '32px', height: '32px', borderRadius: '8px', color: '#ffffff', display: 'flex', justifyContent: 'center', alignItems: 'center', fontWeight: 'bold', fontSize: '1.2rem', flexShrink: 0 },
   algoDetails: { display: 'flex', flexDirection: 'column', gap: '4px' },
