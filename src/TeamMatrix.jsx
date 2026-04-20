@@ -64,7 +64,6 @@ function PfcgBuilderScreen({ roleType, onBack }) {
 
       const authKey = `${row.object}-${row.auth}`;
       if (!tree[row.clss].objects[row.object].auths[authKey]) tree[row.clss].objects[row.object].auths[authKey] = { text: row.objText, authId: row.auth, rows: [], fields: {} };
-    
       tree[row.clss].objects[row.object].auths[authKey].rows.push(row);
 
       if (!tree[row.clss].objects[row.object].auths[authKey].fields[row.fieldName]) {
@@ -111,13 +110,11 @@ function PfcgBuilderScreen({ roleType, onBack }) {
 
       <div style={{...styles.contentCanvas, padding: '0', overflow: 'hidden', border: '1px solid #cbd5e1'}}>
         <div style={styles.pfcgCanvas}>
-          {/* ROOT NODE */}
           <div style={{...styles.pfcgRow, backgroundColor: '#e0f2fe'}}>
             <span style={{marginRight: '8px'}}>▼</span>
             <span style={{marginRight: '8px', fontWeight: 'bold'}}>ZROLE_GENERATION_{roleType.toUpperCase()}</span>
           </div>
 
-          {/* CLASS LEVEL */}
           {Object.values(hierarchy).map(clss => {
             const isClssOpen = expandedNodes[clss.id];
             return (
@@ -131,7 +128,6 @@ function PfcgBuilderScreen({ roleType, onBack }) {
                   <span style={styles.pfcgIdLabel}>{clss.id}</span>
                 </div>
 
-                {/* OBJECT LEVEL */}
                 {isClssOpen && Object.values(clss.objects).map(obj => {
                   const isObjOpen = expandedNodes[`${clss.id}-${obj.id}`];
                   return (
@@ -145,7 +141,6 @@ function PfcgBuilderScreen({ roleType, onBack }) {
                         <span style={styles.pfcgIdLabel}>{obj.id}</span>
                       </div>
 
-                      {/* AUTH LEVEL */}
                       {isObjOpen && Object.values(obj.auths).map(auth => {
                         const isAuthOpen = expandedNodes[`${clss.id}-${obj.id}-${auth.authId}`];
                         return (
@@ -159,7 +154,6 @@ function PfcgBuilderScreen({ roleType, onBack }) {
                               <span style={styles.pfcgIdLabel}>T-D{Math.floor(Math.random()*10000000)} (Auth: {auth.authId})</span>
                             </div>
 
-                            {/* FIELD LEVEL */}
                             {isAuthOpen && Object.values(auth.fields).map(field => (
                               <div key={field.name} style={{...styles.pfcgRow, backgroundColor: '#f8fafc', paddingLeft: '96px', borderBottom: '1px dashed #e2e8f0'}}>
                                 <span style={{marginRight: '12px'}}></span>
@@ -190,7 +184,6 @@ function PfcgBuilderScreen({ roleType, onBack }) {
 // --- NEW AI DEMO MODAL COMPONENT ---
 const TeamMatrixAIDemoModal = ({ isOpen, onClose }) => {
   if (!isOpen) return null;
-
   return (
     <div style={styles.modalBackdrop} onClick={onClose}>
       <div style={styles.modalContent} onClick={e => e.stopPropagation()}>
@@ -249,12 +242,11 @@ export default function TeamMatrix({ team, onBack }) {
   const [summaryView, setSummaryView] = useState('plan'); 
   
   const [expandedSections, setExpandedSections] = useState([]);
-  const [expandedKpis, setExpandedKpis] = useState([]); 
+  const [expandedKpis, setExpandedKpis] = useState([]);
   const [expandedRoleSections, setExpandedRoleSections] = useState([]);
   const [excludedTx, setExcludedTx] = useState(new Set());
   const [pfcgRoleType, setPfcgRoleType] = useState('');
-  
-  const [isDemoModalOpen, setIsDemoModalOpen] = useState(false); // NEW DEMO MODAL STATE
+  const [isDemoModalOpen, setIsDemoModalOpen] = useState(false); 
 
   // --- DATA PROCESSING 1: USER ROSTER ---
   const { enrichedUsers, optimizedCount } = useMemo(() => {
@@ -345,7 +337,6 @@ export default function TeamMatrix({ team, onBack }) {
     const txUsageCount = {};
     if (hasRealTxData) {
       enrichedUsers.forEach(u => {
-      
         const uTx = u.transactions || [];
         const uniqueUserCodes = [...new Set(uTx.map(t => typeof t === 'object' ? t.tcode : t))];
         uniqueUserCodes.forEach(code => {
@@ -369,7 +360,8 @@ export default function TeamMatrix({ team, onBack }) {
             type = fallback.type;
         } else {
             const isDisplay = tx.endsWith('03') || tx.endsWith('D') || tx.includes('DISPLAY');
-            desc = isDisplay ? 'Standard Display Transaction' : 'Standard Maintenance Transaction'; type = isDisplay ? 'D' : 'M';
+            desc = isDisplay ? 'Standard Display Transaction' : 'Standard Maintenance Transaction'; 
+            type = isDisplay ? 'D' : 'M';
         }
       }
       
@@ -395,13 +387,17 @@ export default function TeamMatrix({ team, onBack }) {
   // --- DATA PROCESSING 4: OPTIMIZATION INSIGHTS ---
   const optimizationInsights = useMemo(() => {
     const bloatCandidates = maintainTcodes
-      .slice(0, 7)
-      .map((tx, index) => ({ ...tx, usage: index < 4 ? 0 : Math.max(2, (tx.tcode.length * index) % 9) }))
+      .slice(0, 4)
+      .map((tx, index) => ({ ...tx, usage: index < 2 ? 0 : Math.max(2, (tx.tcode.length * index) % 9) }))
       .sort((a, b) => a.usage - b.usage); 
       
     const sodCandidates = maintainTcodes
-      .slice(2, 5)
+      .slice(4, 7)
       .map(tx => ({ ...tx, usage: Math.max(5, (tx.tcode.length * 2) % 25), conflicts: tx.tcode.length + 2 }));
+
+    const financialCandidates = maintainTcodes
+      .slice(7, 10)
+      .map(tx => ({ ...tx, usage: 12 }));
 
     const standardPairs = [
       { maintain: 'ME21N', display: 'ME23N', desc: 'Purchase Orders' },
@@ -414,8 +410,17 @@ export default function TeamMatrix({ team, onBack }) {
       activeTransactions.some(t => t.tcode === pair.maintain)
     );
 
-    return { bloatCandidates, sodCandidates, segregationPairs };
+    return { bloatCandidates, sodCandidates, financialCandidates, segregationPairs };
   }, [maintainTcodes, activeTransactions]);
+
+  // MAP EXCLUDED TRANSACTIONS TO THEIR REASON FOR ROLE GENERATION TAB
+  const removalReasonMap = useMemo(() => {
+    const map = new Map();
+    optimizationInsights.bloatCandidates.forEach(t => map.set(t.tcode, 'Zero-Usage Bloat'));
+    optimizationInsights.sodCandidates.forEach(t => map.set(t.tcode, 'SoD Conflict Driver'));
+    optimizationInsights.financialCandidates.forEach(t => map.set(t.tcode, 'License Downgrade'));
+    return map;
+  }, [optimizationInsights]);
 
   // --- CHART DATA PREPARATION ---
   const chartDataCost = [
@@ -440,11 +445,20 @@ export default function TeamMatrix({ team, onBack }) {
   const toggleSection = (id) => setExpandedSections(prev => prev.includes(id) ? prev.filter(i => i !== id) : [...prev, id]);
   const toggleKpi = (id) => setExpandedKpis(prev => prev.includes(id) ? prev.filter(i => i !== id) : [...prev, id]);
   const toggleRoleSection = (id) => setExpandedRoleSections(prev => prev.includes(id) ? prev.filter(i => i !== id) : [...prev, id]);
+  
   const toggleTxInclude = (tcode) => {
     setExcludedTx(prev => {
       const next = new Set(prev);
       if (next.has(tcode)) next.delete(tcode);
       else next.add(tcode);
+      return next;
+    });
+  };
+
+  const handleImproveRole = (candidates) => {
+    setExcludedTx(prev => {
+      const next = new Set(prev);
+      candidates.forEach(c => next.add(c.tcode));
       return next;
     });
   };
@@ -480,27 +494,24 @@ export default function TeamMatrix({ team, onBack }) {
         </div>
 
         <div style={styles.headerTitleRow}>
-         
           <div style={{ textAlign: 'left' }}>
             <div style={styles.eyebrowText}>{team.users[0]?.country || 'Global'} / {team.name}</div>
             <h1 style={styles.heroTitle}>Role Optimization <span style={styles.heroAccent}>Workspace</span></h1>
             <p style={styles.heroSubtitle}>Analyzing <strong>{enrichedUsers.length} active users</strong> and <strong>{activeTransactions.length} unique transactions</strong>.</p>
             
-            {/* NEW: AI Insights Demo Button */}
             <button 
               style={styles.demoButton} 
               onClick={() => setIsDemoModalOpen(true)}
               onMouseEnter={(e) => e.target.style.transform = 'translateY(-2px)'}
               onMouseLeave={(e) => e.target.style.transform = 'translateY(0)'}
             >
-              ✨ View AI Optimization Logic
+               ✨ View AI Optimization Logic
             </button>
           </div>
         </div>
 
         {/* --- MAIN TAB NAVIGATION --- */}
         <div style={styles.tabContainer}>
- 
           <div style={styles.tabGroup}>
             <button onClick={() => setActiveTab('summary')} style={{...styles.tabBtn, ...(activeTab === 'summary' ? styles.tabBtnActive : {})}}>
               📑 Executive Summary
@@ -532,7 +543,6 @@ export default function TeamMatrix({ team, onBack }) {
           <div style={styles.tabContentFadeIn}>
 
             {/* VIEW MODE: PLAN (Text Accordions) */}
-      
             {summaryView === 'plan' ? (
               <div style={styles.reportContainer}>
                 <div style={styles.accordionContainer}>
@@ -551,6 +561,29 @@ export default function TeamMatrix({ team, onBack }) {
                         <div style={styles.listWrapper}>
                           <div style={styles.bulletItem}><div style={styles.bulletMarker}></div><div style={styles.bulletContent}><strong>Capture ${kpis.projectedSavings.toLocaleString()} in Immediate Savings:</strong> Downgrade under-utilized accounts from expensive licenses to optimal configurations, reclaiming {kpis.savingsPercentage}% of the annual group budget.</div></div>
                           <div style={styles.bulletItem}><div style={styles.bulletMarker}></div><div style={styles.bulletContent}><strong>Re-align Run-Rate Spend:</strong> Shift current licensing footprint from ${kpis.currentCost.toLocaleString()} down to a mathematically justified baseline of ${kpis.optimalCost.toLocaleString()}.</div></div>
+                        </div>
+
+                        {/* FINANCIAL PROPOSED REMOVALS */}
+                        <div style={styles.proposedRemovalsBox}>
+                          <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '12px' }}>
+                            <h4 style={styles.proposedTitle}>Actionable Insight: Proposed Transaction Removals</h4>
+                            <button onClick={() => handleImproveRole(optimizationInsights.financialCandidates)} style={styles.btnImproveRole}>
+                              ✨ Improve Role (Remove Selected)
+                            </button>
+                          </div>
+                          <div style={{ display: 'flex', flexDirection: 'column', gap: '8px' }}>
+                            {optimizationInsights.financialCandidates.map(tx => {
+                              const isIncluded = !excludedTx.has(tx.tcode);
+                              return (
+                                <label key={tx.tcode} style={{...styles.proposedLabel, opacity: isIncluded ? 1 : 0.5}}>
+                                  <input type="checkbox" checked={isIncluded} onChange={() => toggleTxInclude(tx.tcode)} style={styles.checkbox}/>
+                                  <span style={styles.txCodeBadge}>{tx.tcode}</span>
+                                  <span style={styles.txDescText}>{tx.description}</span>
+                                  {!isIncluded && <span style={styles.removedTag}>Removed</span>}
+                                </label>
+                              );
+                            })}
+                          </div>
                         </div>
                       </div>
                     )}
@@ -572,6 +605,29 @@ export default function TeamMatrix({ team, onBack }) {
                           <div style={styles.bulletItem}><div style={styles.bulletMarker}></div><div style={styles.bulletContent}><strong>Secure {kpis.criticalUsers} High-Risk Users:</strong> Immediately revoke sensitive Maintain/Create capabilities from exposed users who only demonstrate Display-level execution activity.</div></div>
                           <div style={styles.bulletItem}><div style={styles.bulletMarker}></div><div style={styles.bulletContent}><strong>Reduce Audit Reliance:</strong> Transition away from manual compensating controls (which currently only patch {kpis.mitigationPercent}% of exposure) toward a permanently clean architectural design.</div></div>
                         </div>
+
+                        {/* SECURITY PROPOSED REMOVALS */}
+                        <div style={styles.proposedRemovalsBox}>
+                          <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '12px' }}>
+                            <h4 style={styles.proposedTitle}>Actionable Insight: Remove Conflict Drivers</h4>
+                            <button onClick={() => handleImproveRole(optimizationInsights.sodCandidates)} style={styles.btnImproveRole}>
+                              ✨ Improve Role (Remove Selected)
+                            </button>
+                          </div>
+                          <div style={{ display: 'flex', flexDirection: 'column', gap: '8px' }}>
+                            {optimizationInsights.sodCandidates.map(tx => {
+                              const isIncluded = !excludedTx.has(tx.tcode);
+                              return (
+                                <label key={tx.tcode} style={{...styles.proposedLabel, opacity: isIncluded ? 1 : 0.5}}>
+                                  <input type="checkbox" checked={isIncluded} onChange={() => toggleTxInclude(tx.tcode)} style={styles.checkbox}/>
+                                  <span style={styles.txCodeBadge}>{tx.tcode}</span>
+                                  <span style={styles.txDescText}>{tx.description} (SoD Risk)</span>
+                                  {!isIncluded && <span style={styles.removedTag}>Removed</span>}
+                                </label>
+                              );
+                            })}
+                          </div>
+                        </div>
                       </div>
                     )}
                   </div>
@@ -592,73 +648,29 @@ export default function TeamMatrix({ team, onBack }) {
                           <div style={styles.bulletItem}><div style={styles.bulletMarker}></div><div style={styles.bulletContent}><strong>Purge Technical Debt:</strong> Clean up {kpis.estimatedDuplicates.toLocaleString()} redundant assignments to shed approximately {kpis.authObjectsSaved.toLocaleString()} unnecessary authorization objects.</div></div>
                           <div style={styles.bulletItem}><div style={styles.bulletMarker}></div><div style={styles.bulletContent}><strong>Streamline User Profiles:</strong> Compress the current heavy density of {kpis.avgRoleDensity} assigned roles per user down to a strictly governed 2-role target framework.</div></div>
                         </div>
-                      </div>
-                    )}
-                  </div>
 
-                  {/* --- ACCORDION 4: TRANSACTION INSIGHTS --- */}
-                  <div style={{...styles.accordionItem, borderColor: expandedSections.includes(4) ? '#bae6fd' : '#e2e8f0'}}>
-                    <div style={{...styles.accordionHeader, backgroundColor: expandedSections.includes(4) ? '#f0fdf4' : '#ffffff'}} onClick={() => toggleSection(4)}>
-                      <div style={styles.accordionTitleWrap}>
-                        <span style={styles.iconSp}>💡</span>
-                        <h3 style={styles.accordionTitle}>Actionable Transaction Insights</h3>
-                      </div>
-                      <div style={{...styles.chevron, transform: expandedSections.includes(4) ? 'rotate(180deg)' : 'rotate(0deg)'}}>▼</div>
-                    </div>
-                    {expandedSections.includes(4) && (
-                      <div style={styles.accordionContent}>
-                        
-                        <div style={styles.insightSection}>
-                          <h4 style={styles.insightTitle}>Removed to Reduce Role Bloat (0% - 10% Usage)</h4>
-                          <p style={styles.insightDesc}>Transactions with zero historical execution are treated as dead weight and are immediately stripped from the new role design to reduce architectural bloat and license costs.</p>
-                          <div style={styles.pillWrap}>
-                            {optimizationInsights.bloatCandidates.map(tx => (
-                              <div key={tx.tcode} style={{
-                                ...styles.txPillBase, 
-                                ...styles.txBloat,
-                                opacity: tx.usage === 0 ? 0.6 : 1
-                              }}>
-                                <span style={{ textDecoration: tx.usage === 0 ? 'line-through' : 'none', color: tx.usage === 0 ? '#64748b' : '#334155' }}>
-                                  {tx.tcode}
-                                </span>
-                                <span style={{ ...styles.pillValue, backgroundColor: tx.usage === 0 ? '#cbd5e1' : '#e2e8f0', color: tx.usage === 0 ? '#334155' : '#475569' }}>
-                                  {tx.usage === 0 ? '0% (Unused)' : `${tx.usage}% Usage`}
-                                </span>
-                              </div>
-                            ))}
-                            {optimizationInsights.bloatCandidates.length === 0 && <span style={styles.insightDesc}>No extreme bloat candidates found.</span>}
+                        {/* ARCHITECTURE PROPOSED REMOVALS */}
+                        <div style={styles.proposedRemovalsBox}>
+                          <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '12px' }}>
+                            <h4 style={styles.proposedTitle}>Actionable Insight: Remove Zero-Usage Bloat</h4>
+                            <button onClick={() => handleImproveRole(optimizationInsights.bloatCandidates)} style={styles.btnImproveRole}>
+                              ✨ Improve Role (Remove Selected)
+                            </button>
+                          </div>
+                          <div style={{ display: 'flex', flexDirection: 'column', gap: '8px' }}>
+                            {optimizationInsights.bloatCandidates.map(tx => {
+                              const isIncluded = !excludedTx.has(tx.tcode);
+                              return (
+                                <label key={tx.tcode} style={{...styles.proposedLabel, opacity: isIncluded ? 1 : 0.5}}>
+                                  <input type="checkbox" checked={isIncluded} onChange={() => toggleTxInclude(tx.tcode)} style={styles.checkbox}/>
+                                  <span style={styles.txCodeBadge}>{tx.tcode}</span>
+                                  <span style={styles.txDescText}>{tx.description} ({tx.usage}% Usage)</span>
+                                  {!isIncluded && <span style={styles.removedTag}>Removed</span>}
+                                </label>
+                              );
+                            })}
                           </div>
                         </div>
-
-                        <div style={styles.insightSection}>
-                          <h4 style={styles.insightTitle}>Low-Usage Transactions Driving SoD Conflicts</h4>
-                          <p style={styles.insightDesc}>These transactions are rarely used but trigger severe Segregation of Duties conflicts. Removing them instantly cleans up the audit report.</p>
-                          <div style={styles.pillWrap}>
-                            {optimizationInsights.sodCandidates.map(tx => (
-                              <div key={tx.tcode} style={{...styles.txPillBase, ...styles.txSod}}>
-                                <span>{tx.tcode}</span>
-                                <span style={{...styles.pillValue, backgroundColor: '#fca5a5', color: '#7f1d1d'}}>{tx.usage}% Usage | {tx.conflicts} Conflicts</span>
-                              </div>
-                            ))}
-                          </div>
-                        </div>
-
-                        <div style={{...styles.insightSection, marginBottom: 0}}>
-                          <h4 style={styles.insightTitle}>Display/Maintain Segregation Opportunities</h4>
-                          <p style={styles.insightDesc}>We detected users with Maintain/Create access who only perform read-only activities. By shifting them to Display equivalents, we eliminate conflicts without breaking workflows.</p>
-                          <div style={styles.pillWrap}>
-                            {optimizationInsights.segregationPairs.map(pair => (
-                              <div key={pair.maintain} style={{...styles.txPillBase, ...styles.txSeg}}>
-                                <span style={{color: '#dc2626', textDecoration: 'line-through'}}>{pair.maintain}</span>
-                                <span style={{margin: '0 8px', color: '#94a3b8'}}>→</span>
-                                <span>{pair.display}</span>
-                                <span style={{...styles.pillValue, backgroundColor: '#dcfce3', color: '#166534'}}>{pair.desc}</span>
-                              </div>
-                            ))}
-                            {optimizationInsights.segregationPairs.length === 0 && <span style={styles.insightDesc}>No direct segregation pairs detected in current transaction pool.</span>}
-                          </div>
-                        </div>
-
                       </div>
                     )}
                   </div>
@@ -668,7 +680,6 @@ export default function TeamMatrix({ team, onBack }) {
             ) : (
               /* VIEW MODE: GRID WITH RECHARTS (6 KPIs) */
               <div style={styles.flowingGrid}>
-                
                 {/* KPI 1: Cost */}
                 <div style={styles.flowingAccordionItem}>
                   <div style={styles.flowingAccordionHeader} onClick={() => toggleKpi(1)}>
@@ -768,7 +779,7 @@ export default function TeamMatrix({ team, onBack }) {
                             <Legend verticalAlign="bottom" height={36}/>
                           </PieChart>
                         </ResponsiveContainer>
-                       </div>
+                      </div>
                     </div>
                   )}
                 </div>
@@ -819,7 +830,7 @@ export default function TeamMatrix({ team, onBack }) {
                             <Legend verticalAlign="bottom" height={36}/>
                           </PieChart>
                         </ResponsiveContainer>
-                       </div>
+                      </div>
                     </div>
                   )}
                 </div>
@@ -917,6 +928,7 @@ export default function TeamMatrix({ team, onBack }) {
                             <th style={{...styles.th, width: '80px', textAlign: 'center'}}>Include</th>
                             <th style={styles.th}>Transaction</th>
                             <th style={styles.th}>Execution Range (Usage)</th>
+                            <th style={{...styles.th, width: '150px'}}>Removal Reason</th>
                           </tr>
                         </thead>
                         <tbody>
@@ -925,12 +937,7 @@ export default function TeamMatrix({ team, onBack }) {
                             return (
                               <tr key={tx.tcode} style={{...styles.tr, backgroundColor: isIncluded ? '#ffffff' : '#f8fafc', transition: 'all 0.2s ease'}}>
                                 <td style={{...styles.td, textAlign: 'center'}}>
-                                  <input 
-                                    type="checkbox" 
-                                    checked={isIncluded} 
-                                    onChange={() => toggleTxInclude(tx.tcode)} 
-                                    style={styles.checkbox}
-                                  />
+                                  <input type="checkbox" checked={isIncluded} onChange={() => toggleTxInclude(tx.tcode)} style={styles.checkbox} />
                                 </td>
                                 <td style={{...styles.td, opacity: isIncluded ? 1 : 0.5}}>
                                   <div style={styles.primaryText}>{tx.tcode}</div>
@@ -939,10 +946,11 @@ export default function TeamMatrix({ team, onBack }) {
                                 <td style={{...styles.td, opacity: isIncluded ? 1 : 0.5}}>
                                   <div style={{display: 'flex', alignItems: 'center', gap: '12px'}}>
                                     <div style={{...styles.usageBarBg, width: '100px'}}><div style={{...styles.usageBarFill, width: `${tx.usagePercent}%`, background: '#38bdf8'}}></div></div>
-                                    <span style={{fontSize: '0.85rem', fontWeight: '700', color: tx.usagePercent === 0 ? '#94a3b8' : '#0f172a'}}>
-                                      {tx.usagePercent}%
-                                    </span>
+                                    <span style={{fontSize: '0.85rem', fontWeight: '700', color: tx.usagePercent === 0 ? '#94a3b8' : '#0f172a'}}>{tx.usagePercent}%</span>
                                   </div>
+                                </td>
+                                <td style={{...styles.td, fontStyle: 'italic', fontSize: '0.85rem', color: '#dc2626'}}>
+                                  {!isIncluded ? (removalReasonMap.get(tx.tcode) || 'Manual Removal') : '--'}
                                 </td>
                               </tr>
                             );
@@ -977,6 +985,7 @@ export default function TeamMatrix({ team, onBack }) {
                             <th style={{...styles.th, width: '80px', textAlign: 'center'}}>Include</th>
                             <th style={styles.th}>Transaction</th>
                             <th style={styles.th}>Execution Range (Usage)</th>
+                            <th style={{...styles.th, width: '150px'}}>Removal Reason</th>
                           </tr>
                         </thead>
                         <tbody>
@@ -985,12 +994,7 @@ export default function TeamMatrix({ team, onBack }) {
                             return (
                               <tr key={tx.tcode} style={{...styles.tr, backgroundColor: isIncluded ? '#ffffff' : '#f8fafc', transition: 'all 0.2s ease'}}>
                                 <td style={{...styles.td, textAlign: 'center'}}>
-                                  <input 
-                                    type="checkbox" 
-                                    checked={isIncluded} 
-                                    onChange={() => toggleTxInclude(tx.tcode)} 
-                                    style={styles.checkbox}
-                                  />
+                                  <input type="checkbox" checked={isIncluded} onChange={() => toggleTxInclude(tx.tcode)} style={styles.checkbox} />
                                 </td>
                                 <td style={{...styles.td, opacity: isIncluded ? 1 : 0.5}}>
                                   <div style={styles.primaryText}>{tx.tcode}</div>
@@ -999,10 +1003,11 @@ export default function TeamMatrix({ team, onBack }) {
                                 <td style={{...styles.td, opacity: isIncluded ? 1 : 0.5}}>
                                   <div style={{display: 'flex', alignItems: 'center', gap: '12px'}}>
                                     <div style={{...styles.usageBarBg, width: '100px'}}><div style={{...styles.usageBarFill, width: `${tx.usagePercent}%`, background: tx.usagePercent === 0 ? '#cbd5e1' : '#f87171'}}></div></div>
-                                    <span style={{fontSize: '0.85rem', fontWeight: '700', color: tx.usagePercent === 0 ? '#94a3b8' : '#0f172a'}}>
-                                      {tx.usagePercent}%
-                                    </span>
+                                    <span style={{fontSize: '0.85rem', fontWeight: '700', color: tx.usagePercent === 0 ? '#94a3b8' : '#0f172a'}}>{tx.usagePercent}%</span>
                                   </div>
+                                </td>
+                                <td style={{...styles.td, fontStyle: 'italic', fontSize: '0.85rem', color: '#dc2626'}}>
+                                  {!isIncluded ? (removalReasonMap.get(tx.tcode) || 'Manual Removal') : '--'}
                                 </td>
                               </tr>
                             );
@@ -1019,7 +1024,7 @@ export default function TeamMatrix({ team, onBack }) {
              <div style={styles.roleActionFooter}>
                 <div style={styles.footerInner}>
                   <div style={{color: '#64748b', fontSize: '0.95rem', fontWeight: '600'}}>
-                    Optimization selections active. {excludedTx.size} transactions excluded.
+                      Optimization selections active. {excludedTx.size} transactions excluded.
                   </div>
                   <div style={styles.footerActionGroup}>
                     <button onClick={() => handleBuildRoleClick('Display')} style={styles.btnSecondaryBlue}>Build Display Role</button>
@@ -1085,6 +1090,15 @@ const styles = {
   bulletItem: { display: 'flex', alignItems: 'flex-start', gap: '14px' },
   bulletMarker: { minWidth: '6px', height: '6px', backgroundColor: '#059669', borderRadius: '50%', marginTop: '9px' },
   bulletContent: { fontSize: '0.95rem', color: '#334155', lineHeight: '1.6' },
+
+  // --- NEW PROPOSED REMOVALS UI ---
+  proposedRemovalsBox: { backgroundColor: '#f8fafc', border: '1px solid #e2e8f0', borderRadius: '12px', padding: '16px', marginTop: '20px' },
+  proposedTitle: { margin: 0, fontSize: '0.95rem', color: '#0f172a', fontWeight: '700' },
+  btnImproveRole: { backgroundColor: '#10b981', color: '#fff', border: 'none', padding: '6px 14px', borderRadius: '6px', fontSize: '0.85rem', fontWeight: '600', cursor: 'pointer', display: 'flex', alignItems: 'center', gap: '6px' },
+  proposedLabel: { display: 'flex', alignItems: 'center', gap: '12px', cursor: 'pointer' },
+  txCodeBadge: { fontFamily: 'monospace', fontWeight: '700', backgroundColor: '#e2e8f0', padding: '2px 6px', borderRadius: '4px', fontSize: '0.85rem' },
+  txDescText: { fontSize: '0.9rem', color: '#475569', flex: 1 },
+  removedTag: { fontSize: '0.75rem', fontWeight: '700', color: '#ef4444', backgroundColor: '#fee2e2', padding: '2px 8px', borderRadius: '100px' },
 
   // INSIGHTS STYLES
   insightSection: { marginBottom: '24px' },
