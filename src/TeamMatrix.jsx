@@ -1000,9 +1000,6 @@ export default function TeamMatrix({ team, onBack }) {
                               <span style={{ fontSize: '1.1rem', fontWeight: '800', color: '#059669' }}>
                                 {newConflicts}
                               </span>
-                              <span style={{ fontSize: '0.75rem', fontWeight: '700', color: '#10b981', backgroundColor: '#d1fae5', padding: '3px 8px', borderRadius: '100px' }}>
-                                -{actualReduction} Resolved
-                              </span>
                             </div>
                            ) : (
                             <span style={{ fontSize: '0.9rem', fontWeight: '600', color: '#94a3b8', fontStyle: 'italic' }}>
