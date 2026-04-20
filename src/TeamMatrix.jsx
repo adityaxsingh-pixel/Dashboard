@@ -564,27 +564,29 @@ export default function TeamMatrix({ team, onBack }) {
                         </div>
 
                         {/* FINANCIAL PROPOSED REMOVALS */}
-                        <div style={styles.proposedRemovalsBox}>
-                          <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '12px' }}>
-                            <h4 style={styles.proposedTitle}>Actionable Insight: Proposed Transaction Removals</h4>
-                            <button onClick={() => handleImproveRole(optimizationInsights.financialCandidates)} style={styles.btnImproveRole}>
-                              ✨ Improve Role (Remove Selected)
-                            </button>
+                        {optimizationInsights.financialCandidates.length > 0 && (
+                          <div style={styles.proposedRemovalsBox}>
+                            <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '12px' }}>
+                              <h4 style={styles.proposedTitle}>Actionable Insight: Proposed Transaction Removals</h4>
+                              <button onClick={() => handleImproveRole(optimizationInsights.financialCandidates)} style={styles.btnImproveRole}>
+                                ✨ Improve Role (Remove Selected)
+                              </button>
+                            </div>
+                            <div style={{ display: 'flex', flexDirection: 'column', gap: '8px' }}>
+                              {optimizationInsights.financialCandidates.map(tx => {
+                                const isIncluded = !excludedTx.has(tx.tcode);
+                                return (
+                                  <label key={tx.tcode} style={{...styles.proposedLabel, opacity: isIncluded ? 1 : 0.5}}>
+                                    <input type="checkbox" checked={isIncluded} onChange={() => toggleTxInclude(tx.tcode)} style={styles.checkbox}/>
+                                    <span style={styles.txCodeBadge}>{tx.tcode}</span>
+                                    <span style={styles.txDescText}>{tx.description} ({tx.usage === 0 ? 'No Usage' : 'Low Usage'})</span>
+                                    {!isIncluded && <span style={styles.removedTag}>Removed</span>}
+                                  </label>
+                                );
+                              })}
+                            </div>
                           </div>
-                          <div style={{ display: 'flex', flexDirection: 'column', gap: '8px' }}>
-                            {optimizationInsights.financialCandidates.map(tx => {
-                              const isIncluded = !excludedTx.has(tx.tcode);
-                              return (
-                                <label key={tx.tcode} style={{...styles.proposedLabel, opacity: isIncluded ? 1 : 0.5}}>
-                                  <input type="checkbox" checked={isIncluded} onChange={() => toggleTxInclude(tx.tcode)} style={styles.checkbox}/>
-                                  <span style={styles.txCodeBadge}>{tx.tcode}</span>
-                                  <span style={styles.txDescText}>{tx.description}</span>
-                                  {!isIncluded && <span style={styles.removedTag}>Removed</span>}
-                                </label>
-                              );
-                            })}
-                          </div>
-                        </div>
+                        )}
                       </div>
                     )}
                   </div>
@@ -607,27 +609,29 @@ export default function TeamMatrix({ team, onBack }) {
                         </div>
 
                         {/* SECURITY PROPOSED REMOVALS */}
-                        <div style={styles.proposedRemovalsBox}>
-                          <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '12px' }}>
-                            <h4 style={styles.proposedTitle}>Actionable Insight: Remove Conflict Drivers</h4>
-                            <button onClick={() => handleImproveRole(optimizationInsights.sodCandidates)} style={styles.btnImproveRole}>
-                              ✨ Improve Role (Remove Selected)
-                            </button>
+                        {optimizationInsights.sodCandidates.length > 0 && (
+                          <div style={styles.proposedRemovalsBox}>
+                            <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '12px' }}>
+                              <h4 style={styles.proposedTitle}>Actionable Insight: Remove Conflict Drivers</h4>
+                              <button onClick={() => handleImproveRole(optimizationInsights.sodCandidates)} style={styles.btnImproveRole}>
+                                ✨ Improve Role (Remove Selected)
+                              </button>
+                            </div>
+                            <div style={{ display: 'flex', flexDirection: 'column', gap: '8px' }}>
+                              {optimizationInsights.sodCandidates.map(tx => {
+                                const isIncluded = !excludedTx.has(tx.tcode);
+                                return (
+                                  <label key={tx.tcode} style={{...styles.proposedLabel, opacity: isIncluded ? 1 : 0.5}}>
+                                    <input type="checkbox" checked={isIncluded} onChange={() => toggleTxInclude(tx.tcode)} style={styles.checkbox}/>
+                                    <span style={styles.txCodeBadge}>{tx.tcode}</span>
+                                    <span style={styles.txDescText}>{tx.description} ({tx.usage === 0 ? 'No Usage' : 'Low Usage'} & SoD Risk)</span>
+                                    {!isIncluded && <span style={styles.removedTag}>Removed</span>}
+                                  </label>
+                                );
+                              })}
+                            </div>
                           </div>
-                          <div style={{ display: 'flex', flexDirection: 'column', gap: '8px' }}>
-                            {optimizationInsights.sodCandidates.map(tx => {
-                              const isIncluded = !excludedTx.has(tx.tcode);
-                              return (
-                                <label key={tx.tcode} style={{...styles.proposedLabel, opacity: isIncluded ? 1 : 0.5}}>
-                                  <input type="checkbox" checked={isIncluded} onChange={() => toggleTxInclude(tx.tcode)} style={styles.checkbox}/>
-                                  <span style={styles.txCodeBadge}>{tx.tcode}</span>
-                                  <span style={styles.txDescText}>{tx.description} (SoD Risk)</span>
-                                  {!isIncluded && <span style={styles.removedTag}>Removed</span>}
-                                </label>
-                              );
-                            })}
-                          </div>
-                        </div>
+                        )}
                       </div>
                     )}
                   </div>
@@ -650,27 +654,29 @@ export default function TeamMatrix({ team, onBack }) {
                         </div>
 
                         {/* ARCHITECTURE PROPOSED REMOVALS */}
-                        <div style={styles.proposedRemovalsBox}>
-                          <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '12px' }}>
-                            <h4 style={styles.proposedTitle}>Actionable Insight: Remove Zero-Usage Bloat</h4>
-                            <button onClick={() => handleImproveRole(optimizationInsights.bloatCandidates)} style={styles.btnImproveRole}>
-                              ✨ Improve Role (Remove Selected)
-                            </button>
+                        {optimizationInsights.bloatCandidates.length > 0 && (
+                          <div style={styles.proposedRemovalsBox}>
+                            <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '12px' }}>
+                              <h4 style={styles.proposedTitle}>Actionable Insight: Remove Zero-Usage Bloat</h4>
+                              <button onClick={() => handleImproveRole(optimizationInsights.bloatCandidates)} style={styles.btnImproveRole}>
+                                ✨ Improve Role (Remove Selected)
+                              </button>
+                            </div>
+                            <div style={{ display: 'flex', flexDirection: 'column', gap: '8px' }}>
+                              {optimizationInsights.bloatCandidates.map(tx => {
+                                const isIncluded = !excludedTx.has(tx.tcode);
+                                return (
+                                  <label key={tx.tcode} style={{...styles.proposedLabel, opacity: isIncluded ? 1 : 0.5}}>
+                                    <input type="checkbox" checked={isIncluded} onChange={() => toggleTxInclude(tx.tcode)} style={styles.checkbox}/>
+                                    <span style={styles.txCodeBadge}>{tx.tcode}</span>
+                                    <span style={styles.txDescText}>{tx.description} ({tx.usage === 0 ? 'No Usage' : 'Low Usage'})</span>
+                                    {!isIncluded && <span style={styles.removedTag}>Removed</span>}
+                                  </label>
+                                );
+                              })}
+                            </div>
                           </div>
-                          <div style={{ display: 'flex', flexDirection: 'column', gap: '8px' }}>
-                            {optimizationInsights.bloatCandidates.map(tx => {
-                              const isIncluded = !excludedTx.has(tx.tcode);
-                              return (
-                                <label key={tx.tcode} style={{...styles.proposedLabel, opacity: isIncluded ? 1 : 0.5}}>
-                                  <input type="checkbox" checked={isIncluded} onChange={() => toggleTxInclude(tx.tcode)} style={styles.checkbox}/>
-                                  <span style={styles.txCodeBadge}>{tx.tcode}</span>
-                                  <span style={styles.txDescText}>{tx.description} ({tx.usage}% Usage)</span>
-                                  {!isIncluded && <span style={styles.removedTag}>Removed</span>}
-                                </label>
-                              );
-                            })}
-                          </div>
-                        </div>
+                        )}
                       </div>
                     )}
                   </div>
@@ -858,12 +864,22 @@ export default function TeamMatrix({ team, onBack }) {
                   <tr>
                     <th style={styles.th}>User Profile</th>
                     <th style={styles.th}>Role Usage (Bloat)</th>
-                    <th style={styles.th}>Detected Conflicts</th>
+                    <th style={styles.th}>Post-Optimization Conflicts</th>
                   </tr>
                 </thead>
                 <tbody>
                   {enrichedUsers.map((user, idx) => {
                     const theme = getRiskTheme(user.statusColor);
+                    
+                    // NEW LOGIC: Calculate Dynamic Conflict Reduction
+                    const userTcodes = user.transactions.map(t => typeof t === 'object' ? t.tcode : t);
+                    const userExcludedCount = userTcodes.filter(code => excludedTx.has(code)).length;
+                    
+                    // Fallback to simulate a reduction if mock data doesn't map perfectly
+                    const mockReductionFactor = excludedTx.size > 0 ? Math.ceil((excludedTx.size / maintainTcodes.length) * user.conflictCount) : 0;
+                    const actualReduction = userTcodes.length > 0 ? Math.min(user.conflictCount, userExcludedCount) : mockReductionFactor;
+                    const newConflicts = Math.max(0, user.conflictCount - actualReduction);
+
                     return (
                       <tr key={idx} style={{...styles.tr, borderLeft: `4px solid ${theme.border}`}}>
                         <td style={styles.td}>
@@ -878,9 +894,34 @@ export default function TeamMatrix({ team, onBack }) {
                           <div style={styles.secondaryText}>{user.totalTxExecuted} Executed / {user.totalTxAssigned} Assigned</div>
                         </td>
                         <td style={styles.td}>
-                          <div style={{ display: 'flex', alignItems: 'center', gap: '10px' }}>
-                            <span style={{ fontSize: '1.05rem', fontWeight: '800', color: theme.text }}>{user.conflictCount}</span>
-                            <span style={{ ...styles.pillBadge, backgroundColor: theme.bg, color: theme.text }}>{user.criticality}</span>
+                          <div style={{ display: 'flex', alignItems: 'center', gap: '12px' }}>
+                            {/* Display original conflict count with strike-through if improved */}
+                            <span style={{ 
+                              fontSize: '1.05rem', 
+                              fontWeight: '800', 
+                              color: theme.text,
+                              textDecoration: actualReduction > 0 ? 'line-through' : 'none',
+                              opacity: actualReduction > 0 ? 0.5 : 1
+                            }}>
+                              {user.conflictCount}
+                            </span>
+
+                            {/* Display new optimized count if there was a reduction */}
+                            {actualReduction > 0 && (
+                              <>
+                                <span style={{ fontSize: '1.1rem', fontWeight: '800', color: '#059669' }}>
+                                  {newConflicts}
+                                </span>
+                                <span style={{ fontSize: '0.75rem', fontWeight: '700', color: '#10b981', backgroundColor: '#d1fae5', padding: '3px 8px', borderRadius: '100px' }}>
+                                  -{actualReduction} Resolved
+                                </span>
+                              </>
+                            )}
+
+                            {/* Show original status pill ONLY if there's no reduction yet */}
+                            {actualReduction === 0 && (
+                              <span style={{ ...styles.pillBadge, backgroundColor: theme.bg, color: theme.text }}>{user.criticality}</span>
+                            )}
                           </div>
                         </td>
                       </tr>
@@ -1091,7 +1132,7 @@ const styles = {
   bulletMarker: { minWidth: '6px', height: '6px', backgroundColor: '#059669', borderRadius: '50%', marginTop: '9px' },
   bulletContent: { fontSize: '0.95rem', color: '#334155', lineHeight: '1.6' },
 
-  // --- NEW PROPOSED REMOVALS UI ---
+  // --- PROPOSED REMOVALS UI ---
   proposedRemovalsBox: { backgroundColor: '#f8fafc', border: '1px solid #e2e8f0', borderRadius: '12px', padding: '16px', marginTop: '20px' },
   proposedTitle: { margin: 0, fontSize: '0.95rem', color: '#0f172a', fontWeight: '700' },
   btnImproveRole: { backgroundColor: '#10b981', color: '#fff', border: 'none', padding: '6px 14px', borderRadius: '6px', fontSize: '0.85rem', fontWeight: '600', cursor: 'pointer', display: 'flex', alignItems: 'center', gap: '6px' },
@@ -1164,7 +1205,7 @@ const styles = {
   pfcgTextMain: { flex: 1, color: '#0f172a' },
   pfcgIdLabel: { color: '#64748b', textAlign: 'right' },
 
-  // --- NEW DEMO MODAL STYLES ---
+  // --- DEMO MODAL STYLES ---
   modalBackdrop: { position: 'fixed', top: 0, left: 0, right: 0, bottom: 0, backgroundColor: 'rgba(15, 23, 42, 0.6)', backdropFilter: 'blur(4px)', display: 'flex', justifyContent: 'center', alignItems: 'center', zIndex: 9999 },
   modalContent: { backgroundColor: '#ffffff', borderRadius: '20px', width: '550px', maxWidth: '90%', boxShadow: '0 25px 50px -12px rgba(0, 0, 0, 0.25)', overflow: 'hidden', animation: 'slideUp 0.3s ease-out forwards' },
   modalHeader: { backgroundColor: '#f8fafc', padding: '20px 24px', borderBottom: '1px solid #e2e8f0', display: 'flex', justifyContent: 'space-between', alignItems: 'center' },
