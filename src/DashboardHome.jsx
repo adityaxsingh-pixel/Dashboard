@@ -13,11 +13,11 @@ const CustomTooltip = ({ active, payload, scaleMetric, colorMetric }) => {
     const isSameMetric = scaleMetric === colorMetric;
 
     return (
-      <div style={{ backgroundColor: 'rgba(255, 255, 255, 0.95)', padding: '12px 16px', borderRadius: '12px', boxShadow: '0 4px 6px -1px rgba(0,0,0,0.1)', border: '1px solid #e2e8f0', fontFamily: '"Inter", -apple-system, sans-serif', backdropFilter: 'blur(8px)', zIndex: 1000, pointerEvents: 'none' }}>
-        <h4 style={{ margin: '0 0 10px 0', fontSize: '14px', color: '#0f172a', fontWeight: '600', borderBottom: '1px solid #f1f5f9', paddingBottom: '6px' }}>{data.name}</h4>
+      <div style={{ backgroundColor: 'rgba(255, 255, 255, 0.98)', padding: '14px 18px', borderRadius: '12px', boxShadow: '0 10px 25px -5px rgba(4, 120, 87, 0.15)', border: '1px solid #d1fae5', fontFamily: '"Inter", -apple-system, sans-serif', zIndex: 1000, pointerEvents: 'none' }}>
+        <h4 style={{ margin: '0 0 10px 0', fontSize: '15px', color: '#047857', fontWeight: '700', borderBottom: '1px solid #ecfdf5', paddingBottom: '8px' }}>{data.name}</h4>
         <div style={{ display: 'flex', flexDirection: 'column', gap: '6px' }}>
-          <div style={{ fontSize: '13px', color: '#64748b' }}><strong style={{ color: '#334155' }}>{isSameMetric ? 'Value:' : getMetricLabel(scaleMetric) + ':'}</strong> {formatMetric(scaleMetric, scaleValue)}</div>
-          {!isSameMetric && <div style={{ fontSize: '13px', color: '#64748b' }}><strong style={{ color: '#334155' }}>{getMetricLabel(colorMetric)}:</strong> {formatMetric(colorMetric, colorValue)}</div>}
+          <div style={{ fontSize: '13px', color: '#475569' }}><strong style={{ color: '#0f172a' }}>{isSameMetric ? 'Value:' : getMetricLabel(scaleMetric) + ':'}</strong> {formatMetric(scaleMetric, scaleValue)}</div>
+          {!isSameMetric && <div style={{ fontSize: '13px', color: '#475569' }}><strong style={{ color: '#0f172a' }}>{getMetricLabel(colorMetric)}:</strong> {formatMetric(colorMetric, colorValue)}</div>}
         </div>
       </div>
     );
@@ -33,12 +33,12 @@ const CustomizedTreemapContent = (props) => {
   const isSelected = selectedTeams.some(t => t.uniqueId === uniqueId);
   const colorValue = props['_' + colorMetric] || 0;
 
-  let fillColor = '#10b981';
+  let fillColor = '#10b981'; // Default Emerald
   if (colorValue > 0 && maxValue > 0) {
     const ratio = colorValue / maxValue;
-    if (ratio >= 0.70) fillColor = '#f43f5e'; // Rose/Red
-    else if (ratio >= 0.40) fillColor = '#f59e0b'; // Amber
-    else if (ratio >= 0.15) fillColor = '#0ea5e9'; // Sky Blue
+    if (ratio >= 0.70) fillColor = '#ef4444'; // Rose/Red for high risk
+    else if (ratio >= 0.40) fillColor = '#f59e0b'; // Amber for med risk
+    else if (ratio >= 0.15) fillColor = '#34d399'; // Lighter green for low risk
   }
 
   const pad = 4; const innerX = x + pad; const innerY = y + pad;
@@ -54,9 +54,9 @@ const CustomizedTreemapContent = (props) => {
       <rect 
         x={innerX} y={innerY} width={innerWidth} height={innerHeight} 
         fill={fillColor} rx={8} ry={8} 
-        stroke={isSelected ? "#0f172a" : "rgba(255,255,255,0.6)"} 
+        stroke={isSelected ? "#064e3b" : "rgba(255,255,255,0.6)"} 
         strokeWidth={isSelected ? 3 : 1.5} 
-        style={{ transition: 'all 0.2s ease', filter: isSelected ? 'drop-shadow(0px 4px 8px rgba(15,23,42,0.3))' : 'drop-shadow(0px 1px 2px rgba(0,0,0,0.05))' }} 
+        style={{ transition: 'all 0.2s ease', filter: isSelected ? 'drop-shadow(0px 6px 12px rgba(4,120,87,0.3))' : 'drop-shadow(0px 1px 2px rgba(0,0,0,0.05))' }} 
       />
       {showName && (
         <text 
@@ -69,10 +69,10 @@ const CustomizedTreemapContent = (props) => {
         </text>
       )}
       {isSelected && innerWidth > 30 && innerHeight > 30 && (
-         <circle cx={innerX + 16} cy={innerY + 16} r={10} fill="#0f172a" style={{pointerEvents: 'none'}} />
+         <circle cx={innerX + 16} cy={innerY + 16} r={10} fill="#ffffff" style={{pointerEvents: 'none'}} />
       )}
       {isSelected && innerWidth > 30 && innerHeight > 30 && (
-         <text x={innerX + 16} y={innerY + 16} textAnchor="middle" dominantBaseline="central" fill="#ffffff" fontSize="11" fontWeight="700" style={{pointerEvents: 'none'}}>✓</text>
+         <text x={innerX + 16} y={innerY + 16} textAnchor="middle" dominantBaseline="central" fill="#047857" fontSize="12" fontWeight="800" style={{pointerEvents: 'none'}}>✓</text>
       )}
     </g>
   );
@@ -87,21 +87,21 @@ const AIDemoModal = ({ isOpen, onClose }) => {
         <div style={styles.modalBody}>
           <p style={styles.modalText}>This map automatically organizes your workforce by looking at what tasks they actually perform, not just their job titles. This helps spot hidden risks and wasted licenses.</p>
           <div style={styles.algorithmCard}>
-            <div style={{...styles.algoIcon, backgroundColor: '#0ea5e9'}}>⊞</div>
+            <div style={{...styles.algoIcon, backgroundColor: '#10b981'}}>⊞</div>
             <div style={styles.algoDetails}>
               <h4 style={styles.algoTitle}>1. Grouping the Teams</h4>
               <p style={styles.algoDesc}>The system clusters users together based on shared access. The size of the blocks can change based on how many people are in them, or how many security risks they carry.</p>
             </div>
           </div>
           <div style={styles.algorithmCard}>
-            <div style={{...styles.algoIcon, backgroundColor: '#f43f5e'}}>◑</div>
+            <div style={{...styles.algoIcon, backgroundColor: '#ef4444'}}>◑</div>
             <div style={styles.algoDetails}>
               <h4 style={styles.algoTitle}>2. Highlighting Trouble Spots</h4>
               <p style={styles.algoDesc}>By comparing what users are allowed to do versus what they actually do, the system calculates "Clutter." Red blocks mean a team has severe security risks or lots of unused access.</p>
             </div>
           </div>
           <div style={styles.algorithmCard}>
-            <div style={{...styles.algoIcon, backgroundColor: '#10b981'}}>📈</div>
+            <div style={{...styles.algoIcon, backgroundColor: '#047857'}}>📈</div>
             <div style={styles.algoDetails}>
               <h4 style={styles.algoTitle}>3. Finding Cost Savings</h4>
               <p style={styles.algoDesc}>This mapping instantly highlights where you are paying for expensive licenses that people aren't using, making it easy to downgrade them and save money.</p>
@@ -172,7 +172,6 @@ export default function DashboardHome({ onProceed, onSelectTeam }) {
   const handleProceedClick = () => {
     if (onProceed) onProceed(selectedTeams);
     else if (onSelectTeam) onSelectTeam(selectedTeams);
-    else console.error("No routing prop provided to Dashboard");
   };
 
   return (
@@ -233,15 +232,15 @@ export default function DashboardHome({ onProceed, onSelectTeam }) {
       </div>
 
       <div style={styles.footerLegendContainer}>
-        <div style={styles.legendItem}><div style={{...styles.legendDot, backgroundColor: '#f43f5e'}}></div><span style={styles.legendText}>Severe Risk / High Clutter</span></div>
+        <div style={styles.legendItem}><div style={{...styles.legendDot, backgroundColor: '#ef4444'}}></div><span style={styles.legendText}>Severe Risk / High Clutter</span></div>
         <div style={styles.legendItem}><div style={{...styles.legendDot, backgroundColor: '#f59e0b'}}></div><span style={styles.legendText}>Elevated</span></div>
-        <div style={styles.legendItem}><div style={{...styles.legendDot, backgroundColor: '#0ea5e9'}}></div><span style={styles.legendText}>Moderate</span></div>
+        <div style={styles.legendItem}><div style={{...styles.legendDot, backgroundColor: '#34d399'}}></div><span style={styles.legendText}>Moderate</span></div>
         <div style={styles.legendItem}><div style={{...styles.legendDot, backgroundColor: '#10b981'}}></div><span style={styles.legendText}>Clean & Optimized</span></div>
       </div>
       
       {selectedTeams.length > 0 && (
         <div style={styles.floatingActionBar}>
-          <div style={{color: '#0f172a', fontWeight: '600', fontSize: '1.05rem'}}>{selectedTeams.length} {selectedTeams.length === 1 ? 'Team' : 'Teams'} Selected</div>
+          <div style={{color: '#047857', fontWeight: '700', fontSize: '1.05rem'}}>{selectedTeams.length} {selectedTeams.length === 1 ? 'Team' : 'Teams'} Selected</div>
           <button style={styles.btnPrimaryEmerald} onClick={handleProceedClick}>Proceed to Optimization Hub →</button>
         </div>
       )}
@@ -254,42 +253,42 @@ export default function DashboardHome({ onProceed, onSelectTeam }) {
 const styles = {
   container: { padding: '40px 60px 80px 60px', backgroundColor: '#f8fafc', minHeight: '100vh', fontFamily: '"Inter", -apple-system, sans-serif' },
   
-  heroHeaderCard: { display: 'flex', justifyContent: 'space-between', alignItems: 'center', backgroundColor: '#ffffff', padding: '35px 45px', borderRadius: '16px', boxShadow: '0 1px 3px rgba(0,0,0,0.05)', border: '1px solid #e2e8f0', marginBottom: '35px', position: 'relative', overflow: 'hidden' },
+  heroHeaderCard: { display: 'flex', justifyContent: 'space-between', alignItems: 'center', background: 'linear-gradient(135deg, #064e3b 0%, #047857 100%)', padding: '35px 45px', borderRadius: '16px', boxShadow: '0 10px 25px -5px rgba(4, 120, 87, 0.2)', marginBottom: '35px', position: 'relative', overflow: 'hidden' },
   brandBox: { display: 'flex', flexDirection: 'column', maxWidth: '800px', position: 'relative', zIndex: 2 },
-  eyebrowBadge: { display: 'inline-block', padding: '6px 14px', backgroundColor: '#f1f5f9', color: '#64748b', borderRadius: '8px', fontSize: '0.75rem', fontWeight: '700', textTransform: 'uppercase', letterSpacing: '1px', marginBottom: '16px', width: 'fit-content', border: '1px solid #e2e8f0' },
-  heroTitle: { color: '#0f172a', margin: '0 0 8px 0', fontSize: '2.4rem', fontWeight: '600', letterSpacing: '-0.5px' },
-  heroAccent: { color: '#0ea5e9', fontWeight: '600' },
-  heroSubtitle: { margin: 0, fontSize: '1rem', color: '#475569', lineHeight: '1.6', fontWeight: '400', marginBottom: '12px' },
-  demoButton: { marginTop: '12px', padding: '8px 16px', backgroundColor: '#f8fafc', color: '#475569', border: '1px solid #e2e8f0', borderRadius: '8px', fontSize: '0.85rem', fontWeight: '600', cursor: 'pointer', transition: 'all 0.2s ease', width: 'fit-content' },
+  eyebrowBadge: { display: 'inline-block', padding: '6px 14px', backgroundColor: 'rgba(209, 250, 229, 0.15)', color: '#a7f3d0', borderRadius: '8px', fontSize: '0.75rem', fontWeight: '700', textTransform: 'uppercase', letterSpacing: '1px', marginBottom: '16px', width: 'fit-content', border: '1px solid rgba(167, 243, 208, 0.3)' },
+  heroTitle: { color: '#ffffff', margin: '0 0 8px 0', fontSize: '2.4rem', fontWeight: '600', letterSpacing: '-0.5px' },
+  heroAccent: { color: '#34d399', fontWeight: '700' },
+  heroSubtitle: { margin: 0, fontSize: '1rem', color: '#d1fae5', lineHeight: '1.6', fontWeight: '400', marginBottom: '12px' },
+  demoButton: { marginTop: '12px', padding: '8px 16px', backgroundColor: 'rgba(255,255,255,0.1)', color: '#ffffff', border: '1px solid rgba(255,255,255,0.2)', borderRadius: '8px', fontSize: '0.85rem', fontWeight: '600', cursor: 'pointer', transition: 'all 0.2s ease', width: 'fit-content' },
   
   controlsContainer: { display: 'flex', justifyContent: 'center', alignItems: 'center', backgroundColor: '#ffffff', padding: '16px 24px', borderRadius: '12px', boxShadow: '0 1px 3px rgba(0,0,0,0.05)', border: '1px solid #e2e8f0', marginBottom: '30px' },
   metricSelectorBox: { display: 'flex', alignItems: 'center', gap: '12px', paddingLeft: '8px' },
-  metricLabel: { fontSize: '0.80rem', fontWeight: '600', color: '#64748b', textTransform: 'uppercase', letterSpacing: '0.5px' },
+  metricLabel: { fontSize: '0.80rem', fontWeight: '700', color: '#047857', textTransform: 'uppercase', letterSpacing: '0.5px' },
   metricSelect: { border: 'none', fontSize: '1rem', fontWeight: '600', color: '#0f172a', backgroundColor: 'transparent', outline: 'none', cursor: 'pointer' },
   vertDividerMini: { width: '1px', height: '24px', backgroundColor: '#e2e8f0', margin: '0 4px' },
   
-  chartMasterWindow: { display: 'flex', width: '100%', height: '600px', backgroundColor: '#ffffff', borderRadius: '16px', boxShadow: '0 1px 3px rgba(0,0,0,0.05)', padding: '16px', border: '1px solid #e2e8f0' },
+  chartMasterWindow: { display: 'flex', width: '100%', height: '600px', backgroundColor: '#ffffff', borderRadius: '16px', boxShadow: '0 4px 6px -1px rgba(0,0,0,0.05)', padding: '16px', border: '1px solid #e2e8f0' },
   regionHeaderContainer: { display: 'flex', justifyContent: 'center', marginBottom: '16px', marginTop: '4px' },
-  regionHeaderTop: { backgroundColor: '#f8fafc', color: '#475569', padding: '6px 16px', borderRadius: '8px', textAlign: 'center', fontWeight: '600', fontSize: '0.8rem', textTransform: 'uppercase', letterSpacing: '1px', border: '1px solid #e2e8f0' },
+  regionHeaderTop: { backgroundColor: '#ecfdf5', color: '#047857', padding: '6px 16px', borderRadius: '8px', textAlign: 'center', fontWeight: '700', fontSize: '0.8rem', textTransform: 'uppercase', letterSpacing: '1px', border: '1px solid #a7f3d0' },
   
   footerLegendContainer: { display: 'flex', justifyContent: 'center', alignItems: 'center', gap: '32px', marginTop: '24px', padding: '16px 32px', backgroundColor: '#ffffff', borderRadius: '12px', boxShadow: '0 1px 3px rgba(0,0,0,0.05)', border: '1px solid #e2e8f0', width: 'fit-content', margin: '30px auto 0 auto' },
   legendItem: { display: 'flex', alignItems: 'center', gap: '8px' },
   legendDot: { width: '10px', height: '10px', borderRadius: '50%' },
   legendText: { fontSize: '0.8rem', fontWeight: '600', color: '#475569', textTransform: 'uppercase', letterSpacing: '0.5px' },
   
-  floatingActionBar: { position: 'fixed', bottom: '40px', left: '50%', transform: 'translateX(-50%)', backgroundColor: '#ffffff', padding: '12px 24px', borderRadius: '12px', boxShadow: '0 10px 25px -5px rgba(0,0,0,0.1)', display: 'flex', alignItems: 'center', gap: '30px', zIndex: 100, border: '1px solid #e2e8f0' },
-  btnPrimaryEmerald: { background: '#0ea5e9', border: 'none', color: '#ffffff', padding: '12px 24px', borderRadius: '8px', cursor: 'pointer', fontWeight: '600', fontSize: '0.95rem', boxShadow: '0 1px 3px rgba(14, 165, 233, 0.3)' },
+  floatingActionBar: { position: 'fixed', bottom: '40px', left: '50%', transform: 'translateX(-50%)', backgroundColor: '#ecfdf5', padding: '12px 24px', borderRadius: '12px', boxShadow: '0 10px 25px -5px rgba(4, 120, 87, 0.2)', display: 'flex', alignItems: 'center', gap: '30px', zIndex: 100, border: '1px solid #10b981' },
+  btnPrimaryEmerald: { background: '#10b981', border: 'none', color: '#ffffff', padding: '12px 24px', borderRadius: '8px', cursor: 'pointer', fontWeight: '700', fontSize: '0.95rem', boxShadow: '0 2px 4px rgba(16, 185, 129, 0.4)' },
   
-  modalBackdrop: { position: 'fixed', top: 0, left: 0, right: 0, bottom: 0, backgroundColor: 'rgba(15, 23, 42, 0.4)', backdropFilter: 'blur(2px)', display: 'flex', justifyContent: 'center', alignItems: 'center', zIndex: 9999 },
-  modalContent: { backgroundColor: '#ffffff', borderRadius: '16px', width: '500px', maxWidth: '90%', boxShadow: '0 20px 40px -10px rgba(0,0,0,0.1)', overflow: 'hidden' },
-  modalHeader: { backgroundColor: '#ffffff', padding: '20px 24px', borderBottom: '1px solid #e2e8f0', display: 'flex', justifyContent: 'space-between', alignItems: 'center' },
-  modalTitle: { margin: 0, color: '#0f172a', fontSize: '1.1rem', fontWeight: '600' },
+  modalBackdrop: { position: 'fixed', top: 0, left: 0, right: 0, bottom: 0, backgroundColor: 'rgba(15, 23, 42, 0.5)', backdropFilter: 'blur(4px)', display: 'flex', justifyContent: 'center', alignItems: 'center', zIndex: 9999 },
+  modalContent: { backgroundColor: '#ffffff', borderRadius: '16px', width: '500px', maxWidth: '90%', boxShadow: '0 20px 40px -10px rgba(0,0,0,0.2)', overflow: 'hidden' },
+  modalHeader: { backgroundColor: '#ffffff', padding: '20px 24px', borderBottom: '1px solid #f1f5f9', display: 'flex', justifyContent: 'space-between', alignItems: 'center' },
+  modalTitle: { margin: 0, color: '#0f172a', fontSize: '1.2rem', fontWeight: '700' },
   closeButton: { background: 'none', border: 'none', fontSize: '1.5rem', color: '#94a3b8', cursor: 'pointer', padding: 0, lineHeight: 1 },
   modalBody: { padding: '24px' },
   modalText: { color: '#475569', fontSize: '0.95rem', lineHeight: '1.6', marginBottom: '24px', marginTop: 0 },
   algorithmCard: { display: 'flex', alignItems: 'flex-start', gap: '16px', padding: '16px', backgroundColor: '#f8fafc', borderRadius: '12px', marginBottom: '12px', border: '1px solid #e2e8f0' },
   algoIcon: { width: '32px', height: '32px', borderRadius: '8px', color: '#ffffff', display: 'flex', justifyContent: 'center', alignItems: 'center', fontWeight: 'bold', fontSize: '1.2rem', flexShrink: 0 },
   algoDetails: { display: 'flex', flexDirection: 'column', gap: '4px' },
-  algoTitle: { margin: 0, fontSize: '0.95rem', fontWeight: '600', color: '#0f172a' },
+  algoTitle: { margin: 0, fontSize: '0.95rem', fontWeight: '700', color: '#0f172a' },
   algoDesc: { margin: 0, fontSize: '0.85rem', color: '#64748b', lineHeight: '1.5' }
 };

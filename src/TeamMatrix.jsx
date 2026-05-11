@@ -45,7 +45,7 @@ const SummarizedChangesModal = ({ isOpen, onClose, allTx, excludedTx, displayTco
         <div style={{...styles.modalBody, display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '20px', backgroundColor: '#f8fafc', maxHeight: '70vh'}}>
           <div style={styles.summaryBox}><div style={styles.summaryBoxHeader}><span style={{fontSize: '1.2rem'}}>📦</span> <span style={styles.summaryBoxTitle}>Original Access Items ({allTx.length})</span></div><div style={styles.summaryPillContainer}>{allTx.map(tx => <span key={tx.tcode} style={{...styles.summaryPill, backgroundColor: '#f1f5f9', color: '#475569'}}>{tx.tcode}</span>)}</div></div>
           <div style={styles.summaryBox}><div style={styles.summaryBoxHeader}><span style={{fontSize: '1.2rem'}}>🗑️</span> <span style={styles.summaryBoxTitle}>Access Being Removed ({removedList.length})</span></div><div style={styles.summaryPillContainer}>{removedList.length > 0 ? removedList.map(tx => <span key={tx.tcode} style={{...styles.summaryPill, backgroundColor: '#fff1f2', color: '#e11d48', border: '1px solid #fecdd3'}}>{tx.tcode}</span>) : <span style={{color: '#94a3b8', fontSize: '0.85rem', fontStyle: 'italic'}}>No removals.</span>}</div></div>
-          <div style={styles.summaryBox}><div style={styles.summaryBoxHeader}><span style={{fontSize: '1.2rem'}}>👁️</span> <span style={styles.summaryBoxTitle}>New View-Only Role ({targetDisplay.length})</span></div><div style={styles.summaryPillContainer}>{targetDisplay.length > 0 ? targetDisplay.map(tx => <span key={tx.tcode} style={{...styles.summaryPill, backgroundColor: '#f0f9ff', color: '#0284c7', border: '1px solid #e0f2fe'}}>{tx.tcode}</span>) : <span style={{color: '#94a3b8', fontSize: '0.85rem', fontStyle: 'italic'}}>Empty</span>}</div></div>
+          <div style={styles.summaryBox}><div style={styles.summaryBoxHeader}><span style={{fontSize: '1.2rem'}}>👁️</span> <span style={styles.summaryBoxTitle}>New View-Only Role ({targetDisplay.length})</span></div><div style={styles.summaryPillContainer}>{targetDisplay.length > 0 ? targetDisplay.map(tx => <span key={tx.tcode} style={{...styles.summaryPill, backgroundColor: '#f0fdf4', color: '#047857', border: '1px solid #a7f3d0'}}>{tx.tcode}</span>) : <span style={{color: '#94a3b8', fontSize: '0.85rem', fontStyle: 'italic'}}>Empty</span>}</div></div>
           <div style={styles.summaryBox}><div style={styles.summaryBoxHeader}><span style={{fontSize: '1.2rem'}}>✍️</span> <span style={styles.summaryBoxTitle}>New Edit Role ({targetMaintain.length})</span></div><div style={styles.summaryPillContainer}>{targetMaintain.length > 0 ? targetMaintain.map(tx => <span key={tx.tcode} style={{...styles.summaryPill, backgroundColor: '#fffbeb', color: '#d97706', border: '1px solid #fef3c7'}}>{tx.tcode}</span>) : <span style={{color: '#94a3b8', fontSize: '0.85rem', fontStyle: 'italic'}}>Empty</span>}</div></div>
         </div>
       </div>
@@ -105,7 +105,7 @@ function PfcgBuilderScreen({ roleType, onBack, teamsProcessed }) {
       </header>
       <div style={{...styles.contentCanvas, padding: '0', overflow: 'hidden', border: '1px solid #e2e8f0'}}>
         <div style={styles.pfcgCanvas}>
-          <div style={{...styles.pfcgRow, backgroundColor: '#f8fafc'}}><span style={{marginRight: '8px'}}>▼</span><span style={{marginRight: '8px', fontWeight: '600'}}>ZROLE_{teamsProcessed > 1 ? 'BATCH' : 'TEAM'}_{roleType.replace(/\s+/g, '_').toUpperCase()}</span></div>
+          <div style={{...styles.pfcgRow, backgroundColor: '#f8fafc'}}><span style={{marginRight: '8px'}}>▼</span><span style={{marginRight: '8px', fontWeight: '700', color: '#047857'}}>ZROLE_{teamsProcessed > 1 ? 'BATCH' : 'TEAM'}_{roleType.replace(/\s+/g, '_').toUpperCase()}</span></div>
           {Object.values(hierarchy).map(clss => {
             const isClssOpen = expandedNodes[clss.id];
             return (
@@ -129,7 +129,7 @@ function PfcgBuilderScreen({ roleType, onBack, teamsProcessed }) {
                             </div>
                             {isAuthOpen && Object.values(auth.fields).map(field => (
                               <div key={field.name} style={{...styles.pfcgRow, backgroundColor: '#f8fafc', paddingLeft: '96px', borderBottom: '1px dashed #e2e8f0'}}>
-                                <span style={{marginRight: '12px'}}></span><span style={styles.pfcgEdit}>✏️</span><span style={{...styles.pfcgTextMain, width: '250px'}}>{field.text}</span><span style={{color: '#0ea5e9', fontWeight: '600', width: '200px'}}>{field.values.size > 0 ? Array.from(field.values).join(', ') : <span style={{color:'#ef4444'}}>&lt;Empty&gt;</span>}</span><span style={styles.pfcgIdLabel}>{field.name}</span>
+                                <span style={{marginRight: '12px'}}></span><span style={styles.pfcgEdit}>✏️</span><span style={{...styles.pfcgTextMain, width: '250px'}}>{field.text}</span><span style={{color: '#10b981', fontWeight: '600', width: '200px'}}>{field.values.size > 0 ? Array.from(field.values).join(', ') : <span style={{color:'#ef4444'}}>&lt;Empty&gt;</span>}</span><span style={styles.pfcgIdLabel}>{field.name}</span>
                               </div>
                             ))}
                           </React.Fragment>
@@ -267,9 +267,9 @@ function TeamAccordion({ team, isChecked, onCheck, isExpanded, onToggle, onBuild
   const getRiskTheme = (colorCode) => {
     switch (colorCode) {
       case 'Red': return { bg: '#fff1f2', text: '#e11d48', border: '#fda4af', bar: 'linear-gradient(90deg, #fda4af 0%, #e11d48 100%)' };
-      case 'Yellow': return { bg: '#fffbeb', text: '#d97706', border: '#fcd34d', bar: 'linear-gradient(90deg, #fde047 0%, #f59e0b 100%)' };
+      case 'Yellow': return { bg: '#fffbeb', text: '#d97706', border: '#fcd34d', bar: 'linear-gradient(90deg, #fcd34d 0%, #f59e0b 100%)' };
       case 'Blue': return { bg: '#f0f9ff', text: '#0284c7', border: '#7dd3fc', bar: 'linear-gradient(90deg, #7dd3fc 0%, #0ea5e9 100%)' };
-      case 'Green': return { bg: '#ecfdf5', text: '#059669', border: '#6ee7b7', bar: 'linear-gradient(90deg, #6ee7b7 0%, #10b981 100%)' };
+      case 'Green': return { bg: '#ecfdf5', text: '#047857', border: '#6ee7b7', bar: 'linear-gradient(90deg, #6ee7b7 0%, #10b981 100%)' };
       default: return { bg: '#f8fafc', text: '#475569', border: '#cbd5e1', bar: '#94a3b8' };
     }
   };
@@ -333,9 +333,9 @@ function TeamAccordion({ team, isChecked, onCheck, isExpanded, onToggle, onBuild
                   <div style={styles.reportContainer}>
                     <div style={styles.accordionContainer}>
                       {/* Financials */}
-                      <div style={{...styles.accordionItem, borderColor: expandedSections.includes(1) ? '#bae6fd' : '#e2e8f0'}}>
-                        <div style={{...styles.accordionHeader, backgroundColor: expandedSections.includes(1) ? '#f0f9ff' : '#ffffff'}} onClick={() => toggleSection(1)}>
-                          <div style={styles.accordionTitleWrap}><span style={styles.iconSp}>🎯</span><h3 style={styles.accordionTitle}>Save Money on Licenses</h3></div>
+                      <div style={{...styles.accordionItem, borderColor: expandedSections.includes(1) ? '#bbf7d0' : '#e2e8f0'}}>
+                        <div style={{...styles.accordionHeader, backgroundColor: expandedSections.includes(1) ? '#f0fdf4' : '#ffffff'}} onClick={(e) => { e.stopPropagation(); toggleSection(1); }}>
+                          <div style={styles.accordionTitleWrap}><span style={styles.iconSp}>🎯</span><h3 style={{...styles.accordionTitle, color: expandedSections.includes(1) ? '#047857' : '#0f172a'}}>Save Money on Licenses</h3></div>
                           <div style={{...styles.chevron, transform: expandedSections.includes(1) ? 'rotate(180deg)' : 'rotate(0deg)'}}>▼</div>
                         </div>
                         {expandedSections.includes(1) && (
@@ -347,7 +347,7 @@ function TeamAccordion({ team, isChecked, onCheck, isExpanded, onToggle, onBuild
                               <div style={styles.proposedRemovalsBox}>
                                 <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '12px' }}>
                                   <h4 style={styles.proposedTitle}>Suggested Access Removals (to save money)</h4>
-                                  <button onClick={() => handleImproveRole(optimizationInsights.financialCandidates)} style={styles.btnImproveRole}>✨ Remove selected Transactions</button>
+                                  <button onClick={() => handleImproveRole(optimizationInsights.financialCandidates)} style={styles.btnImproveRole}>✨ Apply Removals</button>
                                 </div>
                                 <div style={{ display: 'flex', flexDirection: 'column', gap: '8px' }}>
                                   {optimizationInsights.financialCandidates.map(tx => {
@@ -375,9 +375,9 @@ function TeamAccordion({ team, isChecked, onCheck, isExpanded, onToggle, onBuild
                       </div>
 
                       {/* Security */}
-                      <div style={{...styles.accordionItem, borderColor: expandedSections.includes(2) ? '#bae6fd' : '#e2e8f0'}}>
-                        <div style={{...styles.accordionHeader, backgroundColor: expandedSections.includes(2) ? '#f0f9ff' : '#ffffff'}} onClick={() => toggleSection(2)}>
-                          <div style={styles.accordionTitleWrap}><span style={styles.iconSp}>🛡️</span><h3 style={styles.accordionTitle}>Reduce Security Risks</h3></div>
+                      <div style={{...styles.accordionItem, borderColor: expandedSections.includes(2) ? '#bbf7d0' : '#e2e8f0'}}>
+                        <div style={{...styles.accordionHeader, backgroundColor: expandedSections.includes(2) ? '#f0fdf4' : '#ffffff'}} onClick={(e) => { e.stopPropagation(); toggleSection(2); }}>
+                          <div style={styles.accordionTitleWrap}><span style={styles.iconSp}>🛡️</span><h3 style={{...styles.accordionTitle, color: expandedSections.includes(2) ? '#047857' : '#0f172a'}}>Reduce Security Risks</h3></div>
                           <div style={{...styles.chevron, transform: expandedSections.includes(2) ? 'rotate(180deg)' : 'rotate(0deg)'}}>▼</div>
                         </div>
                         {expandedSections.includes(2) && (
@@ -389,7 +389,7 @@ function TeamAccordion({ team, isChecked, onCheck, isExpanded, onToggle, onBuild
                               <div style={styles.proposedRemovalsBox}>
                                 <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '12px' }}>
                                   <h4 style={styles.proposedTitle}>Suggested Access Removals (to fix risks)</h4>
-                                  <button onClick={() => handleImproveRole(optimizationInsights.sodCandidates)} style={styles.btnImproveRole}>✨ Remove selected Transactions</button>
+                                  <button onClick={() => handleImproveRole(optimizationInsights.sodCandidates)} style={styles.btnImproveRole}>✨ Apply Removals</button>
                                 </div>
                                 <div style={{ display: 'flex', flexDirection: 'column', gap: '8px' }}>
                                   {optimizationInsights.sodCandidates.map(tx => {
@@ -417,9 +417,9 @@ function TeamAccordion({ team, isChecked, onCheck, isExpanded, onToggle, onBuild
                       </div>
 
                       {/* Architecture */}
-                      <div style={{...styles.accordionItem, borderColor: expandedSections.includes(3) ? '#bae6fd' : '#e2e8f0'}}>
-                        <div style={{...styles.accordionHeader, backgroundColor: expandedSections.includes(3) ? '#f0f9ff' : '#ffffff'}} onClick={() => toggleSection(3)}>
-                          <div style={styles.accordionTitleWrap}><span style={styles.iconSp}>⚙️</span><h3 style={styles.accordionTitle}>Clean Up System Clutter</h3></div>
+                      <div style={{...styles.accordionItem, borderColor: expandedSections.includes(3) ? '#bbf7d0' : '#e2e8f0'}}>
+                        <div style={{...styles.accordionHeader, backgroundColor: expandedSections.includes(3) ? '#f0fdf4' : '#ffffff'}} onClick={(e) => { e.stopPropagation(); toggleSection(3); }}>
+                          <div style={styles.accordionTitleWrap}><span style={styles.iconSp}>⚙️</span><h3 style={{...styles.accordionTitle, color: expandedSections.includes(3) ? '#047857' : '#0f172a'}}>Clean Up System Clutter</h3></div>
                           <div style={{...styles.chevron, transform: expandedSections.includes(3) ? 'rotate(180deg)' : 'rotate(0deg)'}}>▼</div>
                         </div>
                         {expandedSections.includes(3) && (
@@ -431,7 +431,7 @@ function TeamAccordion({ team, isChecked, onCheck, isExpanded, onToggle, onBuild
                               <div style={styles.proposedRemovalsBox}>
                                 <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '12px' }}>
                                   <h4 style={styles.proposedTitle}>Suggested Access Removals (to clean up clutter)</h4>
-                                  <button onClick={() => handleImproveRole(optimizationInsights.bloatCandidates)} style={styles.btnImproveRole}>✨ Remove selected Transactions</button>
+                                  <button onClick={() => handleImproveRole(optimizationInsights.bloatCandidates)} style={styles.btnImproveRole}>✨ Apply Removals</button>
                                 </div>
                                 <div style={{ display: 'flex', flexDirection: 'column', gap: '8px' }}>
                                   {optimizationInsights.bloatCandidates.map(tx => {
@@ -477,6 +477,7 @@ function TeamAccordion({ team, isChecked, onCheck, isExpanded, onToggle, onBuild
                         </div>
                       )}
                     </div>
+                    {/* Bloat */}
                     <div style={styles.flowingAccordionItem}>
                       <div style={styles.flowingAccordionHeader} onClick={() => toggleKpi(2)}>
                         <div style={styles.kpiTitleGroup}><span style={{fontSize: '1.4rem'}}>🗑️</span><div style={styles.kpiTitleCol}><h3 style={styles.kpiTitle}>Unused Clutter</h3></div></div>
@@ -492,6 +493,7 @@ function TeamAccordion({ team, isChecked, onCheck, isExpanded, onToggle, onBuild
                         </div>
                       )}
                     </div>
+                    {/* Risk */}
                     <div style={styles.flowingAccordionItem}>
                       <div style={styles.flowingAccordionHeader} onClick={() => toggleKpi(3)}>
                         <div style={styles.kpiTitleGroup}><span style={{fontSize: '1.4rem'}}>🛡️</span><div style={styles.kpiTitleCol}><h3 style={styles.kpiTitle}>Security Risks</h3></div></div>
@@ -556,7 +558,7 @@ function TeamAccordion({ team, isChecked, onCheck, isExpanded, onToggle, onBuild
                               {actualReduction > 0 ? (
                                 <div style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
                                   <span style={{ fontSize: '1rem', fontWeight: '700', color: '#059669' }}>{newConflicts}</span>
-                                  <span style={{ fontSize: '0.75rem', fontWeight: '600', color: '#10b981', backgroundColor: '#ecfdf5', padding: '2px 6px', borderRadius: '4px' }}>-{actualReduction} Fixed</span>
+                                  <span style={{ fontSize: '0.75rem', fontWeight: '600', color: '#047857', backgroundColor: '#ecfdf5', padding: '2px 6px', borderRadius: '4px' }}>-{actualReduction} Fixed</span>
                                 </div>
                               ) : <span style={{ fontSize: '0.9rem', fontWeight: '500', color: '#94a3b8', fontStyle: 'italic' }}>{user.conflictCount} (Unchanged)</span>}
                             </td>
@@ -574,9 +576,9 @@ function TeamAccordion({ team, isChecked, onCheck, isExpanded, onToggle, onBuild
               <div style={styles.tabContentFadeIn}>
                 <div style={styles.accordionContainer}>
                   {/* DISPLAY */}
-                  <div style={{...styles.accordionItem, borderColor: expandedRoleSections.includes('display') ? '#bae6fd' : '#e2e8f0'}}>
-                    <div style={{...styles.accordionHeader, backgroundColor: expandedRoleSections.includes('display') ? '#f0f9ff' : '#ffffff'}} onClick={() => toggleRoleSection('display')}>
-                      <div style={styles.accordionTitleWrap}><span style={styles.iconSp}>👁️</span><div><h3 style={{...styles.accordionTitle, color: '#0284c7'}}>View-Only Role (Safe Access)</h3><span style={styles.cardSub}>Safe, read-only tasks where users can't change data.</span></div></div>
+                  <div style={{...styles.accordionItem, borderColor: expandedRoleSections.includes('display') ? '#a7f3d0' : '#e2e8f0'}}>
+                    <div style={{...styles.accordionHeader, backgroundColor: expandedRoleSections.includes('display') ? '#f0fdf4' : '#ffffff'}} onClick={() => toggleRoleSection('display')}>
+                      <div style={styles.accordionTitleWrap}><span style={styles.iconSp}>👁️</span><div><h3 style={{...styles.accordionTitle, color: '#047857'}}>View-Only Role (Safe Access)</h3><span style={styles.cardSub}>Safe, read-only tasks where users can't change data.</span></div></div>
                       <div style={styles.flexCenter}><span style={styles.countBadgeLight}>{displayTcodes.length} Items</span><div style={{...styles.chevron, marginLeft: '16px', transform: expandedRoleSections.includes('display') ? 'rotate(180deg)' : 'rotate(0deg)'}}>▼</div></div>
                     </div>
                     {expandedRoleSections.includes('display') && (
@@ -590,7 +592,7 @@ function TeamAccordion({ team, isChecked, onCheck, isExpanded, onToggle, onBuild
                                 <tr key={tx.tcode} style={{...styles.tr, backgroundColor: isIncluded ? '#ffffff' : '#f8fafc', transition: 'all 0.2s ease'}}>
                                   <td style={{...styles.td, textAlign: 'center'}}><input type="checkbox" checked={isIncluded} onChange={() => toggleTxInclude(tx.tcode)} style={styles.checkbox} /></td>
                                   <td style={{...styles.td, opacity: isIncluded ? 1 : 0.5}}><div style={styles.primaryText}>{tx.tcode}</div><div style={styles.secondaryText}>{tx.description}</div></td>
-                                  <td style={{...styles.td, opacity: isIncluded ? 1 : 0.5}}><div style={{display: 'flex', alignItems: 'center', gap: '12px'}}><div style={{...styles.usageBarBg, width: '100px'}}><div style={{...styles.usageBarFill, width: `${tx.usagePercent}%`, background: '#38bdf8'}}></div></div><span style={{fontSize: '0.85rem', fontWeight: '600', color: tx.usagePercent === 0 ? '#94a3b8' : '#0f172a'}}>{tx.usagePercent}%</span></div></td>
+                                  <td style={{...styles.td, opacity: isIncluded ? 1 : 0.5}}><div style={{display: 'flex', alignItems: 'center', gap: '12px'}}><div style={{...styles.usageBarBg, width: '100px'}}><div style={{...styles.usageBarFill, width: `${tx.usagePercent}%`, background: '#0ea5e9'}}></div></div><span style={{fontSize: '0.85rem', fontWeight: '600', color: tx.usagePercent === 0 ? '#94a3b8' : '#0f172a'}}>{tx.usagePercent}%</span></div></td>
                                   <td style={{...styles.td, fontStyle: 'italic', fontSize: '0.85rem', color: '#e11d48'}}>{!isIncluded ? (removalReasonMap.get(tx.tcode) || 'Manually Removed') : '--'}</td>
                                 </tr>
                               );
@@ -618,7 +620,7 @@ function TeamAccordion({ team, isChecked, onCheck, isExpanded, onToggle, onBuild
                                 <tr key={tx.tcode} style={{...styles.tr, backgroundColor: isIncluded ? '#ffffff' : '#f8fafc', transition: 'all 0.2s ease'}}>
                                   <td style={{...styles.td, textAlign: 'center'}}><input type="checkbox" checked={isIncluded} onChange={() => toggleTxInclude(tx.tcode)} style={styles.checkbox} /></td>
                                   <td style={{...styles.td, opacity: isIncluded ? 1 : 0.5}}><div style={styles.primaryText}>{tx.tcode}</div><div style={styles.secondaryText}>{tx.description}</div></td>
-                                  <td style={{...styles.td, opacity: isIncluded ? 1 : 0.5}}><div style={{display: 'flex', alignItems: 'center', gap: '12px'}}><div style={{...styles.usageBarBg, width: '100px'}}><div style={{...styles.usageBarFill, width: `${tx.usagePercent}%`, background: tx.usagePercent === 0 ? '#cbd5e1' : '#fb7185'}}></div></div><span style={{fontSize: '0.85rem', fontWeight: '600', color: tx.usagePercent === 0 ? '#94a3b8' : '#0f172a'}}>{tx.usagePercent}%</span></div></td>
+                                  <td style={{...styles.td, opacity: isIncluded ? 1 : 0.5}}><div style={{display: 'flex', alignItems: 'center', gap: '12px'}}><div style={{...styles.usageBarBg, width: '100px'}}><div style={{...styles.usageBarFill, width: `${tx.usagePercent}%`, background: tx.usagePercent === 0 ? '#cbd5e1' : '#f43f5e'}}></div></div><span style={{fontSize: '0.85rem', fontWeight: '600', color: tx.usagePercent === 0 ? '#94a3b8' : '#0f172a'}}>{tx.usagePercent}%</span></div></td>
                                   <td style={{...styles.td, fontStyle: 'italic', fontSize: '0.85rem', color: '#e11d48'}}>{!isIncluded ? (removalReasonMap.get(tx.tcode) || 'Manually Removed') : '--'}</td>
                                 </tr>
                               );
@@ -655,7 +657,6 @@ export default function TeamMatrix({ selectedTeams, team, onBack }) {
   const [pfcgRoleType, setPfcgRoleType] = useState('');
   const [pfcgTeamCount, setPfcgTeamCount] = useState(0);
 
-  // COLLAPSED BY DEFAULT
   const [expandedTeam, setExpandedTeam] = useState(null);
   const [checkedTeams, setCheckedTeams] = useState(new Set());
 
@@ -739,7 +740,7 @@ const styles = {
   headerTitleRow: { display: 'flex', justifyContent: 'space-between', alignItems: 'flex-end', textAlign: 'left' },
   eyebrowText: { color: '#64748b', fontSize: '0.8rem', fontWeight: '600', textTransform: 'uppercase', letterSpacing: '1px', marginBottom: '8px' },
   heroTitle: { color: '#0f172a', margin: '0 0 4px 0', fontSize: '2.2rem', fontWeight: '600', letterSpacing: '-0.5px' },
-  heroAccent: { color: '#0284c7', fontWeight: '600' }, 
+  heroAccent: { color: '#10b981', fontWeight: '600' }, 
   heroSubtitle: { margin: 0, fontSize: '1rem', color: '#475569', fontWeight: '400' },
 
   teamAccordionWrapper: { backgroundColor: '#ffffff', borderRadius: '12px', border: '1px solid #e2e8f0', boxShadow: '0 1px 3px rgba(0,0,0,0.05)', overflow: 'hidden' },
@@ -750,7 +751,7 @@ const styles = {
   tabContainer: { display: 'flex', justifyContent: 'space-between', alignItems: 'flex-end', borderBottom: '1px solid #e2e8f0' },
   tabGroup: { display: 'flex', gap: '16px' },
   tabBtn: { padding: '12px 16px', border: 'none', background: 'transparent', color: '#64748b', fontWeight: '600', fontSize: '0.9rem', cursor: 'pointer', borderBottom: '2px solid transparent', marginBottom: '-1px' },
-  tabBtnActive: { color: '#0f172a', borderBottom: '2px solid #0ea5e9' },
+  tabBtnActive: { color: '#0f172a', borderBottom: '2px solid #10b981' },
   toggleGroup: { display: 'flex', backgroundColor: '#f1f5f9', padding: '4px', borderRadius: '6px', marginBottom: '8px' },
   toggleBtn: { border: 'none', background: 'transparent', padding: '4px 12px', borderRadius: '4px', fontSize: '0.8rem', fontWeight: '500', color: '#64748b', cursor: 'pointer' },
   toggleBtnActive: { background: '#ffffff', color: '#0f172a', boxShadow: '0 1px 2px rgba(0,0,0,0.05)' },
@@ -774,7 +775,7 @@ const styles = {
 
   proposedRemovalsBox: { backgroundColor: '#f8fafc', border: '1px solid #e2e8f0', borderRadius: '8px', padding: '16px', marginTop: '16px' },
   proposedTitle: { margin: 0, fontSize: '0.9rem', color: '#0f172a', fontWeight: '600' },
-  btnImproveRole: { backgroundColor: '#ffffff', color: '#0ea5e9', border: '1px solid #bae6fd', padding: '6px 12px', borderRadius: '6px', fontSize: '0.8rem', fontWeight: '600', cursor: 'pointer' },
+  btnImproveRole: { backgroundColor: '#ffffff', color: '#10b981', border: '1px solid #a7f3d0', padding: '6px 12px', borderRadius: '6px', fontSize: '0.8rem', fontWeight: '600', cursor: 'pointer' },
   proposedLabel: { display: 'flex', alignItems: 'center', gap: '12px', cursor: 'pointer' },
   txCodeBadge: { fontFamily: 'monospace', fontWeight: '600', backgroundColor: '#f1f5f9', padding: '2px 6px', borderRadius: '4px', fontSize: '0.8rem', color: '#334155' },
   txDescText: { fontSize: '0.85rem', color: '#475569', flex: 1 },
@@ -799,7 +800,7 @@ const styles = {
   th: { padding: '12px 16px', backgroundColor: '#f8fafc', color: '#475569', fontWeight: '600', borderBottom: '1px solid #e2e8f0', position: 'sticky', top: 0, zIndex: 1 },
   tr: { borderBottom: '1px solid #f1f5f9', backgroundColor: '#ffffff' },
   td: { padding: '12px 16px', verticalAlign: 'middle', color: '#334155' },
-  checkbox: { width: '16px', height: '16px', cursor: 'pointer', accentColor: '#0ea5e9' },
+  checkbox: { width: '16px', height: '16px', cursor: 'pointer', accentColor: '#10b981' },
   primaryText: { fontSize: '0.95rem', fontWeight: '600', color: '#0f172a', marginBottom: '2px' },
   secondaryText: { fontSize: '0.8rem', color: '#64748b' },
   usageBarBg: { height: '6px', backgroundColor: '#f1f5f9', borderRadius: '3px', overflow: 'hidden', width: '100px' },
@@ -807,7 +808,7 @@ const styles = {
   pillBadge: { padding: '2px 8px', borderRadius: '100px', fontSize: '0.7rem', fontWeight: '600' },
 
   cardSub: { margin: 0, fontSize: '0.8rem', color: '#64748b' },
-  countBadgeLight: { backgroundColor: '#f0f9ff', color: '#0284c7', padding: '2px 8px', borderRadius: '100px', fontSize: '0.75rem', fontWeight: '600' },
+  countBadgeLight: { backgroundColor: '#f0fdf4', color: '#047857', padding: '2px 8px', borderRadius: '100px', fontSize: '0.75rem', fontWeight: '600' },
   countBadgeLightRed: { backgroundColor: '#fff1f2', color: '#e11d48', padding: '2px 8px', borderRadius: '100px', fontSize: '0.75rem', fontWeight: '600' },
   
   footerInner: { display: 'flex', justifyContent: 'space-between', alignItems: 'center' },
@@ -815,11 +816,12 @@ const styles = {
   vertDivider: { width: '1px', height: '24px', backgroundColor: '#e2e8f0', margin: '0 8px' },
   vertDividerMini: { width: '1px', height: '16px', backgroundColor: '#e2e8f0', margin: '0 4px' },
   
-  btnIconAction: { background: '#ffffff', border: '1px solid #cbd5e1', color: '#475569', padding: '6px 10px', borderRadius: '6px', fontSize: '0.8rem', fontWeight: '600', cursor: 'pointer', display: 'flex', alignItems: 'center', gap: '6px' },
+  btnMiniOutline: { background: '#ffffff', border: '1px solid #e2e8f0', color: '#475569', padding: '6px 10px', borderRadius: '6px', fontSize: '0.8rem', fontWeight: '600', cursor: 'pointer', display: 'flex', alignItems: 'center', gap: '6px' },
+  btnMiniGhost: { background: 'transparent', border: '1px solid transparent', color: '#475569', padding: '6px 10px', borderRadius: '6px', fontWeight: '600', fontSize: '0.8rem', cursor: 'pointer' },
   btnSecondaryGraySmall: { background: '#f8fafc', border: '1px solid #e2e8f0', color: '#475569', padding: '6px 12px', borderRadius: '6px', fontWeight: '500', fontSize: '0.8rem', cursor: 'pointer' },
   btnSecondaryBlue: { background: '#ffffff', border: '1px solid #cbd5e1', color: '#0f172a', padding: '10px 20px', borderRadius: '8px', fontWeight: '600', cursor: 'pointer', fontSize: '0.9rem' },
   btnSecondaryRed: { background: '#ffffff', border: '1px solid #cbd5e1', color: '#0f172a', padding: '10px 20px', borderRadius: '8px', fontWeight: '600', cursor: 'pointer', fontSize: '0.9rem' },
-  btnPrimaryEmerald: { background: '#0ea5e9', border: 'none', color: '#ffffff', padding: '10px 24px', borderRadius: '8px', cursor: 'pointer', fontWeight: '600', fontSize: '0.9rem', boxShadow: '0 1px 3px rgba(14, 165, 233, 0.3)' },
+  btnPrimaryEmerald: { background: '#10b981', border: 'none', color: '#ffffff', padding: '10px 24px', borderRadius: '8px', cursor: 'pointer', fontWeight: '600', fontSize: '0.9rem', boxShadow: '0 1px 3px rgba(16, 185, 129, 0.3)' },
 
   pfcgCanvas: { flex: 1, overflowY: 'auto', padding: '24px 32px', backgroundColor: '#f8fafc', fontFamily: '"Consolas", "Courier New", monospace', fontSize: '0.9rem', height: '100%', minHeight: '600px' },
   pfcgRow: { display: 'flex', alignItems: 'center', padding: '8px 12px', cursor: 'pointer' },
@@ -837,6 +839,7 @@ const styles = {
   modalTitle: { margin: 0, color: '#0f172a', fontSize: '1.1rem', fontWeight: '600' },
   closeButton: { background: 'none', border: 'none', fontSize: '1.5rem', color: '#94a3b8', cursor: 'pointer', padding: 0, lineHeight: 1 },
   modalBody: { padding: '24px', overflowY: 'auto' },
+  
   summaryBox: { backgroundColor: '#ffffff', border: '1px solid #e2e8f0', borderRadius: '8px', padding: '16px', display: 'flex', flexDirection: 'column' },
   summaryBoxHeader: { display: 'flex', alignItems: 'center', gap: '8px', borderBottom: '1px solid #f1f5f9', paddingBottom: '12px', marginBottom: '12px' },
   summaryBoxTitle: { fontWeight: '600', color: '#0f172a', fontSize: '0.9rem' },
