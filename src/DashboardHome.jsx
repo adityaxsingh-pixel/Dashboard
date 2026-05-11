@@ -180,7 +180,7 @@ export default function DashboardHome({ onProceed, onSelectTeam }) {
       <div style={styles.heroHeaderCard}>
         <div style={styles.brandBox}>
           <div style={styles.eyebrowBadge}>Global Operations View</div>
-          <h1 style={styles.heroTitle}>Access Optimization <span style={styles.heroAccent}>Dashboard</span></h1>
+          <h1 style={styles.heroTitle}>Role Management <span style={styles.heroAccent}>Dashboard</span></h1>
           <p style={styles.heroSubtitle}>Click on organizational units to select them, then proceed to optimize their access.</p>
           <button style={styles.demoButton} onClick={() => setIsDemoModalOpen(true)}>✨ How this map works</button>
         </div>
