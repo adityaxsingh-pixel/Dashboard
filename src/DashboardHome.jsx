@@ -33,12 +33,12 @@ const CustomizedTreemapContent = (props) => {
   const isSelected = selectedTeams.some(t => t.uniqueId === uniqueId);
   const colorValue = props['_' + colorMetric] || 0;
 
-  let fillColor = '#10b981'; // Default Emerald
+  let fillColor = '#10b981';
   if (colorValue > 0 && maxValue > 0) {
     const ratio = colorValue / maxValue;
-    if (ratio >= 0.70) fillColor = '#ef4444'; // Rose/Red for high risk
-    else if (ratio >= 0.40) fillColor = '#f59e0b'; // Amber for med risk
-    else if (ratio >= 0.15) fillColor = '#34d399'; // Lighter green for low risk
+    if (ratio >= 0.70) fillColor = '#f43f5e'; 
+    else if (ratio >= 0.40) fillColor = '#f59e0b'; 
+    else if (ratio >= 0.15) fillColor = '#0ea5e9'; 
   }
 
   const pad = 4; const innerX = x + pad; const innerY = y + pad;
@@ -59,65 +59,18 @@ const CustomizedTreemapContent = (props) => {
         style={{ transition: 'all 0.2s ease', filter: isSelected ? 'drop-shadow(0px 6px 12px rgba(4,120,87,0.3))' : 'drop-shadow(0px 1px 2px rgba(0,0,0,0.05))' }} 
       />
       {showName && (
-        <text 
-          x={innerX + innerWidth / 2} y={innerY + innerHeight / 2} 
-          textAnchor="middle" fill="#ffffff" fontSize={fontSizeName} fontWeight="600" 
-          fontFamily='"Inter", -apple-system, sans-serif' dominantBaseline="central" 
-          style={{ textShadow: '0px 1px 2px rgba(0,0,0,0.2)', pointerEvents: 'none' }}
-        >
-          {displayName}
-        </text>
+        <text x={innerX + innerWidth / 2} y={innerY + innerHeight / 2} textAnchor="middle" fill="#ffffff" fontSize={fontSizeName} fontWeight="600" fontFamily='"Inter", -apple-system, sans-serif' dominantBaseline="central" style={{ textShadow: '0px 1px 2px rgba(0,0,0,0.2)', pointerEvents: 'none' }}>{displayName}</text>
       )}
-      {isSelected && innerWidth > 30 && innerHeight > 30 && (
-         <circle cx={innerX + 16} cy={innerY + 16} r={10} fill="#ffffff" style={{pointerEvents: 'none'}} />
-      )}
-      {isSelected && innerWidth > 30 && innerHeight > 30 && (
-         <text x={innerX + 16} y={innerY + 16} textAnchor="middle" dominantBaseline="central" fill="#047857" fontSize="12" fontWeight="800" style={{pointerEvents: 'none'}}>✓</text>
-      )}
+      {isSelected && innerWidth > 30 && innerHeight > 30 && <circle cx={innerX + 16} cy={innerY + 16} r={10} fill="#ffffff" style={{pointerEvents: 'none'}} />}
+      {isSelected && innerWidth > 30 && innerHeight > 30 && <text x={innerX + 16} y={innerY + 16} textAnchor="middle" dominantBaseline="central" fill="#047857" fontSize="12" fontWeight="800" style={{pointerEvents: 'none'}}>✓</text>}
     </g>
   );
 };
 
-const AIDemoModal = ({ isOpen, onClose }) => {
-  if (!isOpen) return null;
-  return (
-    <div style={styles.modalBackdrop} onClick={onClose}>
-      <div style={styles.modalContent} onClick={e => e.stopPropagation()}>
-        <div style={styles.modalHeader}><h3 style={styles.modalTitle}>✨ How This Map Works</h3><button style={styles.closeButton} onClick={onClose}>×</button></div>
-        <div style={styles.modalBody}>
-          <p style={styles.modalText}>This map automatically organizes your workforce by looking at what tasks they actually perform, not just their job titles. This helps spot hidden risks and wasted licenses.</p>
-          <div style={styles.algorithmCard}>
-            <div style={{...styles.algoIcon, backgroundColor: '#10b981'}}>⊞</div>
-            <div style={styles.algoDetails}>
-              <h4 style={styles.algoTitle}>1. Grouping the Teams</h4>
-              <p style={styles.algoDesc}>The system clusters users together based on shared access. The size of the blocks can change based on how many people are in them, or how many security risks they carry.</p>
-            </div>
-          </div>
-          <div style={styles.algorithmCard}>
-            <div style={{...styles.algoIcon, backgroundColor: '#ef4444'}}>◑</div>
-            <div style={styles.algoDetails}>
-              <h4 style={styles.algoTitle}>2. Highlighting Trouble Spots</h4>
-              <p style={styles.algoDesc}>By comparing what users are allowed to do versus what they actually do, the system calculates "Clutter." Red blocks mean a team has severe security risks or lots of unused access.</p>
-            </div>
-          </div>
-          <div style={styles.algorithmCard}>
-            <div style={{...styles.algoIcon, backgroundColor: '#047857'}}>📈</div>
-            <div style={styles.algoDetails}>
-              <h4 style={styles.algoTitle}>3. Finding Cost Savings</h4>
-              <p style={styles.algoDesc}>This mapping instantly highlights where you are paying for expensive licenses that people aren't using, making it easy to downgrade them and save money.</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  );
-};
-
-export default function DashboardHome({ onProceed, onSelectTeam }) {
+export default function DashboardHome({ onProceed, onSelectTeam, onNavigate }) {
   const [scaleMetric, setScaleMetric] = useState('userCount');
   const [colorMetric, setColorMetric] = useState('userCount');
   const [selectedTeams, setSelectedTeams] = useState([]);
-  const [isDemoModalOpen, setIsDemoModalOpen] = useState(false);
   
   const { enrichedTreemapData, maxValues } = useMemo(() => {
     let globalMaxUsers = 0; let globalMaxSod = 0; let globalMaxHighRisk = 0; let globalMaxBloat = 0;
@@ -146,8 +99,7 @@ export default function DashboardHome({ onProceed, onSelectTeam }) {
           if (exactUsers > globalMaxUsers) globalMaxUsers = exactUsers; if (exactSodConflicts > globalMaxSod) globalMaxSod = exactSodConflicts;
           if (exactHighRiskConflicts > globalMaxHighRisk) globalMaxHighRisk = exactHighRiskConflicts; if (exactBloatScore > globalMaxBloat) globalMaxBloat = exactBloatScore;
           newDept.children.push({ 
-            ...pos, 
-            uniqueId: `${region.name}-${dept.name}-${pos.name}`,
+            ...pos, uniqueId: `${region.name}-${dept.name}-${pos.name}`,
             userCount: exactUsers || 1, sodCount: exactSodConflicts || 1, highRiskCount: exactHighRiskConflicts || 1, bloatScore: exactBloatScore || 1, 
             _userCount: exactUsers, _sodCount: exactSodConflicts, _highRiskCount: exactHighRiskConflicts, _bloatScore: exactBloatScore 
           });
@@ -176,12 +128,23 @@ export default function DashboardHome({ onProceed, onSelectTeam }) {
 
   return (
     <div style={styles.container}>
+      
+      {/* TOP NAVIGATION BAR */}
+      <div style={styles.topNav}>
+        <div style={{fontWeight: '700', fontSize: '1.2rem', color: '#064e3b'}}>Pathlock Nexus</div>
+        <div style={{display: 'flex', gap: '20px'}}>
+          <button style={styles.navBtnActive}>Optimization Map</button>
+          <button style={styles.navBtn} onClick={() => onNavigate && onNavigate('configuration')}>Configuration</button>
+         <button style={styles.navBtn} onClick={() => onNavigate && onNavigate('masterData')}>Master Data</button>
+         <button style={styles.navBtn} onClick={() => alert("Utilities coming soon")}>Utilities</button>
+        </div>
+      </div>
+
       <div style={styles.heroHeaderCard}>
         <div style={styles.brandBox}>
           <div style={styles.eyebrowBadge}>Global Operations View</div>
-          <h1 style={styles.heroTitle}>Role Management <span style={styles.heroAccent}>Dashboard</span></h1>
+          <h1 style={styles.heroTitle}>Access Optimization <span style={styles.heroAccent}>Dashboard</span></h1>
           <p style={styles.heroSubtitle}>Click on organizational units to select them, then proceed to optimize their access.</p>
-          <button style={styles.demoButton} onClick={() => setIsDemoModalOpen(true)}>✨ How this map works</button>
         </div>
       </div>
 
@@ -218,12 +181,7 @@ export default function DashboardHome({ onProceed, onSelectTeam }) {
               <div style={styles.regionHeaderContainer}><span style={styles.regionHeaderTop}>{region.name}</span></div>
               <div style={{ flex: 1 }}>
                 <ResponsiveContainer width="100%" height="100%">
-                  <Treemap 
-                    data={region.children} 
-                    dataKey={scaleMetric} 
-                    content={<CustomizedTreemapContent colorMetric={colorMetric} maxValue={maxValues[colorMetric]} selectedTeams={selectedTeams} onBlockClick={toggleTeamSelection} />} 
-                    isAnimationActive={true} 
-                  />
+                  <Treemap data={region.children} dataKey={scaleMetric} content={<CustomizedTreemapContent colorMetric={colorMetric} maxValue={maxValues[colorMetric]} selectedTeams={selectedTeams} onBlockClick={toggleTeamSelection} />} isAnimationActive={true} />
                 </ResponsiveContainer>
               </div>
             </div>
@@ -232,9 +190,9 @@ export default function DashboardHome({ onProceed, onSelectTeam }) {
       </div>
 
       <div style={styles.footerLegendContainer}>
-        <div style={styles.legendItem}><div style={{...styles.legendDot, backgroundColor: '#ef4444'}}></div><span style={styles.legendText}>Severe Risk / High Clutter</span></div>
+        <div style={styles.legendItem}><div style={{...styles.legendDot, backgroundColor: '#f43f5e'}}></div><span style={styles.legendText}>Severe Risk / High Clutter</span></div>
         <div style={styles.legendItem}><div style={{...styles.legendDot, backgroundColor: '#f59e0b'}}></div><span style={styles.legendText}>Elevated</span></div>
-        <div style={styles.legendItem}><div style={{...styles.legendDot, backgroundColor: '#34d399'}}></div><span style={styles.legendText}>Moderate</span></div>
+        <div style={styles.legendItem}><div style={{...styles.legendDot, backgroundColor: '#0ea5e9'}}></div><span style={styles.legendText}>Moderate</span></div>
         <div style={styles.legendItem}><div style={{...styles.legendDot, backgroundColor: '#10b981'}}></div><span style={styles.legendText}>Clean & Optimized</span></div>
       </div>
       
@@ -244,14 +202,15 @@ export default function DashboardHome({ onProceed, onSelectTeam }) {
           <button style={styles.btnPrimaryEmerald} onClick={handleProceedClick}>Proceed to Optimization Hub →</button>
         </div>
       )}
-      
-      <AIDemoModal isOpen={isDemoModalOpen} onClose={() => setIsDemoModalOpen(false)} />
     </div>
   );
 }
 
 const styles = {
-  container: { padding: '40px 60px 80px 60px', backgroundColor: '#f8fafc', minHeight: '100vh', fontFamily: '"Inter", -apple-system, sans-serif' },
+  container: { padding: '0 60px 80px 60px', backgroundColor: '#f8fafc', minHeight: '100vh', fontFamily: '"Inter", -apple-system, sans-serif' },
+  topNav: { display: 'flex', justifyContent: 'space-between', alignItems: 'center', padding: '20px 0', marginBottom: '20px', borderBottom: '1px solid #e2e8f0' },
+  navBtn: { background: 'none', border: 'none', color: '#64748b', fontSize: '0.95rem', fontWeight: '600', cursor: 'pointer', padding: '8px 12px', transition: 'color 0.2s ease' },
+  navBtnActive: { background: '#ecfdf5', border: 'none', color: '#047857', fontSize: '0.95rem', fontWeight: '700', cursor: 'pointer', padding: '8px 16px', borderRadius: '8px' },
   
   heroHeaderCard: { display: 'flex', justifyContent: 'space-between', alignItems: 'center', background: 'linear-gradient(135deg, #064e3b 0%, #047857 100%)', padding: '35px 45px', borderRadius: '16px', boxShadow: '0 10px 25px -5px rgba(4, 120, 87, 0.2)', marginBottom: '35px', position: 'relative', overflow: 'hidden' },
   brandBox: { display: 'flex', flexDirection: 'column', maxWidth: '800px', position: 'relative', zIndex: 2 },
@@ -259,7 +218,6 @@ const styles = {
   heroTitle: { color: '#ffffff', margin: '0 0 8px 0', fontSize: '2.4rem', fontWeight: '600', letterSpacing: '-0.5px' },
   heroAccent: { color: '#34d399', fontWeight: '700' },
   heroSubtitle: { margin: 0, fontSize: '1rem', color: '#d1fae5', lineHeight: '1.6', fontWeight: '400', marginBottom: '12px' },
-  demoButton: { marginTop: '12px', padding: '8px 16px', backgroundColor: 'rgba(255,255,255,0.1)', color: '#ffffff', border: '1px solid rgba(255,255,255,0.2)', borderRadius: '8px', fontSize: '0.85rem', fontWeight: '600', cursor: 'pointer', transition: 'all 0.2s ease', width: 'fit-content' },
   
   controlsContainer: { display: 'flex', justifyContent: 'center', alignItems: 'center', backgroundColor: '#ffffff', padding: '16px 24px', borderRadius: '12px', boxShadow: '0 1px 3px rgba(0,0,0,0.05)', border: '1px solid #e2e8f0', marginBottom: '30px' },
   metricSelectorBox: { display: 'flex', alignItems: 'center', gap: '12px', paddingLeft: '8px' },
@@ -278,17 +236,4 @@ const styles = {
   
   floatingActionBar: { position: 'fixed', bottom: '40px', left: '50%', transform: 'translateX(-50%)', backgroundColor: '#ecfdf5', padding: '12px 24px', borderRadius: '12px', boxShadow: '0 10px 25px -5px rgba(4, 120, 87, 0.2)', display: 'flex', alignItems: 'center', gap: '30px', zIndex: 100, border: '1px solid #10b981' },
   btnPrimaryEmerald: { background: '#10b981', border: 'none', color: '#ffffff', padding: '12px 24px', borderRadius: '8px', cursor: 'pointer', fontWeight: '700', fontSize: '0.95rem', boxShadow: '0 2px 4px rgba(16, 185, 129, 0.4)' },
-  
-  modalBackdrop: { position: 'fixed', top: 0, left: 0, right: 0, bottom: 0, backgroundColor: 'rgba(15, 23, 42, 0.5)', backdropFilter: 'blur(4px)', display: 'flex', justifyContent: 'center', alignItems: 'center', zIndex: 9999 },
-  modalContent: { backgroundColor: '#ffffff', borderRadius: '16px', width: '500px', maxWidth: '90%', boxShadow: '0 20px 40px -10px rgba(0,0,0,0.2)', overflow: 'hidden' },
-  modalHeader: { backgroundColor: '#ffffff', padding: '20px 24px', borderBottom: '1px solid #f1f5f9', display: 'flex', justifyContent: 'space-between', alignItems: 'center' },
-  modalTitle: { margin: 0, color: '#0f172a', fontSize: '1.2rem', fontWeight: '700' },
-  closeButton: { background: 'none', border: 'none', fontSize: '1.5rem', color: '#94a3b8', cursor: 'pointer', padding: 0, lineHeight: 1 },
-  modalBody: { padding: '24px' },
-  modalText: { color: '#475569', fontSize: '0.95rem', lineHeight: '1.6', marginBottom: '24px', marginTop: 0 },
-  algorithmCard: { display: 'flex', alignItems: 'flex-start', gap: '16px', padding: '16px', backgroundColor: '#f8fafc', borderRadius: '12px', marginBottom: '12px', border: '1px solid #e2e8f0' },
-  algoIcon: { width: '32px', height: '32px', borderRadius: '8px', color: '#ffffff', display: 'flex', justifyContent: 'center', alignItems: 'center', fontWeight: 'bold', fontSize: '1.2rem', flexShrink: 0 },
-  algoDetails: { display: 'flex', flexDirection: 'column', gap: '4px' },
-  algoTitle: { margin: 0, fontSize: '0.95rem', fontWeight: '700', color: '#0f172a' },
-  algoDesc: { margin: 0, fontSize: '0.85rem', color: '#64748b', lineHeight: '1.5' }
 };

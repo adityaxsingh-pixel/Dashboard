@@ -1,59 +1,65 @@
 import React, { useState } from 'react';
 import DashboardHome from './DashboardHome';
 import TeamMatrix from './TeamMatrix';
-import UserDetailsTable from './UserDetailsTable'; 
-import RoleGeneration from './RoleGeneration';
+import Configuration from './Configuration';
+import MasterData from './MasterData';
 
 export default function App() {
-  const [view, setView] = useState('dashboard'); // 'dashboard', 'matrix', 'userDetails', 'roleGeneration'
-  const [selectedTeam, setSelectedTeam] = useState(null);
-  const [dashboardMetric, setDashboardMetric] = useState('userCount');
+  // We start on the dashboard map
+  const [activeView, setActiveView] = useState('dashboard'); 
   
-  // NEW: State to hold the data passed from the table to the role generation screen
-  const [roleGenUsers, setRoleGenUsers] = useState([]);
+  // Holds the array of ALL teams selected from the multi-select map
+  const [selectedTeams, setSelectedTeams] = useState([]);
 
-  if (view === 'dashboard') {
-    return <DashboardHome 
-      metric={dashboardMetric} 
-      setMetric={setDashboardMetric} 
-      onSelectTeam={(team) => { 
-        setSelectedTeam(team); 
-        setView('matrix'); 
-        window.scrollTo(0,0); 
-      }} 
-    />;
+  // Triggered when "Proceed to Optimization Hub" is clicked on the Dashboard
+  const handleProceed = (teams) => { 
+    setSelectedTeams(teams); 
+    setActiveView('workspace'); 
+    window.scrollTo(0,0);
+  };
+
+  // Triggered by the Top Navigation Bar (Dashboard <-> Configuration)
+  const handleNavigate = (page) => {
+    setActiveView(page);
+    window.scrollTo(0,0);
+  };
+
+  // 1. RENDER DASHBOARD (HEATMAP)
+  if (activeView === 'dashboard') {
+    return (
+      <DashboardHome 
+        onProceed={handleProceed} 
+        onNavigate={handleNavigate} 
+      />
+    );
   }
   
-  if (view === 'matrix') {
-    return <TeamMatrix 
-      team={selectedTeam} 
-      onBack={() => setView('dashboard')} 
-      onViewUsers={() => { 
-        setView('userDetails'); 
-        window.scrollTo(0,0); 
-      }}
-    />;
+  // 2. RENDER GLOBAL CONFIGURATION
+  if (activeView === 'configuration') {
+    return (
+      <Configuration 
+        onNavigate={handleNavigate} 
+      />
+    );
+  }
+  
+  // 3. RENDER BATCH OPTIMIZATION HUB (MATRIX + ROSTERS + ROLE GEN)
+  if (activeView === 'workspace') {
+     return (
+       <TeamMatrix 
+         selectedTeams={selectedTeams} 
+         onBack={() => handleNavigate('dashboard')} 
+       />
+     );
   }
 
-  if (view === 'userDetails') {
-    return <UserDetailsTable 
-      team={selectedTeam} 
-      onBack={() => setView('matrix')} 
-      
-      // NEW: Catch the button click and switch the view
-      onContinueToRoleGen={(users) => {
-        setRoleGenUsers(users);
-        setView('roleGeneration');
-        window.scrollTo(0,0);
-      }}
-    />;
+  // 2. RENDER GLOBAL CONFIGURATION
+  if (activeView === 'masterData') {
+    return (
+      <MasterData 
+        onNavigate={handleNavigate} 
+      />
+    );
   }
-
-  // NEW: Render the Role Generation Workspace
-  if (view === 'roleGeneration') {
-    return <RoleGeneration 
-      users={roleGenUsers} 
-      onBack={() => setView('userDetails')} 
-    />;
-  }
+  return null;
 }

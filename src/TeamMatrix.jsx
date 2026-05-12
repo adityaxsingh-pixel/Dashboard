@@ -347,7 +347,7 @@ function TeamAccordion({ team, isChecked, onCheck, isExpanded, onToggle, onBuild
                               <div style={styles.proposedRemovalsBox}>
                                 <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '12px' }}>
                                   <h4 style={styles.proposedTitle}>Suggested Access Removals (to save money)</h4>
-                                  <button onClick={() => handleImproveRole(optimizationInsights.financialCandidates)} style={styles.btnImproveRole}>✨ Apply Removals</button>
+                                  <button onClick={() => handleImproveRole(optimizationInsights.financialCandidates)} style={styles.btnImproveRole}>✨ Remove Transactions</button>
                                 </div>
                                 <div style={{ display: 'flex', flexDirection: 'column', gap: '8px' }}>
                                   {optimizationInsights.financialCandidates.map(tx => {
@@ -389,7 +389,7 @@ function TeamAccordion({ team, isChecked, onCheck, isExpanded, onToggle, onBuild
                               <div style={styles.proposedRemovalsBox}>
                                 <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '12px' }}>
                                   <h4 style={styles.proposedTitle}>Suggested Access Removals (to fix risks)</h4>
-                                  <button onClick={() => handleImproveRole(optimizationInsights.sodCandidates)} style={styles.btnImproveRole}>✨ Apply Removals</button>
+                                  <button onClick={() => handleImproveRole(optimizationInsights.sodCandidates)} style={styles.btnImproveRole}>✨ Remove Transactions</button>
                                 </div>
                                 <div style={{ display: 'flex', flexDirection: 'column', gap: '8px' }}>
                                   {optimizationInsights.sodCandidates.map(tx => {
@@ -431,7 +431,7 @@ function TeamAccordion({ team, isChecked, onCheck, isExpanded, onToggle, onBuild
                               <div style={styles.proposedRemovalsBox}>
                                 <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '12px' }}>
                                   <h4 style={styles.proposedTitle}>Suggested Access Removals (to clean up clutter)</h4>
-                                  <button onClick={() => handleImproveRole(optimizationInsights.bloatCandidates)} style={styles.btnImproveRole}>✨ Apply Removals</button>
+                                  <button onClick={() => handleImproveRole(optimizationInsights.bloatCandidates)} style={styles.btnImproveRole}>✨ Remove Transactions</button>
                                 </div>
                                 <div style={{ display: 'flex', flexDirection: 'column', gap: '8px' }}>
                                   {optimizationInsights.bloatCandidates.map(tx => {
